@@ -86,6 +86,24 @@ NOT_STARTED
 
 M-005 PROJECT STRUCTURE FOUNDATION
 
+M-006 FOLDER ARCHITECTURE FOUNDATION
+
+Status:
+DONE
+
+Specification:
+08_FOLDER_ARCHITECTURE.md
+
+Commit:
+c4dc304
+
+Result:
+The complete Folder Architecture Specification was created,
+verified across sections 1–88, passed git diff validation,
+committed, and pushed to the main branch.
+
+Next:
+09_DATABASE_ARCHITECTURE.md
 Status:
 DONE
 
@@ -101,7 +119,11 @@ verified across sections 1–88, passed git diff validation,
 committed, and pushed to the main branch.
 
 Next:
-08_FOLDER_ARCHITECTURE.md
+07 — DONE
+08 — DONE
+
+Current Next Master Specification:
+09_DATABASE_ARCHITECTURE.md
 ---
 
 # 3. STATUS DEFINITIONS
