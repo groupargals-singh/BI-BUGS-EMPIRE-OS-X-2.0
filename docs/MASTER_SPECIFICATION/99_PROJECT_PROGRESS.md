@@ -47,9 +47,9 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 | 09 | DATABASE ARCHITECTURE | ✅ DONE |
 | 10 | API ARCHITECTURE | ✅ DONE |
 | 11 | AI CORE | ✅ DONE |
-| 12 | KNOWLEDGE GRAPH | 🔜 NEXT |
-| 13 | PLUGIN SYSTEM | ⏳ PENDING |
-| 14 | MICROSERVICES | ⏳ PENDING |
+| 12 | KNOWLEDGE GRAPH | ✅ DONE |
+| 13 | PLUGIN SYSTEM | ✅ DONE |
+| 14 | MICROSERVICES | 🔜 NEXT |
 | 15 | SECURITY | ⏳ PENDING |
 | 16 | DEVOPS | ⏳ PENDING |
 | 17 | UI/UX SYSTEM | ⏳ PENDING |
@@ -210,9 +210,66 @@ Commit message:
 
 ---
 
+## M-011 — Knowledge Graph Architecture
+
+Status:
+
+DONE
+
+Specification:
+
+`12_KNOWLEDGE_GRAPH.md`
+
+Verification:
+
+- 88 sections verified
+- 1883 lines verified
+- `git diff --check` clean
+- commit created
+- GitHub push confirmed
+
+Commit:
+
+`470ca5a`
+
+Commit message:
+
+`Add knowledge graph architecture specification`
+
+---
+
+## M-012 — Plugin System Architecture
+
+Status:
+
+DONE
+
+Specification:
+
+`13_PLUGIN_SYSTEM.md`
+
+Verification:
+
+- 88 sections verified
+- 1383 lines verified
+- duplicate Section 6/7 heading issue corrected
+- `git diff --check` clean
+- commit created
+- GitHub push confirmed
+
+Commit:
+
+`12e91e5`
+
+Commit message:
+
+`Add plugin system architecture specification`
+
+---
+
 # 4. CURRENT MILESTONE
 
-## M-011 — Knowledge Graph Architecture
+## M-013 — Microservices Architecture
 
 Status:
 
@@ -220,54 +277,80 @@ NEXT
 
 Target specification:
 
-`docs/MASTER_SPECIFICATION/12_KNOWLEDGE_GRAPH.md`
+`docs/MASTER_SPECIFICATION/14_MICROSERVICES.md`
 
 Purpose:
 
-Define the complete knowledge graph architecture of BI-BUGS EMPIRE OS-X 2.0.
+Define the complete microservices architecture of BI-BUGS EMPIRE OS-X 2.0.
 
 Planned areas:
 
-- knowledge graph vision
-- entities
-- relationships
-- concepts
-- ontology
-- graph schema
-- provenance
-- evidence
-- confidence
-- temporal knowledge
-- knowledge acquisition
-- normalization
-- entity resolution
-- relationship resolution
-- contradiction handling
-- graph traversal
-- semantic search
-- graph reasoning
-- knowledge validation
-- graph memory
-- graph versioning
-- graph security
-- graph permissions
-- graph APIs
-- graph databases
-- graph indexing
-- graph analytics
-- graph integration with AI Core
-- graph integration with memory
-- graph integration with research
-- graph integration with specialist brains
-- graph integration with plugins
-- graph integration with APIs
-- graph integration with project memory
-- graph testing
-- graph observability
-- graph scaling
-- graph backup
-- graph recovery
-- graph governance
+- microservices vision
+- microservices mission
+- service architecture
+- service boundaries
+- service ownership
+- domain-driven service design
+- service registry
+- service discovery
+- service identity
+- service authentication
+- service authorization
+- service communication
+- synchronous communication
+- asynchronous communication
+- event-driven architecture
+- message brokers
+- queues
+- service APIs
+- API gateways
+- internal APIs
+- service contracts
+- contract versioning
+- service dependencies
+- dependency management
+- service isolation
+- service security
+- service configuration
+- service secrets
+- service health
+- service monitoring
+- service observability
+- logging
+- metrics
+- tracing
+- failure handling
+- retries
+- circuit breakers
+- timeouts
+- rate limiting
+- load balancing
+- service scaling
+- horizontal scaling
+- service resilience
+- fault isolation
+- disaster recovery
+- backup
+- data ownership
+- database-per-service principles
+- distributed transactions
+- consistency
+- event sourcing where applicable
+- caching
+- service testing
+- integration testing
+- contract testing
+- performance testing
+- security testing
+- deployment
+- containerization
+- orchestration
+- service lifecycle
+- service versioning
+- service migration
+- service retirement
+- governance
+- production standards
 
 ---
 
@@ -311,7 +394,87 @@ LEVEL 0 — CONCEPT / SPECIFICATION FOUNDATION
 
 ---
 
-# 6. IMPLEMENTATION STATUS
+# 6. KNOWLEDGE GRAPH STATUS
+
+Specification:
+
+`12_KNOWLEDGE_GRAPH.md`
+
+Status:
+
+COMPLETE
+
+Sections:
+
+88 / 88
+
+Lines:
+
+1883
+
+Verification:
+
+PASS
+
+Implementation:
+
+NOT STARTED
+
+Testing:
+
+NOT STARTED
+
+Production:
+
+NOT STARTED
+
+Architecture maturity:
+
+LEVEL 0 — CONCEPT / SPECIFICATION FOUNDATION
+
+---
+
+# 7. PLUGIN SYSTEM STATUS
+
+Specification:
+
+`13_PLUGIN_SYSTEM.md`
+
+Status:
+
+COMPLETE
+
+Sections:
+
+88 / 88
+
+Lines:
+
+1383
+
+Verification:
+
+PASS
+
+Implementation:
+
+NOT STARTED
+
+Testing:
+
+NOT STARTED
+
+Production:
+
+NOT STARTED
+
+Architecture maturity:
+
+LEVEL 0 — CONCEPT / SPECIFICATION FOUNDATION
+
+---
+
+# 8. IMPLEMENTATION STATUS
 
 Current implementation state:
 
@@ -319,13 +482,15 @@ NOT STARTED
 
 The project is currently establishing the master architecture and governance specifications.
 
-No specification should be considered implemented merely because its documentation is complete.
+Documentation completion does not mean implementation completion.
 
-Implementation begins only after the required architecture and contracts are sufficiently defined.
+No architecture specification shall be considered implemented merely because its documentation is complete.
+
+Implementation begins only after the required architecture, contracts, security boundaries, and governance requirements are sufficiently defined.
 
 ---
 
-# 7. PRODUCTION STATUS
+# 9. PRODUCTION STATUS
 
 Production readiness:
 
@@ -353,7 +518,7 @@ NOT STARTED
 
 ---
 
-# 8. DEVELOPMENT RULE
+# 10. DEVELOPMENT RULE
 
 Every major module follows:
 
@@ -364,27 +529,35 @@ Every major module follows:
 5. PUSH
 6. PROGRESS UPDATE
 
-No milestone is considered complete until the progress tracker records it.
+No milestone is considered complete until:
+
+- specification is complete;
+- verification passes;
+- commit is created;
+- GitHub push is confirmed;
+- progress tracker is updated.
 
 ---
 
-# 9. VERIFICATION STANDARD
+# 11. VERIFICATION STANDARD
 
 Every specification must be checked for:
 
-- section completeness
-- structural consistency
-- naming consistency
-- cross-reference consistency
-- formatting errors
-- duplicate sections
-- missing sections
-- implementation-state accuracy
-- `git diff --check`
+- section completeness;
+- structural consistency;
+- naming consistency;
+- cross-reference consistency;
+- formatting errors;
+- duplicate sections;
+- missing sections;
+- implementation-state accuracy;
+- `git diff --check`.
+
+Where applicable, section count and line count shall also be verified.
 
 ---
 
-# 10. GIT GOVERNANCE
+# 12. GIT GOVERNANCE
 
 Repository:
 
@@ -396,17 +569,24 @@ Branch:
 
 Latest confirmed commit:
 
-`73e3704`
+`12e91e5`
 
 Latest confirmed milestone:
 
-M-010 — AI Core Architecture
+M-012 — Plugin System Architecture
+
+Next milestone:
+
+M-013 — Microservices Architecture
 
 ---
 
-# 11. RECENT COMMIT HISTORY
+# 13. RECENT COMMIT HISTORY
 
 ```text
+12e91e5 Add plugin system architecture specification
+470ca5a Add knowledge graph architecture specification
+076f33c Update progress after AI core architecture
 73e3704 Add AI core architecture specification
 76bd6b2 Update progress after API architecture
 777c815 Add API architecture specification
