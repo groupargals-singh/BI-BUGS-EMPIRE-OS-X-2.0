@@ -1,12 +1,13 @@
 # BI-BUGS EMPIRE OS X 2.0
 # 11 — AI CORE ARCHITECTURE SPECIFICATION
 
-Document ID: BES-OSX-MS-11
-Document Type: Master Architecture Specification
-Version: 1.0
-Status: FOUNDATION SPECIFICATION
-Implementation Status: NOT STARTED
-Production Status: NOT STARTED
+**Document ID:** BES-OSX-MS-11
+**Document type:** Master Architecture Specification
+**Version:** 1.0
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
 
 ---
 
@@ -132,6 +133,7 @@ RESULT
         |
         v
 AUDIT + LEARNING
+```
 
 # 5. COGNITIVE LAYERS
 
@@ -342,6 +344,7 @@ QUESTION
 → CONFLICT ANALYSIS
 → SYNTHESIS
 → VERIFICATION
+```
 
 # 15. TOOL INTELLIGENCE
 
@@ -408,6 +411,7 @@ CREATED
 → EXECUTING
 → VERIFYING
 → COMPLETED
+```
 
 # 18. VERIFICATION ENGINE
 
@@ -877,7 +881,7 @@ Workflows must distinguish:
 
 ---
 
-# 33. TOOL INTELLIGENCE
+# 33. TOOL REGISTRY AND EXECUTION POLICY
 
 AI Core treats tools as controlled capabilities rather than unrestricted powers.
 
@@ -2067,11 +2071,11 @@ Architecture principles:
 14. Historical traceability.
 15. Implementation status must reflect reality.
 
-Final documentation state:
+Final documentation review state:
 
-Specification:
+Structural review:
 
-COMPLETE
+PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 
@@ -2101,7 +2105,7 @@ Document:
 
 Status:
 
-VERIFIED AFTER STRUCTURAL REVIEW
+STRUCTURAL REVIEW PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation State:
 

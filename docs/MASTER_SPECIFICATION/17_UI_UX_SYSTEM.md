@@ -1,3 +1,13 @@
+# UI/UX SYSTEM SPECIFICATION
+
+**Specification ID:** 17_UI_UX_SYSTEM
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
+---
+
 # 1. UI/UX VISION
 
 BI-BUGS EMPIRE OS-X UI/UX architecture shall provide a consistent, accessible, responsive, secure, and understandable user experience across all supported interfaces.
@@ -1117,7 +1127,7 @@ Current status:
 
 Documentation:
 
-IN PROGRESS
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 

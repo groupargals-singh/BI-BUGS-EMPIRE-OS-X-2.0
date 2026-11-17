@@ -2,9 +2,10 @@
 # TESTING ARCHITECTURE SPECIFICATION
 
 **Specification ID:** 18_TESTING
-**Specification status:** DRAFT FOR REVIEW
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
-**Production status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
 **Scope:** Testing strategy, quality gates, evidence, and release verification.
 
 > This document defines target controls. It is not evidence that a test suite, CI pipeline, or production check already exists.

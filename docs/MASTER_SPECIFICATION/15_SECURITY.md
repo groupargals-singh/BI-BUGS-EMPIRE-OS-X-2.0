@@ -4,10 +4,10 @@
 **Document:** Security Architecture Specification
 **Project:** BI-BUGS EMPIRE OS-X 2.0
 **Specification:** 15
-**Architecture Status:** VERIFIED
-**Implementation Status:** NOT STARTED
-**Testing Status:** NOT STARTED
-**Production Status:** NOT STARTED
+**Specification status:** DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
 
 ---
 
@@ -111,6 +111,7 @@ INTERNAL
 CONFIDENTIAL
 RESTRICTED
 CRITICAL
+```
 
 # 8. SECURITY ARCHITECTURE
 
@@ -1214,7 +1215,7 @@ Current status:
 
 Documentation:
 
-IN PROGRESS
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 
