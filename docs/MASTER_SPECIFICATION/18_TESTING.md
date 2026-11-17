@@ -1,12 +1,25 @@
+# BI-BUGS EMPIRE OS-X 2.0
+# TESTING ARCHITECTURE SPECIFICATION
+
+**Specification ID:** 18_TESTING
+**Specification status:** DRAFT FOR REVIEW
+**Implementation status:** NOT STARTED
+**Production status:** NOT STARTED
+**Scope:** Testing strategy, quality gates, evidence, and release verification.
+
+> This document defines target controls. It is not evidence that a test suite, CI pipeline, or production check already exists.
+
+---
+
 # 1. TESTING VISION
 
 Testing is a required engineering control, not a final optional activity. Every implemented capability must have repeatable evidence that it behaves as intended and fails safely.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Require measurable pass/fail criteria before a capability can be called verified.
+- Trace each quality claim to tests and retained evidence.
+- Treat unexecuted tests as unknown, never as passing.
 
 ---
 
@@ -14,11 +27,11 @@ Requirements:
 
 The testing system shall detect defects early, verify interfaces and data integrity, protect security boundaries, and provide a traceable release decision.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify correctness, safety, and failure handling at each delivery stage.
+- Link test outcomes to requirements and risk owners.
+- Escalate failures that can cause data loss, security exposure, or service interruption.
 
 ---
 
@@ -26,11 +39,11 @@ Requirements:
 
 Quality objectives include correctness, reliability, security, performance, accessibility, maintainability, recoverability, and predictable user experience.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define measurable targets for reliability, security, accessibility, performance, and recovery.
+- State measurement method, environment, and acceptable threshold for each target.
+- Reassess targets when user impact or architecture changes.
 
 ---
 
@@ -38,11 +51,11 @@ Requirements:
 
 Tests must be deterministic where practical, isolated, repeatable, readable, risk-based, and maintained with the code they protect.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Run the required checks against the exact proposed commit in a clean environment.
+- Fail the gate on required-check failures and publish actionable reports.
+- Do not mark a skipped or unexecuted check as passed.
 
 ---
 
@@ -50,11 +63,11 @@ Requirements:
 
 Testing depth shall follow business impact, data sensitivity, complexity, dependency count, and likelihood of failure.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Select test depth from impact, likelihood, complexity, and dependency risk.
+- Cover high-risk paths even when overall coverage is high.
+- Document untested areas and the reason coverage is deferred.
 
 ---
 
@@ -62,11 +75,11 @@ Requirements:
 
 Each test suite shall have an owner, purpose, execution method, pass criteria, and a documented response to failure.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Assign a responsible owner and reviewer to each required test gate.
+- Keep exceptions scoped, approved, time-limited, and auditable.
+- Block completion when required evidence or approval is missing.
 
 ---
 
@@ -74,11 +87,11 @@ Requirements:
 
 Prefer many fast unit tests, a focused set of integration tests, and fewer broad end-to-end tests that cover critical journeys.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Keep fast unit checks broad, integration checks focused, and end-to-end checks limited to critical journeys.
+- Avoid duplicating the same assertion at every test level without added value.
+- Track slow and flaky suites and assign remediation.
 
 ---
 
@@ -86,11 +99,11 @@ Requirements:
 
 Use unit, component, integration, contract, system, end-to-end, acceptance, and production verification tests where appropriate.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Choose unit, component, integration, contract, system, or acceptance level based on the behavior under test.
+- Verify external boundaries at the narrowest level that can prove the contract.
+- Retain end-to-end coverage for critical user outcomes.
 
 ---
 
@@ -98,11 +111,11 @@ Requirements:
 
 Tests follow WRITE, REVIEW, VERIFY, COMMIT, PUSH, and PROGRESS UPDATE; failed gates block milestone completion.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define setup, execution, assertions, cleanup, and evidence before running a test.
+- Preserve failure output and environment details for reproduction.
+- Confirm cleanup executes after both success and failure.
 
 ---
 
@@ -110,11 +123,11 @@ Requirements:
 
 Every important requirement shall map to one or more tests or a documented reason why automated testing is unsuitable.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test visible states, interaction paths, responsive layouts, and validation feedback.
+- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
+- Confirm keyboard and touch interaction for the critical user journeys.
 
 ---
 
@@ -122,11 +135,11 @@ Requirements:
 
 Test cases shall state preconditions, inputs, steps, expected outcomes, cleanup, and evidence to retain.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Specify preconditions, fixture, steps, expected outcome, and cleanup.
+- Make each case independently repeatable and traceable to a requirement or risk.
+- Avoid ambiguous expected results such as 'works correctly'.
 
 ---
 
@@ -134,11 +147,11 @@ Requirements:
 
 Verify valid paths as well as invalid inputs, denied permissions, missing dependencies, timeouts, and malformed data.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify accepted inputs and expected success responses.
+- Verify invalid, unauthorized, malformed, and unsupported inputs fail safely.
+- Confirm failures do not leak secrets or partially apply unintended changes.
 
 ---
 
@@ -146,11 +159,11 @@ Requirements:
 
 Test minimum, maximum, empty, null, zero, just-inside, and just-outside values for constrained fields.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test minimum, maximum, empty, null, zero, and just-inside/just-outside values where applicable.
+- Verify numeric precision, overflow, length limits, and inclusive/exclusive boundaries.
+- Record the boundary rule that makes each expected result correct.
 
 ---
 
@@ -158,11 +171,11 @@ Requirements:
 
 Group equivalent input classes to keep suites efficient while retaining representative valid and invalid cases.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test visible states, interaction paths, responsive layouts, and validation feedback.
+- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
+- Confirm keyboard and touch interaction for the critical user journeys.
 
 ---
 
@@ -170,11 +183,11 @@ Requirements:
 
 Unit tests isolate one function or class, mock external boundaries where needed, and verify return values and side effects.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Exercise function/class behavior with deterministic inputs and isolated external dependencies.
+- Assert return values, exceptions, state changes, and side effects.
+- Include regression tests for fixed defects.
 
 ---
 
@@ -182,11 +195,11 @@ Requirements:
 
 Component tests verify a module's behavior and public interface with controlled dependencies.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify each component's public interface and invariants with controlled dependencies.
+- Test configuration errors and dependency failures at component boundaries.
+- Ensure component tests fail when observable behavior is broken.
 
 ---
 
@@ -194,11 +207,11 @@ Requirements:
 
 Integration tests verify real interactions between modules, databases, queues, file systems, and external adapters in a controlled environment.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify real interactions among modules, persistence, queues, and adapters in a controlled environment.
+- Exercise timeouts, partial failures, retries, and transaction boundaries.
+- Keep integration data isolated from production data.
 
 ---
 
@@ -206,11 +219,11 @@ Requirements:
 
 Provider and consumer contracts shall verify endpoint shape, required fields, status codes, schemas, and compatibility.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Validate request/response schemas, required fields, error codes, and compatibility.
+- Test consumer expectations against provider contracts.
+- Version contract changes and detect breaking changes before release.
 
 ---
 
@@ -218,11 +231,11 @@ Requirements:
 
 API tests cover authentication, authorization, validation, pagination, error responses, rate limits, idempotency, and version behavior.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Validate request/response schemas, status codes, authentication, authorization, and error contracts.
+- Test malformed inputs, pagination boundaries, duplicate requests, rate limits, and version compatibility.
+- Keep contract tests tied to documented consumer/provider expectations.
 
 ---
 
@@ -230,11 +243,11 @@ Requirements:
 
 Database tests verify schema constraints, indexes where material, transactions, relationships, migrations, and rollback behavior.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Exercise constraints, transaction rollback, concurrent updates, and referential integrity.
+- Test migrations from supported prior schemas and validate data before and after upgrade.
+- Use isolated databases and prove cleanup cannot target production data.
 
 ---
 
@@ -242,23 +255,23 @@ Requirements:
 
 Data changes must preserve invariants, references, uniqueness, ownership, and audit requirements.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
-
+- Verify that records preserve defined invariants and required fields.
+- Check uniqueness, referential integrity, ownership boundaries, and valid state transitions.
+- Confirm that updates and deletes preserve required audit history and do not create orphaned or inconsistent records.
+- Test invalid, partial, and concurrent writes where relevant; confirm failures leave data in a valid state.
 ---
 
 # 22. MIGRATION TESTING
 
 Migrations shall be tested against representative prior versions, empty installations, populated data, and safe rollback or recovery procedures.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test upgrade, interruption, retry, idempotency, and rollback limits from known prior states.
+- Compare record counts and critical invariants before and after migration.
+- Record schema version, input fixture, result, and recovery procedure.
 
 ---
 
@@ -266,11 +279,11 @@ Requirements:
 
 AI components shall be tested for task routing, structured output, refusal boundaries, failure handling, latency, and reproducibility limits.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use a versioned evaluation set with explicit rubrics and known limitations.
+- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
+- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
 
 ---
 
@@ -278,11 +291,11 @@ Requirements:
 
 Evaluation datasets must be versioned, permissioned, representative, and reviewed for leakage, bias, and sensitive information.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use a versioned evaluation set with explicit rubrics and known limitations.
+- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
+- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
 
 ---
 
@@ -290,11 +303,11 @@ Requirements:
 
 Use task-specific accuracy, groundedness, calibration, latency, cost, and harmful-error metrics; no single score proves general intelligence.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use a versioned evaluation set with explicit rubrics and known limitations.
+- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
+- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
 
 ---
 
@@ -302,11 +315,11 @@ Requirements:
 
 Test hostile instructions embedded in user input, retrieved content, documents, tool results, and cross-agent messages.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Treat retrieved documents, user files, and tool output as untrusted data.
+- Test instruction override attempts, data exfiltration, tool misuse, and permission bypass.
+- Verify safety controls remain effective when malicious text is embedded in otherwise useful content.
 
 ---
 
@@ -314,11 +327,11 @@ Requirements:
 
 Verify node and edge validity, relationship constraints, provenance, deduplication, query correctness, and safe graph updates.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Check provenance, timestamps, deduplication, conflicting facts, and stale-data handling.
+- Verify uncertain or unverified information is not promoted as confirmed knowledge.
+- Trace each retained claim to its source and review decision.
 
 ---
 
@@ -326,11 +339,11 @@ Requirements:
 
 Plugins must pass manifest validation, permission checks, schema checks, isolation tests, timeout tests, and compatibility tests.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test capability declarations, input schemas, authorization, timeout, and failure isolation.
+- Verify untrusted plugins cannot access undeclared resources or secrets.
+- Test version incompatibility and clean disable/uninstall behavior.
 
 ---
 
@@ -338,11 +351,11 @@ Requirements:
 
 Test service boundaries, independent deployment, discovery, version compatibility, failure isolation, and dependency outages.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test service contracts, timeout budgets, retries, idempotency, and partial failure.
+- Verify tracing/correlation IDs across service boundaries without leaking sensitive payloads.
+- Check that one unavailable service does not create uncontrolled cascading failure.
 
 ---
 
@@ -350,11 +363,11 @@ Requirements:
 
 Verify delivery semantics, duplicate events, ordering assumptions, retries, dead-letter handling, poison messages, and idempotent consumers.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test duplicate delivery, ordering assumptions, retry caps, dead-letter handling, and replay.
+- Verify consumers are idempotent for the delivery guarantees actually provided.
+- Record message IDs and safe failure evidence for reproducibility.
 
 ---
 
@@ -362,11 +375,11 @@ Requirements:
 
 Security tests cover threat scenarios, trust boundaries, least privilege, input validation, data exposure, and secure defaults.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify both allowed and denied cases; include bypass attempts and least-privilege assertions.
+- Use synthetic identities and never place real credentials or sensitive data in fixtures.
+- Capture safe evidence and convert confirmed vulnerabilities into regression tests.
 
 ---
 
@@ -374,11 +387,11 @@ Requirements:
 
 Test valid and invalid credentials, session expiry, revocation, recovery flows, and resistance to enumeration where applicable.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Cover valid, invalid, expired, revoked, and repeated authentication attempts.
+- Check session lifecycle, rate limits, recovery paths, and safe user-facing errors.
+- Confirm secrets and tokens never appear in logs, URLs, or test reports.
 
 ---
 
@@ -386,11 +399,11 @@ Requirements:
 
 Verify role and resource permissions on every protected path, including direct object references and alternate API routes.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test every relevant role against allowed and forbidden resources and actions.
+- Verify authorization server-side at the resource boundary, not only in the interface.
+- Include cross-user and privilege-escalation negative cases.
 
 ---
 
@@ -398,11 +411,11 @@ Requirements:
 
 Protected actions must be denied by default and proceed only after valid explicit authorization under the governing policy.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test that protected actions are denied without the required authority or explicit approval.
+- Verify approval scope, expiry, cancellation, and audit trail where applicable.
+- Confirm a denial leaves protected state unchanged.
 
 ---
 
@@ -410,11 +423,11 @@ Requirements:
 
 Secrets must not appear in logs, test fixtures, reports, repository history, crash output, or client bundles.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use disposable test credentials supplied through the environment or a secret manager.
+- Assert secrets are absent from logs, artifacts, screenshots, and committed fixtures.
+- Exercise missing, invalid, rotated, and revoked credentials safely.
 
 ---
 
@@ -422,23 +435,23 @@ Requirements:
 
 Review dependency versions, known vulnerabilities, integrity, license constraints, and unnecessary packages before release.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
-
+- Scan dependency versions against an approved vulnerability database or scanner.
+- Verify package integrity, lockfile consistency, and declared license constraints.
+- Record findings, severity, affected dependency, and remediation or approved exception.
+- Re-run relevant checks after dependency updates and before release.
 ---
 
 # 37. INPUT VALIDATION TESTING
 
 Test malformed encodings, oversized input, injection strings, path traversal, unexpected types, and Unicode edge cases.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test malformed encodings, oversized payloads, unexpected types, and injection-like input.
+- Validate at every trust boundary rather than relying on UI-only checks.
+- Confirm rejection is bounded, understandable, and free of sensitive details.
 
 ---
 
@@ -446,11 +459,11 @@ Requirements:
 
 Verify data minimization, access boundaries, retention rules, deletion behavior, and redaction of sensitive information.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use synthetic or approved masked data and minimize collected test evidence.
+- Verify consent, access, redaction, retention, and deletion behaviors where implemented.
+- Check logs and reports for personal data leakage.
 
 ---
 
@@ -458,11 +471,11 @@ Requirements:
 
 Define measurable response-time and throughput objectives for critical user journeys and APIs.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define workload, measurement window, warm-up, environment, and target before running the test.
+- Measure latency percentiles, throughput, resource saturation, and error rate together.
+- Set explicit abort thresholds to protect shared or production systems.
 
 ---
 
@@ -470,11 +483,11 @@ Requirements:
 
 Test expected peak traffic with realistic request mixes, datasets, and dependency behavior.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Model expected concurrency, traffic mix, and ramp-up rather than using arbitrary request volume.
+- Monitor dependencies and distinguish client, application, and infrastructure bottlenecks.
+- Run against approved non-production targets unless explicitly authorized otherwise.
 
 ---
 
@@ -482,11 +495,11 @@ Requirements:
 
 Increase load beyond expected limits to discover failure modes, resource exhaustion, and recovery behavior.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Increase load in controlled steps beyond expected capacity and define stop conditions first.
+- Observe graceful degradation, queue growth, recovery, and data correctness.
+- Do not run uncontrolled stress tests against production.
 
 ---
 
@@ -494,11 +507,11 @@ Requirements:
 
 Measure whether capacity grows predictably as workers, data volume, traffic, or service instances increase.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define workload, concurrency, duration, resource ceiling, and latency/error targets in advance.
+- Increase load in controlled steps and monitor bottlenecks and saturation.
+- Run only in an approved non-production environment unless explicitly authorized.
 
 ---
 
@@ -506,11 +519,11 @@ Requirements:
 
 Run sustained workloads to detect memory leaks, queue growth, connection exhaustion, and gradual degradation.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Hold a representative workload for a documented duration and monitor resource trends.
+- Look for leaks, growing queues, degraded latency, and accumulating background work.
+- Compare initial and final health metrics and retain the workload configuration.
 
 ---
 
@@ -518,11 +531,11 @@ Requirements:
 
 Measure successful operation over time and verify graceful handling of transient failures.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Measure success rate, error rate, latency, and recovery over a stated interval.
+- Include sustained operation and dependency degradation scenarios.
+- Compare results to explicit service objectives and retain the environment details.
 
 ---
 
@@ -530,11 +543,11 @@ Requirements:
 
 Verify timeouts, bounded retries, circuit breakers, bulkheads, fallback behavior, and recovery after dependencies return.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify bounded retries, timeouts, circuit breaking, and graceful degradation where implemented.
+- Confirm recovery does not duplicate operations or corrupt state.
+- Check user-visible behavior while dependencies are unavailable.
 
 ---
 
@@ -542,11 +555,11 @@ Requirements:
 
 Introduce controlled failures only in isolated non-production environments unless a separately approved production exercise exists.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define the fault, target, scope, stop conditions, and recovery plan before injection.
+- Verify detection, containment, alerting, and recovery behavior.
+- Require explicit approval; never inject faults into production by default.
 
 ---
 
@@ -554,11 +567,11 @@ Requirements:
 
 Chaos experiments require explicit scope, safety limits, monitoring, abort conditions, and rollback plans.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Start with a narrow, reversible hypothesis and a controlled blast radius.
+- Define steady-state indicators, abort thresholds, and rollback before execution.
+- Record observed impact and corrective actions; do not equate a single run with proof of resilience.
 
 ---
 
@@ -566,11 +579,11 @@ Requirements:
 
 Automate critical journeys across UI, API, services, persistence, notifications, and audit records.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify critical user journeys across the real integrated path.
+- Assert visible outcomes and persisted state, not only internal implementation details.
+- Use stable test data and ensure cleanup cannot affect unrelated users.
 
 ---
 
@@ -578,11 +591,11 @@ Requirements:
 
 Acceptance criteria must be defined before completion and confirmed by the authorized product owner or delegate.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Map acceptance scenarios to agreed user outcomes and explicit pass criteria.
+- Include authorization, error states, accessibility, and important edge cases.
+- Obtain a recorded human decision before declaring acceptance complete.
 
 ---
 
@@ -590,11 +603,11 @@ Requirements:
 
 Defects shall produce regression tests where feasible; run relevant regression suites after changes and full critical suites before release.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Add a repeatable regression case for each confirmed defect where practical.
+- Run affected-area tests plus required critical-path suites after changes.
+- Investigate new failures instead of suppressing them to obtain a green result.
 
 ---
 
@@ -602,11 +615,11 @@ Requirements:
 
 A smoke suite verifies that the deployed build starts and critical paths are minimally functional.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Check that the build starts and critical entry points respond after deployment or packaging.
+- Keep smoke checks fast, deterministic, and safe to rerun.
+- Fail the gate when a critical dependency or core journey is unavailable.
 
 ---
 
@@ -614,11 +627,11 @@ Requirements:
 
 Sanity tests check the changed area and its immediate dependencies after a small fix.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify the narrow changed area and its immediate dependencies after a focused fix.
+- Confirm the fix addresses the reported behavior without obvious adjacent regressions.
+- Do not substitute sanity checks for the required full regression gate.
 
 ---
 
@@ -626,11 +639,11 @@ Requirements:
 
 Verify navigation, forms, validation, loading states, empty states, errors, confirmation dialogs, and responsive layouts.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test visible states, interaction paths, responsive layouts, and validation feedback.
+- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
+- Confirm keyboard and touch interaction for the critical user journeys.
 
 ---
 
@@ -638,11 +651,11 @@ Requirements:
 
 Test semantic structure, keyboard access, focus order, contrast, labels, screen-reader behavior, and non-color status cues.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Combine automated checks with keyboard-only and assistive-technology review.
+- Verify focus order, labels, contrast, zoom/reflow, errors, and reduced-motion behavior.
+- Document the supported assistive technology and any known limitation.
 
 ---
 
@@ -650,11 +663,11 @@ Requirements:
 
 Test supported browsers and versions based on the declared compatibility matrix.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify supported browsers for critical flows, layout, validation, and accessibility.
+- Record browser/version and viewport for reproducible failures.
+- Define the supported browser matrix rather than implying universal compatibility.
 
 ---
 
@@ -662,11 +675,11 @@ Requirements:
 
 Test supported mobile, tablet, and desktop sizes, touch behavior, orientation, and input methods.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test supported screen sizes, touch input, orientation, and device-specific permissions.
+- Verify layout, readable content, keyboard behavior, and interrupted/resumed flows.
+- Record device/OS versions and distinguish emulation from physical-device evidence.
 
 ---
 
@@ -674,11 +687,11 @@ Requirements:
 
 Validate app lifecycle, permissions, network changes, backgrounding, storage limits, and device-specific failures where mobile clients exist.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Test supported screen sizes, app lifecycle, permissions, interrupted connectivity, and orientation where supported.
+- Verify installation, upgrade, data persistence, and safe behavior after process termination.
+- Record device/OS version and steps needed to reproduce a failure.
 
 ---
 
@@ -686,11 +699,11 @@ Requirements:
 
 Test disconnection, slow links, DNS failures, interrupted uploads, retries, and recovery without corrupting user data.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Simulate loss, delay, intermittent connectivity, and restoration.
+- Verify unsent changes are clearly represented and are not silently duplicated or lost.
+- Confirm retry and resumption behavior is idempotent.
 
 ---
 
@@ -698,11 +711,11 @@ Requirements:
 
 Verify compatibility across supported operating systems, runtimes, databases, browsers, and API versions.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Maintain an explicit supported browser, device, OS, runtime, and dependency matrix.
+- Test boundary versions and upgrade paths that are actually supported.
+- Record excluded combinations and the reason for each exclusion.
 
 ---
 
@@ -710,11 +723,11 @@ Requirements:
 
 Validate required configuration, invalid values, missing variables, environment separation, and secure defaults.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Validate required values, types, allowed ranges, and safe defaults.
+- Ensure invalid critical configuration fails clearly and early.
+- Keep environment-specific settings separate and never commit production secrets.
 
 ---
 
@@ -722,11 +735,11 @@ Requirements:
 
 Development, test, staging, and production differences must be documented; tests must not silently depend on developer-only settings.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Keep environment configuration and access boundaries explicit.
+- Document dependencies and version differences that could change test results.
+- Never use production customer data as a shortcut for test setup.
 
 ---
 
@@ -734,11 +747,11 @@ Requirements:
 
 Test artifact creation, installation, startup, health checks, configuration loading, and post-deployment verification.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify artifact identity, configuration validation, health checks, migration ordering, and shutdown behavior.
+- Exercise rollback or forward-fix procedures in a representative environment.
+- Keep deployment evidence tied to the exact artifact and commit.
 
 ---
 
@@ -746,11 +759,11 @@ Requirements:
 
 A release is not rollback-ready until rollback or forward-recovery steps are documented and rehearsed in a safe environment.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define the rollback trigger and verify it does not destroy newer valid data.
+- Test compatibility between application rollback and database/schema state.
+- Record recovery steps, owner, elapsed time, and any manual intervention.
 
 ---
 
@@ -758,11 +771,11 @@ Requirements:
 
 Verify backup completeness, restore integrity, access control, retention, and measured recovery time.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Restore into an isolated environment rather than treating backup creation as proof of recoverability.
+- Verify integrity, access controls, recovery-point objective, and recovery-time objective where defined.
+- Record the backup identifier, restore steps, validation results, and cleanup.
 
 ---
 
@@ -770,11 +783,11 @@ Requirements:
 
 Exercise documented recovery scenarios and record recovery time and recovery point results against approved objectives.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Restore a protected backup into an isolated target and verify integrity.
+- Measure achieved recovery time and data-loss window against approved RTO/RPO.
+- Keep restore evidence dated; backup existence alone is not a passing result.
 
 ---
 
@@ -782,11 +795,11 @@ Requirements:
 
 Verify critical operations produce useful, correlated, appropriately redacted logs, metrics, traces, and health signals.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Trigger representative success and failure paths and verify logs, metrics, traces, and alerts.
+- Check correlation identifiers and useful context while redacting sensitive fields.
+- Verify alert routing and avoid noisy or unowned alerts.
 
 ---
 
@@ -794,11 +807,11 @@ Requirements:
 
 Alerts shall be tested for trigger conditions, routing, severity, deduplication, and actionable messages.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify health checks, alerts, thresholds, and routing with safe synthetic events.
+- Test missing telemetry and noisy/duplicate alert behavior.
+- Confirm dashboards and alerts do not expose credentials or unnecessary personal data.
 
 ---
 
@@ -806,11 +819,11 @@ Requirements:
 
 Logs must be structured where practical, time-stamped, useful for diagnosis, and free of credentials or unnecessary personal data.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Check structured fields, severity, correlation IDs, and redaction behavior.
+- Ensure tokens, passwords, private keys, and unnecessary personal data are excluded.
+- Verify logs remain useful when a dependency fails or an exception is raised.
 
 ---
 
@@ -818,11 +831,11 @@ Requirements:
 
 Sensitive administrative and protected actions must create accurate, tamper-resistant audit evidence where required.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Verify protected actions produce attributable, timestamped, tamper-resistant records where required.
+- Check denied actions and permission decisions as well as successful actions.
+- Restrict access to audit evidence and avoid storing secrets in audit payloads.
 
 ---
 
@@ -830,11 +843,13 @@ Requirements:
 
 Use synthetic or approved masked data; do not copy production secrets or personal data into ordinary test environments.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Prefer synthetic data; use masked or approved data only when necessary and authorized.
+- Minimize collected fields and exclude production credentials, secrets, and unnecessary personal data.
+- Enforce least-privilege access to test datasets and restrict copying or exporting sensitive data.
+- Document data provenance, permitted use, retention, and disposal requirements.
+- Verify that test datasets comply with applicable privacy, security, and project policies.
 
 ---
 
@@ -842,11 +857,11 @@ Requirements:
 
 Fixtures must be isolated, reproducible, and cleaned up even when tests fail.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Make fixture state explicit and independent between tests.
+- Use teardown/finally handling so failed tests do not contaminate later runs.
+- Prove cleanup paths cannot delete unrelated user or production data.
 
 ---
 
@@ -854,11 +869,11 @@ Requirements:
 
 Mock external systems when isolation is needed, but retain integration tests that validate real contracts and critical behavior.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Mock external boundaries only when isolation is needed and document the behavior simulated.
+- Keep integration coverage for critical contracts against real compatible dependencies.
+- Avoid mocks that merely repeat the implementation and cannot detect realistic defects.
 
 ---
 
@@ -866,11 +881,11 @@ Requirements:
 
 Flaky tests must be recorded, investigated, and fixed; retries must not conceal recurring defects or make a red build appear green.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Track intermittent failures with an owner, cause, issue reference, and expiry.
+- Do not silently rerun until green or permanently ignore a failure.
+- Retain a reliable compensating check while the flake is investigated.
 
 ---
 
@@ -878,11 +893,11 @@ Requirements:
 
 Automate repeatable high-value checks and keep automation maintainable, observable, and independent of personal device state.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Keep automated checks deterministic, bounded in runtime, and actionable on failure.
+- Separate setup, action, assertion, and cleanup so failures can be diagnosed.
+- Review automation code like production code and maintain it as interfaces change.
 
 ---
 
@@ -890,11 +905,11 @@ Requirements:
 
 Continuous integration shall run formatting, static checks, unit tests, and relevant integration/security suites before accepting a change.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Run the required checks against the exact proposed commit in a clean environment.
+- Fail the gate on required-check failures and publish actionable reports.
+- Do not mark a skipped or unexecuted check as passed.
 
 ---
 
@@ -902,11 +917,11 @@ Requirements:
 
 Release gates require critical tests to pass, known risks to be accepted by an authorized owner, and evidence to be retained.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Define release-blocking failures and approval ownership before release.
+- Verify critical tests, known risks, monitoring, rollback readiness, and artifact identity.
+- Require an explicit recorded waiver for any permitted exception.
 
 ---
 
@@ -914,11 +929,11 @@ Requirements:
 
 Classify defects by user impact, security impact, data loss risk, reach, and availability; critical unresolved defects block release.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Record a reproducible description, expected/actual result, severity, scope, and safe evidence.
+- Link root cause and fix to a regression test for confirmed defects.
+- Escalate critical security, data-loss, and availability risks immediately.
 
 ---
 
@@ -926,11 +941,11 @@ Requirements:
 
 Record reproduction steps, expected and actual behavior, environment, severity, evidence, owner, fix, and regression coverage.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Record a reproducible description, expected/actual result, severity, scope, and safe evidence.
+- Link root cause and fix to a regression test for confirmed defects.
+- Escalate critical security, data-loss, and availability risks immediately.
 
 ---
 
@@ -938,11 +953,11 @@ Requirements:
 
 Reports must summarize scope, pass/fail/blocked counts, skipped tests, environment, build revision, and links or paths to evidence.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Report revision, environment, scope, pass/fail/blocked/skipped counts, and evidence locations.
+- Distinguish failures from tests not run and explain blockers.
+- Keep reports reproducible and useful for a release decision.
 
 ---
 
@@ -950,11 +965,11 @@ Requirements:
 
 Evidence must identify the exact revision, command or procedure, environment, timestamp, result, and relevant output without exposing secrets.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Capture exact revision, command/procedure, environment, timestamp, result, and relevant safe output.
+- Redact secrets and minimize personal data before retaining evidence.
+- Link evidence to the test case and requirement it supports.
 
 ---
 
@@ -962,11 +977,11 @@ Requirements:
 
 Coverage metrics are diagnostic signals, not proof of quality; critical paths and risk scenarios matter more than a raw percentage.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Map critical requirements and risk scenarios to tests in addition to measuring code coverage.
+- Review untested branches and error paths by risk, not percentage alone.
+- Record the tool and scope used so coverage results are comparable.
 
 ---
 
@@ -974,11 +989,11 @@ Requirements:
 
 Use mutation, property-based, or fuzz testing where complexity and risk justify them, with deterministic seeds when reproducibility matters.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Use property-based or fuzz tests for complex input spaces with reproducible seeds where possible.
+- Use mutation testing to evaluate whether assertions detect meaningful defects.
+- Bound runtime and isolate generated inputs from external or production resources.
 
 ---
 
@@ -986,11 +1001,11 @@ Requirements:
 
 Production checks must be safe, read-only by default, privacy-aware, and limited to approved health and synthetic transactions.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Default to read-only health checks and approved synthetic transactions.
+- Define authorization, blast-radius limits, monitoring, and abort conditions in advance.
+- Never run destructive, load, fault-injection, or data-mutating tests without explicit approval.
 
 ---
 
@@ -998,11 +1013,11 @@ Requirements:
 
 Maturity advances from documented strategy to repeatable manual tests, automated gates, measurable reliability, and continuous risk-based improvement.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Track maturity by repeatability, coverage of critical risks, automation, and evidence quality.
+- Base status on demonstrated capability, not a planned tool or document.
+- Define the next measurable improvement and its owner.
 
 ---
 
@@ -1010,35 +1025,35 @@ Requirements:
 
 Module owners maintain tests as interfaces and requirements change; obsolete tests must be updated or removed with rationale.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
-
+- Assign a named owner or accountable role to each critical test suite.
+- Review tests whenever related requirements, interfaces, dependencies, or risks change.
+- Record review dates and update or retire obsolete tests with a documented rationale.
+- Keep test maintenance responsibilities and unresolved gaps visible in the project tracker.
 ---
 
 # 86. EXCEPTIONS AND WAIVERS
 
 Any test waiver requires a reason, scope, compensating control, approver, expiry, and tracking entry; security-critical controls cannot be silently waived.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
-
+- Record the exact test or control being waived, the reason, and the affected scope.
+- Identify the approver and document compensating controls and residual risk.
+- Set an expiry or review date and track the waiver until it is closed or renewed.
+- Preserve an auditable decision record; never silently waive security-critical controls.
 ---
 
 # 87. COMPLETION CRITERIA
 
 A milestone is complete only when required tests pass, failures are resolved or formally accepted, evidence is recorded, and tracker, commit, and push are verified.
 
-Requirements:
+Verification controls:
 
-- Define clear pass/fail criteria before implementation is marked complete.
-- Keep the test isolated, repeatable, and linked to its requirement or risk.
-- Record evidence and investigate failures; do not mark an unexecuted test as passed.
+- Require all mandated checks to pass or have an authorized, explicit exception.
+- Verify unresolved risks, evidence links, tracker status, and exact revision.
+- Do not declare a milestone complete until its acceptance criteria are demonstrated.
 
 ---
 
@@ -1046,7 +1061,7 @@ Requirements:
 
 This document defines the target testing architecture. It does not prove that tests or automation have already been implemented or executed.
 
-Specification status: COMPLETE — architecture specification only
+Specification review status: STRUCTURAL REVIEW PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation status: NOT STARTED
 
