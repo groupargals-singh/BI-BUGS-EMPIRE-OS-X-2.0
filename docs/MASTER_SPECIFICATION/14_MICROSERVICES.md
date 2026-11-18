@@ -421,3 +421,35 @@ RETIRED
 This specification defines the intended microservices architecture. It does not prove that any service registry, runtime service, deployment pipeline, health monitor, or recovery mechanism has been implemented. Implementation, testing, and production status must remain NOT STARTED until evidence demonstrates otherwise.
 
 Architectural verification applies to this document's consistency and defined controls; it is not a claim that a running microservices platform exists.
+
+
+# 35. BI-BUGS SERVICE ARCHITECTURE APPLICABILITY
+
+This specification describes an optional distributed-service pattern. It does not require BI-BUGS to launch as a microservices platform.
+
+## Current baseline
+
+The verified product foundation is a static frontend shell. No production backend, API service fleet, service registry, message broker, distributed database, container platform, or microservices deployment is established by this document or by repository structure.
+
+## Default delivery principle
+
+For the initial BI-BUGS website, prefer the simplest architecture that satisfies owner-approved requirements, security, maintainability, and expected operating scale. A static site may remain static if the approved customer journey does not require server-side processing. If backend capabilities become necessary, evaluate a modular application or managed service before splitting into independently deployed microservices.
+
+Do not introduce a service, database-per-service boundary, event broker, service mesh, distributed tracing stack, or orchestration platform merely to conform to this architecture.
+
+## Evidence required to adopt microservices
+
+A microservice proposal must identify:
+- a distinct BI-BUGS business capability and measurable reason for independent deployment/scaling/ownership;
+- approved API and data contracts with a named data owner;
+- consistency, idempotency, failure, retry, timeout, and recovery behavior;
+- authentication, authorization, secret handling, network boundaries, and audit requirements;
+- deployment, monitoring, backup/restore, rollback, and incident ownership;
+- operational cost, complexity, service-level expectations, and acceptance tests;
+- owner approval and linked feature/module/API/database registry records.
+
+The number of services is not a quality metric. Avoid distributed complexity when a simpler modular design is adequate.
+
+## Status boundary
+
+Microservices remain NOT STARTED and NOT APPROVED for the first website release. Any later adoption is a separate architecture decision and must not be inferred from folder names, diagrams, or this specification.

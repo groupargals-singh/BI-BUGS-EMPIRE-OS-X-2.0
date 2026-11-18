@@ -15,15 +15,15 @@ FOUNDATION / MASTER SPECIFICATION PHASE
 
 **Implementation Status:**
 
-NOT STARTED
+PARTIAL — first responsive static website frontend foundation implemented and verified; customer/business workflows remain unimplemented.
 
 **Production Status:**
 
-NOT STARTED
+NOT VERIFIED — development preview only; no domain, hosting, or deployment evidence.
 
 **Current Priority:**
 
-BI-BUGS Pest Control Services website requirements and first customer enquiry workflow
+Finish the document-by-document semantic review of Specifications 00–34, reconcile current-state claims and cross-document traceability, record evidence, then obtain explicit owner acceptance. Do not start new product coding before the documentation gate is accepted.
 
 **Current Workflow:**
 
@@ -66,6 +66,10 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 | 28 | VERSION HISTORY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
 | 29 | RELEASE PROCESS | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
 | 30 | ROADMAP 20 YEARS | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 31 | WEBSITE REQUIREMENTS | 🟡 DRAFT — requirements inventory incomplete; owner inputs pending |
+| 32 | WEBSITE DISCOVERY WORKBOOK | 🟡 DRAFT — new-build source decision resolved; remaining owner inputs pending |
+| 33 | LIFECYCLE STATUS STANDARD | 🟡 DRAFT — automated audit tooling tested; owner acceptance pending |
+| 34 | CROSS-DOCUMENT TRACEABILITY AUDIT | 🟡 DRAFT — findings recorded; owner review and follow-up traceability pending |
 
 > **Status interpretation (corrected 2026-10-11):** Rows 00–17 and historical milestones M-001–M-016 now reflect structural-review progress only; none is final owner acceptance. Structural checks have been performed on the working-copy documents, but the full semantic cross-document consistency review and project-owner acceptance remain pending. Application code, executable tests, deployment, and production readiness are separate states; the repository inventory found documentation and `.gitkeep` placeholders outside the docs tree. Do not mark Part 1 owner-approved or move to Part 2 until the remaining review and explicit owner acceptance are recorded.
 
@@ -988,18 +992,20 @@ f0ce9b4 Create master specification index
 
 | Workstream | Progress | Evidence / boundary |
 |---|---:|---|
-| Repository structure | 100% | All 10 implementation-area folders plus `docs/` exist. Folder presence does not mean implementation. |
-| Master specification file presence | 100% | Numbered specifications 00–32 are present; owner/semantic review remains pending for drafts. |
-| Primary project scope alignment | 100% | Accepted decision `DEC-BBE-001` recorded and key vision/blueprint/roadmap documents aligned. |
-| BI-BUGS website requirements | 10% | Requirements baseline `31_WEBSITE_REQUIREMENTS.md` created; detailed sitemap, approved service content, enquiry fields, privacy text, and staff workflow remain unknown. |
-| Website/frontend implementation | 0% | No non-placeholder source files found in `frontend/`. |
-| Backend/API implementation | 0% | No non-placeholder source files found in `backend/`. |
-| Database implementation | 0% | No non-placeholder source files found in `database/`. |
-| AI/automation implementation | 0% | No non-placeholder source files found in `ai-core/`. |
-| Executable application tests | 0% | No application test implementation or execution evidence found. |
-| Deployment/production | 0% | No deployment implementation or production evidence found. |
+| Repository structure | 100% | Required top-level project and documentation directories exist; folder presence is not implementation. |
+| Master specification file presence | 100% | Specifications 00–34 and progress file 99 are present and indexed. Presence is not semantic acceptance. |
+| Documentation structural controls | 100% for current automated checks | Lifecycle metadata audit, website source gate, Markdown local-link/fence scan, and 19 project-control tests pass at the recorded working revision. |
+| Documentation semantic review | 60% provisional | Cross-document audit exists; document-by-document semantic review, owner review, complete registry traceability, and final acceptance remain open. |
+| Primary project scope alignment | 100% for recorded scope decision | DEC-BBE-001 accepted; primary BI-BUGS website scope aligned in key vision/blueprint/roadmap documents. |
+| BI-BUGS website requirements | 10% provisional | Baseline and new-build decision recorded; sitemap, approved service content, public contacts, customer action, privacy, and staff workflow remain owner inputs. |
+| Website/frontend implementation | PARTIAL | Static responsive frontend foundation exists; customer/business workflows remain unimplemented. See Milestone 34. |
+| Backend/API implementation | 0% | No backend application source verified. |
+| Database implementation | 0% | No database application source verified. |
+| AI/automation implementation | 0% | No AI/automation application source verified. |
+| Project-control tests | 19/19 PASS | Lifecycle, website source gate, and frontend shell tests; these do not constitute product acceptance tests. |
+| Deployment/production | 0% | No deployment implementation or production evidence. |
 
-**Percentage rule:** Report workstream percentages separately. Keep the overall 10% estimate provisional until approved website features, acceptance criteria, and delivery weights exist. Update this snapshot after each verified milestone; never raise a percentage because a document or folder was merely created.
+**Percentage rule:** Report workstream percentages separately. Keep the overall 10% estimate provisional until approved website features, acceptance criteria, and delivery weights exist. Update this snapshot after each verified milestone; never raise a percentage because a document or folder was merely created. Documentation structural checks are not the same as owner-approved documentation completion.
 
 
 ## 25. WEBSITE REQUIREMENTS BASELINE CREATED — 2026-11-17
@@ -1045,3 +1051,251 @@ f0ce9b4 Create master specification index
 **Progress:** Requirements baseline remains 10%; frontend/backend/database/AI implementation, executable tests, and deployment remain 0%; overall estimate remains 10% provisional. Creating a discovery workbook does not complete the requirements or increase implementation progress.
 
 **Next action:** Obtain the official website URL or the owner's explicit new-build confirmation. Then follow the appropriate audit/build path and progressively approve the remaining workbook items. Preserve unrelated working-tree modifications.
+
+
+## 28. MASTER SPECIFICATION LIFECYCLE METADATA AUDIT — 2026-11-17
+
+**Completed:** Performed a cross-document header audit across the 30 numbered specifications (01–30), alongside repository-wide Markdown fence/link checks and Git whitespace checks.
+
+**Finding:** The specification set does not yet use one consistent lifecycle-header schema. Specifications 01–04 use legacy `Status: ACTIVE` metadata; specification 12 uses the shorter `Status` / `Implementation` / `Testing` / `Production` labels; specifications 05–11 and 13–18 use the newer explicit lifecycle labels with some historical exceptions already documented in milestone 22; and registry/roadmap documents 19–30 use a mixed `Status` plus implementation/testing/production status pattern. The earlier canonical-header-only validator therefore reported false positives for documents using legitimate legacy labels; those counts are not defects by themselves. The real issue is inconsistent vocabulary and the risk of misreading `ACTIVE` as owner approval or implementation evidence.
+
+**Safety decision:** No bulk header rewrite was made. In particular, `ACTIVE` was not silently converted to `APPROVED`, and no implementation, testing, or production state was inferred from document status. Harmonization requires a semantic mapping that preserves each document's existing meaning and must not imply owner approval.
+
+**Verification:** All 30 numbered specification files were present exactly once. The repository-wide Git whitespace checks passed (`git diff --check` and `git diff --cached --check`). The earlier automated lifecycle-header check was corrected conceptually: it is a schema-consistency signal, not a universal validity test until legacy field mappings are explicitly defined. No source code was added, no files were deleted, and no unrelated changes were staged.
+
+**Progress:** No implementation percentage changed. Overall estimate remains 10% provisional; frontend, backend, database, AI/automation, executable application tests, and deployment remain 0%. The repository still has zero non-placeholder source files across the ten implementation areas.
+
+**Next task:** Define and approve a backward-compatible lifecycle metadata mapping for specifications 01–30, then update the document index/validation rule. After that, continue semantic cross-document traceability review. Website implementation remains gated on the owner's existing-site URL or explicit new-website confirmation.
+
+**Repository delivery:** This progress entry is an additional unstaged documentation change. Existing 13 staged documentation files and 41 other unstaged tracked modifications remain preserved. Commit/push is still blocked by the placeholder Git author identity; no commit was created.
+
+
+## 29. BACKWARD-COMPATIBLE LIFECYCLE STATUS STANDARD AND AUDIT TOOL — 2026-11-17
+
+**Completed:** Added `33_LIFECYCLE_STATUS_STANDARD.md`, documenting the four canonical lifecycle dimensions, historical header aliases, migration safeguards, interpretation rules, and audit acceptance criteria. Added the read-only `scripts/validate_spec_lifecycle.py` utility and five unit tests in `testing/test_validate_spec_lifecycle.py`. Linked the standard from the Master Index, Master Specification README, `docs/README.md`, and the 20-year roadmap.
+
+**Compatibility policy:** `Specification status` recognizes legacy `Status`; `Implementation status` recognizes `Implementation`; `Testing status` recognizes `Testing`; and `Production status` recognizes `Production`. Missing fields are reported as `NOT DECLARED`; multiple aliases for one dimension are `AMBIGUOUS`. Parsing is limited to the document header. Existing source headers were not bulk-rewritten. In particular, legacy `ACTIVE` is preserved literally and never upgraded to owner-approved, implemented, tested, released, or production-verified.
+
+**Verification:** `python -m unittest discover -s testing -p 'test_validate_spec_lifecycle.py' -v` — 5 tests PASS. `python scripts/validate_spec_lifecycle.py` — completed read-only audit of 33 numbered specifications; 12 metadata gaps were reported, all four legacy specifications 01–04 missing implementation/testing/production declarations. The `--strict` mode returned exit code 1 for these genuine legacy gaps, as designed. `git diff --check` and `git diff --cached --check` passed. No files were deleted and no website/product implementation was claimed.
+
+**Remaining lifecycle work:** Specifications 01–04 still need explicit implementation/testing/production declarations added through a reviewed, non-semantic-changing migration. Owner/semantic review of specifications remains separate; the audit tool cannot approve documents. The strict metadata gate therefore correctly remains red until those header gaps are addressed.
+
+**Progress boundary:** This milestone delivers documentation governance and a tested development audit utility only. It does not change BI-BUGS website requirements or product implementation percentages. Overall project estimate remains 10% provisional; website requirements baseline remains 10%; frontend, backend, database, AI/automation, application tests, and deployment remain 0%.
+
+**Repository delivery:** The new standard, script, unit tests, navigation updates, and this progress entry are preserved in the working tree. Existing staged and unrelated unstaged changes remain untouched. Commit/push remains blocked by the placeholder Git author identity (`Aapka Naam <aapka@email.com>`); no commit was created.
+
+**Next task:** Perform a reviewed header-only metadata migration for specifications 01–04, preserving `ACTIVE` as a document status and adding only accurately evidenced implementation/testing/production declarations. Then rerun the audit and continue the remaining semantic traceability review. Website implementation remains gated on the owner's exact existing-site URL or explicit new-build confirmation.
+
+
+## 30. LEGACY SPECIFICATION HEADER COMPLETENESS MIGRATION — 2026-11-17
+
+**Completed:** Applied a reviewed, header-only metadata completion to specifications 01–04. Preserved each document's legacy `Status: ACTIVE` value exactly and added explicit implementation, testing, and production declarations based on the current repository inventory and verification evidence. No body text or requirements were rewritten.
+
+**Recorded states:** `Implementation status: NOT STARTED — no application capability verified`; `Testing status: NOT RUN — product acceptance tests not executed`; `Production status: NOT VERIFIED — no production deployment evidence`. These statements describe the current inspected project state and do not alter the legacy specification/workstream label.
+
+**Verification:** Re-ran all five lifecycle audit unit tests — PASS. `python scripts/validate_spec_lifecycle.py --strict` — PASS, with `specifications=33 metadata_issues=0`. `git diff --check` and `git diff --cached --check` — PASS. All 33 numbered specifications 01–33 now declare each lifecycle dimension through either a canonical label or a documented backward-compatible alias. The alias values remain literal; no `ACTIVE` status was promoted to approval.
+
+**Supersedes milestone 29's interim audit count:** The 12 missing-field findings identified at milestone 29 were the four legacy files 01–04. This migration resolves those header-completeness gaps. Milestone 29 remains as the historical record of the initial audit and tool creation.
+
+**Boundary:** This is a documentation governance and developer-tooling milestone only. It does not implement the customer-facing BI-BUGS website or its backend, database, business workflows, AI, application acceptance tests, or production deployment. Overall project estimate remains 10% provisional; website requirements baseline remains 10%; product implementation workstreams remain 0%.
+
+**Repository delivery:** Changes remain in the working tree; no commit or push was performed. Git author configuration remains the placeholder `Aapka Naam <aapka@email.com>`. Existing unrelated unstaged changes and previously staged files remain preserved.
+
+**Next task:** Continue semantic cross-document traceability review and resolve any real requirement/registry/roadmap conflicts with evidence. Website implementation remains gated on the owner's exact existing-site URL or explicit new-build confirmation.
+
+
+## 31. CROSS-DOCUMENT SEMANTIC TRACEABILITY AUDIT — 2026-11-17
+
+**Completed:** Reviewed the Master Index, Engineering Constitution, Master Blueprint, Engineering Rules, Project Structure, Database/API/Security/Testing architectures, Feature/Module/API/Database/AI registries, Release Process, Website Requirements, Discovery Workbook, Lifecycle Status Standard, progress tracker, and near-term roadmap. Added `34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md` and linked it from the Master Index and documentation entry points.
+
+**Confirmed findings:** (1) The current progress snapshot incorrectly said specifications 00–32 were present; corrected it to 00–34. The lifecycle audit utility was also extended to include this new specification 34; strict validation now covers 34 numbered specifications. (2) Registry documents 20–24 define record schemas but the targeted scan found no populated stable-ID feature/module/API/database/AI records. (3) Website requirements lacked direct navigation links to API, database, security, testing, and release controls; added those links. (4) Broad architecture domains such as booking, payment, inventory, mobile, IoT, and AI are not direct contradictions because the Blueprint explicitly gates optional capabilities on specific requirements/approval; recorded this as a scope-control risk. (5) No populated requirement-to-implementation-to-test-to-release chain exists yet.
+
+**Consistency checks:** Primary website scope and supporting-system principle align across the Blueprint and website requirements. The discovery workbook keeps unknown business facts and optional customer actions unapproved. API/database architecture, security/testing/release controls, and lifecycle metadata are described as design/verification controls rather than evidence of live product behavior. The legacy `Status: ACTIVE` in the Master Blueprint is a recognized alias and is not interpreted as implementation or owner approval.
+
+**Verification boundary:** This was a documentation and repository traceability audit only. It does not create application code, approve website content, populate fabricated registry records, run product acceptance tests, or verify production. Overall estimate remains 10% provisional; website requirements baseline remains 10%; frontend, backend, database, AI/automation, executable application tests, and deployment remain 0%.
+
+**Next task:** Resolve the owner decision in Specification 32: provide the exact official website URL for an existing-site audit, or explicitly confirm a new website build. Then approve the first customer journey and populate the corresponding traceability records before implementation.
+
+**Repository delivery:** New report and navigation/progress/roadmap changes are in the working tree. Existing staged and unrelated unstaged modifications were not reset or cleaned. No commit/push was performed because Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 32. WEBSITE SOURCE DECISION GATE VALIDATOR — 2026-11-17
+
+**Completed:** Added the read-only validator `scripts/validate_website_source_gate.py` and unit tests in `testing/test_validate_website_source_gate.py`. The validator reads the owner-controlled decision rows in Specification 32 and checks that the existing-site route has a valid HTTPS URL, explicit ownership verification, an approved audit/migration/redesign path, and approver/date/evidence reference; or that the new-build route has an explicit owner-confirmed no-site decision, matching not-applicable ownership, approved new-build path, and evidence reference.
+
+**Safety behavior:** The current workbook remains UNKNOWN / NOT VERIFIED / BLOCKED. The validator therefore reports BLOCKED and strict mode exits non-zero. It does not fill in the owner's answer, search for a substitute domain, change DNS/hosting, or approve the full website scope. A source-gate PASS would resolve only the existing-site versus new-build choice, not the remaining requirements, privacy, security, acceptance, or production gates.
+
+**Documentation:** Added exact owner-controlled value patterns, evidence requirements, command usage, and gate limitations to `32_WEBSITE_DISCOVERY_WORKBOOK.md`. Linked the validator and tests from the Master Index, docs README, specification README, and roadmap.
+
+**Verification:** All 13 project-control unit tests passed (5 lifecycle + 8 website-source-gate). The source-gate normal mode correctly reports BLOCKED with exit 0; strict mode correctly reports the same blockers with exit 1. Lifecycle strict audit passed for 34/34 specifications with 0 metadata issues. Markdown audit passed for 61 files with 0 broken local links and 0 unbalanced fences. `git diff --check` and `git diff --cached --check` passed; generated Python caches were removed.
+
+**Next task:** The owner must resolve WDG-01 using the workbook's explicit patterns. After that, continue the other first-release approvals; do not treat this one gate as 100% website readiness.
+
+**Repository delivery:** Working-tree changes only; no commit/push because Git author remains the placeholder `Aapka Naam <aapka@email.com>`. Existing staged/unstaged changes were preserved.
+
+
+## 33. OWNER CONFIRMATION — NEW OFFICIAL WEBSITE FROM SCRATCH — 2026-11-17
+
+**Completed:** Recorded the owner's explicit decision that BI-BUGS needs a new official website built from scratch in accepted decision `DEC-BBE-002` in `docs/DECISIONS/DECISION_LOG.md`. Updated the first source-decision table in `32_WEBSITE_DISCOVERY_WORKBOOK.md` with the exact no-existing-source route, the matching not-applicable ownership state, the approved new-build delivery path, and non-secret decision evidence identifying the project owner, date, and instruction. Updated the workbook audit/next-action sections and the master roadmap.
+
+**Decision evidence:** Project owner (user confirmation in ChatGPT conversation), 2026-11-17: “BI-BUGS के लिए नई official website शुरू से बनानी है।” No external domain or website ownership has been inferred. Domain, hosting, company brand assets, approved service catalogue, public contacts, sitemap, enquiry/booking/payment behavior, privacy requirements, and production release remain open decisions.
+
+**Gate boundary:** WDG-01 is now resolved for the NEW WEBSITE BUILD route. This does not mean website requirements are complete or that implementation/production is approved. The source-gate validator is a read-only check; its strict PASS validates only the recorded source decision.
+
+**Next task:** Define the first small website release slice and progressively capture the minimum owner-approved content and customer journey needed to implement it. Do not fabricate company details or credentials.
+
+**Progress:** Documentation/source-decision gate: 100% for this milestone. Overall project estimate remains 10% provisional; website requirements baseline remains 10%; frontend, backend, database, AI/automation, product acceptance tests, and deployment remain 0%. The decision itself adds no application code.
+
+**Repository delivery:** Working-tree documentation changes only. Existing staged and unstaged work remains preserved. No commit/push was attempted because the configured Git author identity is still the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 34. FIRST WEBSITE FRONTEND FOUNDATION — 2026-11-17
+
+**Completed:** Created the first working BI-BUGS website frontend foundation in `frontend/`: semantic HTML landing page, responsive CSS design system starter, mobile navigation behavior, and a frontend README with local run instructions. The page uses only the confirmed company name and clearly marks company profile, service catalogue, and customer contact journey as awaiting owner approval. No invented service claims, phone/email/domain, prices, certificates, testimonials, or coverage details were added.
+
+**Safety/scope boundary:** This is a development preview, not a public launch. No enquiry form, customer data collection, booking, payment, account/login, WhatsApp/call link, analytics, backend/API, database, staff administration, domain, hosting, DNS, or production deployment was implemented. The temporary visual palette is a prototype default, not an approved company brand system.
+
+**Verification:** Added `testing/test_website_shell.py` with 6 checks covering semantic document structure/mobile viewport, confirmed company identity, absence of fabricated business facts, absence of unapproved transaction/data-collection controls, responsive/reduced-motion/focus styles, and accessible mobile-navigation state. Frontend tests: 6/6 PASS. Full project-control suite: 19/19 PASS (5 lifecycle + 8 source-gate + 6 frontend). Node JavaScript syntax check passed. Both local asset references resolve. `git diff --check` passed during the milestone verification.
+
+**How to preview:** From the repository root run `python -m http.server 8080 --directory frontend`, then open `http://127.0.0.1:8080` on the development device/browser.
+
+**Progress:** Frontend foundation slice: 100% complete. Website product implementation overall remains PARTIAL; backend/API, database, enquiry/booking/customer workflows, application integration, accessibility browser testing, and deployment remain 0%/not verified. Overall project estimate remains 10% provisional pending a defined denominator and approved requirements; do not treat this small frontend slice as full website completion.
+
+**Next task:** Obtain owner approval for the first customer action (contact handoff, enquiry form, booking, or a defined combination), the official public contact details, approved service catalogue, and privacy/data-handling requirements. Then implement the smallest secure end-to-end workflow with tests.
+
+**Repository delivery:** New frontend and test files plus requirement/roadmap/progress updates are in the working tree. Existing staged and unstaged modifications remain preserved. No commit/push was attempted because Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 35. DOCUMENTATION RE-AUDIT AND CONSISTENCY CORRECTIONS — 2026-11-17
+
+**Completed:** Re-audited the current Master Index, numbered specification filenames, lifecycle metadata, Markdown local links, Testing Architecture sections 65–88, roadmap status, and current progress snapshot. Corrected the Master Index lifecycle header, clarified the DEC-BBE-002 new-build decision and remaining domain/hosting inputs in Specifications 31–32, updated the 20-year roadmap's Horizon 0 scope to include Specifications 00–34, and synchronized the near-term roadmap.
+
+**Testing specification corrections:** Sections 4, 10, 14, 23, 24, 25, 53, 75, 77, and 78 had duplicated or mismatched verification controls. Replaced them with controls specific to testing principles, requirement traceability, equivalence partitions, AI core behavior, evaluation dataset governance, AI metrics, UI/UX behavior, defect severity, and defect workflow. Sections 69, 71, and 72 were checked and contain substantive controls.
+
+**Traceability audit corrections:** Recorded DEC-BBE-002 as resolved, closed the documentation-navigation portion of finding F-03, and clarified that implementation-level traceability remains open. The stale next action asking for the source decision was removed.
+
+**Progress snapshot correction:** The current dashboard now distinguishes documentation structural checks from semantic/owner review and records the actual frontend foundation and 19/19 project-control test result. Older milestone entries remain historical and are not rewritten.
+
+**Verification executed after these edits:** lifecycle strict audit PASS (34 specifications, 0 metadata issues); website source gate strict PASS (new-build route); full project-control unit suite PASS (19/19); Markdown audit PASS (61 files, 0 broken local links, 0 unbalanced fences); `git diff --check` and `git diff --cached --check` PASS.
+
+**Remaining documentation gates:** Document-by-document semantic review, owner acceptance, requirements-specific registry records after owner approval, and complete end-to-end traceability. Unknown company facts and owner decisions remain explicitly open rather than fabricated.
+
+
+## 36. CURRENT-STATE RECONCILIATION AND DOCUMENTATION GATE PRIORITY — 2026-11-18
+
+**Completed:** Reconciled current project status against the accepted `DEC-BBE-002` decision and the verified Milestone 34 frontend foundation. Updated the live project priority to finish document-by-document semantic review and obtain owner acceptance before starting any new product-coding work. Updated the current website discovery audit so it no longer describes the implementation folders as empty or the implementation as wholly not started. The current state now distinguishes the static frontend shell from the still-unimplemented business workflows and supporting application layers.
+
+**Historical integrity:** Earlier milestone entries that said the website source decision or frontend implementation was pending remain unchanged as dated historical records. This milestone explicitly supersedes those statements for current status only: the new-build source route is resolved by DEC-BBE-002, and the frontend shell exists; domain/hosting, approved content, customer journey, privacy, staff workflow, and production release remain open.
+
+**Documentation priority:** Phase 1 — Complete Documentation remains active. The next work is document-by-document semantic review, conflict/traceability reconciliation, evidence recording, and owner acceptance. Requirements discovery and product coding remain gated; no new application feature was started in this milestone.
+
+**Verification before/after reconciliation:** The pre-edit working copy passed all 19 project-control unit tests, lifecycle strict audit (34 specifications, 0 metadata issues), and website source gate strict audit. Post-edit checks and Markdown integrity checks are recorded in the following verification update before this milestone is treated as complete.
+
+**Progress:** Documentation semantic review remains 60% provisional; no percentage increase is claimed for correcting status text alone. Overall project estimate remains 10% provisional. Frontend foundation slice remains complete, but full website and business workflows remain partial/not implemented.
+
+**Repository delivery:** Working-tree documentation edits only. Existing staged, unstaged, and untracked changes were preserved. No commit/push was performed because Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 37. POST-RECONCILIATION VERIFICATION — 2026-11-18
+
+**Verification results:** All 35 numbered specifications (00–34) are present, with the separate progress tracker 99 also present. Lifecycle strict audit PASS: 34 specifications (01–34), zero metadata issues. Website source gate strict audit PASS: NEW WEBSITE BUILD, based on the accepted owner decision. Full project-control unit suite PASS: 19/19 (5 lifecycle + 8 source-gate + 6 frontend shell tests). Markdown integrity scan PASS across 61 documentation Markdown files: 0 broken relative links and 0 unbalanced code fences. `git diff --check` and `git diff --cached --check` PASS.
+
+**Scope of verification:** These are documentation integrity, decision-gate, and project-control checks. They do not complete semantic review, constitute owner acceptance, prove end-to-end customer workflows, or establish production readiness.
+
+**Working-tree safety:** Existing staged, unstaged, and untracked work was preserved. Only the Python cache directories generated by this verification run were removed. No bulk staging, reset, clean, or deletion of project source/data was performed.
+
+**Delivery:** No commit or push. Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 38. CORE SCOPE AND WEBSITE REQUIREMENTS SEMANTIC REVIEW — 2026-11-18
+
+**Completed:** Performed a semantic consistency review of Specifications 01 (Project Vision), 03 (Master Blueprint), 31 (Website Requirements), 32 (Website Discovery Workbook), and the accepted Decision Log records DEC-BBE-001/002. Confirmed that the BI-BUGS pest-control website remains the primary product; broad architecture domains are supporting/future capabilities and do not authorize unapproved first-release features. Confirmed that the new-build source route is resolved and that the remaining domain/hosting/content/customer/privacy/operations decisions are separate owner inputs.
+
+**Correction applied:** Found and fixed two stale requirements: Specification 31 had still required an existing-site assessment; Specification 32's first-release gate still treated the source/new-build decision as pending. Both now reflect DEC-BBE-002 as resolved and retain separate domain/hosting approval. Added finding F-06 and the review result to Specification 34.
+
+**Verification:** The five-document review was read against the accepted decisions. Post-edit verification PASS: full project-control suite 19/19; lifecycle strict audit 34/34 with zero metadata issues; website source gate strict PASS; Markdown integrity 61 files, zero broken relative links and zero unbalanced fences; `git diff --check` and `git diff --cached --check` PASS.
+
+**Remaining:** This review group is consistent after correction; final owner acceptance remains pending. Continue semantic review of the remaining architecture, security, data, API, registry, testing, release, and governance specifications.
+
+**Progress:** Documentation semantic review remains 60% provisional; no percentage increase is claimed until broader document groups and traceability are reviewed. Overall project estimate remains 10% provisional.
+
+**Repository delivery:** Working-tree documentation changes only. Existing staged/unstaged/untracked work preserved. No commit/push because Git author identity remains placeholder.
+
+
+## 39. DATA AND API ARCHITECTURE SCOPE REVIEW — 2026-11-18
+
+**Completed:** Reviewed the database and API architecture specifications alongside security, testing, feature/module/API/database/AI registries, and release process. Confirmed that the data-domain catalogue and route examples are intended as architecture guidance, not evidence of approved features or live endpoints. Confirmed registry schemas, testing controls, and release controls do not claim working product capability.
+
+**Correction applied:** Added explicit BI-BUGS scope boundaries to Specifications 09 and 10. Booking and payment data/API sections are now explicitly conditional and cannot be interpreted as first-release authorization. Reusable architecture content was retained. Added review evidence to Specification 34.
+
+**Verification:** Post-edit checks PASS: project-control suite 19/19; lifecycle strict audit 34 specifications with zero metadata issues; website source gate strict PASS; Markdown integrity scan 61 files with zero broken relative links and zero unbalanced code fences; `git diff --check` and `git diff --cached --check` PASS.
+
+**Remaining:** Requirement-linked registry population remains blocked until owner-approved business requirements exist. Continue semantic review of governance, security, testing, DevOps, and release controls.
+
+**Progress:** Documentation semantic review remains 60% provisional; no percentage increase is claimed for one additional document group. Overall project estimate remains 10% provisional.
+
+**Repository delivery:** Working-tree documentation changes only. Existing staged/unstaged/untracked work preserved. No commit/push because Git author identity remains placeholder.
+
+## 40. SECURITY ARCHITECTURE SCOPE AND RELEASE BASELINE REVIEW — 2026-11-18
+
+**Completed:** Reviewed Specification 15 against the BI-BUGS project vision, Master Blueprint, website requirements/discovery workbook, security rules, testing architecture, and release process. Added Section 89 to distinguish the current static website foundation from conditional future capabilities.
+
+**Corrections:** Defined the static-site security baseline; explicitly marked enquiry forms, accounts, booking, payments, backend/API/database, AI/plugins, mobile, and hardware as not approved/not implemented; added a data/privacy approval gate; and defined minimum evidence required before public release. Updated Security Rules to enforce this applicability boundary. Added the review evidence and remaining acceptance gates to Specification 34.
+
+**Verification:** The review is documentation-only. Automated verification results for this exact working copy are recorded in the following milestone.
+
+**Remaining:** Owner acceptance, feature-specific threat models after requirements approval, implementation of controls, security testing, hosting configuration review, and production evidence remain open. No security implementation or compliance certification is claimed.
+
+**Progress:** Documentation remains 60% provisional; no percentage increase is claimed from one security document review. Overall project estimate remains 10% provisional.
+
+**Repository delivery:** Working-tree changes only. Existing staged/unstaged/untracked work preserved. No commit/push because Git author identity remains placeholder.
+
+## 41. SECURITY REVIEW POST-EDIT VERIFICATION — 2026-11-18
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); full project-control unit suite PASS (19/19); Markdown integrity scan PASS (61 Markdown files, zero broken relative links, zero unbalanced code fences); `git diff --check` PASS; `git diff --cached --check` PASS. Security Specification 15 sections 88 and 89 are in ascending order, and the new BI-BUGS applicability section is present after the final architecture standard.
+
+**Verification boundary:** These checks validate document metadata, source decision fields, existing project-control tests, Markdown integrity, and whitespace. They do not test the security of a deployed website, prove a live security control, or establish production readiness.
+
+**Working-tree safety and delivery:** Existing staged, unstaged, and untracked changes were preserved. No reset, clean, bulk staging, commit, or push was performed. Git identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+## 42. DEVOPS AND RELEASE APPLICABILITY REVIEW — 2026-11-18
+
+**Completed:** Reviewed Specifications 16 and 29 against Security, Testing, Changelog, Version History, Website Requirements, Discovery Workbook, and the actual repository/frontend baseline. Added BI-BUGS-specific applicability sections to both documents.
+
+**Corrections:** Distinguished the local static preview from production; separated documentation-only commits from software releases; mapped current controls versus conditional CI, cloud, containers, backend, monitoring, and automated deployment; defined backup/restore/rollback and operational ownership requirements; and specified evidence required before the first public static website release.
+
+**Remaining:** Actual hosting/domain and release-role decisions, approved website content/journey, deployment implementation, recovery exercises, owner acceptance, and production evidence remain open. No CI pipeline, cloud resource, production deployment, or software release is claimed.
+
+**Progress:** Documentation semantic review remains 60% provisional until remaining specification groups and final acceptance are completed. Overall project estimate remains 10% provisional.
+
+**Repository delivery:** Working-tree changes only; existing staged/unstaged/untracked work preserved. No commit/push because Git identity remains placeholder.
+
+## 43. DEVOPS AND RELEASE POST-EDIT VERIFICATION — 2026-11-18
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); full project-control unit suite PASS (19/19); Markdown integrity scan PASS (61 Markdown files, zero broken relative links, zero unbalanced code fences); `git diff --check` PASS; `git diff --cached --check` PASS.
+
+**Verification boundary:** These checks validate specification metadata, the accepted source-route fields, project-control tests, Markdown integrity, and whitespace. They do not validate a CI/CD provider, cloud environment, deployment artifact, backup/restore, rollback, or production service.
+
+**Working-tree safety and delivery:** Existing staged, unstaged, and untracked work was preserved. No reset, clean, bulk staging, commit, or push was performed. Git identity remains the placeholder `Aapka Naam <aapka@email.com>`.
+
+
+## 44. AI, KNOWLEDGE, PLUGIN, MICROSERVICES, AND MEMORY SCOPE REVIEW — 2026-11-18
+
+**Completed:** Reviewed Specifications 11–14 and 19 against the BI-BUGS owner decisions, website requirements/discovery workbook, database/API architecture, security, testing, registries, and release controls.
+
+**Corrections applied:** Added BI-BUGS applicability boundaries to AI Core, Knowledge Graph, Plugin System, Microservices, and Project Memory. Explicitly separated reusable architecture patterns from approved first-release scope; kept AI, graph storage, plugins, and microservices unapproved/conditional; required evidence and owner approval before adoption; and prohibited using project memory/Git documentation as an unapproved customer or employee data store. Added findings F-07 through F-11 to Specification 34.
+
+**Verification boundary:** The edits are documentation-only. They do not implement AI, graph storage, plugins, microservices, customer records, or a memory service. Owner acceptance remains pending.
+
+**Progress:** Documentation semantic review remains 60% provisional until remaining document groups and final owner acceptance are completed. Overall project estimate remains 10% provisional.
+
+**Repository delivery:** Working-tree changes only; existing staged, unstaged, and untracked work preserved. No commit/push because Git author identity remains placeholder.
+
+
+## 45. AI/DATA EXTENSIBILITY REVIEW POST-EDIT VERIFICATION — 2026-11-18
+
+**Verification results:** Lifecycle strict audit PASS (34 numbered specifications, zero metadata issues); website source gate strict audit PASS (NEW WEBSITE BUILD, based on DEC-BBE-002); full project-control unit suite PASS (19/19); Markdown integrity scan PASS (61 Markdown files, zero broken relative links, zero unbalanced fenced code blocks); target applicability sections confirmed present in Specifications 11–14 and 19; `git diff --check` PASS; `git diff --cached --check` PASS.
+
+**Verification boundary:** These checks validate documentation metadata, the accepted website source decision, existing project-control tests, Markdown links/fences, and whitespace. They do not prove AI, graph storage, plugins, microservices, customer-data workflows, or a production website are implemented or secure.
+
+**Working-tree safety and delivery:** Existing staged, unstaged, and untracked changes were preserved. No reset, clean, bulk staging, commit, or push was performed. Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`; GitHub delivery is therefore still blocked pending the correct author identity.

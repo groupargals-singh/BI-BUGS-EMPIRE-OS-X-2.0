@@ -3,7 +3,7 @@
 
 **Document:** 12_KNOWLEDGE_GRAPH.md
 **Specification:** Knowledge Graph Architecture
-**Status:** Specification
+**Status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
 **Implementation:** NOT STARTED
 **Testing:** NOT STARTED
 **Production:** NOT STARTED
@@ -67,6 +67,7 @@ TIME
 CONFIDENCE
 ↓
 CONTEXT
+```
 
 # 3. CORE RESPONSIBILITIES
 
@@ -1844,9 +1845,11 @@ Architecture principles:
 14. Controlled scalability.
 15. Implementation status must reflect reality.
 
-Final specification state:
+Final specification review state:
 
-COMPLETE
+Structural review:
+
+PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 
@@ -1876,8 +1879,37 @@ Document:
 
 Status:
 
-VERIFIED AFTER STRUCTURAL REVIEW
+STRUCTURAL REVIEW PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation State:
 
 NOT STARTED
+
+
+# 89. BI-BUGS KNOWLEDGE SCOPE AND INITIAL DELIVERY BOUNDARY
+
+The Knowledge Graph is an optional architecture capability. Its presence in this specification does not require a graph database or graph-based application in the first BI-BUGS website release.
+
+## BI-BUGS knowledge domains
+
+Potential knowledge is limited to the pest-control business and its approved website/workflows, for example:
+- owner-approved company identity, service descriptions, service areas, and public contact details;
+- approved website content, FAQs, and customer-facing guidance;
+- approved internal operating procedures and policy references;
+- later, explicitly approved links between enquiries, customers, service jobs, staff, assets, and evidence, if those workflows are authorized.
+
+These are candidate domains, not populated or approved facts. No service claims, treatment advice, geographic coverage, pricing, customer records, staff records, or regulatory claims may be inferred or fabricated.
+
+## Data authority and provenance
+
+The canonical source remains the approved source document or owning business system. A graph record may index that source but must preserve its origin, effective date, approval state, revision, and access classification. Conflicting or stale source records must remain visible and must not be silently merged into a public-facing fact.
+
+Customer, employee, financial, and operational data must not be ingested until purpose, fields, access, consent/legal basis where applicable, retention, deletion, export, and security controls are approved. Credentials and secrets are prohibited.
+
+## Technology selection and first release
+
+Do not select or deploy a graph database solely because this architecture describes one. The initial website may use a simpler content/data approach if it meets approved requirements. A graph store is considered only when a documented BI-BUGS use case demonstrates a material need for relationship traversal or knowledge reasoning that the selected simpler architecture cannot meet, with cost, operations, backup, recovery, and security assessed.
+
+## Acceptance gate
+
+A graph capability remains NOT STARTED until approved requirements, stable registry IDs, schema and ownership, provenance rules, access policy, migration/recovery plan, test evidence, and owner authorization exist. This section does not authorize graph storage or customer-data processing.

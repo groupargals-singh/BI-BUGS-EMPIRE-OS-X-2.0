@@ -2110,3 +2110,31 @@ STRUCTURAL REVIEW PASS — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PEN
 Implementation State:
 
 NOT STARTED
+
+
+# 89. BI-BUGS PRODUCT SCOPE AND AI APPLICABILITY
+
+This architecture is a long-term design reference, not authorization to build a general-purpose AI platform or to add AI to the first BI-BUGS website release.
+
+## Current product boundary
+
+- The confirmed primary product is the BI-BUGS Pest Control Services website and its owner-approved supporting business workflows.
+- The current repository evidence is a limited static website foundation. No AI runtime, model gateway, agent runtime, specialist brain, autonomous execution service, or AI-backed customer workflow is established by this specification.
+- The first public website release does not require an AI feature unless the owner separately approves a specific user/business problem, data use, measurable acceptance criteria, and security/privacy controls.
+- Website content, service facts, prices, availability, coverage, and customer commitments must come from approved company sources. AI output must not invent or independently publish these facts.
+
+## Conditional future use
+
+AI assistance may later be evaluated for narrowly defined BI-BUGS tasks such as internal knowledge search, drafting support, enquiry classification, or staff workflow assistance. Each use requires a documented purpose, authorized data sources, human review boundaries, error handling, evaluation dataset, acceptance threshold, cost/retention decision, and owner approval.
+
+Generic finance, trading, cybersecurity, hardware, science, and unrelated specialist-brain examples elsewhere in this architecture are reusable platform patterns only. They are not BI-BUGS product requirements or approved specialist modules.
+
+## Authority and execution limits
+
+AI must not independently approve quotations, diagnose infestations, promise treatment outcomes, set prices, schedule technicians, issue invoices, collect payments, change customer records, or send external communications. Such actions remain unavailable until the relevant business workflow, source of truth, permission model, human approval, audit trail, and recovery path are explicitly approved and implemented.
+
+No self-learning, model training, external research ingestion, plugin invocation, or self-modification may use company/customer data without a documented lawful purpose, access policy, retention rule, and owner authorization.
+
+## Acceptance gate
+
+Before any AI capability is moved from proposal to implementation, record its requirement and decision in the appropriate registries; map data classification and security controls; define human oversight and prohibited actions; specify evaluation and failure criteria; and obtain owner approval. Until then, AI Core remains **NOT STARTED** for product implementation and **NOT APPROVED** as a first-release dependency.

@@ -1,3 +1,12 @@
+# PLUGIN SYSTEM SPECIFICATION
+
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
+---
+
 # 1. PLUGIN SYSTEM VISION
 
 The BI-BUGS EMPIRE OS-X 2.0 Plugin System shall provide a secure, modular, extensible, model-independent mechanism for adding capabilities to the platform without tightly coupling plugins to the core system.
@@ -123,6 +132,7 @@ Recommended structure:
 
 ```text
 plugin.<domain>.<name>
+```
 
 # 7. PLUGIN IDENTITY
 
@@ -1305,7 +1315,7 @@ No plugin subsystem shall become an uncontrolled parallel authority.
 
 # 87. PLUGIN IMPLEMENTATION AND PRODUCTION STANDARD
 
-The Plugin System specification is complete at the architecture-documentation level.
+The Plugin System architecture content has been drafted. Owner review and cross-document consistency checks remain pending; this is not an implementation or production-completion claim.
 
 Implementation status:
 
@@ -1360,7 +1370,7 @@ The Plugin System shall never be permitted to bypass the Engineering Constitutio
 
 Documentation:
 
-COMPLETE
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 
@@ -1381,3 +1391,27 @@ NOT STARTED
 Next Milestone:
 
 M-013 — Microservices Architecture
+
+
+# 89. BI-BUGS PLUGIN AND INTEGRATION APPLICABILITY
+
+The Plugin System is a conditional extension architecture, not a committed first-release feature and not permission to install arbitrary third-party software.
+
+No plugin, connector, external integration, marketplace, or dynamic code-loading capability is currently approved or evidenced as implemented for BI-BUGS EMPIRE OS-X 2.0.
+
+A proposed plugin must solve a documented BI-BUGS business requirement and identify its provider, exact capabilities, data exchanged, hosting/location, permissions, subprocessors where relevant, costs, availability dependency, support owner, version policy, failure behavior, exit/export path, and security/privacy impact. The owner must approve the specific integration before credentials are supplied or a connection is enabled.
+
+Minimum controls before activation:
+- reviewed provider and supply-chain provenance;
+- least-privilege scopes and isolated credentials stored outside Git;
+- explicit data minimization and approved retention;
+- sandboxing or equivalent isolation appropriate to the risk;
+- contract/schema validation, timeout and rate limits;
+- audit logs that exclude secrets and unnecessary personal data;
+- disable/revoke and rollback procedure;
+- security, privacy, failure-mode, and acceptance tests;
+- named business and technical owner.
+
+Plugins must not independently publish company facts, make customer commitments, authorize payments/refunds, alter financial records, assign technicians, or send customer communications unless a separately approved workflow explicitly grants that narrow capability and human controls.
+
+Until an individual plugin passes this gate and is entered in the relevant registry, plugin installation, activation, and production use remain NOT APPROVED. A plugin architecture document is not evidence of a connected service.
