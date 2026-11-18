@@ -23,13 +23,23 @@ No major project component should be considered complete
 unless it is represented in the appropriate documentation,
 registry, implementation, and verification records.
 
+**Historical status clarification (working-copy audit, 2026-10-11):** Numbered specifications 00–30 were present at that audit. Specifications 19–30 were expanded drafts awaiting owner review; specification 18 remained under review. A specification being present or marked ACTIVE/DONE does not prove application implementation, successful tests, deployment, or production readiness. The repository inventory found documentation and `.gitkeep` placeholders only outside the documentation tree; implementation status remains NOT VERIFIED.
+
+**Current addition (2026-11-17):** Specifications 31 and 32 record the BI-BUGS Pest Control Services website requirements baseline and its owner-input discovery workbook. Detailed requirements remain draft/unknown until verified against BI-BUGS-approved sources.
+
 ---
 
 ## 2. PROJECT PRINCIPLE
 
-BI-BUGS-EMPIRE-OS-X-2.0 is intended to be built as a
-long-term, modular, scalable, secure, maintainable,
-testable, and continuously improvable software platform.
+BI-BUGS-EMPIRE-OS-X-2.0 is the digital platform for BI-BUGS Pest
+Control Services Pvt Ltd. The primary product is its pest-control
+services website and the connected business workflows required
+to support customer enquiries and company operations.
+
+Modularity, scalability, security, maintainability, testing, AI,
+automation, and infrastructure are supporting design capabilities.
+They must serve the BI-BUGS Pest Control Services purpose and must
+not silently expand the project into unrelated products or industries.
 
 The project must be developed systematically.
 
@@ -39,24 +49,23 @@ No major subsystem should be skipped merely to move faster.
 
 ## 3. DOCUMENT AUTHORITY
 
-Documentation authority follows this order:
+### Normative authority hierarchy
 
-1. Master Constitution
-2. Engineering Constitution
-3. Master Blueprint
-4. System Architecture
-5. Engineering / Security / AI Rules
-6. Technical Standards
-7. Registries
-8. Project Memory
-9. Decision Records
-10. Roadmap
-11. Progress Records
-12. Implementation Code
-13. Tests and verification evidence
+For requirements and policy conflicts, use this order:
 
-Where documents conflict, the conflict must be recorded
-and resolved through the Decision Log.
+1. Engineering Constitution (`02_ENGINEERING_CONSTITUTION.md`) — canonical normative constitution.
+2. Master Constitution entry point (`docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md`) — supporting summary only; it explicitly does not replace the canonical constitution.
+3. Master Blueprint and approved system architecture.
+4. Approved architecture decisions recorded in the Decision Log, provided they do not violate a higher-level constitution or security rule.
+5. Domain architecture specifications and the Engineering, Security, and AI Rules.
+6. Technical standards and documented interface/data contracts.
+7. Registries, project memory, roadmap, and progress records, each within its defined scope.
+
+A lower-level document or implementation must not silently override a higher-level requirement. If two requirements at the same level conflict, preserve both claims, record the conflict and evidence in the Decision Log, and obtain an authorized resolution before implementation.
+
+### Evidence is not authority
+
+Implementation code, test results, runtime observations, and production telemetry are evidence of actual behavior; they are not policy documents and do not automatically authorize behavior that violates the hierarchy above. A test failure or operational observation must be recorded and addressed rather than used to silently rewrite requirements. Completion claims must cite the relevant revision and verification evidence.
 
 ---
 
@@ -400,6 +409,26 @@ treated as proof that a feature has been implemented.
 
 ---
 
+## 31 — BI-BUGS PEST CONTROL WEBSITE REQUIREMENTS
+
+`31_WEBSITE_REQUIREMENTS.md`
+
+Records confirmed website scope, candidate customer journeys,
+unknown business requirements, source-of-truth rules, and the
+requirements-capture work needed before website implementation.
+
+Unknown details must remain unknown until confirmed by BI-BUGS.
+
+---
+
+## 32 — WEBSITE DISCOVERY AND OWNER INPUT WORKBOOK
+
+`32_WEBSITE_DISCOVERY_WORKBOOK.md`
+
+Captures owner decisions for website identity, brand assets, approved pest-control services/content, service geography, contact channels, customer enquiry/booking behavior, staff workflow, candidate sitemap, design, and operations. All unconfirmed values remain UNKNOWN; this workbook does not authorize implementation or publication.
+
+---
+
 ## 99 — PROJECT PROGRESS
 
 `99_PROJECT_PROGRESS.md`
@@ -445,15 +474,15 @@ Primary file:
 
 ---
 
-## Master System
+## Master System — Supporting Entry Points
 
 `docs/MASTER_SYSTEM/`
 
-Contains the highest-level project governance documents.
+Contains supporting governance summaries and entry points. These files do not override the canonical numbered specifications.
 
 Primary file:
 
-`MASTER_CONSTITUTION.md`
+`MASTER_CONSTITUTION.md` — supporting summary; the canonical normative constitution is `02_ENGINEERING_CONSTITUTION.md`.
 
 ---
 
@@ -527,3 +556,4 @@ deployment/
 hardware/
 scripts/
 testing/
+```

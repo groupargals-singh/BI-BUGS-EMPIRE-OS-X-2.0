@@ -1,0 +1,30 @@
+# BI-BUGS EMPIRE OS-X 2.0 — Master Specification
+
+**Document status:** DRAFT FOR REVIEW
+
+## Source of truth
+
+- [00_MASTER_INDEX.md](00_MASTER_INDEX.md) — specification catalogue and navigation.
+- [99_PROJECT_PROGRESS.md](99_PROJECT_PROGRESS.md) — milestone status and verification evidence.
+- [32_WEBSITE_DISCOVERY_WORKBOOK.md](32_WEBSITE_DISCOVERY_WORKBOOK.md) — owner-input checklist for website identity, content, customer journey, and operations.
+- Numbered specifications 01–32 define the intended architecture, governance, BI-BUGS website requirements baseline, and owner-input discovery workbook.
+
+## Status meanings
+
+- **DRAFT FOR REVIEW / DRAFT CREATED:** document exists but has not passed its full review and acceptance checks.
+- **IMPLEMENTATION NOT STARTED:** architecture is described; working code has not been verified by this document.
+- **VERIFIED:** required checks ran against an identified revision and evidence is recorded.
+- **RELEASED:** a release record and deployment evidence exist. A commit alone is not a software release.
+
+## Engineering workflow
+
+1. Inspect the exact repository path, branch, current revision, and working-tree changes.
+2. Read the relevant canonical specification and linked decisions before editing.
+3. Make a scoped change and preserve unrelated work.
+4. Run formatting, link, structural, and relevant behavior checks.
+5. Record actual outcomes and evidence in the progress tracker.
+6. Commit or push only after review and verification; never infer success from an attempted command.
+
+## Important boundary
+
+These files describe intended architecture and acceptance criteria. They do not prove that software, CI, production controls, tests, or integrations are implemented. Mark implementation as verified only when executable evidence supports that claim.

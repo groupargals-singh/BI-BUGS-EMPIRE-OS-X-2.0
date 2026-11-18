@@ -14,23 +14,27 @@ Owner
 
 BI-BUGS Pest Control Services Pvt Ltd
 
+Canonical architecture source: `MASTER_SPECIFICATION/03_MASTER_BLUEPRINT.md`.
+
+**Implementation boundary:** This document is a supporting vision/blueprint. Capability descriptions below are intended architecture, not evidence of working code, successful tests, or production deployment. Where details differ, the canonical Master Specification and approved decisions govern.
+
 ---
 
 Vision
 
-BI-BUGS EMPIRE OS X 2.0 is an AI Powered Intelligent Business Operating System designed to become a next-generation platform for Pest Control and broader Field Service businesses.
+BI-BUGS EMPIRE OS X 2.0 is the digital platform for BI-BUGS Pest Control Services Pvt Ltd. Its primary product is the BI-BUGS Pest Control Services website and the connected business workflows needed to manage customer enquiries and pest-control services.
 
-The platform is designed to evolve continuously through modular architecture, artificial intelligence, cloud computing, automation, analytics, and future hardware integration.
+The platform may use modular software, AI, cloud infrastructure, automation, analytics, and integrations where they directly support BI-BUGS operations and are justified by approved requirements.
 
-The objective is to build a scalable enterprise platform that can continue growing for many years without requiring a complete rewrite.
+The objective is to build a secure, reliable, maintainable digital foundation for BI-BUGS Pest Control Services—not a generic operating system for unrelated businesses.
 
 ---
 
 Core Principles
 
-1. AI First
+1. BI-BUGS Business First; AI Where Useful
 
-Artificial Intelligence will assist every major module.
+Artificial intelligence should be added only where it improves an approved BI-BUGS website or pest-control business workflow. AI is a supporting capability, not the product purpose, and must not be forced into every module.
 
 2. Modular Design
 
@@ -64,15 +68,15 @@ Every module must be documented before implementation.
 
 Long Term Mission
 
-To create one of the world's most advanced AI-powered business operating systems for field service industries.
+To provide BI-BUGS Pest Control Services with a reliable digital website and connected business platform, improving how customers discover services and how the company manages the resulting work.
 
 BI-BUGS AI CORE
 
-The BI-BUGS AI CORE is the central intelligence engine of the entire operating system.
+The BI-BUGS AI Core is a supporting intelligence subsystem for approved website and pest-control business workflows.
 
-Every module communicates with the AI Core through secure internal APIs.
+Only modules with a defined business need should integrate with AI through secure internal APIs.
 
-The AI Core is responsible for learning, assisting, analyzing, predicting, automating and improving the platform continuously.
+AI capabilities may assist with specific, evaluated tasks such as information retrieval, analysis, prediction, or workflow support. They must not be assumed necessary for every module, and any consequential action remains subject to the platform's security and approval controls.
 
 ---
 
@@ -121,6 +125,8 @@ Designed to support future integration of updated business knowledge and technic
 ---
 
 System Layers
+
+**Scope rule:** These layers are an architectural catalogue, not a claim that every layer is approved for the first release. The BI-BUGS Pest Control Services website and its essential supporting business workflow take priority. Advanced enterprise, global-platform, training, innovation, IoT, drone, and other speculative capabilities remain future concepts until separately justified and approved.
 
 Layer 0
 AI Core

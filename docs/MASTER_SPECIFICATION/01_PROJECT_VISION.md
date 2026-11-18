@@ -13,37 +13,49 @@
 
 # 1. PURPOSE
 
-BI-BUGS-EMPIRE-OS-X-2.0 is a long-term software platform
-designed to provide a modular, scalable, secure, intelligent,
-maintainable, and extensible foundation for the BI-BUGS digital
-ecosystem.
+BI-BUGS-EMPIRE-OS-X-2.0 exists to build and operate the digital
+platform for BI-BUGS Pest Control Services Pvt Ltd. Its primary
+product deliverable is the BI-BUGS Pest Control Services website,
+together with the backend, data, administration, and business
+workflows required to support that website and the company's
+pest-control customer services.
 
-The project is intended to evolve through clearly defined
-architectural layers rather than being developed as an
-unstructured collection of scripts or applications.
+The website and its connected business operations are the centre
+of this project. Architecture, AI, automation, mobile access,
+cloud infrastructure, and integrations are supporting capabilities;
+they are not separate projects or reasons to broaden the product
+away from BI-BUGS Pest Control Services.
 
-The system must support future expansion without requiring
-uncontrolled rewrites of the entire platform.
+The project must evolve through clearly defined, secure, testable,
+and maintainable components. Future expansion must not displace
+the primary pest-control website and business purpose.
 
 ---
 
 # 2. CORE VISION
 
-The core vision is to build a unified digital platform in which:
+Build one coordinated BI-BUGS digital service in which customers
+can discover the company's pest-control services and contact or
+request service from BI-BUGS, while authorized staff can manage
+the resulting customer and service workflows.
 
-- business systems
-- intelligent software
-- data systems
-- automation
-- user interfaces
-- mobile systems
-- cloud infrastructure
-- hardware integrations
-- security systems
-- testing systems
-- operational systems
+The website is the primary customer-facing entry point. Its
+supporting architecture may include:
 
-can operate as coordinated parts of one controlled architecture.
+- website pages and customer-facing experience
+- service information and approved content
+- enquiry and contact capture
+- customer and service-request records
+- staff administration and follow-up workflows
+- scheduling and field-service support where approved
+- business data, reporting, and operational controls
+- AI assistance and automation where they demonstrably help
+- security, testing, deployment, backup, and monitoring
+
+Detailed page lists, service catalogue entries, booking rules,
+payment methods, integrations, and staff workflows must be
+specified from BI-BUGS requirements; they must not be invented
+from generic templates.
 
 The system must remain understandable, testable, auditable,
 upgradeable, and maintainable as it grows.
@@ -52,10 +64,14 @@ upgradeable, and maintainable as it grows.
 
 # 3. LONG-TERM OBJECTIVE
 
-The long-term objective is to create a reliable digital
-foundation capable of supporting multiple BI-BUGS-related
-applications, services, intelligence systems, automation
-workflows, data systems, and future products.
+The long-term objective is to make the BI-BUGS Pest Control
+Services website and its connected business operations reliable,
+secure, easy to maintain, and progressively more capable.
+
+Technical expansion is justified only when it supports this
+business purpose or is separately approved by the project owner.
+Other industries, unrelated products, and generic enterprise
+platform capabilities are not part of the current delivery scope.
 
 The architecture must therefore be designed for:
 
@@ -498,3 +514,4 @@ Release
 Monitoring
     ↓
 Improvement
+```

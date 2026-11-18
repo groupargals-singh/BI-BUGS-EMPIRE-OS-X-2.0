@@ -23,7 +23,7 @@ NOT STARTED
 
 **Current Priority:**
 
-Complete Master Specification Architecture
+BI-BUGS Pest Control Services website requirements and first customer enquiry workflow
 
 **Current Workflow:**
 
@@ -33,49 +33,51 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 
 # 2. MASTER SPECIFICATION STATUS
 
-| No. | Specification | Status |
+| No. | Specification | Specification status (not implementation) |
 |---:|---|---|
-| 00 | MASTER INDEX | ✅ DONE |
-| 01 | PROJECT VISION | ✅ DONE |
-| 02 | ENGINEERING CONSTITUTION | ✅ DONE |
-| 03 | MASTER BLUEPRINT | ✅ DONE |
-| 04 | DIGITAL DNA SYSTEM | ✅ DONE |
-| 05 | LIVING BLUEPRINT SYSTEM | ✅ DONE |
-| 06 | ENGINEERING RULES | ✅ DONE |
-| 07 | PROJECT STRUCTURE | ✅ DONE |
-| 08 | FOLDER ARCHITECTURE | ✅ DONE |
-| 09 | DATABASE ARCHITECTURE | ✅ DONE |
-| 10 | API ARCHITECTURE | ✅ DONE |
-| 11 | AI CORE | ✅ DONE |
-| 12 | KNOWLEDGE GRAPH | ✅ DONE |
-| 13 | PLUGIN SYSTEM | ✅ DONE |
-| 14 | MICROSERVICES | ✅ DONE |
-| 15 | SECURITY | ✅ DONE |
-| 16 | DEVOPS | ✅ DONE |
-| 17 | UI/UX SYSTEM | ✅ DONE |
-| 18 | TESTING | 🔜 NEXT |
-| 19 | PROJECT MEMORY | ⏳ PENDING |
-| 20 | FEATURE REGISTRY | ⏳ PENDING |
-| 21 | MODULE REGISTRY | ⏳ PENDING |
-| 22 | API REGISTRY | ⏳ PENDING |
-| 23 | DATABASE REGISTRY | ⏳ PENDING |
-| 24 | AI REGISTRY | ⏳ PENDING |
-| 25 | DECISION REGISTRY | ⏳ PENDING |
-| 26 | IDEA VAULT | ⏳ PENDING |
-| 27 | CHANGELOG | ⏳ PENDING |
-| 28 | VERSION HISTORY | ⏳ PENDING |
-| 29 | RELEASE PROCESS | ⏳ PENDING |
-| 30 | ROADMAP 20 YEARS | ⏳ PENDING |
+| 00 | MASTER INDEX | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 01 | PROJECT VISION | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 02 | ENGINEERING CONSTITUTION | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 03 | MASTER BLUEPRINT | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 04 | DIGITAL DNA SYSTEM | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 05 | LIVING BLUEPRINT SYSTEM | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 06 | ENGINEERING RULES | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 07 | PROJECT STRUCTURE | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 08 | FOLDER ARCHITECTURE | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 09 | DATABASE ARCHITECTURE | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 10 | API ARCHITECTURE | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 11 | AI CORE | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 12 | KNOWLEDGE GRAPH | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 13 | PLUGIN SYSTEM | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 14 | MICROSERVICES | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 15 | SECURITY | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 16 | DEVOPS | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 17 | UI/UX SYSTEM | 🟡 STRUCTURE PASS — REVIEW PENDING |
+| 18 | TESTING | 🟡 Structural checks PASS — draft owner review pending; implementation not started |
+| 19 | PROJECT MEMORY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 20 | FEATURE REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 21 | MODULE REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 22 | API REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 23 | DATABASE REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 24 | AI REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 25 | DECISION REGISTRY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 26 | IDEA VAULT | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 27 | CHANGELOG | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 28 | VERSION HISTORY | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 29 | RELEASE PROCESS | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+| 30 | ROADMAP 20 YEARS | 🟡 DRAFT EXPANDED — local checks pass; owner review pending |
+
+> **Status interpretation (corrected 2026-10-11):** Rows 00–17 and historical milestones M-001–M-016 now reflect structural-review progress only; none is final owner acceptance. Structural checks have been performed on the working-copy documents, but the full semantic cross-document consistency review and project-owner acceptance remain pending. Application code, executable tests, deployment, and production readiness are separate states; the repository inventory found documentation and `.gitkeep` placeholders outside the docs tree. Do not mark Part 1 owner-approved or move to Part 2 until the remaining review and explicit owner acceptance are recorded.
 
 ---
 
-# 3. COMPLETED MILESTONES
+# 3. HISTORICAL MILESTONE RECORDS
 
 ## M-001 — Master Specification Foundation
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Completed:
 
@@ -90,7 +92,7 @@ Completed:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -102,7 +104,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -114,7 +116,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -126,7 +128,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -138,7 +140,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -150,7 +152,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -162,7 +164,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -174,7 +176,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -186,7 +188,7 @@ Specification:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -214,7 +216,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -242,7 +244,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -271,7 +273,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -298,7 +300,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -325,7 +327,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -353,7 +355,7 @@ Commit message:
 
 Status:
 
-DONE
+DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 
 Specification:
 
@@ -377,96 +379,90 @@ Commit message:
 
 ---
 
-# 4. CURRENT MILESTONE
-
 ## M-017 — Testing Architecture
 
 Status:
 
-NEXT
+DRAFT FOR REVIEW — specification content exists; acceptance review is not complete
+
+Specification:
+
+`18_TESTING.md`
+
+Verification:
+
+- 88 numbered sections, sequential and unique
+- 1072 lines in the current working copy (read-back verified 2026-11-17)
+- 88 numbered sections remain present, sequential and unique; full section-level semantic review is still required
+- 35 repeated generic control blocks replaced with section-specific checks
+- Follow-up section audit (2026-11-17): reviewed controls in sections 21, 36, and 69–72; corrected the section 69 heading and missing separator boundaries between sections 69 and 70; verified the section 70 controls and read back sections 71–72
+- Targeted checks for sections 21, 36, and 69–72: all expected headings and verification blocks present; bullet counts match the reviewed controls
+- Whole-file structural scan (2026-11-17): all 88 section headings sequential and unique; no joined bullet lines, missing Markdown heading prefixes, or missing section separators detected; section 88 intentionally contains implementation/status boundaries rather than verification controls
+- `git diff --check` passed for the testing specification and progress tracker
+- implementation status explicitly remains NOT STARTED
+- automated test execution explicitly remains NOT VERIFIED
+- current working-copy edits are uncommitted; the baseline commit is not proof that this revision was accepted
+
+Milestone commit:
+
+`4a63ff3` — `Add testing architecture specification`
+
+---
+
+# 4. CURRENT MILESTONE
+
+## M-018 — Project Memory Architecture
+
+Status:
+
+DRAFT EXPANDED — local structure checks pass; owner review and acceptance pending
 
 Target specification:
 
-`docs/MASTER_SPECIFICATION/18_TESTING.md`
+`docs/MASTER_SPECIFICATION/19_PROJECT_MEMORY.md`
 
 Purpose:
 
-Define the complete testing architecture and quality assurance system of BI-BUGS EMPIRE OS-X 2.0.
+Define the project-wide memory model that preserves verified decisions, requirements, features, modules, changes, provenance, and current progress without treating unverified ideas as facts.
 
 Planned areas:
 
-- testing vision
-- testing mission
-- testing principles
-- quality strategy
-- test architecture
-- test pyramid
-- unit testing
-- integration testing
-- contract testing
-- API testing
-- database testing
-- AI testing
-- knowledge graph testing
-- plugin testing
-- microservices testing
-- security testing
-- DevOps testing
-- UI/UX testing
-- mobile testing
-- frontend testing
-- backend testing
-- end-to-end testing
-- regression testing
-- smoke testing
-- sanity testing
-- performance testing
-- load testing
-- stress testing
-- scalability testing
-- reliability testing
-- resilience testing
-- fault injection
-- chaos testing
-- accessibility testing
-- compatibility testing
-- cross-browser testing
-- cross-device testing
-- network testing
-- offline testing
-- data validation
-- data integrity testing
-- migration testing
-- backup and recovery testing
-- disaster recovery testing
-- observability testing
-- monitoring validation
-- logging validation
-- security validation
-- authentication testing
-- authorization testing
-- permission testing
-- secret handling validation
-- vulnerability testing
-- dependency testing
-- configuration testing
-- environment testing
-- deployment testing
-- rollback testing
-- CI/CD testing
-- release validation
-- test automation
-- test reporting
-- defect management
-- quality gates
-- release gates
-- test evidence
-- test documentation
-- test governance
-- production verification
-- continuous testing
-- testing maturity
-- production testing standards
+- memory purpose and governance
+- memory categories and ownership
+- project, feature, module, decision, and change records
+- source provenance and verification status
+- confidence and uncertainty labels
+- conflict resolution and duplicate detection
+- short-term and long-term retention rules
+- indexing, search, retrieval, and traceability
+- versioning, history, backup, and recovery
+- privacy, permissions, and sensitive-data handling
+- human approval for promotion of important records
+- consistency checks and stale-record detection
+- migration and compatibility rules
+- memory quality tests and audit evidence
+- implementation boundary and acceptance criteria
+
+---
+
+## Working-copy documentation verification — 2026-10-11
+
+Scope: BI-BUGS EMPIRE OS-X 2.0 documentation only.
+
+- Markdown files checked under docs/: 57
+- Empty Markdown files remaining: 0
+- Broken relative Markdown links: 0
+- Testing specification numbered sections: 88, sequential, no duplicate titles
+- Repeated generic Testing control blocks remaining: 0
+- Specifications 19–30: required metadata, sequential section numbering, non-empty sections, acceptance/verification controls, and implementation-limit statements checked: PASS
+- All numbered Master Specification files 00–30 present: PASS
+- Supporting Markdown files checked: 57; empty files: 0; broken relative links: 0
+- git diff --check: PASS
+- Current working-tree edits: UNCOMMITTED
+- Runtime/application tests: NOT RUN by this documentation audit
+- Implementation/production status: NOT VERIFIED; no live capability is claimed
+
+These checks validate documentation structure and whitespace only. They do not establish that software builds, tests pass, or the product is production-ready.
 
 ---
 
@@ -478,7 +474,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -518,7 +514,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -558,7 +554,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -598,7 +594,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -634,7 +630,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -670,7 +666,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -710,7 +706,7 @@ Specification:
 
 Status:
 
-COMPLETE
+STRUCTURE CHECKS PASS — OWNER REVIEW PENDING
 
 Sections:
 
@@ -835,23 +831,25 @@ Branch:
 
 `main`
 
-Latest confirmed commit:
+Latest confirmed milestone commit:
 
-`6d1255b`
+`4a63ff3`
 
 Latest confirmed milestone:
 
-M-016 — UI/UX System Architecture
+M-017 — Testing Architecture
 
 Next milestone:
 
-M-017 — Testing Architecture
+M-018 — Project Memory Architecture
 
 ---
 
 # 17. RECENT COMMIT HISTORY
 
 ```text
+4a63ff3 Add testing architecture specification
+5494ca5 Update progress after UI UX architecture
 6d1255b Add UI UX system specification
 a50c4bb Add DevOps architecture specification
 ae4ce3c Add security architecture specification
@@ -880,6 +878,75 @@ f067612 Add digital DNA system specification
 f0ce9b4 Create master specification index
 5ba0777 Add complete project structure
 3cabc55 Initial Commit
+```
+
+---
+
+# 18. DOCUMENTATION VERIFICATION UPDATE — 2026-10-11
+
+**Scope:** Sequential local structural verification of Master Specification documents 00–30.
+
+**Result:** All numbered specifications 00–30 passed the checks executed in this audit for section numbering/duplicates, required structural markers, relevant internal references, and Markdown code-fence balance where applicable. This result is a documentation-structure result only; it is not owner approval and does not verify software implementation, runtime behavior, tests, deployment, or production readiness.
+
+**Fixes applied during this audit:**
+- `00_MASTER_INDEX.md`: closed the final unclosed code block.
+- `01_PROJECT_VISION.md`: closed the final unclosed code block.
+- `02_ENGINEERING_CONSTITUTION.md`: completed missing core principles/governance sections and closed the code block.
+- `03_MASTER_BLUEPRINT.md`: completed missing architecture-boundary sections and closed the diagram.
+- `04_DIGITAL_DNA_SYSTEM.md`: completed component identity/lifecycle/governance sections and closed the code block.
+- `05_LIVING_BLUEPRINT_SYSTEM.md`: completed state/drift/recovery/governance sections and closed the code block.
+- `07_PROJECT_STRUCTURE.md`: closed seven unclosed code blocks.
+- `11_AI_CORE.md`: closed three unclosed code blocks and disambiguated the duplicate `TOOL INTELLIGENCE` section title.
+- `12_KNOWLEDGE_GRAPH.md`: closed the knowledge model diagram.
+- `13_PLUGIN_SYSTEM.md`: closed the plugin ID example.
+- `14_MICROSERVICES.md`: closed the service lifecycle diagram and added an implementation boundary.
+- `15_SECURITY.md`: closed the asset-classification diagram.
+
+**Current status:** Documentation structure checks PASS. Specifications marked DRAFT FOR REVIEW still require owner review/acceptance. Implementation remains NOT STARTED or NOT VERIFIED as stated by the individual specifications. Automated application tests and production verification remain NOT RUN / NOT VERIFIED.
+
+**Full sequential re-audit (2026-10-11):** specifications 00–30 pass the repeated structural checks for existence, project identity, duplicate numbered section IDs (excluding document-title collisions), and balanced Markdown code fences. The initial ad-hoc checker produced false failures for dotted section numbers and the document title `10. API ARCHITECTURE`; the checker was corrected and the audit rerun. All 24 supporting Markdown files were inspected; repository-wide scan: 57 Markdown files, 0 unresolved Markdown references, 0 unbalanced code fences. `git diff --check` PASS. No overclaiming implementation/production status found in the scanned status fields.
+
+**Implementation blocker confirmed:** the `ai-core`, `backend`, `cloud`, `database`, `deployment`, `frontend`, `hardware`, `mobile`, `scripts`, and `testing` directories currently contain no non-placeholder files. No root/first-level package/build/test manifests were found in the inspected patterns. Therefore application implementation, executable tests, deployment, and production readiness are NOT VERIFIED / NOT STARTED. Current documentation diff: 51 files changed; no commit/push performed.
+
+**Cross-document consistency audit (2026-10-11):** Compared the Master Index authority/status clarification, Master Specification README status definitions, progress tracker implementation/production declarations, project rules, and supporting master constitution. Found and fixed a status-label contradiction in tracker sections 5–11: the word `COMPLETE` could be read as full specification acceptance even though owner review remained pending. These seven labels now read `STRUCTURE CHECKS PASS — OWNER REVIEW PENDING`. A fresh repository inventory confirmed that `ai-core`, `backend`, `cloud`, `database`, `deployment`, `frontend`, `hardware`, `mobile`, `scripts`, and `testing` contain no non-placeholder implementation files. `git diff --check` PASS after the correction. This audit does not constitute owner approval, software implementation, runtime testing, or production validation.
+
+**Remaining gates:** owner review/acceptance of draft specifications; implementation plan approval; creation of real application modules; executable tests and bug fixes; integration/security tests; deployment and production verification. Do not mark these gates complete until evidence is recorded. Commit/push only after review and explicit approval.
+
+## 19. REMAINING MASTER SPECIFICATION DOCUMENTS — STRUCTURAL RE-AUDIT (2026-10-11)
+
+**Scope:** `06_ENGINEERING_RULES.md`, `08_FOLDER_ARCHITECTURE.md`, `09_DATABASE_ARCHITECTURE.md`, `16_DEVOPS.md`, `17_UI_UX_SYSTEM.md`, `26_IDEA_VAULT.md`, `27_CHANGELOG.md`, and `28_VERSION_HISTORY.md`.
+
+**Results:** All eight files exist and are non-empty. The audit passed for duplicate numbered section IDs, balanced Markdown code fences, project identity markers, status fields that do not falsely claim unverified runtime/testing/production completion, and local relative Markdown links (0 broken relative links found). `git diff --check` PASS.
+
+**Status corrections:** `06_ENGINEERING_RULES.md`, `08_FOLDER_ARCHITECTURE.md`, and `09_DATABASE_ARCHITECTURE.md` now explicitly state `DRAFT FOR REVIEW` and that project-owner review/cross-document consistency checks remain pending. `16_DEVOPS.md` and `17_UI_UX_SYSTEM.md` now state the same review boundary. This corrects misleading/inconsistent earlier status labels; it does not imply owner acceptance.
+
+**Per-document result:** Structural audit PASS for all eight files. Specification approval remains pending. Runtime implementation, automated enforcement, executable tests, deployment, and production status remain NOT STARTED / NOT VERIFIED as indicated in each specification. No commit or push was performed.
+
+**Next step:** Continue with the remaining documentation consistency and owner-review gates; do not describe Part 1 as fully approved until the project owner reviews and accepts the drafts. Software implementation and release gates remain separate from documentation status.
+
+
+## 20. STATUS CONSISTENCY CORRECTIONS — 2026-10-11
+
+**Scope:** Follow-up corrections to status labels that could be mistaken for owner-approved specifications or completed software.
+
+**Corrections applied and re-read from the working files:**
+- `07_PROJECT_STRUCTURE.md`: status now explicitly says DRAFT FOR REVIEW; owner review and cross-document consistency check pending.
+- `10_API_ARCHITECTURE.md`: current status verified as DRAFT FOR REVIEW; implementation/testing/deployment/production remain NOT STARTED.
+- `11_AI_CORE.md` and `12_KNOWLEDGE_GRAPH.md`: replaced ambiguous final `COMPLETE` specification labels with structural review PASS and explicit owner-review/cross-document-check pending.
+- `13_PLUGIN_SYSTEM.md`: replaced the claim that architecture documentation is complete with a clear statement that architecture content is drafted and owner review remains pending; implementation/testing/deployment/production remain NOT STARTED.
+- `14_MICROSERVICES.md`: replaced unqualified `Architecture Status: VERIFIED` with structural review PASS and owner-review/cross-document-check pending. Its own implementation-boundary statement remains in place.
+- `15_SECURITY.md`: corrected the header's unqualified `Architecture Status: VERIFIED` to DRAFT FOR REVIEW, matching the detailed status section; implementation/testing/production remain NOT STARTED.
+- `18_TESTING.md`: replaced `Specification status: COMPLETE` with structural review PASS and owner-review/cross-document-check pending; automated test execution remains NOT VERIFIED.
+
+**Verification:** Read-back checks confirmed the expected corrected status strings in all eight listed documents. A repeated structural check for specifications 00–30 plus this tracker found all files present, BI-BUGS project identity markers present, and balanced Markdown code fences. `git diff --check` PASS. This is a working-copy structural/status consistency result only; it is not owner acceptance, runtime verification, executed test evidence, deployment, or production approval. No commit or push performed.
+
+**Cross-document consistency finding (2026-10-11):** The normative authority hierarchy in `00_MASTER_INDEX.md` previously mixed policy authority with implementation code and test evidence, while `06_ENGINEERING_RULES.md` used a different order and omitted the canonical Engineering Constitution. Corrected both documents to share one hierarchy: canonical Engineering Constitution → supporting Master Constitution entry point → Master Blueprint/approved system architecture → authorized Decision Log entries (never overriding higher-level rules) → domain architecture and rules → technical standards/contracts → registries, memory, roadmap, and progress records. Both now explicitly state that code, test results, runtime observations, and telemetry are evidence of behavior, not policy authority. A follow-up audit found that `docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md` labels itself a supporting summary and points back to `02_ENGINEERING_CONSTITUTION.md` and `06_ENGINEERING_RULES.md`; the hierarchy was corrected to reflect that reality. `git diff --check` passed in the subsequent repository check.
+
+**Part 1 gate:** Continue the cross-document semantic audit of all 31 numbered specifications plus this tracker. Structural checks alone are insufficient. Part 1 is not owner-approved until the remaining semantic review is completed and the project owner accepts the draft set. Do not begin Part 2 before the documentation gate is resolved.
+
+**Follow-up semantic fix (2026-10-11):** The authority audit found that `00_MASTER_INDEX.md` and `06_ENGINEERING_RULES.md` ranked `docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md` above the Engineering Constitution even though the Master Constitution file explicitly describes itself as a supporting summary and points to `02_ENGINEERING_CONSTITUTION.md` as canonical. Both hierarchies now place `02_ENGINEERING_CONSTITUTION.md` first and label the Master Constitution as a supporting entry point. The index's Master System description was also corrected from “highest-level project governance documents” to supporting summaries/entry points. Read-back confirmed all three edits. Repository-wide Markdown link scan: 0 broken links in the 33 Markdown files under `docs/MASTER_SPECIFICATION`; authority hierarchy matches in index and engineering rules; `git diff --check` PASS. A first-pass status-header scan also flagged 13 specifications without the exact `**Status:**` header format; several use alternate status fields/sections, so this is a review queue rather than proof that the documents lack status. Review and normalize those statuses consistently in the next pass.
+
+
 ## 21. TESTING SPECIFICATION TARGETED AUDIT — 2026-11-17
 
 **Scope:** Targeted review of Sections 69 (Audit Testing), 71 (Test Fixtures and Cleanup), and 72 (Mocking Policy) in `18_TESTING.md`, plus numbered-heading and Markdown structural checks for the full specification.
@@ -889,6 +956,8 @@ f0ce9b4 Create master specification index
 **Boundary:** This is a documentation and structural audit of the current working copy only. It does not prove executable test implementation, test execution, CI enforcement, runtime behavior, or production readiness. Those remain NOT VERIFIED / NOT STARTED.
 
 **Next step:** Continue the remaining cross-document semantic review and keep implementation/testing/release gates separate from specification checks.
+
+
 ## 22. MASTER SPECIFICATION STATUS HEADER NORMALIZATION — 2026-11-17
 
 **Scope:** Review the 13-document status-header queue identified in the prior tracker entry: specifications 05–11, 13–18 (excluding 12). The initial exact `**Status:**` scan was treated as a review cue, not proof that all 13 documents lacked status metadata.
@@ -898,3 +967,81 @@ f0ce9b4 Create master specification index
 **Verification:** All 13 queued documents now contain exactly one of each of the four canonical status fields in their document headers. Targeted `git diff --check` passed for the edited specifications. This is metadata consistency only, not semantic owner approval or evidence of software implementation, executed tests, deployment, or production readiness.
 
 **Next step:** Continue the semantic cross-document review of specifications 00–30 and the project progress tracker. Do not begin implementation phase approval until the project owner has reviewed and accepted the draft specification set.
+
+
+## 23. BI-BUGS PRIMARY SCOPE ALIGNMENT — 2026-11-17
+
+**Completed work:** The project owner explicitly confirmed that BI-BUGS EMPIRE OS-X 2.0 is being built for BI-BUGS Pest Control Services Pvt Ltd and its website. Recorded this as accepted decision `DEC-BBE-001` in `docs/DECISIONS/DECISION_LOG.md` and aligned the canonical Project Vision, Master Blueprint, supporting blueprint, and near-term roadmap to that purpose.
+
+**Scope rule now recorded:** The BI-BUGS Pest Control Services website is the primary customer-facing product. Backend, data, staff administration, communications, AI, automation, security, deployment, and reporting are supporting capabilities only where they serve the website and pest-control business workflows. Generic multi-industry expansion and unrelated products are not current delivery scope. Existing future architecture ideas are retained; no historical content was deleted.
+
+**Planning update:** The first candidate vertical slice is visitor → approved pest-control information → contact/service enquiry → secure enquiry record → authorized staff review. This is a candidate for requirements review, not a claim that the workflow exists or is approved in every detail. Website sitemap, service content, enquiry fields, privacy text, and staff follow-up rules remain to be specified.
+
+**Verification boundary:** Documentation alignment only. No application source code, executable tests, deployment, or production capability was created by this task. The implementation folders remain placeholder-only. The pre-existing 52-file working-tree change set was preserved; no unrelated files were staged or deleted.
+
+**Next task:** Audit and capture the actual BI-BUGS website requirements (sitemap, approved service catalogue/content, contact/enquiry journey, staff handling, and acceptance criteria) before choosing the first implementation slice.
+
+
+## 24. PROJECT PROGRESS SNAPSHOT — 2026-11-17
+
+**Overall estimated completion: 10% (provisional planning estimate, not a measured feature-completion ratio).** A reliable weighted percentage will replace this estimate after the BI-BUGS website requirements and feature denominator are approved. Do not interpret documentation presence as working software.
+
+| Workstream | Progress | Evidence / boundary |
+|---|---:|---|
+| Repository structure | 100% | All 10 implementation-area folders plus `docs/` exist. Folder presence does not mean implementation. |
+| Master specification file presence | 100% | Numbered specifications 00–32 are present; owner/semantic review remains pending for drafts. |
+| Primary project scope alignment | 100% | Accepted decision `DEC-BBE-001` recorded and key vision/blueprint/roadmap documents aligned. |
+| BI-BUGS website requirements | 10% | Requirements baseline `31_WEBSITE_REQUIREMENTS.md` created; detailed sitemap, approved service content, enquiry fields, privacy text, and staff workflow remain unknown. |
+| Website/frontend implementation | 0% | No non-placeholder source files found in `frontend/`. |
+| Backend/API implementation | 0% | No non-placeholder source files found in `backend/`. |
+| Database implementation | 0% | No non-placeholder source files found in `database/`. |
+| AI/automation implementation | 0% | No non-placeholder source files found in `ai-core/`. |
+| Executable application tests | 0% | No application test implementation or execution evidence found. |
+| Deployment/production | 0% | No deployment implementation or production evidence found. |
+
+**Percentage rule:** Report workstream percentages separately. Keep the overall 10% estimate provisional until approved website features, acceptance criteria, and delivery weights exist. Update this snapshot after each verified milestone; never raise a percentage because a document or folder was merely created.
+
+
+## 25. WEBSITE REQUIREMENTS BASELINE CREATED — 2026-11-17
+
+**Completed:** Added `31_WEBSITE_REQUIREMENTS.md` as the first BI-BUGS-specific requirements baseline. Added it to the Master Index, Master Specification README, supporting documentation index, and roadmap references.
+
+**What is recorded:** Confirmed business/project scope, candidate first customer journey, explicit unknowns, source-of-truth rules, requirement lifecycle, requirements-capture deliverables, and acceptance criteria. The document deliberately does not invent website pages, service names, prices, company contacts, booking/payment behavior, or integrations.
+
+**Verification:** Nine related documentation files passed the targeted checks for balanced Markdown code fences, local relative links, and `git diff --check`. The canonical Master Blueprint's numbered section headings were checked for uniqueness. No application source code or executable tests were created or run.
+
+**Requirements workstream:** 10% — baseline created; owner-approved website details remain outstanding. Overall project estimate remains 10% provisional. Implementation remains 0%.
+
+**Repository delivery status:** The 12 scoped documentation files are staged and passed `git diff --cached --check`. Commit/push is blocked because the configured Git author is the literal placeholder `Aapka Naam <aapka@email.com>`; no commit was created under a false identity. Forty-one other working-tree modifications remain unstaged and preserved.
+
+**Next task:** Obtain and verify the official BI-BUGS website/domain and collect authoritative business content/assets. If no verified source is available in the repository or accessible sources, keep those fields marked UNKNOWN and request only the missing owner-provided material.
+
+
+## 26. WEBSITE SOURCE AND IMPLEMENTATION INVENTORY AUDIT — 2026-11-17
+
+**Completed work:** Audited the repository for existing website/application source, company-specific website facts, and brand/design assets before choosing an implementation slice.
+
+**Verified findings:** The ten implementation-area folders (`frontend/`, `backend/`, `database/`, `deployment/`, `cloud/`, `mobile/`, `hardware/`, `ai-core/`, `scripts/`, and `testing/`) contain zero non-placeholder files; the tracked-file count across these areas is zero. No repository image/design assets (`png`, `jpg`, `jpeg`, `webp`, `svg`, `fig`, or `pdf`) were found. The inspected project documentation does not provide a verified official website URL, company contact details, or an approved service catalogue.
+
+**Interpretation:** There is no existing application source in this repository to migrate, extend, or test. This does not prove that BI-BUGS has no live website or external brand assets; private/external systems were not inspected. The official website source remains UNKNOWN / OWNER INPUT REQUIRED. No similarly named external domain has been accepted as official.
+
+**Verification:** Read-only inventory and repository search completed. `git diff --check` and `git diff --cached --check` passed before this entry was recorded. No files were deleted and no unrelated working-tree changes were staged.
+
+**Progress:** Requirements baseline remains 10%; frontend, backend, database, AI/automation, executable tests, and deployment remain 0%. Overall project estimate remains 10% provisional. These values were not increased because this milestone is an evidence audit, not software implementation.
+
+**Next task:** Obtain the exact official BI-BUGS website URL, or the owner's explicit confirmation that this is a new website build. Then audit the approved source/content and define the first small, testable website slice.
+
+**Repository delivery:** The existing scoped documentation changes remain staged only in their explicitly selected files. Commit/push remains blocked until the owner replaces the placeholder Git author name/email with the correct identity. The 41 pre-existing unstaged modifications remain untouched.
+
+
+## 27. WEBSITE DISCOVERY WORKBOOK CREATED — 2026-11-17
+
+**Completed:** Created `32_WEBSITE_DISCOVERY_WORKBOOK.md` and linked it from the Master Index and both documentation entry points. The workbook turns unresolved Specification 31 items into a traceable owner-review checklist covering the existing-site/new-build gate, company identity/brand, approved service catalogue/content, geography/contact channels, first-release customer actions, form/privacy requirements, staff workflow, candidate sitemap, design/accessibility/language, hosting/integrations, and release acceptance.
+
+**Evidence update:** A further exact-name public web search did not verify an official BI-BUGS website/domain. A LinkedIn directory result mentions a BI BUGS PEST CONTROL SERVICES profile, but does not establish website ownership or an official domain. No external candidate has been treated as official. The exact URL remains UNKNOWN / OWNER INPUT REQUIRED.
+
+**Verification boundary:** Workbook and navigation updates are documentation only. No website code, brand assets, approved service content, API, database, tests, hosting, or deployment were created. The workbook uses explicit UNKNOWN/OWNER INPUT states and warns against publishing unapproved claims or placing credentials in Git.
+
+**Progress:** Requirements baseline remains 10%; frontend/backend/database/AI implementation, executable tests, and deployment remain 0%; overall estimate remains 10% provisional. Creating a discovery workbook does not complete the requirements or increase implementation progress.
+
+**Next action:** Obtain the official website URL or the owner's explicit new-build confirmation. Then follow the appropriate audit/build path and progressively approve the remaining workbook items. Preserve unrelated working-tree modifications.
