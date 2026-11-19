@@ -1788,3 +1788,31 @@ silent change, explicit authority over accidental authority, and verified
 state over claimed state.
 
 END OF 06_ENGINEERING_RULES
+
+
+# 115. BI-BUGS PROJECT APPLICABILITY AND DELIVERY BOUNDARY
+
+These rules apply to BI-BUGS EMPIRE OS-X 2.0 as the digital platform for
+BI-BUGS Pest Control Services Pvt Ltd. Under DEC-BBE-001, the primary product
+is the BI-BUGS pest-control services website and only those connected business
+workflows that receive explicit requirements and owner approval. DEC-BBE-002
+approves a new official website build; it does not approve domain, hosting,
+service claims, sitemap, customer journey, data collection, payment, or release.
+
+General rules for AI, hardware, mobile, plugins, microservices, external
+integrations, financial operations, and autonomous automation describe
+conditional engineering controls, not approved first-release features. Use
+the simplest architecture that satisfies approved requirements. Do not add
+services, dependencies, data collection, integrations, or privileged actions
+without a documented requirement, risk review, authorization, tests, and
+required owner approval.
+
+Current evidence boundary: a static frontend shell and documentation-control
+tools exist. Backend/API, database, customer/staff workflows, AI runtime,
+production integrations, CI/CD enforcement, and production deployment are
+not verified as implemented. Automated enforcement of this specification
+is not present merely because the rules are documented.
+
+**Acceptance:** This section makes the generic engineering rules applicable
+to the approved BI-BUGS scope; it does not claim runtime enforcement or
+owner acceptance of the complete specification.

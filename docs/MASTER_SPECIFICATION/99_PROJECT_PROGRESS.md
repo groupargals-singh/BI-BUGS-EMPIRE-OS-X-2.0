@@ -1337,3 +1337,20 @@ f0ce9b4 Create master specification index
 **Verification boundary:** These checks validate lifecycle metadata, owner source-route fields, existing project-control tests, Markdown links/fences, and whitespace. They do not close semantic reviews listed in Specification 35, constitute owner acceptance, populate feature registries without approved requirements, or establish production readiness.
 
 **Progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. No percentage increase is claimed for creating the matrix.
+
+
+## 49. SPECIFICATIONS 05–08 SEMANTIC REVIEW — 2026-11-19
+
+**Completed:** Reviewed Specifications 05–08 against the Master Index authority hierarchy, Master Blueprint, accepted BI-BUGS scope decisions, current repository root inventory, and the Documentation Completion Matrix.
+
+**Corrections:** Aligned the Living Blueprint authority order with the canonical Master Index; clarified that blueprint state is evidence, not policy authority; added BI-BUGS scope/evidence boundaries to the Living Blueprint and Engineering Rules; replaced the stale sequential next-specification list in Project Structure with the current roadmap/matrix; corrected current repository inventory wording; and clarified that root directories are architectural boundaries, not proof of implemented modules. Updated Folder Architecture to require approved need before permanent subfolder creation. Updated Specification 35 and the cross-document audit.
+
+**Remaining:** Explicit owner acceptance; implementation and automated enforcement are separate future work and are not claimed.
+
+**Progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. This review group is recorded as complete at document level, but no phase percentage increase is claimed until the next broader review/verification batch.
+
+## 50. SPECIFICATIONS 05–08 POST-EDIT VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); project-control unit suite PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax check PASS; `git diff --check` PASS.
+
+**Verification boundary:** These checks validate metadata, owner source-route fields, existing control tests, Markdown integrity, frontend JavaScript syntax, and whitespace. They do not implement a Living Blueprint engine, runtime engineering-rule enforcement, backend, database, AI, business workflow, or production service. Specifications 05–08 remain draft pending owner acceptance.

@@ -1302,16 +1302,17 @@ Implementation should not begin from an undefined structure.
 
 ## 72. Current Implementation Status
 
-At the time of this specification:
+Current repository evidence (2026-11-19): the declared root-domain
+directories exist. The `frontend/` directory contains the limited static
+website shell; `scripts/` and `testing/` contain documentation-control
+validators and their tests. The other root directories are architectural
+placeholders/future boundaries and do not establish implemented product
+modules. No backend/API server, database implementation, AI runtime,
+customer/business workflow, or production deployment is verified.
 
-Project Structure Specification:
-IN PROGRESS
-
-The project is still in the foundation and specification stage.
-
-Actual production implementation must not be assumed from documentation alone.
-
-Implementation status must be based on verified repository state.
+The structure specification itself remains DRAFT FOR REVIEW pending the
+remaining semantic review and owner acceptance. Production implementation
+must not be inferred from directory presence or documentation.
 
 ## 73. Current Master Specification Status
 
@@ -1325,21 +1326,12 @@ A document existing in the repository does not automatically mean its implementa
 
 ## 74. Next Structural Specifications
 
-After completion of this specification, the planned sequence continues with:
-
-08_FOLDER_ARCHITECTURE.md
-09_DATABASE_ARCHITECTURE.md
-10_API_ARCHITECTURE.md
-11_AI_CORE.md
-12_KNOWLEDGE_GRAPH.md
-13_PLUGIN_SYSTEM.md
-14_MICROSERVICES.md
-15_SECURITY.md
-16_DEVOPS.md
-17_UI_UX_SYSTEM.md
-18_TESTING.md
-
-The remaining master specifications continue according to the Master Index.
+The original sequential list above is a historical planning sequence, not
+the current execution order. The current authoritative review backlog is
+`35_DOCUMENTATION_COMPLETION_MATRIX.md`, and the ordered delivery roadmap is
+`docs/ROADMAP/MASTER_ROADMAP.md`. Specifications 00–34 already exist; their
+review and owner-acceptance state must be read from the matrix and progress
+tracker, not inferred from this historical sequence.
 
 ## 75. Structural Quality Gate
 
@@ -1577,3 +1569,24 @@ The repository structure is not merely a collection of folders.
 It is the physical representation of the system architecture.
 
 Every major structural decision must therefore be intentional, documented, reviewable, and traceable.
+
+
+## 89. BI-BUGS CURRENT DOMAIN APPLICABILITY
+
+The root domains in this specification are architectural boundaries and
+possible future locations, not a declaration that every domain is approved
+or implemented. DEC-BBE-001 makes the BI-BUGS Pest Control Services website
+the controlling product scope; DEC-BBE-002 approves a new website build only.
+
+The current root directory inventory matches the declared domain list, but
+only the static frontend shell and documentation-control scripts/tests have
+verified source files. `ai-core/`, `backend/`, `cloud/`, `database/`,
+`deployment/`, `hardware/`, and `mobile/` remain empty or without verified
+product implementation at this baseline. Directory presence is not a module,
+service, database, AI capability, integration, or deployment.
+
+The first delivery must not depend on AI, mobile, hardware, plugins,
+microservices, graph storage, payments, or booking unless a specific BI-BUGS
+requirement is approved. Select and populate only the smallest architecture
+that meets approved website and business-workflow requirements. Update this
+map when actual code, ownership, dependencies, and tests are established.

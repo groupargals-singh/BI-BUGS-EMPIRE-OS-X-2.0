@@ -203,3 +203,14 @@ Continue the owner-input workbook for the remaining website content, customer jo
 Created `35_DOCUMENTATION_COMPLETION_MATRIX.md` as the canonical worklist for semantic review, owner-input gates, registry dependencies, and Documentation Phase 1 acceptance. The matrix distinguishes semantic review from structural validation, implementation, and owner acceptance. It records evidence-based status per specification and explicitly gates stable-ID registry population on approved requirements.
 
 The matrix does not mark every file reviewed merely because automated checks pass. Specifications 05–08, 17–18, 25–28, and 30 remain review targets; 31–32 retain substantive owner-input gaps; and owner acceptance remains pending. Existing 60% Documentation and 10% overall estimates are unchanged.
+
+
+## 17. Blueprint, engineering rules, and repository structure review — 2026-11-19
+
+**Documents reviewed:** Specifications 05–08, compared with the canonical Master Index, Master Blueprint, accepted DEC-BBE-001/002, current repository root inventory, and Documentation Completion Matrix.
+
+**Corrections applied:** Specification 05's authority order now matches the Master Index and explicitly treats the Living Blueprint as a state/evidence record rather than a policy authority. Specifications 05 and 06 now state BI-BUGS-specific applicability and distinguish documented target controls from implemented automation. Specification 07's stale sequential next-specification list was replaced with the current matrix/roadmap references; its current repository inventory and optional-domain boundary were clarified. Specification 08 now distinguishes existing root directories from populated product implementation and requires approved need before permanent subfolder creation. The completion matrix now records this review group.
+
+**Consistency result:** The declared root directory names match the current repository. The static frontend shell and documentation-control tooling are present; backend/API, database, AI runtime, business workflows, mobile/hardware integrations, and production deployment are not verified. Optional domains do not become first-release scope by appearing in the folder map.
+
+**Remaining:** Owner acceptance remains pending. Actual folder population, module ownership, dependency contracts, and requirement-linked registry records must follow approved website requirements.

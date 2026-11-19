@@ -111,20 +111,21 @@ The Living Blueprint must:
 
 # 5. BLUEPRINT AUTHORITY
 
-The Living Blueprint operates under the authority hierarchy defined by:
+The Living Blueprint follows the normative authority hierarchy in `00_MASTER_INDEX.md`:
 
-1. Engineering Constitution
-2. Master Blueprint
-3. Master Specifications
-4. Approved Architecture Decisions
-5. Living Blueprint State
-6. Implementation
-7. Runtime Observations
+1. Engineering Constitution (`02_ENGINEERING_CONSTITUTION.md`).
+2. Master Constitution entry point as a supporting summary only.
+3. Master Blueprint and approved system architecture.
+4. Approved Decision Log entries that do not violate higher-level requirements.
+5. Domain specifications and Engineering, Security, and AI Rules.
+6. Technical standards and documented interface/data contracts.
+7. Registries, project memory, roadmap, and progress records within their defined scope.
 
-When implementation differs from approved architecture, the difference
-must not silently become the new architecture.
-
-The difference must be reviewed and formally resolved.
+The Living Blueprint is a state/evidence record, not a new policy authority.
+Implementation, tests, runtime observations, and production telemetry are
+evidence of actual behavior; they do not silently override approved requirements.
+When actual state differs from approved architecture, record the delta and
+resolve it through the authorized governance process.
 
 ---
 
@@ -189,3 +190,29 @@ If generation or validation fails, preserve the last known valid blueprint, reco
 # 14. IMPLEMENTATION BOUNDARY
 
 This specification defines a target process. It does not prove that automated generation, drift detection, schema validation, or runtime synchronization has been implemented. Each capability requires separate implementation and verification evidence.
+
+
+# 15. BI-BUGS CURRENT APPLICABILITY AND ACCEPTANCE
+
+For the current BI-BUGS delivery, the Living Blueprint is maintained through
+version-controlled specifications, decision records, repository inventory,
+test evidence, and the progress tracker. No automated blueprint generator,
+runtime drift detector, live architecture database, or synchronization agent
+is verified as implemented.
+
+The current verified application foundation is a limited static frontend
+shell. The root architecture directories are present, but their presence
+does not prove that backend, database, API, AI, cloud, mobile, hardware,
+workflow, or deployment capabilities exist. Record each as planned,
+conditional, not started, or not verified until source and test evidence
+proves otherwise.
+
+For first delivery, the blueprint must remain focused on the BI-BUGS Pest
+Control Services website and owner-approved supporting workflows under
+DEC-BBE-001 and DEC-BBE-002. Optional AI, plugins, graph storage,
+microservices, mobile, hardware, booking, and payments require separate
+requirements and owner approval.
+
+**Acceptance:** This applicability clarification is a documentation control.
+Owner acceptance and implementation of any automated Living Blueprint
+capability remain pending.

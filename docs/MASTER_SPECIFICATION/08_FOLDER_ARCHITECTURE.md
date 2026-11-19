@@ -1539,7 +1539,9 @@ Production:
 NOT STARTED
 
 This status MUST be updated after the specification passes verification
-and is committed.
+and is committed. The repository's root directories are present, but most
+are unpopulated architecture boundaries; see Section 89 for the current
+implementation inventory and scope distinction.
 
 ---
 
@@ -1564,3 +1566,24 @@ an uncontrolled accumulation of files.
 
 The architecture exists to preserve clarity, ownership, security,
 maintainability, scalability, and long-term evolution.
+
+
+## 89. BI-BUGS CURRENT FOLDER INVENTORY AND SCOPE
+
+The root folders documented here are approved as repository organization
+boundaries, not as approval to implement every capability they could hold.
+For the current BI-BUGS website delivery, the verified source inventory is
+limited to `frontend/index.html`, `frontend/assets/css/styles.css`,
+`frontend/assets/js/main.js`, `frontend/README.md`, the two documentation
+validators in `scripts/`, and their project-control tests in `testing/`.
+
+The root folders `ai-core/`, `backend/`, `cloud/`, `database/`, `deployment/`,
+`hardware/`, and `mobile/` are not verified as containing product application
+implementation. They remain future/conditional boundaries. Do not create
+subfolders or add dependencies merely to fill the architecture diagram.
+
+Any new permanent folder requires an approved BI-BUGS requirement, named
+responsibility, ownership, dependency direction, security/data boundary,
+verification plan, and synchronized documentation. Optional AI, mobile,
+hardware, plugin, microservice, booking, and payment capabilities remain
+subject to separate requirements and owner approval.

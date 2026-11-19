@@ -31,10 +31,10 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 02 | Engineering Constitution | STRUCTURE VERIFIED; semantic acceptance not evidenced | Full policy consistency and owner review |
 | 03 | Master Blueprint | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 38 scope review) | Final owner confirmation; reconcile architecture map with approved requirements |
 | 04 | Digital DNA System | STRUCTURE VERIFIED; semantic acceptance not evidenced | Review BI-BUGS applicability, necessity, and links; owner review |
-| 05 | Living Blueprint System | REVIEW NOT YET EVIDENCED | Review lifecycle/change/evidence rules against current Git/document process |
-| 06 | Engineering Rules | REVIEW NOT YET EVIDENCED | Reconcile with Constitution, Security Rules, standards, and roadmap |
-| 07 | Project Structure | REVIEW NOT YET EVIDENCED | Compare every described directory/ownership boundary with actual repository |
-| 08 | Folder Architecture | REVIEW NOT YET EVIDENCED | Check allowed dependencies, ownership and actual folder names |
+| 05 | Living Blueprint System | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; automated generator/drift detection remains unimplemented |
+| 06 | Engineering Rules | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; runtime/CI rule enforcement remains unimplemented |
+| 07 | Project Structure | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; update map as approved modules are implemented |
+| 08 | Folder Architecture | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; future subfolder creation remains requirement-gated |
 | 09 | Database Architecture | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 39) | Requirement-specific schema remains gated; no database design approval without requirements |
 | 10 | API Architecture | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 39) | Requirement-specific contracts/endpoints remain gated; no live API implied |
 | 11 | AI Core | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 44) | Keep AI optional; any actual AI requirement needs separate owner approval |
