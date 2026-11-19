@@ -106,3 +106,17 @@ The repository contains a documentation changelog draft and a Git history, but t
 - Production: NOT VERIFIED.
 
 This document does not claim that a release has occurred merely because changelog text exists.
+
+## 15. Initial unreleased documentation change record
+
+### Unreleased — documentation and project-control changes only
+
+The following repository revisions are documentation/control changes, not software releases:
+
+- `f9550bb` — synchronized verified BI-BUGS documentation and the limited static website foundation; included documentation, validators, tests, and frontend shell.
+- `98949c3` — added the Documentation Completion Matrix and semantic-review backlog.
+- `d500146` — reviewed and clarified Living Blueprint, Engineering Rules, Project Structure, and Folder Architecture for BI-BUGS scope and repository evidence.
+
+These entries describe source-control changes only. They do not claim a released application artifact, production website, backend, database, or deployed business workflow. The changelog must be updated from verified commits and approved release records; do not move an entry from Unreleased to a versioned release section until the release process has produced an identifiable approved artifact.
+
+**Current baseline:** No software release version or release artifact is established by the above commits. The repository has no Git tags in the inspected local tag list at this review point.

@@ -214,3 +214,13 @@ The matrix does not mark every file reviewed merely because automated checks pas
 **Consistency result:** The declared root directory names match the current repository. The static frontend shell and documentation-control tooling are present; backend/API, database, AI runtime, business workflows, mobile/hardware integrations, and production deployment are not verified. Optional domains do not become first-release scope by appearing in the folder map.
 
 **Remaining:** Owner acceptance remains pending. Actual folder population, module ownership, dependency contracts, and requirement-linked registry records must follow approved website requirements.
+
+## 18. UI/UX, testing, decision, idea, change, version, and roadmap review — 2026-11-19
+
+**Documents reviewed:** Specifications 17, 18, and 25–28, 30; Decision Log; recent Git history, local tag inventory, tracked artifact candidates; compared against DEC-BBE-001/002 and Specification 35.
+
+**Corrections and records:** Specification 17 now distinguishes the public BI-BUGS website UI from conditional account/admin/AI/chat/file/mobile/offline interfaces and states that current shell styling is not approved branding or a complete design system. Specification 18 now maps tests to current BI-BUGS delivery stages and distinguishes 19 repository-control/frontend-shell tests from product acceptance tests. Specification 25 records DEC-BBE-001/002 from the canonical Decision Log without duplicating their authority. Specification 26 records that no verified idea inventory was imported rather than inventing IDEA IDs. Specification 27 records verified documentation/control commits as Unreleased documentation changes only. Specification 28 records the inspected Git baseline and absence of local tags/release artifacts without claiming there are no external releases. Specification 30 clarifies the mandatory BI-BUGS sequence and gates optional capabilities.
+
+**Evidence boundary:** The current repository is not a released or production-deployed business application. No semantic software version or application release artifact was established by the inspected commit/tag/artifact inventory. Owner confirmation is required for any releases, tags, or deployments outside the inspected repository.
+
+**Remaining:** Owner acceptance of the reviewed specifications; actual website content, design, journey, test acceptance criteria, and roadmap capacity/date approvals; any automation implementation is separate future work.

@@ -116,3 +116,13 @@ Detect duplicate/malformed IDs, missing source or owner where required, invalid 
 - Production: NOT VERIFIED.
 
 This document does not claim that an idea-vault service or automated triage workflow is implemented.
+
+## 15. BI-BUGS INITIAL IDEA INVENTORY AND SCOPE CONTROL
+
+The current documentation review did not identify a separately maintained, owner-approved idea inventory. Therefore the initial vault baseline is **NO VERIFIED IDEA RECORDS IMPORTED**. This does not mean that no ideas have ever been discussed; it means no item is promoted into this registry without a source, stable ID, owner, status, and provenance.
+
+Do not copy speculative capabilities from architecture documents or the 20-year roadmap into the vault as accepted ideas. Optional booking, payments, customer accounts, CRM, inventory, technician/mobile tools, AI, integrations, hardware, and IoT remain candidates/conditional topics unless the owner explicitly submits or accepts a specific idea record. An owner-approved requirement or decision must remain in its canonical record type; do not duplicate it as an idea merely to populate the vault.
+
+A future idea intake must record who proposed it, date/source, problem, intended user outcome, evidence/assumptions, risks, dependencies, owner, lifecycle status, and next review. The project owner must approve the scoring method before ideas are ranked using numeric scores.
+
+**Review result:** Empty/unpopulated baseline is intentional until source-backed ideas are supplied. No fabricated IDEA IDs or product commitments are created. Owner acceptance of the schema and any future idea entries remains pending.

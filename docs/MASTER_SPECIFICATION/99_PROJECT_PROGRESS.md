@@ -1354,3 +1354,21 @@ f0ce9b4 Create master specification index
 **Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); project-control unit suite PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax check PASS; `git diff --check` PASS.
 
 **Verification boundary:** These checks validate metadata, owner source-route fields, existing control tests, Markdown integrity, frontend JavaScript syntax, and whitespace. They do not implement a Living Blueprint engine, runtime engineering-rule enforcement, backend, database, AI, business workflow, or production service. Specifications 05–08 remain draft pending owner acceptance.
+
+## 51. SPECIFICATIONS 17, 18, 25–28, AND 30 SEMANTIC REVIEW — 2026-11-19
+
+**Completed:** Reviewed UI/UX, Testing Architecture, Decision Registry, Idea Vault, Changelog, Version History, and 20-Year Roadmap against BI-BUGS scope decisions, the canonical Decision Log, current Git history/tags/artifact inventory, and Documentation Completion Matrix.
+
+**Corrections:** Added website-first UI/UX applicability and conditional-interface gates; clarified design/content decisions requiring owner approval; mapped testing strategy to BI-BUGS delivery stages and distinguished the 19 project-control/frontend-shell tests from product acceptance testing; linked the two accepted decisions in the registry without duplicating the canonical log; recorded an intentionally empty verified idea baseline; recorded actual documentation commits as Unreleased documentation changes rather than software releases; recorded current Git baseline, no local tags and no identified application release artifact with explicit limits; and clarified the BI-BUGS roadmap sequence and conditional future capabilities.
+
+**Owner-input gates remain:** Final sitemap, services/content, brand assets/design, customer journey, privacy/data requirements, test acceptance criteria, future roadmap capacity/budgets/dates, and confirmation of any external release/deployment history. No such facts were invented.
+
+**Progress:** Documentation remains 60% provisional pending verification of this revision and remaining review groups. Overall project estimate remains 10% provisional. Owner acceptance remains pending.
+
+## 52. SPECIFICATIONS 17, 18, 25–28, AND 30 POST-REVIEW VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell test suite PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax check PASS; `git diff --check` PASS.
+
+**Evidence boundary:** The 19 tests cover lifecycle/source-gate validators and the limited static website shell. They are not end-to-end business/product acceptance tests. No software release, application artifact, or production deployment is established by these checks. Specifications 17, 18, 25–28, and 30 remain drafts pending owner acceptance and remaining owner inputs.
+
+**Progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. No percentage increase is claimed for this review batch.

@@ -1071,3 +1071,29 @@ Automated test execution status: NOT VERIFIED
 Production verification status: NOT STARTED
 
 No test suite shall be reported as passing until its command, environment, revision, and result are recorded.
+
+# 89. BI-BUGS TESTING SCOPE, EVIDENCE, AND RELEASE GATES
+
+This specification describes a risk-based testing strategy for the BI-BUGS Pest Control Services website and only owner-approved supporting workflows. Listing a test type in this document does not mean the corresponding subsystem exists or must be built. AI, graph, plugin, microservice, event-queue, mobile, offline, payment, hardware, and IoT tests are conditional on separately approved scope.
+
+## 89.1 Test scope by delivery stage
+
+**Current repository baseline:** project-control tests validate documentation lifecycle parsing, the website source decision gate, and the limited static website shell. These tests are not product acceptance tests for a live customer enquiry journey. No backend/API, database, authentication, booking, payment, staff workflow, AI runtime, production deployment, backup/restore, or end-to-end business journey is verified.
+
+**Next product requirements/design stage:** derive test cases from owner-approved website requirements. At minimum, identify content correctness, navigation, responsive layouts, keyboard/accessibility, supported browser/device expectations, approved customer contact/enquiry behavior (if selected), privacy/consent, input validation, abuse/rate controls, failure/retry behavior, and staff authorization where a staff system is approved.
+
+**Before first production release:** require traceability from each accepted requirement to test cases and results; unit/component tests for implemented code; integration/contract tests for actual interfaces; end-to-end tests for the approved customer journey; security and privacy checks; accessibility and responsive checks; operational smoke/health checks; backup/restore and recovery evidence where persistent data exists; and explicit release-owner approval. Record skipped tests and risk acceptance; do not waive mandatory security/privacy controls silently.
+
+## 89.2 Test evidence record
+
+Every reported test result must include the exact revision, command or procedure, environment, date, pass/fail outcome, relevant output/artifact, and known limitations. A test is not evidence for code that was not present at that revision. A test-suite pass does not prove production deployment, external service behavior, or user acceptance.
+
+## 89.3 Current verified control suite
+
+At the 2026-11-19 documentation review baseline, `python -m unittest discover -s testing -v` passed 19 project-control/frontend-shell tests. `python scripts/validate_spec_lifecycle.py --strict` reported 34 specifications and zero metadata issues. `python scripts/validate_website_source_gate.py --strict` passed the `NEW WEBSITE BUILD` source route. These checks validate repository controls and the static shell only; they do not establish a complete product test strategy execution or production readiness.
+
+## 89.4 Quality ownership and gates
+
+The project owner approves business acceptance criteria and release authorization. The implementation owner maintains automated tests; the security/privacy reviewer evaluates relevant risk; and the release owner verifies the required evidence. Named people/roles must be assigned in the delivery plan before a production release; this specification does not invent current assignments.
+
+**Review result:** Testing architecture reviewed for BI-BUGS scope. Test types for unapproved/absent subsystems remain conditional. Product acceptance criteria and production test execution remain pending requirements, implementation, and owner approval.

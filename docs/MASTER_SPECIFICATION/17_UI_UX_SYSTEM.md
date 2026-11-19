@@ -1162,3 +1162,27 @@ The interface shall be:
 Final principle:
 
 DESIGN FOR PEOPLE, COMMUNICATE CLEARLY, PROTECT USERS, AND MAKE EVERY IMPORTANT ACTION UNDERSTANDABLE.
+
+# 89. BI-BUGS WEBSITE APPLICABILITY AND DESIGN DECISION GATES
+
+This specification defines reusable UI/UX quality principles. It is not approval to build every interface listed in Sections 18–65. The current controlling product is the BI-BUGS Pest Control Services website under DEC-BBE-001, and DEC-BBE-002 approves a new website build only.
+
+## 89.1 First-release applicability
+
+The first UI/UX design scope is the public BI-BUGS website. The sitemap, page names, language, approved company/service content, visual identity, public contact details, calls to action, and enquiry journey must be established in `31_WEBSITE_REQUIREMENTS.md` and `32_WEBSITE_DISCOVERY_WORKBOOK.md` before final visual design. Do not invent brand colors, typography, logo usage, service claims, customer testimonials, awards, prices, coverage areas, contact channels, or legal copy.
+
+The existing static shell is a technical preview foundation only. Its placeholder sections and current styling are not owner-approved final brand/design decisions. A design token may be proposed for review, but must not be labelled official until approved by the project owner.
+
+## 89.2 Conditional interface capabilities
+
+The following sections apply only if their associated feature is approved by requirements: user accounts and settings (49–50), AI/chat/tool interfaces (53–60), file upload/preview (61–63), offline/queued actions (65), dashboards and tables (21, 36), and administrative or staff interfaces. They are not implied first-release commitments. Admin panel, customer login, online booking, payment, technician/mobile app, AI assistant, and file upload must each have a linked accepted requirement before design or implementation.
+
+## 89.3 Website design acceptance gates
+
+Before a page is considered design-approved, record: target audience and task; page purpose; approved content source; navigation entry/exit; primary and secondary actions; responsive behavior; accessibility criteria; empty/error/loading/success states where relevant; privacy/data collection impact; and owner review. Use semantic HTML, keyboard operation, visible focus, meaningful labels, sufficient contrast, reduced-motion support, and non-color-only state communication. Applicable WCAG conformance target must be selected and approved in the requirements/design phase; this document does not claim certification.
+
+## 89.4 Current evidence boundary
+
+The repository contains a limited static frontend shell with responsive styles, semantic structure, a skip link, and an accessible mobile navigation state. This is not a complete design system, user research result, approved sitemap, visual brand guide, production accessibility audit, or user-tested design. No usability research, visual regression suite, browser/device matrix, analytics, or production UX monitoring is verified.
+
+**Review result:** The generic UI/UX principles are applicable as quality controls; optional interface categories are now explicitly conditional. Owner acceptance of the full specification, sitemap, brand decisions, content, and design remains pending.

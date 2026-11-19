@@ -43,20 +43,20 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 14 | Microservices | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 44) | Preserve simplest-architecture default; adoption requires measurable justification |
 | 15 | Security | REVIEWED — OWNER ACCEPTANCE PENDING (Milestones 40–41) | Feature-specific threat models await approved requirements; implementation/security testing remain later phases |
 | 16 | DevOps | REVIEWED — OWNER ACCEPTANCE PENDING (Milestones 42–43) | Hosting/provider/release roles and deployment details need owner decisions |
-| 17 | UI/UX System | REVIEW NOT YET EVIDENCED | Review design principles against BI-BUGS audience, accessibility and approved journeys |
-| 18 | Testing Architecture | PARTIAL REVIEW | Reconcile all test strategy sections with approved first customer journey; project-control tests are not product acceptance tests |
+| 17 | UI/UX System | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Owner approval of sitemap, brand/design tokens, content, accessibility target and approved customer journey |
+| 18 | Testing Architecture | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Requirement-linked product acceptance tests and production evidence await approved requirements/implementation |
 | 19 | Project Memory | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 44) | Confirm project-memory boundaries; do not use as customer/staff record store |
 | 20 | Feature Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only after owner-approved requirements; no speculative feature IDs |
 | 21 | Module Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only modules justified by approved requirements |
 | 22 | API Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only approved API contracts after architecture/requirements review |
 | 23 | Database Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only approved data entities/fields after privacy and data requirements approval |
 | 24 | AI Registry | STRUCTURE / SCOPE REVIEWED; records gated | Keep empty/conditional until a specific BI-BUGS AI use case is approved |
-| 25 | Decision Registry | REVIEW NOT YET EVIDENCED | Verify schema and ensure DEC-BBE-001/002 are traceable; do not duplicate Decision Log authority |
-| 26 | Idea Vault | REVIEW NOT YET EVIDENCED | Review intake, triage, rejection, and promotion rules; no unapproved ideas become scope |
-| 27 | Changelog | REVIEW NOT YET EVIDENCED | Verify change-entry format and distinguish docs commits from software releases |
-| 28 | Version History | REVIEW NOT YET EVIDENCED | Verify version semantics and historical accuracy against repository evidence |
+| 25 | Decision Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Canonical log contains DEC-BBE-001/002; automation/owner schema acceptance pending |
+| 26 | Idea Vault | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | No verified idea inventory imported; future source-backed ideas require owner intake |
+| 27 | Changelog | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Unreleased documentation commits recorded; release entries await approved artifacts |
+| 28 | Version History | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Repository baseline recorded; remote/out-of-repo release history needs owner confirmation |
 | 29 | Release Process | REVIEWED — OWNER ACCEPTANCE PENDING (Milestones 42–43) | Actual release roles, hosting, deployment, recovery and production evidence remain open |
-| 30 | 20-Year Roadmap | REVIEW NOT YET EVIDENCED | Validate near-term sequencing against BI-BUGS scope; long-range items remain options, not commitments |
+| 30 | 20-Year Roadmap | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Detailed dates, budgets, staffing, and future optional features remain unapproved |
 | 31 | Website Requirements | PARTIAL REVIEW; requirements inventory incomplete | Owner-approved sitemap, content, service list, contact, customer action, privacy and workflows |
 | 32 | Website Discovery Workbook | OWNER INPUT REQUIRED; new-build decision resolved | Complete remaining business/brand/customer/privacy/operations/hosting inputs with owner |
 | 33 | Lifecycle Status Standard | STRUCTURE / TOOLING VERIFIED | Owner acceptance of the standard; retain strict audit evidence and lifecycle compatibility |

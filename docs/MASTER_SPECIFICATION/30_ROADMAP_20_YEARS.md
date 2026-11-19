@@ -198,3 +198,26 @@ Review the near-term plan regularly and the long-range horizon at least annually
 - Production: NOT VERIFIED.
 
 This document does not claim that any future phase is funded, scheduled, implemented, or guaranteed.
+
+## 17. BI-BUGS scope and horizon governance
+
+The roadmap is subordinate to DEC-BBE-001 and DEC-BBE-002. Its delivery subject is the BI-BUGS Pest Control Services website and only owner-approved supporting business workflows. The horizon descriptions are capability stages, not a commitment to implement every domain shown in the broader architecture.
+
+### Mandatory sequence for current delivery
+
+1. Finish and obtain owner acceptance of the documentation package.
+2. Complete owner-led website requirements discovery: services and factual content, sitemap/pages, brand assets, languages, public contact path, customer enquiry/booking decision, privacy/data handling, staff follow-up, and operational ownership.
+3. Approve the customer journey and measurable acceptance criteria.
+4. Approve the simplest suitable UI, data, backend/API, security, hosting, and release architecture.
+5. Implement one end-to-end BI-BUGS customer journey and verify it before adding optional modules.
+6. Expand only when evidence shows a business need and the owner accepts the scope, cost, risk, and support burden.
+
+### Optional capabilities are not roadmap commitments
+
+AI/automation, CRM, inventory, online payments, customer accounts, booking/scheduling, technician/mobile applications, plugins/integrations, microservices, graph databases, hardware, IoT, and computer vision are conditional opportunities. They require a specific problem statement, owner-approved requirement/decision, feasibility and risk review, measurable success criteria, accountable support owner, and funding/capacity decision before scheduling. Long-range time bands do not automatically authorize them.
+
+### Horizon review controls
+
+Review the near-term roadmap at each major milestone and the strategic horizon at least annually or when a material assumption changes. For every horizon, retain the goal, evidence, dependencies, risks, measurable exit criteria, owner, approval status, and review trigger. If those fields are unknown, label them pending. Do not invent a 20-year calendar, budget, staffing plan, or guaranteed technology choice.
+
+**Review result:** Strategic sequence and BI-BUGS scope boundaries clarified. The 20-year horizon remains a planning framework only; owner approval, budgets, capacity, detailed delivery dates, and future feature commitments remain pending.

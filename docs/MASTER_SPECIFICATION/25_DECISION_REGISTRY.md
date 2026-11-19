@@ -131,3 +131,16 @@ Detect duplicate IDs, missing approver for accepted decisions, missing rationale
 - Production: NOT VERIFIED.
 
 This document does not claim that a decision-registry service or automated approval workflow is implemented.
+
+## 16. BI-BUGS DECISION LOG BASELINE AND CURRENT RECORDS
+
+`docs/DECISIONS/DECISION_LOG.md` is the current canonical record store for project decisions; this specification defines the registry schema and governance. Do not create duplicate records in a second file or treat a schema example as a real decision. Stable IDs remain unique and are never recycled.
+
+| Decision ID | Title | Status | Evidence location | Scope boundary |
+|---|---|---|---|---|
+| DEC-BBE-001 | BI-BUGS Pest Control website is the primary project scope | ACCEPTED | `../DECISIONS/DECISION_LOG.md` | Controls project purpose; detailed requirements remain open |
+| DEC-BBE-002 | Build a new official BI-BUGS website from scratch | ACCEPTED | `../DECISIONS/DECISION_LOG.md` | Approves new-build route only; not domain, hosting, content, workflow, payment, or production release |
+
+These two records are the only accepted project decisions identified in the current decision-log baseline. This is a bounded repository inventory, not a claim that no verbal or external business decisions exist. Any additional owner decision must be captured in the canonical log with the complete schema before it is treated as binding.
+
+**Review result:** Schema and canonical decision-log linkage reviewed. No additional decision records have been invented. Automated registry validation and owner acceptance of the schema remain pending.

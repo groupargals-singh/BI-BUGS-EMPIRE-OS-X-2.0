@@ -120,3 +120,18 @@ The inspected Git history includes documentation commits such as `4a63ff3` (“A
 - Production: NOT VERIFIED.
 
 This document does not claim that a software release or deployment has occurred.
+
+## 16. Verified repository baseline — 2026-11-19
+
+This is a source-control baseline record, not a software release:
+
+- Branch: `main`
+- Latest inspected commit: `d500146ef4234862f11fc49d13b7eae4115aa33d` — `Review BI-BUGS blueprint and structure specifications`
+- Earlier documentation/control commits in this reviewed sequence: `98949c3` and `f9550bb`.
+- Local Git tag inventory at review time: no tags listed.
+- Tracked release/build artifact inventory: no application release artifact identified; `deployment/.gitkeep` is a placeholder, not a deployment artifact.
+- Production deployment: NOT VERIFIED.
+
+A complete remote release/tag inventory and any releases/deployments performed outside this repository require owner confirmation. Do not infer that none exist outside the inspected repository. Do not assign a semantic software version to documentation commits. A future release record must identify an approved artifact, source revision, tests, approval, target environment, deployment health evidence, and rollback/recovery evidence where applicable.
+
+**Review result:** Repository source-control baseline is recorded with evidence boundaries. No software release is declared.
