@@ -113,6 +113,8 @@ This document does not claim that a release has occurred merely because changelo
 
 The following verified repository revisions are documentation/control changes, not software releases (newest first):
 
+- `0f2b457` — reconciled BI-BUGS documentation acceptance gates, stale lifecycle-header wording, owner-input conversion rules, and roadmap status.
+
 - `06c0077` — finalized the document review baseline, owner-input register, requirement-record schema, and internal package/owner-acceptance distinction.
 
 - `a84c4a0` — reconciled supporting documentation, legacy architecture summaries, roadmap views, and the auxiliary completion matrix.
