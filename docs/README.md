@@ -17,6 +17,9 @@
 - `MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md` — cross-document semantic findings and remaining traceability gates.
 - `scripts/validate_website_source_gate.py` — read-only owner website-source decision gate; use `--strict` in pre-implementation checks.
 
+
+- `MASTER_SPECIFICATION/35_DOCUMENTATION_COMPLETION_MATRIX.md` — document-by-document review and completion checklist for Documentation Phase 1.
+
 ## Supporting records
 - `DECISIONS/DECISION_LOG.md` — decision record entry point.
 - `PROJECT_MEMORY/PROJECT_MEMORY.md` and `FEATURE_MEMORY.md` — project and feature notes.

@@ -196,3 +196,10 @@ Continue the owner-input workbook for the remaining website content, customer jo
 **Consistency result:** These changes align the five documents with DEC-BBE-001/002, Specifications 03, 09, 10, 15, 18, 20–25, 29, 31, and 32. They preserve future architecture options without approving AI, graph storage, plugins, microservices, CRM, or customer-data processing. No provider, database, service, integration, AI feature, customer field, or business fact was invented.
 
 **Acceptance boundary:** The document-level scope clarifications are recorded in the working copy. Owner acceptance, approved website content/journey, requirement-specific registries, implementation, feature testing, and production evidence remain open. This review is not a claim that these capabilities exist.
+
+
+## 16. Documentation completion matrix and review-status reconciliation — 2026-11-19
+
+Created `35_DOCUMENTATION_COMPLETION_MATRIX.md` as the canonical worklist for semantic review, owner-input gates, registry dependencies, and Documentation Phase 1 acceptance. The matrix distinguishes semantic review from structural validation, implementation, and owner acceptance. It records evidence-based status per specification and explicitly gates stable-ID registry population on approved requirements.
+
+The matrix does not mark every file reviewed merely because automated checks pass. Specifications 05–08, 17–18, 25–28, and 30 remain review targets; 31–32 retain substantive owner-input gaps; and owner acceptance remains pending. Existing 60% Documentation and 10% overall estimates are unchanged.

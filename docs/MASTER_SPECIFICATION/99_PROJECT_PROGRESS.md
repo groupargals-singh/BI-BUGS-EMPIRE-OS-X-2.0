@@ -1316,3 +1316,24 @@ f0ce9b4 Create master specification index
 **Progress:** No phase percentage increase is claimed from this repository-delivery and baseline-correction task. Documentation remains 60% provisional; overall project estimate remains 10% provisional.
 
 **Scope boundary:** The new website shell is a local preview foundation only. It is not the complete official website, a deployed service, or a complete BI-BUGS operating platform.
+
+
+## 47. DOCUMENTATION COMPLETION MATRIX AND REVIEW BACKLOG — 2026-11-19
+
+**Completed:** Added `35_DOCUMENTATION_COMPLETION_MATRIX.md` to convert Documentation Phase 1 into an auditable specification-by-specification review backlog. It records the current evidence-based state of Specifications 00–34 and tracker 99, distinguishes semantic review from structural/tooling verification and owner acceptance, identifies remaining document groups, and defines cross-document, registry, website-requirement, privacy, operations, release, and final verification gates.
+
+**Navigation updated:** Linked the matrix from the Master Index, Master Specification README, documentation README, and active Master Roadmap. Added a corresponding current-state addendum to Specification 34.
+
+**Important scope boundary:** No owner facts or features were invented. Registry population remains gated until approved requirements exist. Documentation remains draft; explicit owner acceptance is still pending. This matrix is a control artifact and does not itself complete the remaining semantic reviews.
+
+**Current progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. The next work is to complete semantic reviews for 05–08, 17–18, 25–28, and 30, reconcile current dashboard wording, then continue owner-input capture and traceability.
+
+**Git delivery:** Verification and push status for this milestone must be recorded only after the checks and remote confirmation below are complete.
+
+## 48. DOCUMENTATION MATRIX VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); project-control test suite PASS (19/19); Markdown integrity audit PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); `git diff --check` PASS. Remote branch was fetched and was synchronized before delivery (0 ahead / 0 behind).
+
+**Verification boundary:** These checks validate lifecycle metadata, owner source-route fields, existing project-control tests, Markdown links/fences, and whitespace. They do not close semantic reviews listed in Specification 35, constitute owner acceptance, populate feature registries without approved requirements, or establish production readiness.
+
+**Progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. No percentage increase is claimed for creating the matrix.

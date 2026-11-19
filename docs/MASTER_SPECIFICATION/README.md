@@ -12,6 +12,9 @@
 - Website source decision gate: `../scripts/validate_website_source_gate.py` (tested by `../testing/test_validate_website_source_gate.py`).
 - Numbered specifications 01–34 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, and the current semantic traceability audit.
 
+
+- [35_DOCUMENTATION_COMPLETION_MATRIX.md](35_DOCUMENTATION_COMPLETION_MATRIX.md) — document-by-document completion matrix, owner-input gates, and Documentation Phase 1 acceptance checklist.
+
 ## Status meanings
 
 - **DRAFT FOR REVIEW / DRAFT CREATED:** document exists but has not passed its full review and acceptance checks.

@@ -4,6 +4,9 @@
 
 Canonical strategy: `../MASTER_SPECIFICATION/30_ROADMAP_20_YEARS.md`.
 
+
+Documentation control: use `../MASTER_SPECIFICATION/35_DOCUMENTATION_COMPLETION_MATRIX.md` as the document-by-document acceptance checklist. The matrix is a control artifact, not a percentage increase or owner approval.
+
 ## Ordered work themes
 1. **ACTIVE — Complete Documentation first.** Finish the document-by-document semantic review of Specifications 00–34, reconcile contradictions and traceability gaps, verify current-state claims, record evidence, and obtain explicit project-owner acceptance. No new product-coding work starts before this documentation gate is accepted. The audit is recorded in `../MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md`; registry population remains gated by approved requirements.
 2. Inventory actual source modules and map them to approved website/business requirements.

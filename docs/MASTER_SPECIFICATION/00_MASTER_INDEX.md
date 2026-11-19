@@ -584,3 +584,9 @@ hardware/
 scripts/
 testing/
 ```
+
+
+
+## Documentation completion control
+
+`35_DOCUMENTATION_COMPLETION_MATRIX.md` tracks semantic-review status, owner-input gates, cross-document acceptance criteria, and the completion checklist for Documentation Phase 1.
