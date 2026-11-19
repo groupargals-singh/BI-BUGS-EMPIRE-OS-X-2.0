@@ -202,7 +202,7 @@ Continue the owner-input workbook for the remaining website content, customer jo
 
 Created `DOCUMENTATION_COMPLETION_MATRIX.md` as the canonical worklist for semantic review, owner-input gates, registry dependencies, and Documentation Phase 1 acceptance. The matrix distinguishes semantic review from structural validation, implementation, and owner acceptance. It records evidence-based status per specification and explicitly gates stable-ID registry population on approved requirements.
 
-The matrix does not mark every file reviewed merely because automated checks pass. Specifications 05–08, 17–18, 25–28, and 30 remain review targets; 31–32 retain substantive owner-input gaps; and owner acceptance remains pending. Existing 60% Documentation and 10% overall estimates are unchanged.
+At the time of the initial matrix creation, Specifications 05–08, 17–18, 25–28, and 30 were still review targets. Those document-level reviews are now recorded in Milestones 49, 51, 53, and 55. Specifications 31–32 retain substantive owner-input gaps; Specification 34 retains open traceability/owner-disposition work; owner acceptance remains pending. Existing 60% Documentation and 10% overall estimates are unchanged.
 
 
 ## 17. Blueprint, engineering rules, and repository structure review — 2026-11-19
@@ -217,7 +217,7 @@ The matrix does not mark every file reviewed merely because automated checks pas
 
 ## 18. UI/UX, testing, decision, idea, change, version, and roadmap review — 2026-11-19
 
-**Documents reviewed:** Specifications 17, 18, and 25–28, 30; Decision Log; recent Git history, local tag inventory, tracked artifact candidates; compared against DEC-BBE-001/002 and Specification 35.
+**Documents reviewed:** Specifications 17, 18, and 25–28, 30; Decision Log; recent Git history, local tag inventory, tracked artifact candidates; compared against DEC-BBE-001/002 and the auxiliary Documentation Completion Matrix.
 
 **Corrections and records:** Specification 17 now distinguishes the public BI-BUGS website UI from conditional account/admin/AI/chat/file/mobile/offline interfaces and states that current shell styling is not approved branding or a complete design system. Specification 18 now maps tests to current BI-BUGS delivery stages and distinguishes 19 repository-control/frontend-shell tests from product acceptance tests. Specification 25 records DEC-BBE-001/002 from the canonical Decision Log without duplicating their authority. Specification 26 records that no verified idea inventory was imported rather than inventing IDEA IDs. Specification 27 records verified documentation/control commits as Unreleased documentation changes only. Specification 28 records the inspected Git baseline and absence of local tags/release artifacts without claiming there are no external releases. Specification 30 clarifies the mandatory BI-BUGS sequence and gates optional capabilities.
 
@@ -249,7 +249,7 @@ The matrix does not mark every file reviewed merely because automated checks pas
 
 Renamed the auxiliary completion matrix to `DOCUMENTATION_COMPLETION_MATRIX.md` and removed the misleading numbered-specification identity. This avoids collision with the Master Index's numbered entry 35, which is the website source-gate validator. Updated all documentation references.
 
-The matrix now includes a separate supporting-document review table for documentation indexes, constitution summary, project/feature memory indexes, rules, standards, roadmaps, and root architecture summaries. These are subordinate supporting documents and must not override numbered canonical specifications. Their semantic review remains the next internal documentation task.
+The matrix now includes a separate supporting-document review table for documentation indexes, constitution summary, project/feature memory indexes, rules, standards, roadmaps, and root architecture summaries. These are subordinate supporting documents and must not override numbered canonical specifications. Their review is now recorded in Milestones 58–60.
 
 ## 22. Supporting summaries, rules, standards, and roadmap reconciliation — 2026-11-19
 
@@ -257,10 +257,25 @@ The matrix now includes a separate supporting-document review table for document
 
 **Corrections:** Added explicit canonical-authority and BI-BUGS applicability boundaries; made AI optional; clarified that current folders are not modules and registry IDs are not allocated speculatively; made stack/tool selection requirements-driven; corrected the legacy Master Blueprint's unsupported mandatory microservices/plugin/offline/API/franchise assertions; and converted root changelog/version-history files into non-authoritative pointers to the canonical numbered ledgers. Rewrote the active roadmap/phase sequence to reflect current work and the no-product-coding-before-documentation-acceptance gate.
 
-**Remaining:** Final review of root architecture summaries and general navigation pages; full current-state/progress reconciliation; owner acceptance and unresolved website inputs.
+**Remaining:** Full current-state/progress reconciliation; closure or explicit owner disposition of cross-document findings; owner acceptance and unresolved website inputs.
 
 ## 23. Root architecture pointers and documentation navigation review — 2026-11-19
 
 Reviewed root architecture/navigation summaries for system, database, API, AI, security, documentation, and version history. Added BI-BUGS-specific current-state boundaries: no application database/API/AI runtime is verified; the security guide is not a completed audit; root pointers remain subordinate to numbered canonical specifications. The legacy Master Blueprint now labels its broad capability catalogue as historical/optional rather than mandatory architecture. Updated README/index navigation to distinguish the auxiliary completion matrix from numbered Specification 35. The supporting-document section of the completion matrix is now marked reviewed at this baseline.
 
 Remaining cross-document work is the final full audit and closure/explicit owner disposition of findings, plus unresolved business inputs and owner acceptance.
+
+
+## 24. Final current-state disposition of original audit findings — 2026-11-19
+
+| Finding | Current disposition | Evidence / remaining action |
+|---|---|---|
+| F-01 — stale specification count | RESOLVED | Current progress snapshot and lifecycle audit now identify Specifications 00–34 / 01–34; dated historical snapshots are retained as history. |
+| F-02 — registries schema-only | OPEN BY DESIGN / REQUIREMENTS-GATED | Specifications 20–24 now document empty initial product inventories and population rules. Populate only after owner-approved requirements and actual implementation exist. |
+| F-03 — missing website control links | RESOLVED AS NAVIGATION GAP | Specification 31 links the relevant API/database/security/testing/release controls. Requirement-specific traceability remains open. |
+| F-04 — broad architecture vs first-release scope | MITIGATED; MONITOR | Canonical specs and supporting blueprint now state optional capabilities are not first-release commitments. Continue to enforce DEC-BBE-001/002. |
+| F-05 — no end-to-end requirement-to-evidence chain | OPEN / BLOCKED BY OWNER INPUTS AND IMPLEMENTATION | The earlier zero-source inventory is historical. Current inventory includes a limited static frontend shell and project-control tooling, but no approved customer journey, backend/API/database, business workflow, or complete requirement → feature/module/data → test → release chain. Build that chain only after requirements are approved and implemented. |
+| F-06 — stale source-decision prerequisite | RESOLVED | DEC-BBE-002 and workbook/source-gate validator record the new-build route. Domain/hosting/content/workflow decisions remain open separately. |
+| F-07 through F-11 — AI/knowledge/plugin/microservices/memory scope boundaries | MITIGATED; MONITOR | Applicability sections added; optional features remain approval-gated and project memory is not customer/staff data storage. |
+
+**Audit conclusion:** The document-by-document semantic review and supporting-document review are recorded. The documentation package is not yet ready for owner acceptance because owner business inputs, final requirement traceability, and explicit disposition/acceptance remain open. No product coding is authorized before the documentation gate is accepted.

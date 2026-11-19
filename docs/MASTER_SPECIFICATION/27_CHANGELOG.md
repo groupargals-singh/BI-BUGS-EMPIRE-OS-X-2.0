@@ -107,16 +107,20 @@ The repository contains a documentation changelog draft and a Git history, but t
 
 This document does not claim that a release has occurred merely because changelog text exists.
 
-## 15. Initial unreleased documentation change record
+## 15. Unreleased documentation and project-control change record
 
 ### Unreleased — documentation and project-control changes only
 
-The following repository revisions are documentation/control changes, not software releases:
+The following verified repository revisions are documentation/control changes, not software releases (newest first):
 
-- `f9550bb` — synchronized verified BI-BUGS documentation and the limited static website foundation; included documentation, validators, tests, and frontend shell.
-- `98949c3` — added the Documentation Completion Matrix and semantic-review backlog.
+- `a84c4a0` — reconciled supporting documentation, legacy architecture summaries, roadmap views, and the auxiliary completion matrix.
+- `f5f247b` — reviewed the Master Index, Constitution, Digital DNA, website requirements, and lifecycle standard.
+- `d103fe3` — defined evidence-based population gates for feature, module, API, database, and AI registries.
+- `c2fe0c6` — reviewed UI/UX, testing, decision, idea, changelog, version-history, and long-range roadmap controls.
 - `d500146` — reviewed and clarified Living Blueprint, Engineering Rules, Project Structure, and Folder Architecture for BI-BUGS scope and repository evidence.
+- `98949c3` — added the Documentation Completion Matrix and semantic-review backlog.
+- `f9550bb` — synchronized verified BI-BUGS documentation and the limited static website foundation; included documentation, validators, tests, and frontend shell.
 
 These entries describe source-control changes only. They do not claim a released application artifact, production website, backend, database, or deployed business workflow. The changelog must be updated from verified commits and approved release records; do not move an entry from Unreleased to a versioned release section until the release process has produced an identifiable approved artifact.
 
-**Current baseline:** No software release version or release artifact is established by the above commits. The repository has no Git tags in the inspected local tag list at this review point.
+**Current baseline:** No software release version or release artifact is established by the above commits. The inspected local Git tag inventory contained no tags at the time of review; confirm remote tags and any external releases separately before a future release declaration.

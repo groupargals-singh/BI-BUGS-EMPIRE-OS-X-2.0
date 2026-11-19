@@ -135,3 +135,15 @@ This is a source-control baseline record, not a software release:
 A complete remote release/tag inventory and any releases/deployments performed outside this repository require owner confirmation. Do not infer that none exist outside the inspected repository. Do not assign a semantic software version to documentation commits. A future release record must identify an approved artifact, source revision, tests, approval, target environment, deployment health evidence, and rollback/recovery evidence where applicable.
 
 **Review result:** Repository source-control baseline is recorded with evidence boundaries. No software release is declared.
+
+
+## 17. Documentation-only source-control revisions after initial baseline
+
+The following verified `main` revisions extend the source-control history recorded in Section 16. They are documentation/project-control commits, not semantic software versions, release artifacts, or deployments:
+
+- `c2fe0c6` — BI-BUGS UX, testing, and governance record review.
+- `d103fe3` — BI-BUGS registry population gates.
+- `f5f247b` — BI-BUGS governance and website requirements review.
+- `a84c4a0` — supporting documentation and roadmap reconciliation.
+
+No software release is declared by these commits. Recheck Git history, remote tags, artifacts, and owner-provided external release records before preparing any actual software release entry.

@@ -76,7 +76,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | Architecture choice | Static/modular/backend/database choices justified by approved requirements | NOT FINALISED; do not preselect unnecessarily |
 | UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | PARTIAL / OWNER INPUT REQUIRED |
 | Release readiness documentation | Domain/hosting owner, release roles, security/privacy evidence, rollback/recovery plan | OWNER INPUT REQUIRED |
-| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | STRUCTURAL CHECKS passed through Milestone 56; rerun after each revision |
+| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | STRUCTURAL CHECKS passed through Milestone 60; rerun after each revision |
 | Owner acceptance | Explicit approval of the documentation package and remaining decisions | PENDING |
 
 ## 5. Required completion sequence
