@@ -229,3 +229,33 @@ The following input groups remain unapproved: (1) company display identity, logo
 Owner answers must be recorded with source/evidence and approval date. `OWNER_INPUT_RECEIVED` is not the same as `APPROVED`. Do not request passwords, private keys, API tokens, payment credentials, or recovery codes. Unknowns must not be converted into default assumptions to force completion.
 
 **Review result:** Workbook structure and decision gates reviewed; actual business input remains pending. Documentation may be internally organized, but requirements/design readiness and owner acceptance are blocked until the relevant inputs are supplied.
+
+
+## 16. Owner input completion register and response protocol — 2026-11-19
+
+This section is the concise working register for completing the open business decisions. It intentionally contains no assumed values. The detailed question tables above remain the source questionnaire. An answer is not approved until the owner confirms it; record evidence/source and approval date.
+
+| Register ID | Decision group | Required owner answer/evidence | Current status |
+|---|---|---|---|
+| OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | OPEN — OWNER INPUT REQUIRED |
+| OI-02 | Service catalogue and claims | Exact services, target customer segments, treatment descriptions, prohibited claims, licences/certifications/safety wording allowed for publication | OPEN — OWNER INPUT REQUIRED |
+| OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | OPEN — OWNER INPUT REQUIRED |
+| OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | OPEN — OWNER INPUT REQUIRED |
+| OI-05 | Customer data and privacy | Exact minimum fields, purpose, notice/consent, retention/deletion, access roles, exports and incident handling | OPEN — OWNER INPUT REQUIRED |
+| OI-06 | Staff operations | Roles, assignment, status transitions, response/escalation, audit history and account lifecycle | OPEN — OWNER INPUT REQUIRED |
+| OI-07 | Sitemap and content | Approved pages, page owner, source material, calls-to-action and legal notices | OPEN — OWNER INPUT REQUIRED |
+| OI-08 | Design and accessibility | Approved visual references, mobile requirements, languages, accessibility target and acceptance method | OPEN — OWNER INPUT REQUIRED |
+| OI-09 | Technical and hosting | Domain/DNS owner, hosting preference, budget, data region, framework constraints and integrations | OPEN — OWNER INPUT REQUIRED |
+| OI-10 | Operations and release | Support owner, monitoring, backups/recovery, incident contact, release approver and rollback authority | OPEN — OWNER INPUT REQUIRED |
+| OI-11 | Acceptance | Measurable first-release acceptance criteria and explicit documentation/package approval | OPEN — OWNER INPUT REQUIRED |
+
+### Response and approval protocol
+
+1. Capture the owner's answer verbatim or attach the owner-provided source; do not silently rewrite it as a stronger claim.
+2. Mark it `RECEIVED — NOT APPROVED` until the owner explicitly approves the exact wording/decision.
+3. Record approver role, approval date, evidence/source reference, scope, and any expiry/review condition.
+4. Convert approved requirements into stable `WREQ-*` entries in Specification 31 with priority, rationale, acceptance criteria, dependencies, risk, and lifecycle state.
+5. Link only necessary registry records and tests. Do not create API/database/AI records for unapproved or nonexistent capabilities.
+6. Re-run the documentation and traceability audits after the approved inputs are incorporated.
+
+**Current resolved decision:** OI-00 — Delivery path: `OWNER APPROVED — NEW_WEBSITE_BUILD` (DEC-BBE-002, 2026-11-17). This does not close OI-01 through OI-11.

@@ -1483,3 +1483,24 @@ f0ce9b4 Create master specification index
 **Overall project:** Remains 10% provisional; no application backend/database/business workflow or production deployment is claimed.
 
 **Milestone 64 verification:** Lifecycle strict PASS (34 specifications, zero metadata issues); website source gate strict PASS; project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 files, zero broken relative links/fence issues); frontend JavaScript syntax PASS; `git diff --check` PASS. The weighted progress update changes only the documentation estimate; overall project estimate remains 10% provisional.
+
+
+## 65. OWNER INPUT REGISTER AND DOCUMENTATION ACCEPTANCE SPLIT — 2026-11-19
+
+**Completed:** Added the consolidated OI-01 through OI-11 owner-input register and response/approval protocol to Specification 32. Added the stable WREQ requirement record schema and lifecycle evidence rules to Specification 31. Updated the Documentation Completion Matrix to distinguish internal documentation package readiness from owner business decisions and explicit owner acceptance. Recorded the distinction in Specification 34.
+
+**Internal documentation status:** READY FOR OWNER REVIEW, subject to final verification and GitHub synchronization. The numbered and supporting document semantic reviews, current audit dispositions, navigation, registry population rules, and documentation controls are recorded.
+
+**Owner gate:** OI-01 through OI-11 remain OPEN — OWNER INPUT REQUIRED. Only OI-00 (new official website build) is resolved by DEC-BBE-002. No owner acceptance is claimed.
+
+**Progress:** Documentation remains 70% provisional under the existing weighted rubric; owner-input capture and explicit package acceptance are incomplete. Overall project estimate remains 10% provisional.
+
+## 66. OWNER-INPUT REGISTER AND INTERNAL PACKAGE VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell test suite PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS.
+
+**Documentation outcome:** The completion matrix now separates internal documentation readiness from owner acceptance. Internal semantic review, supporting-document review, current finding disposition, requirement schema, owner-input capture protocol, navigation, and structural verification are recorded. The package is ready to present for owner review after this revision is committed and remote HEAD is confirmed.
+
+**Owner gate remains open:** OI-01 through OI-11 are still pending. OI-00 (new website build) is resolved only. No service catalogue, customer journey, public contact, privacy policy, hosting provider, or operational owner has been inferred. Owner acceptance is not claimed.
+
+**Progress:** Documentation remains 70% provisional; the remaining 30% is primarily owner-supplied decisions, final requirement-to-evidence traceability after approval, and explicit owner acceptance. Overall project estimate remains 10% provisional.

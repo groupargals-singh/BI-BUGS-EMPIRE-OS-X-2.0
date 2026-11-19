@@ -1,7 +1,7 @@
 # BI-BUGS EMPIRE OS-X 2.0 — DOCUMENTATION COMPLETION MATRIX
 
 **Document type:** Auxiliary documentation control artifact (not a numbered Master Specification)
-**Status:** WORKING CONTROL MATRIX — DRAFT; OWNER ACCEPTANCE PENDING
+**Status:** INTERNAL DOCUMENTATION PACKAGE READY FOR OWNER REVIEW; OWNER INPUTS / ACCEPTANCE PENDING
 **Last reviewed:** 2026-11-19
 **Authority:** `00_MASTER_INDEX.md`, `02_ENGINEERING_CONSTITUTION.md`, accepted decisions DEC-BBE-001 and DEC-BBE-002.
 
@@ -19,7 +19,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 - **PARTIAL REVIEW:** only a named part or applicability boundary has been checked; remaining sections need review.
 - **STRUCTURE / TOOLING VERIFIED:** automated metadata, links, tests, or validators pass; this is not semantic approval.
 - **OWNER INPUT REQUIRED:** the document is a workbook or requirement record awaiting real business decisions.
-- **REVIEW NOT YET EVIDENCED:** no sufficient current milestone evidence was found to call the full semantic review complete.
+- **REVIEW NOT YET EVIDENCED:** no sufficient current milestone evidence was found to call the full semantic review complete. This status is not currently assigned to any numbered or supporting document in the current review baseline.
 - **CONDITIONAL / NOT APPLICABLE YET:** records or implementation must wait until a relevant requirement is approved.
 
 ## 3. Specification-by-specification matrix
@@ -60,23 +60,23 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 31 | Website Requirements | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Approved sitemap/content/services/contact/customer action/privacy/staff workflow and acceptance criteria |
 | 32 | Website Discovery Workbook | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Fill and approve the remaining owner-input groups; source route alone is not full approval |
 | 33 | Lifecycle Status Standard | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; strict audit validates metadata only, not semantic approval |
-| 34 | Cross-Document Traceability Audit | PARTIAL REVIEW — FINDINGS TRACKED (Milestone 55) | Close or explicitly accept each finding after all document reviews and owner decisions |
-| 99 | Project Progress Tracker | CONTROL RECORD; current snapshot needs reconciliation as work proceeds | Keep current status, milestone evidence and Git delivery facts synchronized; historical entries remain historical |
+| 34 | Cross-Document Traceability Audit | REVIEWED — CURRENT FINDING DISPOSITION RECORDED (Milestones 62–63) | F-02 remains requirements-gated; F-05 remains blocked by owner inputs and implementation; F-04/F-07–F-11 are monitor items; owner disposition/acceptance pending |
+| 99 | Project Progress Tracker | REVIEWED — CURRENT SNAPSHOT RECONCILED (Milestones 61–64) | Maintain current snapshot and dated milestone history; update only from verified evidence |
 
 ## 4. Cross-document and registry completion gates
 
 | Gate | Required evidence | Current status |
 |---|---|---|
 | Authority and scope | Constitution, DEC-BBE-001/002, Blueprint and scope boundaries agree | Reviewed for core scope; final owner acceptance pending |
-| Specification consistency | No unresolved contradiction across applicable specifications | PARTIAL — review matrix above |
+| Specification consistency | No unresolved contradiction across applicable specifications | REVIEWED AT DOCUMENT BASELINE — new contradictions must be logged; owner decisions remain separate |
 | Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | OWNER INPUT REQUIRED |
 | Privacy and data | Approved data fields, purpose, consent, retention, access and deletion requirements | OWNER INPUT REQUIRED |
 | Operational workflow | Enquiry handling, staff roles, assignment, response and escalation | OWNER INPUT REQUIRED |
-| Registry traceability | Stable IDs linked requirement → feature/module → API/data → test → release | NOT POPULATED; gated by approved requirements |
+| Registry traceability | Stable IDs linked requirement → feature/module → API/data → test → release | TEMPLATE/POPULATION RULES REVIEWED; product records gated by approved requirements and implementation |
 | Architecture choice | Static/modular/backend/database choices justified by approved requirements | NOT FINALISED; do not preselect unnecessarily |
-| UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | PARTIAL / OWNER INPUT REQUIRED |
+| UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | DOCUMENT FRAMEWORK REVIEWED; actual sitemap/brand/accessibility targets require owner input |
 | Release readiness documentation | Domain/hosting owner, release roles, security/privacy evidence, rollback/recovery plan | OWNER INPUT REQUIRED |
-| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | STRUCTURAL CHECKS passed through Milestone 60; rerun after each revision |
+| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | PASS through Milestone 64; rerun after each revision |
 | Owner acceptance | Explicit approval of the documentation package and remaining decisions | PENDING |
 
 ## 5. Required completion sequence
@@ -88,22 +88,42 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 5. Run the full documentation verification suite and record exact revision, commands, outcomes, and limitations.
 6. Present the complete documentation package for explicit owner acceptance. Do not begin new product coding before this documentation gate is accepted.
 
-## 6. Completion acceptance checklist
+## 6. Completion acceptance checklists
 
-- [ ] All applicable specifications 00–34 have a documented semantic-review result.
-- [ ] Every known contradiction is corrected or linked to an explicit unresolved decision.
-- [ ] Every specification has clear scope, assumptions, dependencies, lifecycle metadata and evidence boundary.
-- [ ] All internal links and navigation are valid.
-- [ ] All applicable registries have either approved linked records or an explicit gated/not-applicable explanation.
-- [ ] Website requirements distinguish confirmed facts, candidates, unknowns and owner decisions.
-- [ ] No company fact, service, price, claim, contact, integration or workflow is invented.
-- [ ] Strict lifecycle audit passes with zero metadata issues.
-- [ ] Strict website source gate passes.
-- [ ] Project-control test suite passes.
-- [ ] Markdown integrity and Git diff checks pass.
-- [ ] Progress, roadmap, audit and index agree on current status.
-- [ ] Changes are committed and the exact commit is confirmed on GitHub.
-- [ ] Project owner explicitly accepts the documentation package.
+### 6.1 Internal documentation package readiness
+
+- [x] Applicable Specifications 00–34 have a documented semantic-review result.
+- [x] Known cross-document findings F-01–F-11 have a current disposition or explicit blocker.
+- [x] Scope, assumptions, dependencies, lifecycle metadata and evidence boundaries are recorded across the reviewed specifications.
+- [x] Internal links and navigation pass the current Markdown integrity audit.
+- [x] Applicable registries have reviewed schemas and explicit population gates; empty inventories are explained.
+- [x] Website requirements distinguish confirmed facts, candidates, unknowns and owner decisions.
+- [x] No company fact, service, price, claim, contact, integration or workflow has been invented in the requirements baseline.
+- [x] Strict lifecycle audit passes with zero metadata issues.
+- [x] Strict website source gate passes.
+- [x] Project-control/frontend-shell test suite passes.
+- [x] Markdown integrity and Git diff checks pass.
+- [x] Progress, roadmap, audit, changelog, version history and index have been reconciled to the current evidence baseline.
+- [x] Latest documentation changes are committed and exact remote GitHub HEAD is verified.
+
+**Internal documentation package status:** READY FOR OWNER REVIEW, subject to the latest verification/commit remaining green. This does not mean the BI-BUGS owner has accepted the package or supplied the business inputs listed below.
+
+### 6.2 Owner decisions and project acceptance — still open
+
+- [ ] Owner confirms approved services and publishable content/claims.
+- [ ] Owner supplies/approves brand assets, public identity and language.
+- [ ] Owner approves service geography and public contact channels.
+- [ ] Owner approves sitemap and first-release customer action.
+- [ ] Owner approves any form fields, purpose, privacy notice, consent, retention and deletion rules.
+- [ ] Owner approves staff roles and enquiry-handling workflow, if required.
+- [ ] Owner approves accessibility targets and page-level content.
+- [ ] Owner decides domain, DNS, hosting, budget and operational ownership.
+- [ ] Owner approves monitoring, backup, incident and release responsibilities.
+- [ ] Requirements are converted to stable `WREQ-*` records with acceptance criteria and traceability.
+- [ ] Requirement-to-feature/module/API/data/test/release links are complete for approved and implemented scope.
+- [ ] Project owner explicitly accepts the documentation package and remaining decisions.
+
+Do not mark Section 6.2 complete based on a source-gate PASS, a repository commit, or an assistant-generated draft. Record owner evidence and approval date.
 
 ## 7. Progress accounting
 
@@ -126,7 +146,7 @@ The overall project estimate remains **10% provisional**. The static frontend sh
 
 | Supporting document/group | Current evidence-based status | Remaining gate |
 |---|---|---|
-| `docs/README.md` and `docs/MASTER_SPECIFICATION/README.md` | REVIEWED — navigation updated through Milestone 55 | Final link/status reconciliation after all supporting docs are reviewed |
+| `docs/README.md` and `docs/MASTER_SPECIFICATION/README.md` | REVIEWED — navigation reconciled through Milestone 60 | Maintain links/status when files change |
 | `docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md` | REVIEWED — SUPPORTING SUMMARY | Keep subordinate to Specification 02 and DEC-BBE-001/002 |
 | `docs/PROJECT_MEMORY/PROJECT_MEMORY.md` and `FEATURE_MEMORY.md` | REVIEWED — SUPPORTING INDEXES | Canonical links and no-customer-data/no-live-engine boundaries recorded |
 | `docs/PROJECT_RULES.md` and `docs/RULES/*` | REVIEWED — SUPPORTING RULE SUMMARIES | Remain subordinate to canonical Engineering/Security/AI/Testing specifications |

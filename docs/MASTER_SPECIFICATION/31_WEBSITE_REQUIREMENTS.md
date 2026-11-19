@@ -210,3 +210,25 @@ This requirements baseline has been reviewed against DEC-BBE-001/002, the Discov
 The candidate first customer journey and candidate sitemap remain proposals, not approved requirements. The workbook is the capture mechanism; once a decision is accepted, transfer it into a stable `WREQ-*` requirement with source, owner, scope, priority, acceptance criteria, dependencies, risk, and lifecycle. Link only justified feature/module/API/data/test records. No registry should be populated from assumptions.
 
 **Review result:** Scope and unknowns are internally consistent. This document is not complete for implementation planning until the owner supplies and accepts the required business inputs and measurable first-release acceptance criteria.
+
+
+## 18. Requirement record template and owner approval evidence — 2026-11-19
+
+No new business requirements are created from unknown workbook fields. When an owner decision is received and approved, add one record using this minimum schema:
+
+| Field | Required content |
+|---|---|
+| Requirement ID | Stable unique `WREQ-*` identifier |
+| Title / statement | One testable requirement, with one primary outcome |
+| Source / evidence | Owner statement, approved source document, or authoritative company asset |
+| Approval | Approver role/name as authorized, approval date, approval status |
+| Scope | Website page, customer journey, staff workflow, data or operational boundary |
+| Priority | Owner-confirmed priority and rationale |
+| Acceptance criteria | Observable, testable pass/fail conditions |
+| Dependencies | Related requirements, policy, content, API/data or external provider |
+| Risk / privacy | Data classification, security/privacy implications and mitigations |
+| Lifecycle | `PROPOSED`, `OWNER_APPROVED`, `IMPLEMENTED`, `TESTED`, `RELEASED`, `PRODUCTION_VERIFIED` as evidence supports |
+
+`RECEIVED` is not `OWNER_APPROVED`; `OWNER_APPROVED` is not `IMPLEMENTED`; implementation is not `TESTED`; test pass is not release or production verification. Do not skip lifecycle states. Keep a requirement in the workbook until its evidence and approval are traceable here.
+
+**Current owner-approved website requirement records:** No service/content/customer-journey requirements have yet been approved beyond the project-level scope facts WREQ-C-001 through WREQ-C-004 and the new-build delivery decision DEC-BBE-002. The customer journey and sitemap remain candidates.
