@@ -1,5 +1,10 @@
 # 07 — PROJECT STRUCTURE
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ## 1. Purpose
 
 This document defines the authoritative physical and logical project structure of BI-BUGS-EMPIRE-OS-X-2.0.
@@ -27,21 +32,17 @@ Every structural component must have a defined purpose, owner, dependency direct
 
 ## 2. Structural Authority
 
-The project structure is governed by the following authority order:
+For normative requirements and policy conflicts, use the shared hierarchy defined in `00_MASTER_INDEX.md`:
 
-1. Engineering Constitution
-2. Master Blueprint
-3. Digital DNA System
-4. Living Blueprint System
-5. Engineering Rules
-6. Project Structure
-7. Folder Architecture
-8. Module-level specifications
-9. Implementation code
+1. Engineering Constitution (`02_ENGINEERING_CONSTITUTION.md`) — canonical normative constitution.
+2. Master Constitution entry point — supporting summary only.
+3. Master Blueprint and approved system architecture.
+4. Approved Decision Log entries that do not violate higher-level requirements.
+5. Domain specifications and Engineering, Security, and AI Rules.
+6. Technical standards and documented interface/data contracts.
+7. Registries, project memory, roadmap, and progress records within their defined scope.
 
-If a lower-level implementation conflicts with this document, the implementation must be corrected.
-
-If the structure itself conflicts with a higher-level architectural rule, the higher-level rule has authority.
+Implementation code, tests, and runtime observations are evidence of actual behavior, not policy authority. They do not automatically override a higher-level requirement. If implementation conflicts with an approved requirement, record the evidence and resolve the conflict through the authorized governance process before changing either the requirement or implementation.
 
 ---
 
@@ -51,6 +52,7 @@ The repository root is:
 
 ```text
 BI-BUGS-EMPIRE-OS-X-2.0/
+```
 
 ## 4. Major System Domains
 
@@ -68,6 +70,7 @@ hardware
 mobile
 scripts
 testing
+```
 
 ## 5. Dependency Direction
 
@@ -83,6 +86,7 @@ Application / Backend
 AI / Domain Services
       ↓
 Data / Infrastructure
+```
 
 ## 6. Architecture Boundary Principle
 
@@ -121,6 +125,7 @@ ai-core/
 ├── verification/
 ├── decision/
 └── interfaces/
+```
 
 ## 8. AI Core Rules
 
@@ -156,6 +161,7 @@ backend/
 ├── integrations/
 ├── jobs/
 └── interfaces/
+```
 
 ## 10. Backend Rules
 
@@ -192,6 +198,7 @@ cloud/
 ├── networking/
 ├── monitoring/
 └── configuration/
+```
 
 ## 12. database
 
@@ -208,6 +215,7 @@ database/
 ├── queries/
 ├── repositories/
 └── backups/
+```
 
 ## 13. Database Rules
 
@@ -1541,10 +1549,10 @@ Specification:
 07_PROJECT_STRUCTURE.md
 
 Status:
-IN PROGRESS
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Documentation:
-UNDER DEVELOPMENT
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 NOT STARTED

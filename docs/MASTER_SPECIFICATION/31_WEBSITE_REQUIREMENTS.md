@@ -4,13 +4,13 @@
 
 **Specification ID:** BBEOSX-MS-31
 **Specification status:** DRAFT FOR REVIEW — REQUIREMENTS INVENTORY INCOMPLETE
-**Implementation status:** NOT STARTED
-**Testing status:** NOT RUN
-**Production status:** NOT VERIFIED
+**Implementation status:** PARTIAL — responsive static frontend foundation created; business workflows not implemented
+**Testing status:** FRONTEND FOUNDATION UNIT TESTS PASS — see `testing/test_website_shell.py`
+**Production status:** NOT VERIFIED — preview only; no deployment evidence
 **Authority:** Master Specification
 **Parent:** `00_MASTER_INDEX.md`
 **Scope decision:** `DEC-BBE-001`
-**Related:** `01_PROJECT_VISION.md`, `03_MASTER_BLUEPRINT.md`, `17_UI_UX_SYSTEM.md`, `20_FEATURE_REGISTRY.md`, `21_MODULE_REGISTRY.md`, `30_ROADMAP_20_YEARS.md`, `99_PROJECT_PROGRESS.md`
+**Related:** `01_PROJECT_VISION.md`, `03_MASTER_BLUEPRINT.md`, `15_SECURITY.md`, `17_UI_UX_SYSTEM.md`, `18_TESTING.md`, `20_FEATURE_REGISTRY.md`, `21_MODULE_REGISTRY.md`, `22_API_REGISTRY.md`, `23_DATABASE_REGISTRY.md`, `29_RELEASE_PROCESS.md`, `30_ROADMAP_20_YEARS.md`, `99_PROJECT_PROGRESS.md`
 
 ---
 
@@ -60,8 +60,8 @@ Do not implement this candidate until the website requirements, data fields, con
 The following information has not been established by the inspected repository documents. Each item remains **UNKNOWN / OWNER INPUT REQUIRED** until supported by an approved source.
 
 ### 5.1 Website identity and access
-- Official production website URL/domain. **Audit result (2026-11-17): NOT VERIFIED** in the repository or public search; similarly named domains/listings are not sufficient proof of ownership.
-- Whether an existing website must be migrated, redesigned, replaced, or integrated.
+- Official production domain/URL. **New-build route confirmed (DEC-BBE-002, 2026-11-17); production domain/URL remains UNKNOWN / OWNER INPUT REQUIRED.** No domain or hosting provider is approved yet.
+- Existing-site migration/redesign: **NOT APPLICABLE to the approved new-build route**; owner confirmed the new official website must be built from scratch.
 - Approved logo, brand assets, colours, typography, imagery, and design references.
 - Supported languages and exact language versions.
 - Target geographic/service coverage and branch details.
@@ -126,7 +126,7 @@ Never promote an unknown or proposed requirement directly to implemented or rele
 
 Before implementation planning is approved, produce:
 
-1. Verified website/domain and existing-site assessment.
+1. Confirmed source route (RESOLVED by DEC-BBE-002: new website build) and owner-approved production domain/hosting decision; an existing-site assessment is NOT APPLICABLE to the approved new-build route.
 2. Owner-approved sitemap and navigation structure.
 3. Owner-approved service catalogue and publishable content sources.
 4. Customer journey and exact enquiry/contact/booking decision.
@@ -144,7 +144,7 @@ Before implementation planning is approved, produce:
 - The candidate journey is clearly labelled as unapproved until reviewed.
 - No invented company content, services, prices, contacts, or integrations appear.
 - Website requirements link to the Feature, Module, API, Database, UI/UX, Security, Testing, and Roadmap records as they are approved.
-- Implementation status remains NOT STARTED until actual code and verification evidence exist.
+- Implementation status must reflect verified code and test evidence; the current static frontend foundation is PARTIAL and does not imply complete website functionality.
 
 ## 10. Current status and limitations
 
@@ -152,9 +152,9 @@ Before implementation planning is approved, produce:
 - Requirements inventory: INITIAL BASELINE CREATED; detailed owner inputs remain incomplete.
 - Sitemap and service catalogue: UNKNOWN.
 - Enquiry/booking rules: UNKNOWN; candidate journey only.
-- Website implementation: NOT STARTED.
-- Application tests: NOT RUN.
-- Production: NOT VERIFIED.
+- Website implementation: PARTIAL — responsive static frontend foundation exists in `frontend/`; no backend, database, enquiry, booking, payment, or staff workflow is implemented.
+- Frontend foundation tests: 6 unit tests PASS; complete project-control test suite: 19 tests PASS.
+- Production: NOT VERIFIED — the frontend is a development preview and is not approved for public launch.
 
 This document is a requirements inventory, not a completed website specification and not evidence of a working website.
 
@@ -168,28 +168,33 @@ A read-only audit of the current repository working copy was completed before se
 | Non-placeholder files in `frontend/`, `backend/`, `database/`, `deployment/`, `cloud/`, `mobile/`, `hardware/`, `ai-core/`, `scripts/`, and `testing/` | 0 files found | There is no existing application implementation in these areas to assess or safely extend. |
 | Tracked implementation files across those ten areas | 0 | No existing frontend/backend/database source code is available for a migration or feature audit. |
 | Brand/design assets (`png`, `jpg`, `jpeg`, `webp`, `svg`, `fig`, `pdf`) in the repository | 0 files found | No approved logo, imagery, or design reference was located in the repository. |
-| Official website URL/domain, company contact details, approved service catalogue | Not found in the inspected project documentation | These remain UNKNOWN; do not invent or infer them from similarly named businesses/domains. |
+| Official website URL/domain, company contact details, approved service catalogue | Not found in the inspected project documentation at the time of the audit | Owner later confirmed the new-build route via DEC-BBE-002; public domain/contact details and approved service catalogue remain UNKNOWN. |
 | Project documentation | Present | Documentation describes intended architecture and scope, not a functioning website. |
 
 **Audit boundary:** This is a repository inventory, not a claim that the company has no website or brand assets elsewhere. It does not inspect private hosting accounts, domain registrar accounts, company devices, or unprovided files. A public search did not establish a verified official domain. Any external candidate must be confirmed by the project owner before it is treated as BI-BUGS property.
 
-## 12. Next owner-input gate
+## 12. Historical source gate and next owner inputs
 
-The next implementation decision is blocked only on identifying the official website source:
+The source decision recorded in this earlier requirements baseline was resolved by the owner on 2026-11-17 through accepted decision `DEC-BBE-002`: build a new official BI-BUGS website from scratch. The decision is recorded in `32_WEBSITE_DISCOVERY_WORKBOOK.md` and passes `scripts/validate_website_source_gate.py --strict`.
 
-- If an existing official website exists, provide its exact URL so its pages, content, customer journey, and technical constraints can be audited before migration/redesign decisions.
-- If no website currently exists, explicitly confirm **new website build**; then capture approved brand assets, official contact details, service catalogue, service area, and first-release customer action before coding.
-- If the website/assets are held in a file or private account, provide an owner-approved export or access route; do not share passwords or secret keys in chat or repository files.
+Remaining inputs include approved brand assets, official public contact details, service catalogue, service area, sitemap, and first-release customer action. If website/assets are held in a private account, use an owner-approved export or scoped access route; do not share passwords or secret keys in chat or repository files.
 
-No application implementation should be started from guessed company facts. The first code slice can be selected once the official source/new-build decision and minimum approved content are available.
+The static frontend foundation may be developed using confirmed facts and clearly labelled placeholders. Do not implement customer data collection, booking, payment, or public claims until the owner approves the relevant content, customer journey, privacy, and operational requirements.
 
 
 ## 15. Public identity search follow-up — 2026-11-17
 
 A further exact-name public web search did not establish an official BI-BUGS website/domain. A LinkedIn directory result contains a profile text entry mentioning “BI BUGS PEST CONTROL SERVICES”, but this is not proof of domain ownership, legal identity, or an official website. Other search results were unrelated directory/listing material. Therefore:
 
-- Official website URL/domain remains **UNKNOWN / NOT VERIFIED**.
-- No candidate URL is promoted to an approved source.
-- The owner must supply the exact official URL or explicitly confirm a new website build.
+- At the time of that public-search follow-up, no official website URL/domain had been verified.
+- The owner subsequently confirmed the new-build route in DEC-BBE-002; no external candidate URL was adopted as the source.
+- Public domain registration/selection and contact details remain separate open decisions.
 
-This is a limited public-search result, not proof that no external website exists. See the current search result references in the project conversation; do not copy third-party contact details or claims into BI-BUGS content.
+This is a limited historical public-search result, not proof that no external website exists. Do not copy third-party contact details or claims into BI-BUGS content.
+
+
+## 16. Frontend foundation implementation update — 2026-11-17
+
+The initial repository audit in section 11 predates the first frontend implementation. The current working tree now contains a static frontend shell at `frontend/index.html`, styles at `frontend/assets/css/styles.css`, and accessible mobile navigation at `frontend/assets/js/main.js`. The earlier zero-file inventory remains a historical snapshot and is not the current inventory.
+
+The preview contains only the confirmed company name and clearly marked pending content. It intentionally has no enquiry form, booking, payment, customer-data collection, public contact details, approved service descriptions, backend, database, or deployment. See `frontend/README.md` for local preview instructions and `testing/test_website_shell.py` for six passing foundation checks.

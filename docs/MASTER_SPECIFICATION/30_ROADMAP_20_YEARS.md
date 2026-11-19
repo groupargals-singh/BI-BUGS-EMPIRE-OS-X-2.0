@@ -7,7 +7,7 @@
 **Production status:** NOT VERIFIED
 **Authority:** Master Specification
 **Parent:** `00_MASTER_INDEX.md`
-**Related:** `01_PROJECT_VISION.md`, `03_MASTER_BLUEPRINT.md`, `05_LIVING_BLUEPRINT_SYSTEM.md`, `06_ENGINEERING_RULES.md`, `18_TESTING.md`, `19_PROJECT_MEMORY.md`, `20_FEATURE_REGISTRY.md`, `25_DECISION_REGISTRY.md`, `26_IDEA_VAULT.md`, `27_CHANGELOG.md`, `28_VERSION_HISTORY.md`, `29_RELEASE_PROCESS.md`, `31_WEBSITE_REQUIREMENTS.md`, `99_PROJECT_PROGRESS.md`
+**Related:** `01_PROJECT_VISION.md`, `03_MASTER_BLUEPRINT.md`, `05_LIVING_BLUEPRINT_SYSTEM.md`, `06_ENGINEERING_RULES.md`, `18_TESTING.md`, `19_PROJECT_MEMORY.md`, `20_FEATURE_REGISTRY.md`, `25_DECISION_REGISTRY.md`, `26_IDEA_VAULT.md`, `27_CHANGELOG.md`, `28_VERSION_HISTORY.md`, `29_RELEASE_PROCESS.md`, `31_WEBSITE_REQUIREMENTS.md`, `33_LIFECYCLE_STATUS_STANDARD.md`, `99_PROJECT_PROGRESS.md`
 
 > Strategic planning horizon only. This roadmap is not a delivery promise, a funding commitment, or evidence of implementation.
 
@@ -33,7 +33,7 @@ Provide a long-range direction while keeping near-term delivery evidence-based a
 **Goal:** Make the project specification internally consistent and establish an accurate repository baseline.
 
 Work:
-- review Master Specification 00–30 and progress tracker;
+- review Master Specification 00–34 and progress tracker;
 - reconcile registry schemas, IDs, status definitions and links;
 - identify real source files, build entry points, dependencies and test commands;
 - distinguish planned architecture from implemented software;

@@ -54,9 +54,9 @@ Tests must be deterministic where practical, isolated, repeatable, readable, ris
 
 Verification controls:
 
-- Run the required checks against the exact proposed commit in a clean environment.
-- Fail the gate on required-check failures and publish actionable reports.
-- Do not mark a skipped or unexecuted check as passed.
+- Ensure each test has one clear purpose and assertions that detect meaningful regressions.
+- Keep tests independent of execution order, wall-clock timing, personal device state, and uncontrolled external services.
+- Prefer the simplest test level that proves the behavior while retaining higher-level coverage for critical user outcomes.
 
 ---
 
@@ -126,9 +126,9 @@ Every important requirement shall map to one or more tests or a documented reaso
 
 Verification controls:
 
-- Test visible states, interaction paths, responsive layouts, and validation feedback.
-- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
-- Confirm keyboard and touch interaction for the critical user journeys.
+- Assign stable requirement and test-case identifiers and maintain a bidirectional mapping.
+- Identify requirements with no test, tests with no current requirement, and requirements covered only by manual review.
+- Update trace links when a requirement changes, is deferred, or is retired; preserve the reason and approving decision.
 
 ---
 
@@ -174,9 +174,9 @@ Group equivalent input classes to keep suites efficient while retaining represen
 
 Verification controls:
 
-- Test visible states, interaction paths, responsive layouts, and validation feedback.
-- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
-- Confirm keyboard and touch interaction for the critical user journeys.
+- Define partitions from the actual validation and business rules, not merely from convenient sample values.
+- Select at least one representative from each valid and invalid partition, including distinct error classes.
+- Revisit partitions when validation rules, accepted formats, or downstream behavior changes.
 
 ---
 
@@ -282,9 +282,9 @@ AI components shall be tested for task routing, structured output, refusal bound
 
 Verification controls:
 
-- Use a versioned evaluation set with explicit rubrics and known limitations.
-- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
-- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
+- Test deterministic orchestration, permission enforcement, retrieval boundaries, and tool-call schemas independently of model quality.
+- Include adversarial and ambiguous inputs and verify safe abstention or clarification where confidence is insufficient.
+- Re-run the relevant safety and quality suite after model, prompt, retrieval, tool, or policy changes.
 
 ---
 
@@ -294,9 +294,9 @@ Evaluation datasets must be versioned, permissioned, representative, and reviewe
 
 Verification controls:
 
-- Use a versioned evaluation set with explicit rubrics and known limitations.
-- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
-- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
+- Record dataset provenance, licensing/permission, collection date, version, intended population, and exclusions.
+- Separate development/tuning examples from held-out evaluation examples and document leakage controls.
+- Review representativeness, sensitive-data minimization, retention, and retirement criteria before each evaluation cycle.
 
 ---
 
@@ -306,9 +306,9 @@ Use task-specific accuracy, groundedness, calibration, latency, cost, and harmfu
 
 Verification controls:
 
-- Use a versioned evaluation set with explicit rubrics and known limitations.
-- Test groundedness, uncertainty, refusal, prompt injection, tool boundaries, and sensitive-data leakage.
-- Report sample-level evidence and avoid claiming universal accuracy from a small test set.
+- Define metric formulas, thresholds, denominators, confidence intervals where appropriate, and severity-weighted failure categories before scoring.
+- Report task success, factuality/groundedness, refusal quality, harmful error rate, latency, and cost only where each is relevant and measurable.
+- Disaggregate results by task and important input groups; do not hide severe failures inside an aggregate average.
 
 ---
 
@@ -642,9 +642,9 @@ Verify navigation, forms, validation, loading states, empty states, errors, conf
 
 Verification controls:
 
-- Test visible states, interaction paths, responsive layouts, and validation feedback.
-- Use stable selectors and deterministic fixtures; review visual diffs before accepting them.
-- Confirm keyboard and touch interaction for the critical user journeys.
+- Validate page hierarchy, navigation labels, feedback, error recovery, and task completion against approved user journeys.
+- Check layout behavior at agreed viewport sizes and ensure content is not clipped, obscured, or dependent on color alone.
+- Test keyboard, pointer, and touch interaction with visible focus and understandable state changes.
 
 ---
 
@@ -908,9 +908,9 @@ Continuous integration shall run formatting, static checks, unit tests, and rele
 
 Verification controls:
 
-- Run the required checks against the exact proposed commit in a clean environment.
-- Fail the gate on required-check failures and publish actionable reports.
-- Do not mark a skipped or unexecuted check as passed.
+- Run required checks on the exact proposed revision in a clean, reproducible CI environment.
+- Publish machine-readable results and actionable failure logs; protect credentials and sensitive test data in CI output.
+- Make required gates branch-protection conditions and record any authorized, time-limited exception without disguising a failed or skipped check as a pass.
 
 ---
 
@@ -932,9 +932,9 @@ Classify defects by user impact, security impact, data loss risk, reach, and ava
 
 Verification controls:
 
-- Record a reproducible description, expected/actual result, severity, scope, and safe evidence.
-- Link root cause and fix to a regression test for confirmed defects.
-- Escalate critical security, data-loss, and availability risks immediately.
+- Define severity levels with explicit impact examples and release-blocking rules before triage.
+- Consider exploitability, affected users/data, service availability, reversibility, and viable workarounds when assigning severity.
+- Record severity changes with rationale and approver; do not downgrade a defect solely to meet a release date.
 
 ---
 
@@ -944,9 +944,9 @@ Record reproduction steps, expected and actual behavior, environment, severity, 
 
 Verification controls:
 
-- Record a reproducible description, expected/actual result, severity, scope, and safe evidence.
-- Link root cause and fix to a regression test for confirmed defects.
-- Escalate critical security, data-loss, and availability risks immediately.
+- Move each defect through explicit states such as reported, triaged, assigned, in progress, fixed, verified, and closed; define reopen criteria.
+- Require an owner, target milestone or review date, affected revision, and linked regression coverage for confirmed defects.
+- Preserve rejected, duplicate, deferred, and accepted-risk outcomes with rationale and authorized decision references.
 
 ---
 

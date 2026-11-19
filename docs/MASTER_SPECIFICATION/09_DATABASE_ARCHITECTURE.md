@@ -1,5 +1,10 @@
 # 09 — DATABASE ARCHITECTURE
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ## 1. Purpose
 
 The Database Architecture Specification defines the authoritative architecture
@@ -102,6 +107,8 @@ However, derived copies MUST NOT silently become authoritative.
 ## 6. Data Domains
 
 The database SHOULD be organized around logical data domains.
+
+**BI-BUGS scope boundary:** The domains below are an architecture catalogue, not an approved first-release schema. For this project, only data required by an owner-approved BI-BUGS website/business requirement may be designed or implemented. Booking, payment, invoice, inventory, device, AI knowledge, and AI memory domains remain conditional/future options unless separately approved. The Master Blueprint (`03_MASTER_BLUEPRINT.md`) and accepted scope decisions control feature inclusion.
 
 Possible domains include:
 
@@ -979,6 +986,8 @@ Business data ownership MUST remain clear.
 
 ## 61. Booking Data
 
+**Conditional capability:** This section defines controls only if booking is later approved by an explicit BI-BUGS requirement. It does not authorize booking in the first release.
+
 Booking data SHOULD preserve:
 
 - customer
@@ -995,6 +1004,8 @@ Booking state transitions MUST be controlled.
 ---
 
 ## 62. Payment Data
+
+**Conditional capability:** This section defines controls only if online payment is later approved by an explicit BI-BUGS requirement and security review. It does not authorize payment collection or payment storage in the first release.
 
 Payment-related persistence MUST be highly controlled.
 
@@ -1425,11 +1436,11 @@ Specification:
 
 Status:
 
-VERIFIED
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Documentation:
 
-COMPLETE
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 

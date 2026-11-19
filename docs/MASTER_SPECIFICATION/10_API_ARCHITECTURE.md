@@ -1,5 +1,10 @@
 # 10. API ARCHITECTURE
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ---
 
 ## 1. Purpose
@@ -113,6 +118,8 @@ The contract SHOULD specify:
 ## 8. Resource Design
 
 REST-style APIs SHOULD represent resources using clear nouns.
+
+**BI-BUGS scope boundary:** The routes below are illustrative resource-design examples only. They are not approved, implemented, or live API endpoints. Create an API contract only when a specific BI-BUGS website/business requirement is owner-approved and linked through the Feature, Module, API, Database, Security, and Testing records. Booking, invoice, payment, and other operational endpoints remain conditional/future options unless separately approved.
 
 Example:
 
@@ -676,6 +683,8 @@ Financial APIs MUST NOT assume client-side validation is sufficient.
 
 ## 53. Booking APIs
 
+**Conditional capability:** These controls apply only if booking APIs are later approved by an explicit BI-BUGS requirement. This section does not authorize booking endpoints in the first release.
+
 Booking APIs MUST protect against:
 
 - duplicate booking
@@ -1073,11 +1082,11 @@ Specification:
 
 Status:
 
-VERIFIED
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Documentation:
 
-COMPLETE
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 

@@ -5,6 +5,9 @@
 **Document Type:** Engineering Constitution
 **Project:** BI-BUGS-EMPIRE-OS-X-2.0
 **Status:** ACTIVE
+**Implementation status:** NOT STARTED — no application capability verified
+**Testing status:** NOT RUN — product acceptance tests not executed
+**Production status:** NOT VERIFIED — no production deployment evidence
 **Version:** 1.0.0
 **Authority:** Master Specification
 **Parent:** 00_MASTER_INDEX.md
@@ -32,8 +35,7 @@ Standards, Architecture, Registry, and Specification documents.
 
 # 2. CONSTITUTIONAL PRINCIPLES
 
-The following principles are mandatory unless a formally recorded
-decision explicitly changes them.
+The following principles are mandatory. A Decision Log entry cannot waive or amend this Constitution; constitutional changes must follow the explicit amendment process in Section 4.
 
 ## EC-001 — Systematic Development
 
@@ -52,3 +54,76 @@ Requirement
 → Monitoring
 → Maintenance
 → Improvement
+```
+
+## EC-002 — Evidence-Based Completion
+
+A task must not be marked complete merely because a document or code file exists. Completion requires the checks appropriate to the task and recorded evidence.
+
+## EC-003 — Security and Privacy by Design
+
+Security, privacy, least privilege, input validation, secret protection, and auditability must be considered during design and maintained through implementation, testing, and operation.
+
+## EC-004 — Explicit Authority and Permission
+
+Protected, destructive, external, financial, credential-related, deployment, or system-changing actions must follow documented authorization and approval requirements. Convenience must not bypass those controls.
+
+## EC-005 — Clear Ownership and Interfaces
+
+Every major subsystem must have a defined purpose, owner, boundary, dependencies, and documented interfaces. Hidden coupling and circular dependencies should be avoided.
+
+## EC-006 — Data Integrity and Provenance
+
+Important data must have defined sources, validation, ownership, lifecycle, access rules, and appropriate audit or provenance records. Unknown or conflicting information must not be presented as verified fact.
+
+## EC-007 — Testability and Verification
+
+Requirements must be testable where practical. Changes must receive relevant unit, integration, security, regression, or system checks before being accepted or released.
+
+## EC-008 — Traceable Changes
+
+Material changes must be traceable to a requirement, issue, decision, or approved task. Unrelated changes must be preserved, and changes must be reviewable.
+
+## EC-009 — Reversibility and Recovery
+
+High-impact changes must consider rollback, backup, recovery, and failure handling before execution. Irreversible actions require additional care and authorization.
+
+## EC-010 — Observability and Operability
+
+Operationally important components must provide appropriate logs, health checks, diagnostics, metrics, alerts, and failure information according to their criticality.
+
+## EC-011 — Compatibility and Controlled Evolution
+
+Interfaces, schemas, versions, and migrations must be changed deliberately. Breaking changes must be identified, documented, and managed through an approved migration or compatibility plan.
+
+## EC-012 — Honest Status Reporting
+
+Documentation must distinguish planned, in-progress, blocked, implemented, tested, verified, and released work. A claim of production readiness requires deployment and operational evidence.
+
+## EC-013 — Dependency and Supply-Chain Care
+
+Dependencies, tools, and external integrations must be selected and updated with attention to maintenance, licensing where applicable, security, compatibility, and reproducibility.
+
+## EC-014 — Resource-Aware Design
+
+Architecture and automation should be proportionate to demonstrated requirements. Performance, resource usage, and scaling claims must be validated rather than assumed.
+
+## EC-015 — Human Review for High-Impact Decisions
+
+High-impact security, data-loss, production, financial, and authority changes require appropriate human review and explicit approval as defined by project rules.
+
+---
+
+# 3. ENFORCEMENT
+
+These principles guide the detailed Rules, Standards, Architecture, Registries, Testing, and Release documents. Where a requirement is more specific, the detailed document must remain consistent with this constitution.
+
+A conflict must be recorded in the Decision Log and resolved through the documented governance process. No implementation convenience may silently override a constitutional requirement.
+
+# 4. AMENDMENTS
+
+Changes to this constitution must be explicit, reviewed, traceable, and recorded in the Decision Log and Changelog. A change must not be treated as approved merely because the file was edited.
+
+# 5. IMPLEMENTATION BOUNDARY
+
+This document defines engineering policy. Its existence does not prove that software controls, automated enforcement, tests, or production processes have been implemented. Those require separate implementation and verification evidence.

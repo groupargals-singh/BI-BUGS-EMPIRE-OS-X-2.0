@@ -1,3 +1,12 @@
+# DEVOPS ARCHITECTURE SPECIFICATION
+
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
+---
+
 # 1. DEVOPS VISION
 
 BI-BUGS EMPIRE OS-X DevOps architecture shall provide a reliable system for building, testing, releasing, deploying, monitoring, and maintaining the platform.
@@ -1109,7 +1118,7 @@ Current status:
 
 Documentation:
 
-IN PROGRESS
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 
@@ -1144,3 +1153,56 @@ The DevOps system shall be:
 Final principle:
 
 BUILD WITH DISCIPLINE, TEST WITH EVIDENCE, DEPLOY WITH CONTROL, MONITOR CONTINUOUSLY, AND RECOVER RELIABLY.
+
+---
+
+# 89. BI-BUGS WEBSITE DEVOPS APPLICABILITY BASELINE
+
+This specification describes reusable delivery and operations controls. Apply only the controls needed by the approved BI-BUGS website scope and actual hosting architecture. The presence of a DevOps capability in this document does not approve a cloud platform, container platform, microservice topology, paid service, or automated production deployment.
+
+## 89.1 Current repository and static website foundation
+
+The current product source includes a static frontend shell. There is no verified production build pipeline, artifact registry, backend service, database, container workload, cloud infrastructure, or production environment. Current local preview instructions are development-only and must not be treated as a deployment procedure.
+
+For the current static website stage, the applicable delivery baseline is:
+
+- Keep source changes reviewable in Git and preserve the distinction between documentation changes and product releases.
+- Run the documented project-control tests and applicable HTML, link, asset, accessibility, and security checks before a website release candidate is considered.
+- Record the exact source revision, commands, environment, results, and known limitations for each verification run.
+- Keep development preview separate from public hosting; never expose a local development server as production.
+- Do not add CI/CD credentials, hosting tokens, domain credentials, or private configuration to source files or Git.
+- Select a hosting provider and deployment approach only after owner approval of domain, budget, data handling, access ownership, backup, and support requirements.
+- Require explicit owner authorization before connecting a domain, publishing public content, or performing production-impacting actions.
+
+## 89.2 Conditional platform capabilities
+
+| DevOps capability | Applicability condition | Current status |
+|---|---|---|
+| CI validation | Use for repository checks when a CI provider and permissions are approved | Local project-control checks exist; CI pipeline not verified |
+| Static-site build/artifact | Required if the selected host/build system produces a deployable artifact | No release artifact verified |
+| Cloud infrastructure/IaC | Only if owner-approved hosting requires managed infrastructure | Not selected / not implemented |
+| Containers/orchestration/microservices | Only if approved runtime architecture needs them | Not selected / not implemented |
+| Backend/API/database operations | Only after those product capabilities are approved and designed | Not implemented |
+| Monitoring/alerts/logging | Define according to hosting features, privacy, and operational ownership | Not configured / not verified |
+| Automated deployment | Only after protected environments, credentials, approvals, and tested rollback exist | Not implemented |
+| Autoscaling/service mesh/distributed tracing | Only where measured architecture and workload justify them | Future/conditional; not applicable to present static shell |
+
+## 89.3 Environment model
+
+Use only environments justified by the actual delivery model. At minimum, distinguish a developer's local preview from public production. Add shared development, test, or staging environments only when a real service, integration, or release risk requires them. Production credentials and customer data must not be copied into local or test environments. Environment names, owners, access, configuration source, and data classification must be recorded before use.
+
+## 89.4 Backup, restore, rollback, and continuity
+
+Before production launch, identify what must be recoverable: source repository, approved public assets/content, hosting configuration, DNS/domain settings, and—only if later introduced—application data and uploaded customer records. Define backup owner, frequency, retention, encryption/access, restore procedure, restore test evidence, and acceptable recovery objectives based on business impact. A Git repository is not a complete backup of hosting, DNS, secrets, or future customer data.
+
+For a static-site release, rollback may mean restoring the previous verified artifact or source revision and revalidating the public site. If a backend or data store is later introduced, rollback must account for schema/data compatibility and may require forward recovery rather than simply reverting code. Never claim rollback or restore is tested without an executed test record.
+
+## 89.5 Operational ownership and monitoring
+
+Before launch, the owner must assign responsibility for domain/hosting administration, publication, access revocation, billing review, security reports, incident response, backup/restore, and emergency rollback. Monitoring and alert thresholds must be selected from the actual host and approved service expectations; do not invent uptime/SLO commitments or collect unnecessary personal data in logs.
+
+## 89.6 Production readiness evidence
+
+Production readiness requires, at minimum, owner-approved hosting/domain and public content; protected administrative access; HTTPS; reviewed deployment steps; source/artifact identity; passing scope-appropriate tests; security and privacy review; backup/restore or static rollback evidence; monitoring/incident contact; cost/renewal ownership; and explicit release authorization. Missing evidence blocks production status. This section defines requirements only and does not assert that any of these controls are currently implemented.
+
+---

@@ -1,0 +1,122 @@
+# BI-BUGS EMPIRE OS-X 2.0 — VERSION HISTORY
+
+**Specification ID:** BBEOSX-MS-28
+**Status:** DRAFT FOR REVIEW
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+**Authority:** Master Specification
+**Parent:** `00_MASTER_INDEX.md`
+**Related:** `19_PROJECT_MEMORY.md`, `25_DECISION_REGISTRY.md`, `27_CHANGELOG.md`, `29_RELEASE_PROCESS.md`, `99_PROJECT_PROGRESS.md`
+
+---
+
+## 1. Purpose
+
+Maintain an authoritative history of software release identities and their status, scope, compatibility, verification, approval, deployment and rollback evidence. This record distinguishes source-control commits from software versions and deployed artifacts.
+
+A commit is not automatically a release. A tag or version label is not proof of deployment or successful operation.
+
+## 2. Required version record
+
+Each release record should include:
+- semantic version or explicitly identified pre-release version;
+- lifecycle status and release date;
+- source commit and signed/approved tag where supported;
+- artifact identity, checksum/provenance and build environment;
+- scope and linked changelog entries;
+- compatibility, API/schema changes and migration requirements;
+- security/dependency notes and known issues;
+- test suite/revision, commands, results and evidence links;
+- release owner, approval and release process record;
+- deployment environment/status and health verification when deployed;
+- rollback or forward-recovery procedure and evidence;
+- predecessor/successor and support/deprecation status.
+
+Unknown fields must remain pending; do not infer deployment from a commit.
+
+## 3. Versioning policy
+
+Use Semantic Versioning where applicable:
+- **MAJOR:** incompatible public contract changes;
+- **MINOR:** backward-compatible functionality;
+- **PATCH:** backward-compatible fixes;
+- **Pre-release:** a clearly labelled candidate or preview that is not equivalent to a final release.
+
+The project owner must approve the actual versioning policy and compatibility promises. Documentation-only commits do not automatically increment the software version.
+
+## 4. Lifecycle
+
+Suggested states:
+- `PLANNED`
+- `CANDIDATE`
+- `VERIFIED`
+- `APPROVED`
+- `RELEASED`
+- `DEPLOYED`
+- `ROLLED_BACK`
+- `WITHDRAWN`
+- `UNSUPPORTED`
+
+Transitions require a timestamp, actor, reason, source revision and evidence. `RELEASED` means an approved artifact was published. `DEPLOYED` means that artifact was installed in a named environment and deployment/health checks were recorded. Do not combine these states.
+
+## 5. Source and artifact provenance
+
+Record the exact source commit, build command/environment, dependency lock state where applicable, artifact filename/identifier, checksum, and build logs. Where reproducible builds or signed provenance are available, retain the verification result. Never replace a released artifact silently while retaining the same identity.
+
+## 6. Verification and release gates
+
+A candidate should pass required unit, component, integration, end-to-end, security, accessibility, performance, migration and recovery tests according to scope/risk. Record skipped tests and reasons. A release gate must fail closed when required evidence or approval is missing. A green build alone is not a complete release gate.
+
+## 7. Deployment and rollback
+
+Record deployment environment, configuration revision, migration status, health checks, monitoring, and post-deployment validation. Define rollback/forward-recovery prerequisites, data compatibility, and responsible owner. Rollback success requires evidence; a documented plan alone is not proof that rollback works.
+
+## 8. Support and deprecation
+
+For each released version, record supported status, maintenance window when approved, security update policy, known issues, upgrade path and end-of-support date when known. Deprecation requires a notice, migration guidance, and replacement or end-of-life decision.
+
+## 9. Incident and withdrawal handling
+
+If a release is withdrawn or rolled back, preserve its record and document the reason, affected environments, impact, remediation, and follow-up tests. Do not delete release history. Security incidents must follow the approved disclosure and access-control process.
+
+## 10. Reconciliation with changelog and Git
+
+Version History, Changelog, tags, source commits, build artifacts and deployment records must agree on version identity and status. Mark a commit as documentation-only when relevant. If the repository lacks artifact or deployment evidence, state that release/deployment status is not verified.
+
+## 11. Integrity checks
+
+Detect duplicate versions, missing source commit/artifact identity, invalid lifecycle transitions, release entries without changelog links, deployment claims without environment evidence, missing test/approval evidence, and rollback claims without test records.
+
+## 12. Required verification tests
+
+- Version identifiers are unique and follow the approved scheme.
+- Every release maps to a source revision and identifiable artifact.
+- Candidate/release/deployment states are distinct.
+- Required release gates block missing tests or approval.
+- Changelog, Git tags and Version History agree.
+- Deployment status includes environment and health evidence.
+- Rollback/forward recovery is tested for releases that require it.
+- Withdrawn versions retain their history and incident links.
+
+## 13. Initial repository baseline
+
+The inspected Git history includes documentation commits such as `4a63ff3` (“Add testing architecture specification”). This is a repository commit, not evidence of a software release. No application build artifact or deployment record was found in the tracked-file inventory for this audit.
+
+## 14. Acceptance criteria for this specification
+
+- The project owner approves the versioning and lifecycle rules.
+- Changelog and Release Process requirements are consistent.
+- Artifact, test, approval, deployment and rollback evidence are defined.
+- Documentation changes cannot be misreported as shipped software.
+- Existing tags/releases are reconciled before declaring a complete version history.
+
+## 15. Current status and limitations
+
+- Specification content: draft prepared for review.
+- Complete software version inventory: NOT VERIFIED.
+- Build artifact history: NOT VERIFIED.
+- Deployment history: NOT VERIFIED.
+- Production: NOT VERIFIED.
+
+This document does not claim that a software release or deployment has occurred.

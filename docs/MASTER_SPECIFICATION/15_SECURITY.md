@@ -1252,3 +1252,61 @@ No individual security mechanism shall be considered sufficient.
 Final principle:
 
 SECURITY MUST EXIST BY DESIGN, BE VERIFIED BY EVIDENCE, AND BE MAINTAINED THROUGHOUT THE ENTIRE LIFE OF BI-BUGS EMPIRE OS-X.
+
+---
+
+# 89. BI-BUGS WEBSITE SECURITY APPLICABILITY AND RELEASE BASELINE
+
+This section applies the reusable security architecture to the confirmed BI-BUGS Pest Control Services website scope. It does not approve or imply accounts, enquiry forms, bookings, payments, staff portals, AI, plugins, mobile applications, IoT, or any external integration. Each capability remains conditional on an owner-approved requirement and a documented release decision.
+
+## 89.1 Current static website foundation
+
+For the current static frontend shell, the applicable security baseline is:
+
+- Publish only owner-approved company facts, service claims, contact details, and brand assets.
+- Keep development preview and production publication separate; do not expose a development server as a public production service.
+- Do not place credentials, private configuration, customer information, or internal records in frontend source, public assets, Git history, or browser-delivered code.
+- Use HTTPS for any approved public deployment and configure the hosting platform with supported secure defaults.
+- Minimize third-party scripts, fonts, embeds, and external requests; each addition requires a documented purpose and review.
+- Keep dependencies limited, tracked, and reviewed; remove unused dependencies rather than adding speculative frameworks.
+- Validate HTML, links, assets, headers, and browser behavior before release; scan dependencies and review security-sensitive changes.
+- Provide a clear owner-approved method for reporting security issues before public launch.
+
+The current static shell has no customer form, login, API, database, payment flow, or staff portal. Controls for those absent capabilities must not be reported as implemented.
+
+## 89.2 Conditional controls for future capabilities
+
+| Capability | Security controls required before implementation/release | Current status |
+|---|---|---|
+| Enquiry/contact form | Approved purpose and fields; data minimization; input validation; abuse/rate controls; secure transport; privacy notice/consent where required; access-controlled delivery; retention/deletion and incident handling | Not approved / not implemented |
+| Customer or staff accounts | Identity lifecycle; secure authentication; authorization; session/token controls; recovery; MFA for privileged/high-risk access; account audit and revocation | Not approved / not implemented |
+| Booking/appointments | Explicit workflow approval; authorization; validation; concurrency/integrity controls; audit and cancellation/change rules | Conditional; not approved |
+| Payments/invoices | Explicit owner and provider approval; payment-provider security boundary; no storage of raw card credentials; reconciliation, access controls, audit and applicable compliance review | Conditional; not approved |
+| Backend/API/database | Threat model; service identities; least privilege; secrets management; validation; secure transport; logging without secrets; backup/restore and access review | Not implemented |
+| AI/automation/plugins | Explicit task permissions; untrusted-input isolation; human approval for sensitive actions; output verification; sandboxing and auditable execution | Future option; not approved |
+| Mobile, IoT, hardware, computer vision | Separate use-case approval, device identity, update lifecycle, physical/network threat model, privacy impact and operational recovery plan | Future option; not approved |
+
+## 89.3 Data and privacy gate
+
+Before any personal or customer data is collected, the owner must approve the specific purpose, fields, audience, lawful/contractual basis as applicable, notice/consent approach, access roles, retention period, deletion process, processors/recipients, and incident contact. Legal applicability must be assessed for the actual service and jurisdiction by an appropriate reviewer; this specification is not a legal-compliance certification. Do not collect data merely because a form or database can support it.
+
+## 89.4 Minimum release security evidence
+
+A public website release must not be approved until the release record links to evidence for:
+
+1. Owner approval of the exact public content, domain, hosting, and release authority.
+2. HTTPS and hosting configuration review, including administrative access protection.
+3. Dependency inventory and vulnerability review for shipped assets.
+4. Input/output and browser security checks appropriate to the actual features present.
+5. Secret and repository scan, with no credentials exposed in shipped files or history introduced by the release.
+6. Privacy/data-flow review confirming whether personal data is collected; if none is collected, record that boundary explicitly.
+7. Backup, rollback, monitoring, and security-issue reporting arrangements appropriate to the hosting service.
+8. Recorded test results, unresolved-risk acceptance, release approval, and deployment outcome.
+
+A checklist or document alone is not evidence that a control is operating. Each release item must point to a dated test, configuration review, provider record, or owner decision. Missing evidence blocks the corresponding release gate.
+
+## 89.5 Ownership and change control
+
+The project owner must assign who administers the domain/hosting, who can publish changes, who receives security reports, and who authorizes emergency suspension or rollback before production launch. Do not assume these roles or invent named people. Review this section whenever a new data flow, integration, account type, public endpoint, or operational capability is proposed.
+
+---

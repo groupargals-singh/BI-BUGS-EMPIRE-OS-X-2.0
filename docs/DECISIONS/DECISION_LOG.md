@@ -32,3 +32,17 @@ Accepted decisions should not be silently overwritten; supersede them with a lin
 - **Consequences, risks, and alternatives rejected:** Generic multi-industry expansion, unrelated products, and speculative enterprise layers must not be treated as current delivery requirements. Existing architecture concepts are retained as future possibilities where appropriate; no historical material is deleted. Scope changes require a new owner-approved decision.
 - **Related requirements, features, modules, commits, and tests:** `01_PROJECT_VISION.md`, `03_MASTER_BLUEPRINT.md`, `30_ROADMAP_20_YEARS.md`, `docs/MASTER_BLUEPRINT.md`, and the BI-BUGS website requirements to be specified.
 - **Reversal conditions / review date:** Review only if the project owner explicitly changes the primary business purpose.
+
+
+## DEC-BBE-002 — Build a new official BI-BUGS website from scratch
+
+- **Status:** ACCEPTED
+- **Date:** 2026-11-17
+- **Owner / approver:** Project Owner (explicit instruction in the current ChatGPT conversation)
+- **Context and constraints:** The project must establish its official BI-BUGS Pest Control Services website as a new build, rather than migrating, redesigning, or auditing an existing website as the source.
+- **Options considered:** (1) Audit/migrate/redesign an existing official website; (2) build a new official BI-BUGS website from scratch.
+- **Evidence, assumptions, and uncertainty:** Owner instruction: “BI-BUGS के लिए नई official website शुरू से बनानी है।” This confirms the new-build route only. It does not establish that no external website or business record exists, nor does it approve a domain, hosting provider, brand assets, service claims, sitemap, customer journey, payment/booking behavior, privacy terms, or production deployment.
+- **Decision and rationale:** Option 2 is ACCEPTED. The official BI-BUGS website will be built from scratch. The owner-controlled source gate is recorded in `../MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md` and validated by `scripts/validate_website_source_gate.py`.
+- **Consequences, risks, and alternatives rejected:** Do not treat an unverified external URL as the official source. Domain, DNS, hosting, content, integrations, and release remain separately gated. Preserve all existing repository history and files.
+- **Related requirements, features, modules, commits, and tests:** `31_WEBSITE_REQUIREMENTS.md`, `32_WEBSITE_DISCOVERY_WORKBOOK.md`, `scripts/validate_website_source_gate.py`, `testing/test_validate_website_source_gate.py`.
+- **Reversal conditions / review date:** Change only through a new explicit owner-approved decision that supersedes this record.

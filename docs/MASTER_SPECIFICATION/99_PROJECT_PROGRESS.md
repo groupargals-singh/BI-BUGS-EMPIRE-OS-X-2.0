@@ -1299,3 +1299,20 @@ f0ce9b4 Create master specification index
 **Verification boundary:** These checks validate documentation metadata, the accepted website source decision, existing project-control tests, Markdown links/fences, and whitespace. They do not prove AI, graph storage, plugins, microservices, customer-data workflows, or a production website are implemented or secure.
 
 **Working-tree safety and delivery:** Existing staged, unstaged, and untracked changes were preserved. No reset, clean, bulk staging, commit, or push was performed. Git author identity remains the placeholder `Aapka Naam <aapka@email.com>`; GitHub delivery is therefore still blocked pending the correct author identity.
+
+
+## 46. CURRENT REPOSITORY BASELINE, DELIVERY IDENTITY, AND VERIFICATION — 2026-11-19
+
+**Current repository inventory:** The earlier zero-source inventory statements in historical milestones remain historical snapshots and are superseded for present-tense status by this milestone. Current non-cache source files in implementation areas are: `frontend/index.html`, `frontend/assets/css/styles.css`, `frontend/assets/js/main.js`, `frontend/README.md`, `scripts/validate_spec_lifecycle.py`, `scripts/validate_website_source_gate.py`, and three corresponding project-control test files. No backend/API server, database implementation, AI runtime, business workflow, production deployment, or integration is verified.
+
+**Documentation corrections:** Updated the current repository-baseline statements in Specifications 20, 21, and 22 so the registries distinguish historical placeholder-only inventory from the present limited frontend/tooling foundation. Specification 31 already records the frontend baseline and its explicit limitations.
+
+**Git delivery identity correction:** Historical milestones 37–45 correctly record that delivery was blocked at those earlier points by a placeholder Git identity. That blocker is now resolved: local Git author is `groupargals-singh <groupargals@gmail.com>`. This does not itself prove a push; remote verification is recorded only after a successful push.
+
+**Verification on 2026-11-19:** Lifecycle strict audit PASS (34 numbered specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD based on DEC-BBE-002); project-control test suite PASS (19/19); frontend JavaScript syntax check PASS; `git diff --check` PASS.
+
+**Remaining blockers:** Documentation remains draft pending full semantic review and explicit owner acceptance. Stable-ID requirement/feature/module/API/database/AI/decision/test/release records are not yet populated end-to-end. Website requirements still lack owner-approved production domain/hosting, full content and service catalogue, contact details, customer journey, privacy/data handling, and business workflow decisions. These are not fabricated or treated as approved.
+
+**Progress:** No phase percentage increase is claimed from this repository-delivery and baseline-correction task. Documentation remains 60% provisional; overall project estimate remains 10% provisional.
+
+**Scope boundary:** The new website shell is a local preview foundation only. It is not the complete official website, a deployed service, or a complete BI-BUGS operating platform.

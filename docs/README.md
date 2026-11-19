@@ -13,6 +13,9 @@
 ## BI-BUGS website requirements
 - `MASTER_SPECIFICATION/31_WEBSITE_REQUIREMENTS.md` — confirmed scope, candidate customer journey, unknown requirements, and requirements-capture baseline. Details remain draft until BI-BUGS owner review.
 - `MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md` — owner-input checklist for official site/new-build decision, brand, approved services/content, contact, customer journey, staff workflow, sitemap, design, and operations.
+- `MASTER_SPECIFICATION/33_LIFECYCLE_STATUS_STANDARD.md` — backward-compatible lifecycle metadata policy and audit rules.
+- `MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md` — cross-document semantic findings and remaining traceability gates.
+- `scripts/validate_website_source_gate.py` — read-only owner website-source decision gate; use `--strict` in pre-implementation checks.
 
 ## Supporting records
 - `DECISIONS/DECISION_LOG.md` — decision record entry point.

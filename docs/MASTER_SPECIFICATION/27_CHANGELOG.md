@@ -1,0 +1,108 @@
+# BI-BUGS EMPIRE OS-X 2.0 — CHANGELOG
+
+**Specification ID:** BBEOSX-MS-27
+**Status:** DRAFT FOR REVIEW
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+**Authority:** Master Specification
+**Parent:** `00_MASTER_INDEX.md`
+**Related:** `19_PROJECT_MEMORY.md`, `20_FEATURE_REGISTRY.md`, `25_DECISION_REGISTRY.md`, `28_VERSION_HISTORY.md`, `29_RELEASE_PROCESS.md`, `99_PROJECT_PROGRESS.md`
+
+---
+
+## 1. Purpose
+
+Provide a human-readable, traceable record of meaningful project changes so maintainers and users can understand what changed, why it changed, and what verification supports the change.
+
+The changelog records actual changes. It must not imply that planned work has shipped.
+
+## 2. Scope
+
+Record user-visible changes, architecture and contract changes, bug fixes, security changes, deprecations, removals, migrations, operational changes, and known limitations. Tiny formatting-only changes may be grouped unless they materially affect traceability.
+
+## 3. Entry format
+
+Each release or unreleased group should include:
+- version or clearly labelled `Unreleased`;
+- date or explicit pending date;
+- Added, Changed, Fixed, Security, Deprecated, Removed, Migration/Operations, and Known Issues subsections as applicable;
+- concise impact and affected areas;
+- compatibility/migration notes for breaking changes;
+- linked decision, feature, issue/defect, commit/tag and test evidence when available;
+- approval/release reference for released entries.
+
+Do not invent version numbers, dates, test results, or release links.
+
+## 4. Change categories
+
+- **Added:** newly available and verified capability.
+- **Changed:** behavior or contract changes.
+- **Fixed:** confirmed defect corrections, including the observable symptom.
+- **Security:** security-relevant changes, with responsible disclosure where required.
+- **Deprecated:** functionality still present but scheduled for removal.
+- **Removed:** capability actually removed from the released artifact.
+- **Migration/Operations:** data, configuration, deployment, or recovery actions required.
+- **Known Issues:** important limitations and unresolved defects.
+
+Documentation-only changes must be identified as such when they could otherwise be mistaken for software functionality.
+
+## 5. Unreleased versus released
+
+Keep unreleased changes separate from published releases. A change may move to a released section only after the release process has been followed and the release record identifies the artifact/version. Do not rewrite published history to conceal a defect; add a correction entry with links.
+
+## 6. Accuracy and evidence
+
+Each statement must match the scope of the evidence. A code change does not prove the feature passes tests; a passing test does not prove production deployment. Link exact revision, test report, and release artifact where applicable. Label missing evidence and known limitations.
+
+## 7. Security-sensitive entries
+
+Avoid publishing exploitable details, secrets, tokens, personal data, or sensitive incident information. Follow the approved disclosure process. Public notes should communicate impact and remediation safely; detailed incident evidence belongs in access-controlled records.
+
+## 8. Compatibility and migration notes
+
+For breaking changes, state affected consumers, prerequisites, migration steps, compatibility window, data/schema effects, rollback or forward-recovery guidance, and support status. Link the relevant API/database/decision records.
+
+## 9. Review workflow
+
+1. Collect change records from reviewed work.
+2. Check each claim against code, tests, and release evidence.
+3. Link feature/decision IDs and the source revision.
+4. Check security/privacy disclosure.
+5. Obtain release-owner review.
+6. Publish only with the corresponding approved release.
+
+## 10. Integrity checks
+
+Detect duplicate release headings, missing dates/status, references to unknown versions or commits, unreleased entries marked shipped, claims of fixes without evidence, missing migration notes for breaking changes, and mismatched changelog/version-history records.
+
+## 11. Repository baseline
+
+The repository contains a documentation changelog draft and a Git history, but this specification does not treat documentation commits as software releases. Each actual release must be established by its approved version and artifact evidence.
+
+## 12. Required verification tests
+
+- Entries follow the agreed format and newest-first order.
+- Unreleased work is not described as shipped.
+- Each released entry links to a valid release record.
+- Claims are supported by change/test evidence.
+- Breaking changes include migration/compatibility notes.
+- Security notes do not disclose secrets or restricted details.
+- Changelog and Version History agree on release identity and status.
+
+## 13. Acceptance criteria for this specification
+
+- The project owner approves the categories and release-promotion rules.
+- The format aligns with Version History and Release Process.
+- Documentation-only work is distinguishable from software delivery.
+- The current unreleased section is reconciled with reviewed changes.
+- Integrity checks and evidence requirements are defined.
+
+## 14. Current status and limitations
+
+- Specification content: draft prepared for review.
+- Changelog process automation: NOT VERIFIED.
+- Software release status: NOT VERIFIED by this document.
+- Production: NOT VERIFIED.
+
+This document does not claim that a release has occurred merely because changelog text exists.

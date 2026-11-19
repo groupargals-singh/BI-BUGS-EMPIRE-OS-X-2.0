@@ -4,7 +4,10 @@
 **Document ID:** BBEOSX-MS-00  
 **Document Type:** Master Index  
 **Project:** BI-BUGS-EMPIRE-OS-X-2.0  
-**Status:** ACTIVE  
+**Specification status:** DRAFT FOR REVIEW — MASTER INDEX; OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED — documentation index only
+**Testing status:** DOCUMENTATION LINK AND STRUCTURE CHECKS — SEE PROJECT PROGRESS
+**Production status:** NOT APPLICABLE — documentation control
 **Authority:** Master Project Documentation  
 **Version:** 1.0.0
 
@@ -25,7 +28,7 @@ registry, implementation, and verification records.
 
 **Historical status clarification (working-copy audit, 2026-10-11):** Numbered specifications 00–30 were present at that audit. Specifications 19–30 were expanded drafts awaiting owner review; specification 18 remained under review. A specification being present or marked ACTIVE/DONE does not prove application implementation, successful tests, deployment, or production readiness. The repository inventory found documentation and `.gitkeep` placeholders only outside the documentation tree; implementation status remains NOT VERIFIED.
 
-**Current addition (2026-11-17):** Specifications 31 and 32 record the BI-BUGS Pest Control Services website requirements baseline and its owner-input discovery workbook. Detailed requirements remain draft/unknown until verified against BI-BUGS-approved sources.
+**Current additions (2026-11-17):** Specifications 31 and 32 record the BI-BUGS Pest Control Services website requirements baseline and owner-input discovery workbook. The owner confirmed a new official website build (DEC-BBE-002); this resolves only the source route, not the remaining content, journey, privacy, or release approvals. Specification 33 defines lifecycle status metadata; Specification 34 records cross-document findings. Website requirements remain draft until the remaining BI-BUGS owner inputs are approved.
 
 ---
 
@@ -426,6 +429,30 @@ Unknown details must remain unknown until confirmed by BI-BUGS.
 `32_WEBSITE_DISCOVERY_WORKBOOK.md`
 
 Captures owner decisions for website identity, brand assets, approved pest-control services/content, service geography, contact channels, customer enquiry/booking behavior, staff workflow, candidate sitemap, design, and operations. All unconfirmed values remain UNKNOWN; this workbook does not authorize implementation or publication.
+
+---
+
+## 33 — LIFECYCLE STATUS AND BACKWARD-COMPATIBILITY STANDARD
+
+`33_LIFECYCLE_STATUS_STANDARD.md`
+
+Defines canonical lifecycle dimensions, recognized historical header aliases, safe interpretation rules, and the read-only audit command. Legacy labels remain intact until a reviewed migration is approved; `ACTIVE` never implies owner approval or working software.
+
+---
+
+## 34 — CROSS-DOCUMENT SEMANTIC TRACEABILITY AUDIT
+
+`34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md`
+
+Records verified consistency checks, traceability gaps, scope-control risks, implementation boundaries, and follow-up owner/release gates across website scope, architecture, registries, security, testing, and roadmap. Findings are not owner-approved until reviewed.
+
+---
+
+## 35 — WEBSITE SOURCE DECISION GATE VALIDATOR
+
+`../scripts/validate_website_source_gate.py` and `../testing/test_validate_website_source_gate.py`
+
+Read-only validation of the owner-controlled existing-site versus new-build decision recorded in Specification 32. A clean result resolves only that source gate, not full website readiness or production approval.
 
 ---
 

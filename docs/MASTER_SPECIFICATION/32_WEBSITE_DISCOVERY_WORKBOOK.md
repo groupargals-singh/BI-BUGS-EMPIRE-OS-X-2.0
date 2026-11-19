@@ -3,14 +3,14 @@
 # WEBSITE DISCOVERY AND OWNER INPUT WORKBOOK
 
 **Specification ID:** BBEOSX-MS-32
-**Specification status:** DRAFT — OWNER INPUT REQUIRED
-**Implementation status:** NOT STARTED
-**Testing status:** NOT RUN
+**Specification status:** DRAFT — OWNER INPUT IN PROGRESS; SOURCE DECISION RESOLVED
+**Implementation status:** PARTIAL — static frontend foundation exists; customer/business workflows are not implemented
+**Testing status:** SOURCE-GATE STRICT VALIDATION PASS; frontend/project-control test evidence recorded in `99_PROJECT_PROGRESS.md`
 **Production status:** NOT VERIFIED
 **Authority:** Master Specification
 **Parent:** `00_MASTER_INDEX.md`
 **Related:** `31_WEBSITE_REQUIREMENTS.md`, `17_UI_UX_SYSTEM.md`, `20_FEATURE_REGISTRY.md`, `21_MODULE_REGISTRY.md`, `22_API_REGISTRY.md`, `23_DATABASE_REGISTRY.md`, `30_ROADMAP_20_YEARS.md`, `99_PROJECT_PROGRESS.md`
-**Controlling decision:** `DEC-BBE-001`
+**Controlling decisions:** `DEC-BBE-001`, `DEC-BBE-002`
 
 ---
 
@@ -31,13 +31,21 @@ Do not fill blank values with guesses. Keep evidence/source and approval date be
 
 | Field | Current value | Required evidence/action |
 |---|---|---|
-| Official website URL | UNKNOWN | Owner supplies exact URL, or confirms no current official site. |
-| Website ownership | NOT VERIFIED | Confirm that the supplied domain/site belongs to BI-BUGS Pest Control Services Pvt Ltd. |
-| Delivery path | BLOCKED | Choose existing-site audit/migration/redesign, or new website build. |
-| Existing hosting/CMS/source access | UNKNOWN | Identify provider/platform and provide a safe owner-approved export/access route if relevant. |
-| Current website status | UNKNOWN | State live, offline, under construction, or no website. |
+| Official website URL | NO OFFICIAL WEBSITE — OWNER CONFIRMED | Owner explicitly directed a new official website build from scratch; no existing official site is to be used as the source. |
+| Website ownership | NOT APPLICABLE — NO OFFICIAL WEBSITE | No existing official website/domain is being claimed or migrated. |
+| Delivery path | OWNER APPROVED — NEW_WEBSITE_BUILD | New BI-BUGS official website build from scratch. |
+| Existing hosting/CMS/source access | NOT APPLICABLE — NEW_BUILD | Hosting/CMS selection remains a separate open decision. |
+| Current website status | NO OFFICIAL WEBSITE — OWNER CONFIRMED | Recorded from the owner's explicit decision; no external domain ownership is inferred. |
+| Owner decision evidence | Project owner (user confirmation in ChatGPT conversation); 2026-11-17; explicit instruction: “BI-BUGS के लिए नई official website शुरू से बनानी है।” | Non-secret owner decision evidence; no credentials recorded. |
 
-**Gate WDG-01:** No migration, redesign, DNS, hosting, or production changes until the official source and owner authority are verified.
+**Gate WDG-01:** The existing-site versus new-build decision is resolved as NEW WEBSITE BUILD. Do not register/connect a domain, change DNS, select paid hosting, or publish to production until the domain, provider, ownership, budget, and release authority are separately approved.
+
+For automated validation, use exactly one of these owner-controlled decision patterns:
+- Existing site: `Official website URL` is the exact `https://` URL; `Website ownership` is `OWNER VERIFIED`; `Delivery path` is one of `OWNER APPROVED — EXISTING_SITE_AUDIT`, `OWNER APPROVED — MIGRATION`, or `OWNER APPROVED — REDESIGN`.
+- New site: `Official website URL` is `NO OFFICIAL WEBSITE — OWNER CONFIRMED`; `Website ownership` is `NOT APPLICABLE — NO OFFICIAL WEBSITE`; `Delivery path` is `OWNER APPROVED — NEW_WEBSITE_BUILD`.
+- `Owner decision evidence` must identify the approver, date, and non-secret evidence/reference. Do not enter credentials.
+
+Run `python scripts/validate_website_source_gate.py` for a status report or add `--strict` to make an unresolved source decision fail a gate check. A PASS resolves only the source decision; it does not approve the full sitemap, content, customer journey, privacy, security, acceptance tests, or production release.
 
 ## 3. Company identity and brand
 
@@ -175,8 +183,8 @@ Do not request or store passwords, private keys, API tokens, payment credentials
 
 ## 11. First release acceptance gate
 
-The first release cannot be approved until the owner has accepted:
-1. Official website source or explicit new-build decision.
+The source route is already RESOLVED by accepted decision DEC-BBE-002 (new official website build). The first release cannot be approved until the owner has accepted:
+1. Production domain/registrar/DNS and hosting/provider decisions, with ownership, budget, and release authority. An existing-site migration assessment is not applicable to the approved new-build route.
 2. Sitemap and page-level content sources.
 3. Service catalogue and publishable claims.
 4. Public contact details and service geography.
@@ -193,21 +201,21 @@ Every approved item must be transferred to Specification 31 as a stable requirem
 
 Any material scope change requires impact review and, where appropriate, a new decision linked to `DEC-BBE-001`. Preserve old values and decision history; do not erase rejected/deferred ideas.
 
-## 13. Current audit status — 2026-11-17
+## 13. Current audit status — reconciled 2026-11-18
 
-- Repository implementation inventory: zero non-placeholder source files across the ten implementation areas.
-- Repository brand/design assets: none found in the audited file types.
-- Official website URL/domain: NOT VERIFIED.
-- Public search: a professional profile result mentions “BI BUGS PEST CONTROL SERVICES”, but does not establish an official website/domain or company ownership of a candidate URL.
-- Approved service catalogue/contact details/sitemap: NOT FOUND in the inspected repository.
-- Implementation: NOT STARTED.
-- Testing: NOT RUN.
-- Production: NOT VERIFIED.
+- Repository implementation inventory: a static responsive frontend shell exists in `frontend/` (`index.html`, CSS, and JavaScript). Backend, database, deployment, cloud, mobile, hardware, and AI product implementation remain unverified/not started; project-control scripts and tests are not product features.
+- Repository brand/design assets: no approved company brand assets were found in the audited file types; the frontend palette is a temporary prototype.
+- Official website source decision: OWNER CONFIRMED — NEW WEBSITE FROM SCRATCH (DEC-BBE-002).
+- Existing website/domain: no external website or domain is being asserted or selected as the official source for this project.
+- Approved service catalogue/contact details/sitemap: NOT FOUND in the inspected repository; owner approval remains required.
+- Implementation: PARTIAL — static frontend foundation only; no customer/business workflow is implemented.
+- Testing: frontend shell tests and project-control tests have passed locally; this is not end-to-end product acceptance.
+- Production: NOT VERIFIED — no domain, hosting, deployment, or production evidence.
 
-This is a repository and public-search boundary, not proof that no external website, assets, or business records exist.
+The new-build route is an owner decision. It does not prove that no external site or business records exist, and it does not approve domain, hosting, content, customer workflows, privacy, or production release. Earlier zero-source inventory statements are historical snapshots from before the frontend foundation was created; they are not current status.
 
 ## 14. Next action and owner gate
 
-**Single blocking owner decision:** Supply the exact official website URL, or explicitly confirm that BI-BUGS needs a new website built from scratch.
+**WDG-01 source decision: RESOLVED — NEW WEBSITE BUILD.** The owner explicitly confirmed on 2026-11-17 that BI-BUGS needs a new official website built from scratch. The decision evidence is recorded in the table above and validated by `scripts/validate_website_source_gate.py`.
 
-Once this is known, proceed with the matching audit/build path. The remaining workbook items can be captured progressively; do not hold up the project by asking for unrelated details all at once.
+**Remaining owner inputs:** Capture company identity/brand, approved services and claims, service geography/contact channels, first-release customer action, form/privacy requirements, staff workflow, sitemap, accessibility/language, hosting/domain, and release acceptance progressively. Do not invent these details or request unrelated decisions all at once.

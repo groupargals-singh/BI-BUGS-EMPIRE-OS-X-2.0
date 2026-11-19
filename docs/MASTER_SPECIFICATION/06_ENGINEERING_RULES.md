@@ -2,6 +2,11 @@
 # MASTER SPECIFICATION — 06
 # ENGINEERING RULES
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ## 1. PURPOSE
 
 This document defines the master engineering rules for
@@ -50,18 +55,17 @@ identifiable source of authority.
 
 These rules operate under the project authority hierarchy.
 
-Priority order:
+Normative authority order (aligned with `00_MASTER_INDEX.md`):
 
-1. Master Constitution
-2. Master Blueprint
-3. Master Specifications
-4. Approved Architecture Decisions
-5. Engineering Rules
-6. Approved Implementation
-7. Operational Observations
+1. Engineering Constitution (`02_ENGINEERING_CONSTITUTION.md`) — canonical normative constitution.
+2. Master Constitution entry point (`docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md`) — supporting summary only; it explicitly does not replace the canonical constitution.
+3. Master Blueprint and approved system architecture.
+4. Approved Architecture Decisions recorded in the Decision Log, provided they do not violate a higher-level constitution or security rule.
+5. Domain architecture specifications and the Engineering, Security, and AI Rules.
+6. Technical standards and documented interface/data contracts.
+7. Registries, Project Memory, Roadmap, and Progress Records, each within its defined scope.
 
-Lower-level implementation must not silently override higher-level
-project authority.
+Implementation code, test results, operational observations, and production telemetry are evidence of actual behavior, not higher-level policy authority. They must not silently override requirements or authorize prohibited behavior. Conflicts must be recorded with evidence and resolved by an authorized decision before affected implementation proceeds. A failed test or operational observation must be addressed explicitly, not hidden by changing a status label.
 
 ---
 
@@ -1673,13 +1677,13 @@ Document:
 
 06_ENGINEERING_RULES.md
 
-Status:
+Specification status:
 
-IN_PROGRESS
+DRAFT FOR REVIEW
 
 Documentation state:
 
-MASTER SPECIFICATION FOUNDATION
+CONTENT PREPARED; PROJECT-OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Runtime enforcement:
 

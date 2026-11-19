@@ -1,5 +1,10 @@
 # 08 — FOLDER ARCHITECTURE
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ## 1. Purpose
 
 The Folder Architecture Specification defines the permanent architectural
@@ -1511,11 +1516,11 @@ Specification:
 
 Status:
 
-IN PROGRESS
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Documentation:
 
-UNDER DEVELOPMENT
+DRAFT FOR REVIEW — OWNER REVIEW AND CROSS-DOCUMENT CONSISTENCY CHECK PENDING
 
 Implementation:
 

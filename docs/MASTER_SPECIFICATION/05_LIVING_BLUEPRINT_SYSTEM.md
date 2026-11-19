@@ -2,6 +2,11 @@
 # MASTER SPECIFICATION — 05
 # LIVING BLUEPRINT SYSTEM
 
+**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Implementation status:** NOT STARTED
+**Testing status:** NOT RUN
+**Production status:** NOT VERIFIED
+
 ## 1. PURPOSE
 
 The Living Blueprint System defines the mechanism through which the
@@ -155,3 +160,32 @@ Example:
 LBP-0001
 LBP-0002
 LBP-0003
+```
+
+# 8. STATE MODEL
+
+Each recorded element must distinguish its lifecycle state, including planned, approved, implemented, tested, verified, deprecated, or retired as applicable. A state must include the evidence and revision that justify it. Unknown state must remain explicitly unknown.
+
+# 9. REQUIRED BLUEPRINT CONTENT
+
+The blueprint should represent component identities, ownership, interfaces, dependencies, data flows, trust boundaries, decisions, requirements, test references, deployment environments, known risks, and unresolved differences. Each entry should link to authoritative records instead of duplicating mutable details unnecessarily.
+
+# 10. DRIFT DETECTION AND RESOLUTION
+
+A drift check compares the approved intended state with repository and runtime evidence. Findings must be classified as documentation drift, implementation drift, environment drift, or unverified state. Each finding must have an owner or responsible role, impact, evidence, resolution decision, and status.
+
+# 11. GENERATION, VALIDATION, AND INTEGRITY
+
+If the blueprint is generated automatically, record the generator version, source revision, environment, generation time, and validation result. Validate schema, identifiers, references, and required fields. Integrity markers may detect accidental change but do not by themselves prove correctness or authenticity.
+
+# 12. ACCESS CONTROL AND CHANGE GOVERNANCE
+
+Only authorized processes or people may modify approved blueprint state. Changes must be auditable and reviewed according to their impact. Secrets and sensitive personal data must not be copied into blueprint records. Conflicts must be escalated through the Decision Log and project governance.
+
+# 13. FAILURE AND RECOVERY
+
+If generation or validation fails, preserve the last known valid blueprint, record the failure, and mark the current state stale or unavailable rather than silently publishing partial data as verified. Recovery must preserve revision history and audit records.
+
+# 14. IMPLEMENTATION BOUNDARY
+
+This specification defines a target process. It does not prove that automated generation, drift detection, schema validation, or runtime synchronization has been implemented. Each capability requires separate implementation and verification evidence.

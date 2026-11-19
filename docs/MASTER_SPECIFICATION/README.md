@@ -7,7 +7,10 @@
 - [00_MASTER_INDEX.md](00_MASTER_INDEX.md) — specification catalogue and navigation.
 - [99_PROJECT_PROGRESS.md](99_PROJECT_PROGRESS.md) — milestone status and verification evidence.
 - [32_WEBSITE_DISCOVERY_WORKBOOK.md](32_WEBSITE_DISCOVERY_WORKBOOK.md) — owner-input checklist for website identity, content, customer journey, and operations.
-- Numbered specifications 01–32 define the intended architecture, governance, BI-BUGS website requirements baseline, and owner-input discovery workbook.
+- [33_LIFECYCLE_STATUS_STANDARD.md](33_LIFECYCLE_STATUS_STANDARD.md) — canonical lifecycle dimensions, backward-compatible aliases, and audit policy.
+- [34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md](34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md) — semantic consistency findings, registry/traceability gaps, and remaining delivery gates.
+- Website source decision gate: `../scripts/validate_website_source_gate.py` (tested by `../testing/test_validate_website_source_gate.py`).
+- Numbered specifications 01–34 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, and the current semantic traceability audit.
 
 ## Status meanings
 

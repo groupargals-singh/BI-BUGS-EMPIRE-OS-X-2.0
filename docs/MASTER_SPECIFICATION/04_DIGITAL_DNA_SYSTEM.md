@@ -5,6 +5,9 @@
 **Document Type:** Digital DNA System Specification
 **Project:** BI-BUGS-EMPIRE-OS-X-2.0
 **Status:** ACTIVE
+**Implementation status:** NOT STARTED — no application capability verified
+**Testing status:** NOT RUN — product acceptance tests not executed
+**Production status:** NOT VERIFIED — no production deployment evidence
 **Version:** 1.0.0
 **Authority:** Master Specification
 **Parent:** 00_MASTER_INDEX.md
@@ -88,3 +91,53 @@ The platform identity is:
 ```text
 Project:
 BI-BUGS-EMPIRE-OS-X-2.0
+```
+
+# 5. COMPONENT IDENTITY RECORD
+
+Every tracked component should have a stable identifier and, where applicable, a record containing:
+
+- component ID and name
+- component type and purpose
+- owning subsystem and responsible role
+- repository location
+- lifecycle and implementation status
+- version and compatibility range
+- dependencies and dependants
+- public interfaces and data contracts
+- permissions and security classification
+- data ownership and provenance requirements
+- related requirements, decisions, documentation, and tests
+- verification evidence and last reviewed revision
+
+Unknown values must be marked unknown or not yet assigned; they must not be fabricated.
+
+# 6. ID AND NAMING RULES
+
+Identifiers must be unique within their declared namespace, stable across ordinary edits, and referenced consistently. Renaming or replacing an identifier must include a traceable migration or alias when existing references may depend on it.
+
+Names should be descriptive, predictable, and consistent with the project's naming standards. File names, component IDs, API names, database entities, and feature IDs must not be assumed interchangeable.
+
+# 7. DEPENDENCY AND RELATIONSHIP MODEL
+
+Dependencies must be explicit and directional where possible. A component record should distinguish required runtime dependencies, optional integrations, development/test dependencies, and downstream dependants. Circular dependencies must be identified and justified or removed.
+
+# 8. LIFECYCLE AND VERSIONING
+
+A component may move through planned, designed, implemented, tested, verified, deprecated, and retired states as appropriate. Status transitions require evidence suited to the state. A version number or registry entry alone does not prove implementation or release.
+
+# 9. SECURITY AND DATA CLASSIFICATION
+
+Component identity records should declare required permissions, trust boundaries, sensitive-data handling, and relevant security controls. Credentials and secret values must never be stored in the Digital DNA record; only references to approved secret-management mechanisms may be recorded.
+
+# 10. TRACEABILITY AND VERIFICATION
+
+Components should link to their governing requirements, decisions, specifications, implementation paths, tests, and verification results. Verification records should identify the revision tested, command or procedure, result, and relevant limitations.
+
+# 11. CHANGE GOVERNANCE
+
+Changes to component identity, ownership, dependencies, interfaces, permissions, or lifecycle must be reviewed for compatibility and security impact. Material changes must be recorded in the appropriate registries, decision records, and changelog.
+
+# 12. IMPLEMENTATION BOUNDARY
+
+This specification defines the intended Digital DNA model. It does not claim that a runtime registry, automated dependency graph, identity service, or enforcement mechanism already exists. Those capabilities require implementation and separate tests.
