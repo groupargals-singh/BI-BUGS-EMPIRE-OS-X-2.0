@@ -113,6 +113,8 @@ This document does not claim that a release has occurred merely because changelo
 
 The following verified repository revisions are documentation/control changes, not software releases (newest first):
 
+- `06c0077` — finalized the document review baseline, owner-input register, requirement-record schema, and internal package/owner-acceptance distinction.
+
 - `a84c4a0` — reconciled supporting documentation, legacy architecture summaries, roadmap views, and the auxiliary completion matrix.
 - `f5f247b` — reviewed the Master Index, Constitution, Digital DNA, website requirements, and lifecycle standard.
 - `d103fe3` — defined evidence-based population gates for feature, module, API, database, and AI registries.

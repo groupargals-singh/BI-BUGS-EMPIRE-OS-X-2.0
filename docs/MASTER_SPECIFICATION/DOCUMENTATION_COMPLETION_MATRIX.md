@@ -2,7 +2,7 @@
 
 **Document type:** Auxiliary documentation control artifact (not a numbered Master Specification)
 **Status:** INTERNAL DOCUMENTATION PACKAGE READY FOR OWNER REVIEW; OWNER INPUTS / ACCEPTANCE PENDING
-**Last reviewed:** 2026-11-19
+**Last reviewed:** 2026-11-20
 **Authority:** `00_MASTER_INDEX.md`, `02_ENGINEERING_CONSTITUTION.md`, accepted decisions DEC-BBE-001 and DEC-BBE-002.
 
 ## 1. Purpose and completion rule
@@ -60,7 +60,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 31 | Website Requirements | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Approved sitemap/content/services/contact/customer action/privacy/staff workflow and acceptance criteria |
 | 32 | Website Discovery Workbook | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Fill and approve the remaining owner-input groups; source route alone is not full approval |
 | 33 | Lifecycle Status Standard | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; strict audit validates metadata only, not semantic approval |
-| 34 | Cross-Document Traceability Audit | REVIEWED — CURRENT FINDING DISPOSITION RECORDED (Milestones 62–63) | F-02 remains requirements-gated; F-05 remains blocked by owner inputs and implementation; F-04/F-07–F-11 are monitor items; owner disposition/acceptance pending |
+| 34 | Cross-Document Traceability Audit | REVIEWED — FINDING DISPOSITIONS AND INTERNAL/OWNER GATES RECONCILED (Milestones 62–67) | F-02 remains requirements-gated; F-05 remains blocked by owner inputs and implementation; F-04/F-07–F-11 are monitor items; owner disposition/acceptance pending |
 | 99 | Project Progress Tracker | REVIEWED — CURRENT SNAPSHOT RECONCILED (Milestones 61–64) | Maintain current snapshot and dated milestone history; update only from verified evidence |
 
 ## 4. Cross-document and registry completion gates
@@ -76,7 +76,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | Architecture choice | Static/modular/backend/database choices justified by approved requirements | NOT FINALISED; do not preselect unnecessarily |
 | UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | DOCUMENT FRAMEWORK REVIEWED; actual sitemap/brand/accessibility targets require owner input |
 | Release readiness documentation | Domain/hosting owner, release roles, security/privacy evidence, rollback/recovery plan | OWNER INPUT REQUIRED |
-| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | PASS through Milestone 64; rerun after each revision |
+| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | PASS through Milestone 66; rerun after each revision |
 | Owner acceptance | Explicit approval of the documentation package and remaining decisions | PENDING |
 
 ## 5. Required completion sequence
@@ -106,7 +106,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 - [x] Progress, roadmap, audit, changelog, version history and index have been reconciled to the current evidence baseline.
 - [x] Latest documentation changes are committed and exact remote GitHub HEAD is verified.
 
-**Internal documentation package status:** READY FOR OWNER REVIEW, subject to the latest verification/commit remaining green. This does not mean the BI-BUGS owner has accepted the package or supplied the business inputs listed below.
+**Internal documentation package status:** READY FOR OWNER REVIEW, subject to the latest verification/commit remaining green. Milestone 67 reconciles the audit conclusion, OI-to-WREQ conversion rule, stale lifecycle-header wording, roadmap wording, and canonical revision ledgers. This does not mean the BI-BUGS owner has accepted the package or supplied the business inputs listed below.
 
 ### 6.2 Owner decisions and project acceptance — still open
 
@@ -137,7 +137,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-20 consistency pass did not close any owner-input or owner-acceptance gate, so the evidence-based estimate remains 70%. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

@@ -4,7 +4,7 @@
 **Document ID:** BES-OSX-MS-11
 **Document type:** Master Architecture Specification
 **Version:** 1.0
-**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Specification status:** DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
 **Testing status:** NOT RUN
 **Production status:** NOT VERIFIED

@@ -8,14 +8,14 @@ Canonical strategy: `../MASTER_SPECIFICATION/30_ROADMAP_20_YEARS.md`.
 Documentation control: use `../MASTER_SPECIFICATION/DOCUMENTATION_COMPLETION_MATRIX.md` as the document-by-document acceptance checklist. The matrix is a control artifact, not a percentage increase or owner approval.
 
 ## Ordered work themes
-1. **ACTIVE — Complete Documentation first.** Finish the document-by-document semantic review of Specifications 00–34, reconcile contradictions and traceability gaps, verify current-state claims, record evidence, and obtain explicit project-owner acceptance. No new product-coding work starts before this documentation gate is accepted. The audit is recorded in `../MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md`; registry population remains gated by approved requirements.
+1. **ACTIVE — Documentation and owner-acceptance gate.** The document-by-document semantic review of Specifications 00–34 and supporting documents is recorded complete. The internal package is ready for owner review; remaining work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. No new product-coding work starts before the owner-input and documentation gate is accepted. See `../MASTER_SPECIFICATION/DOCUMENTATION_COMPLETION_MATRIX.md` and `../MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md`.
 2. Inventory actual source modules and map them to approved website/business requirements.
 3. Use `32_WEBSITE_DISCOVERY_WORKBOOK.md` to capture the remaining BI-BUGS owner inputs: sitemap, approved content, customer enquiry path, staff follow-up workflow, brand, service area, and release constraints; transfer approved items into `31_WEBSITE_REQUIREMENTS.md`. The new-build source decision is recorded as `DEC-BBE-002`.
 4. Existing prototype boundary: responsive static website shell is already implemented and covered by six unit tests. Treat it as a limited foundation only; do not add product features until documentation acceptance and approved requirements. Enquiry capture and staff review remain unapproved and unimplemented.
 5. Establish repeatable unit, integration, contract, and acceptance checks for that journey.
 6. Implement only after BI-BUGS-specific requirements and interfaces are reviewed.
 7. Verify backup/restore, release, monitoring, and rollback paths before production use.
-8. Define and implement backward-compatible lifecycle metadata mapping across specifications 01–34; preserve legacy meaning and never infer owner approval from `ACTIVE` labels. The standard and read-only audit utility are available in `33_LIFECYCLE_STATUS_STANDARD.md` and `scripts/validate_spec_lifecycle.py`; header-completeness migration for specifications 01–04 is complete. Semantic owner review remains open.
+8. **COMPLETED — Lifecycle metadata standard and migration.** Specifications 01–34 declare lifecycle dimensions using canonical labels or documented legacy aliases. The read-only audit utility is `scripts/validate_spec_lifecycle.py`; preserve legacy meaning and never infer owner approval from `ACTIVE` labels. Semantic document review is recorded; owner acceptance remains separate.
 
 9. Website source gate: RESOLVED — owner confirmed a new official BI-BUGS website from scratch on 2026-11-17; the decision is recorded in `32_WEBSITE_DISCOVERY_WORKBOOK.md` and validated by `scripts/validate_website_source_gate.py`. This resolves only the source route, not the remaining business/content/privacy/security/hosting/release approvals. Next: define and approve the first small customer journey, then create traceable requirements and implementation records.
 
@@ -35,3 +35,6 @@ Each theme needs an owner, acceptance criteria, dependency list, and test eviden
 ## Current execution snapshot — 2026-11-19
 
 Documentation Phase 1 remains active at 70% provisional. The specification-by-specification and supporting-document semantic reviews are recorded as complete; the remaining cross-document traceability, owner-input, final verification, and acceptance gates are listed in the Documentation Completion Matrix. The source decision is resolved, but business content and first-release workflow are not. Keep phase percentages provisional and do not mark the phase complete until the matrix's acceptance checklist and owner approval are satisfied.
+
+
+**Consistency reconciliation — 2026-11-20:** The internal documentation package is ready for owner review, not owner-accepted. OI-01–OI-11 remain open. Approved decisions alone may become `WREQ-*` records; no speculative registry population is allowed. Milestone 67 updates the canonical audit and revision history.

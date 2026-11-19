@@ -147,3 +147,10 @@ The following verified `main` revisions extend the source-control history record
 - `a84c4a0` — supporting documentation and roadmap reconciliation.
 
 No software release is declared by these commits. Recheck Git history, remote tags, artifacts, and owner-provided external release records before preparing any actual software release entry.
+
+
+## 18. Documentation-only source-control revision — 2026-11-19
+
+- `06c0077` — finalized BI-BUGS documentation review and owner-input gates.
+- Classification: documentation/project-control only; not a semantic software version, release artifact, or deployment.
+- Evidence boundary: internal documentation package can be presented for owner review; OI-01–OI-11 and explicit owner acceptance remain open.

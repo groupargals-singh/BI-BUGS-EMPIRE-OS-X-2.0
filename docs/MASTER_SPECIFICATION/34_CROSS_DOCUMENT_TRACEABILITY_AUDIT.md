@@ -278,7 +278,7 @@ Remaining cross-document work is the final full audit and closure/explicit owner
 | F-06 — stale source-decision prerequisite | RESOLVED | DEC-BBE-002 and workbook/source-gate validator record the new-build route. Domain/hosting/content/workflow decisions remain open separately. |
 | F-07 through F-11 — AI/knowledge/plugin/microservices/memory scope boundaries | MITIGATED; MONITOR | Applicability sections added; optional features remain approval-gated and project memory is not customer/staff data storage. |
 
-**Audit conclusion:** The document-by-document semantic review and supporting-document review are recorded. The documentation package is not yet ready for owner acceptance because owner business inputs, final requirement traceability, and explicit disposition/acceptance remain open. Documentation Phase 1 is 70% provisional under the weighted rubric in `DOCUMENTATION_COMPLETION_MATRIX.md`. No product coding is authorized before the documentation gate is accepted.
+**Audit conclusion (historical wording reconciled 2026-11-20):** The document-by-document semantic review and supporting-document review are recorded. The internal documentation package is ready to be presented for owner review, subject to the latest verification and GitHub synchronization. It is **not owner-accepted**: business inputs, requirement-level traceability, and explicit package acceptance remain open. Documentation Phase 1 is 70% provisional under the weighted rubric in `DOCUMENTATION_COMPLETION_MATRIX.md`. No new product coding is authorized before the owner-input and documentation-acceptance gates are satisfied.
 
 
 ## 25. Internal documentation package readiness versus owner acceptance — 2026-11-19
@@ -288,3 +288,18 @@ The document-level semantic review across Specifications 00–34 and the support
 The discovery workbook now provides a consolidated OI-01 through OI-11 register covering identity/brand, services/claims, coverage/contact, customer journey, privacy/data, staff operations, sitemap/content, design/accessibility, technical/hosting, operations/release, and acceptance. Specification 31 provides the stable `WREQ-*` requirement schema and lifecycle distinction. OI-00 (new website build) is resolved by DEC-BBE-002; OI-01 through OI-11 remain open.
 
 **Remaining blocker:** These are genuine business-owner decisions and cannot be completed by documentation editing or inferred from the company name. The project may present the internal documentation package for owner review, but it must not claim owner acceptance or begin new product coding before the owner-input and approval gates are satisfied.
+
+
+## 26. Final internal documentation consistency and evidence-boundary review — 2026-11-20
+
+**Documents reviewed:** Documentation Completion Matrix, Specifications 05–18 lifecycle headers, Website Requirements, Website Discovery Workbook, Project Progress Tracker, Master Roadmap, Delivery Phases, canonical Changelog and Version History, and this cross-document audit.
+
+**Corrections applied:**
+- Reconciled the older audit conclusion with the later internal-package-readiness versus owner-acceptance distinction. The package can be presented for owner review; it is not owner-accepted.
+- Extended the OI-01 through OI-11 register with explicit requirement-conversion guidance. No `WREQ-*` product requirement is created until the corresponding owner decision is explicitly approved; deferred/not-applicable outcomes must be recorded with rationale.
+- Reconciled the active roadmap wording with the current completed semantic-review baseline; remaining work is owner discovery, requirement-level traceability, final verification, and explicit owner acceptance.
+- Added the verified `06c0077` documentation/control revision to the canonical changelog and version history; it is not a software release.
+
+**Evidence boundary:** These are documentation consistency/control changes only. No owner business input has been inferred; no new customer feature, service, contact detail, policy, hosting choice, API, database, integration, or production capability is approved or implemented by this milestone.
+
+**Remaining:** OI-01 through OI-11 require real owner decisions or explicit defer/not-applicable dispositions. Approved items must be converted into testable `WREQ-*` records and linked to justified design, implementation, test, and release evidence. Explicit owner acceptance remains pending.

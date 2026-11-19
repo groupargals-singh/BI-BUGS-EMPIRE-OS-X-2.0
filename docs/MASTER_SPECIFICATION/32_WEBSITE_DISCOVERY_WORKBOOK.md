@@ -235,19 +235,19 @@ Owner answers must be recorded with source/evidence and approval date. `OWNER_IN
 
 This section is the concise working register for completing the open business decisions. It intentionally contains no assumed values. The detailed question tables above remain the source questionnaire. An answer is not approved until the owner confirms it; record evidence/source and approval date.
 
-| Register ID | Decision group | Required owner answer/evidence | Current status |
-|---|---|---|---|
-| OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | OPEN — OWNER INPUT REQUIRED |
-| OI-02 | Service catalogue and claims | Exact services, target customer segments, treatment descriptions, prohibited claims, licences/certifications/safety wording allowed for publication | OPEN — OWNER INPUT REQUIRED |
-| OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | OPEN — OWNER INPUT REQUIRED |
-| OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | OPEN — OWNER INPUT REQUIRED |
-| OI-05 | Customer data and privacy | Exact minimum fields, purpose, notice/consent, retention/deletion, access roles, exports and incident handling | OPEN — OWNER INPUT REQUIRED |
-| OI-06 | Staff operations | Roles, assignment, status transitions, response/escalation, audit history and account lifecycle | OPEN — OWNER INPUT REQUIRED |
-| OI-07 | Sitemap and content | Approved pages, page owner, source material, calls-to-action and legal notices | OPEN — OWNER INPUT REQUIRED |
-| OI-08 | Design and accessibility | Approved visual references, mobile requirements, languages, accessibility target and acceptance method | OPEN — OWNER INPUT REQUIRED |
-| OI-09 | Technical and hosting | Domain/DNS owner, hosting preference, budget, data region, framework constraints and integrations | OPEN — OWNER INPUT REQUIRED |
-| OI-10 | Operations and release | Support owner, monitoring, backups/recovery, incident contact, release approver and rollback authority | OPEN — OWNER INPUT REQUIRED |
-| OI-11 | Acceptance | Measurable first-release acceptance criteria and explicit documentation/package approval | OPEN — OWNER INPUT REQUIRED |
+| Register ID | Decision group | Required owner answer/evidence | Requirement conversion | Current status |
+|---|---|---|---|---|
+| OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | WREQ for approved identity/brand/content rules only | OPEN — OWNER INPUT REQUIRED |
+| OI-02 | Service catalogue and claims | Exact services, target customer segments, treatment descriptions, prohibited claims, licences/certifications/safety wording allowed for publication | WREQ for each approved service/content/claim | OPEN — OWNER INPUT REQUIRED |
+| OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | WREQ for approved service-area and public-contact behavior | OPEN — OWNER INPUT REQUIRED |
+| OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | WREQ for the owner-selected first-release customer action | OPEN — OWNER INPUT REQUIRED |
+| OI-05 | Customer data and privacy | Exact minimum fields, purpose, notice/consent, retention/deletion, access roles, exports and incident handling | WREQ for approved data-purpose/privacy/retention controls | OPEN — OWNER INPUT REQUIRED |
+| OI-06 | Staff operations | Roles, assignment, status transitions, response/escalation, audit history and account lifecycle | WREQ for approved staff roles and workflow, if in scope | OPEN — OWNER INPUT REQUIRED |
+| OI-07 | Sitemap and content | Approved pages, page owner, source material, calls-to-action and legal notices | WREQ for approved sitemap/page/content requirements | OPEN — OWNER INPUT REQUIRED |
+| OI-08 | Design and accessibility | Approved visual references, mobile requirements, languages, accessibility target and acceptance method | WREQ for approved language/design/accessibility criteria | OPEN — OWNER INPUT REQUIRED |
+| OI-09 | Technical and hosting | Domain/DNS owner, hosting preference, budget, data region, framework constraints and integrations | WREQ for approved technical/hosting constraints | OPEN — OWNER INPUT REQUIRED |
+| OI-10 | Operations and release | Support owner, monitoring, backups/recovery, incident contact, release approver and rollback authority | WREQ for approved operational/release requirements | OPEN — OWNER INPUT REQUIRED |
+| OI-11 | Acceptance | Measurable first-release acceptance criteria and explicit documentation/package approval | Acceptance criteria and explicit package-acceptance evidence; do not create a product feature ID solely for approval | OPEN — OWNER INPUT REQUIRED |
 
 ### Response and approval protocol
 
@@ -257,5 +257,7 @@ This section is the concise working register for completing the open business de
 4. Convert approved requirements into stable `WREQ-*` entries in Specification 31 with priority, rationale, acceptance criteria, dependencies, risk, and lifecycle state.
 5. Link only necessary registry records and tests. Do not create API/database/AI records for unapproved or nonexistent capabilities.
 6. Re-run the documentation and traceability audits after the approved inputs are incorporated.
+
+**Requirement conversion rule:** OI-01 through OI-11 do not create product requirements until the owner supplies and explicitly approves the exact decision. Once approved, split combined answers into atomic, testable `WREQ-*` records; record the source, approval date, scope, priority, acceptance criteria, dependencies, risk/privacy impact, and lifecycle. If an item is explicitly deferred or not applicable, record that disposition and rationale instead of creating a requirement.
 
 **Current resolved decision:** OI-00 — Delivery path: `OWNER APPROVED — NEW_WEBSITE_BUILD` (DEC-BBE-002, 2026-11-17). This does not close OI-01 through OI-11.

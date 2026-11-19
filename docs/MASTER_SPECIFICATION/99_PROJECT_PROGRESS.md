@@ -21,9 +21,9 @@ PARTIAL — first responsive static website frontend foundation implemented and 
 
 NOT VERIFIED — development preview only; no domain, hosting, or deployment evidence.
 
-**Current Priority (2026-11-19):**
+**Current Priority (2026-11-20):**
 
-Numbered Specifications 00–34 and the supporting documentation have received document-level semantic review in the recorded milestones. The active work is now final progress/changelog/current-state reconciliation, closure or explicit owner disposition of cross-document findings, completion of owner inputs in Specifications 31–32, final verification, and explicit owner acceptance. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
+Numbered Specifications 00–34 and supporting documentation have received document-level semantic review. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
 
 **Current Workflow:**
 
@@ -1504,3 +1504,19 @@ f0ce9b4 Create master specification index
 **Owner gate remains open:** OI-01 through OI-11 are still pending. OI-00 (new website build) is resolved only. No service catalogue, customer journey, public contact, privacy policy, hosting provider, or operational owner has been inferred. Owner acceptance is not claimed.
 
 **Progress:** Documentation remains 70% provisional; the remaining 30% is primarily owner-supplied decisions, final requirement-to-evidence traceability after approval, and explicit owner acceptance. Overall project estimate remains 10% provisional.
+
+
+## M-067 — Final documentation consistency and owner-input conversion gate — 2026-11-20
+
+**Status:** COMPLETED — INTERNAL DOCUMENTATION CONSISTENCY PASS; OWNER INPUTS / ACCEPTANCE STILL OPEN
+
+**Completed:**
+- Reconciled the cross-document audit conclusion with the distinction between internal package readiness and owner acceptance.
+- Extended the OI-01–OI-11 register with explicit rules for converting only approved owner decisions into atomic, testable `WREQ-*` requirements; deferred/not-applicable outcomes require a recorded rationale.
+- Reconciled the active Master Roadmap and phase view with the completed semantic-review baseline and remaining owner gates.
+- Updated the canonical Changelog and Version History for verified documentation-only commit `06c0077`; no software release is claimed.
+- Updated the Documentation Completion Matrix review date and current audit disposition.
+
+**Verification:** `python -m unittest discover -s testing -v` — 19/19 PASS; `python scripts/validate_spec_lifecycle.py --strict` — PASS (34 specifications, zero metadata issues); `python scripts/validate_website_source_gate.py --strict` — PASS (NEW WEBSITE BUILD); Node JavaScript syntax check — PASS; Markdown integrity — 63 files, zero broken relative links/unbalanced fences; `git diff --check` — PASS.
+
+**Limitations:** OI-01–OI-11 remain owner decisions. No business facts, services, content, customer journey, privacy policy, hosting, integrations, or production features were invented or approved. Documentation remains 70% provisional; overall project estimate remains 10% provisional.

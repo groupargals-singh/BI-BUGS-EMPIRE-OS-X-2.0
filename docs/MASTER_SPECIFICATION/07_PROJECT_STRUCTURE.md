@@ -1,6 +1,6 @@
 # 07 — PROJECT STRUCTURE
 
-**Specification status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Specification status:** DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
 **Testing status:** NOT RUN
 **Production status:** NOT VERIFIED

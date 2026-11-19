@@ -4,7 +4,7 @@
 
 Canonical strategy: `../MASTER_SPECIFICATION/30_ROADMAP_20_YEARS.md`; current progress: `../MASTER_SPECIFICATION/99_PROJECT_PROGRESS.md`; Documentation Phase 1 gate: `../MASTER_SPECIFICATION/DOCUMENTATION_COMPLETION_MATRIX.md`.
 
-1. **Phase A — Documentation and owner baseline:** semantic review, scope/decision consistency, requirements discovery, registries, security/privacy boundaries, and explicit owner acceptance. This is the current active phase.
+1. **Phase A — Documentation and owner baseline:** semantic review and internal consistency are recorded complete; owner discovery, requirement traceability, final verification, and explicit owner acceptance remain. This is the current active phase.
 2. **Phase B — Website requirements and design:** owner-approved sitemap, service/content, customer action, staff follow-up, data ownership, UI/UX, threat model, and measurable acceptance criteria.
 3. **Phase C — Website vertical slice:** one approved visitor-to-enquiry (or other owner-selected action) journey through the minimum required UI/API/data and authorized staff handling.
 4. **Phase D — Quality hardening:** regression, security, privacy, accessibility, recovery, performance, and compatibility checks appropriate to implemented scope.
