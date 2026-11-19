@@ -1328,7 +1328,7 @@ A document existing in the repository does not automatically mean its implementa
 
 The original sequential list above is a historical planning sequence, not
 the current execution order. The current authoritative review backlog is
-`35_DOCUMENTATION_COMPLETION_MATRIX.md`, and the ordered delivery roadmap is
+`DOCUMENTATION_COMPLETION_MATRIX.md`, and the ordered delivery roadmap is
 `docs/ROADMAP/MASTER_ROADMAP.md`. Specifications 00–34 already exist; their
 review and owner-acceptance state must be read from the matrix and progress
 tracker, not inferred from this historical sequence.

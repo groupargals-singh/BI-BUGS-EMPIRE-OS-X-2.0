@@ -1,11 +1,9 @@
-# Version History — Supporting Index
+# Version History — Supporting Entry Point
 
-**Status:** Documentation index; not a software release ledger.
+**Status:** Navigation pointer only; not a software release ledger.
 
 Canonical source: `MASTER_SPECIFICATION/28_VERSION_HISTORY.md`.
 
-## Verified repository revisions
-- `4a63ff3` — Add testing architecture specification (repository commit, not a software release).
-- `5494ca5` — Update progress after UI UX architecture (repository commit, not a software release).
+Repository commits, branch names, documentation milestones, and Git tags are not automatically software releases. Use the canonical Version History for any approved application release, artifact identity, verification, deployment, and rollback evidence.
 
-The current working tree contains uncommitted documentation edits. Recheck commit and remote refs before describing this working copy as published. Software version, deployment, compatibility, and release status require separate evidence.
+The older commit examples in this file are historical references only and do not establish a current software version, release, or deployment. The current repository baseline must be checked from Git when preparing a release.

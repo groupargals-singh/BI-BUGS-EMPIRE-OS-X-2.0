@@ -18,7 +18,7 @@
 - `scripts/validate_website_source_gate.py` — read-only owner website-source decision gate; use `--strict` in pre-implementation checks.
 
 
-- `MASTER_SPECIFICATION/35_DOCUMENTATION_COMPLETION_MATRIX.md` — document-by-document review and completion checklist for Documentation Phase 1.
+- `MASTER_SPECIFICATION/DOCUMENTATION_COMPLETION_MATRIX.md` — document-by-document review and completion checklist for Documentation Phase 1.
 
 ## Supporting records
 - `DECISIONS/DECISION_LOG.md` — decision record entry point.
@@ -28,3 +28,7 @@
 
 ## Working rule
 Update canonical specifications first, then link supporting summaries to them. Do not duplicate conflicting sources of truth. Record test commands, revision, outcomes, and evidence before changing status to verified. Never store credentials in documentation.
+
+## BI-BUGS scope boundary
+
+The active product scope is the BI-BUGS Pest Control Services website and owner-approved supporting workflows. Architecture documents, optional capabilities, and future roadmap items are not approval to implement them. The current frontend is a limited static preview; backend/API/database/business workflows and production deployment are not verified.

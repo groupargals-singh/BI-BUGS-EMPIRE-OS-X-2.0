@@ -5,7 +5,7 @@
 Canonical strategy: `../MASTER_SPECIFICATION/30_ROADMAP_20_YEARS.md`.
 
 
-Documentation control: use `../MASTER_SPECIFICATION/35_DOCUMENTATION_COMPLETION_MATRIX.md` as the document-by-document acceptance checklist. The matrix is a control artifact, not a percentage increase or owner approval.
+Documentation control: use `../MASTER_SPECIFICATION/DOCUMENTATION_COMPLETION_MATRIX.md` as the document-by-document acceptance checklist. The matrix is a control artifact, not a percentage increase or owner approval.
 
 ## Ordered work themes
 1. **ACTIVE — Complete Documentation first.** Finish the document-by-document semantic review of Specifications 00–34, reconcile contradictions and traceability gaps, verify current-state claims, record evidence, and obtain explicit project-owner acceptance. No new product-coding work starts before this documentation gate is accepted. The audit is recorded in `../MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md`; registry population remains gated by approved requirements.
@@ -31,3 +31,7 @@ Each theme needs an owner, acceptance criteria, dependency list, and test eviden
 
 
 **AI/data extensibility scope review — 2026-11-18:** Specifications 11–14 and 19 now explicitly distinguish BI-BUGS product requirements from reusable AI, knowledge-graph, plugin, and microservices patterns. AI, graph storage, plugins, and microservices remain unapproved for the first website release; project memory is not a customer/employee data store. Adoption requires a specific business requirement, security/data controls, registry traceability, tests, and owner approval. Documentation Phase 1 remains active.
+
+## Current execution snapshot — 2026-11-19
+
+Documentation Phase 1 remains active. The specification-by-specification semantic review is substantially advanced; the remaining support-document review and owner-input/acceptance gates are listed in the Documentation Completion Matrix. The source decision is resolved, but business content and first-release workflow are not. Keep phase percentages provisional and do not mark the phase complete until the matrix's acceptance checklist and owner approval are satisfied.

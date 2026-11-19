@@ -589,13 +589,13 @@ testing/
 
 ## Documentation completion control
 
-`35_DOCUMENTATION_COMPLETION_MATRIX.md` tracks semantic-review status, owner-input gates, cross-document acceptance criteria, and the completion checklist for Documentation Phase 1.
+`DOCUMENTATION_COMPLETION_MATRIX.md` tracks semantic-review status, owner-input gates, cross-document acceptance criteria, and the completion checklist for Documentation Phase 1.
 
 ## 7. Current repository and documentation control baseline — 2026-11-19
 
 The historical inventory statements above are dated snapshots and must not be read as the current repository state. The current verified source inventory is a limited static website foundation (`frontend/index.html`, `frontend/assets/css/styles.css`, `frontend/assets/js/main.js`, and `frontend/README.md`), documentation validators in `scripts/`, and project-control/frontend-shell tests in `testing/`. The architecture directories `ai-core/`, `backend/`, `cloud/`, `database/`, `deployment/`, `hardware/`, and `mobile/` contain placeholders only at this baseline. No backend/API service, application database, AI runtime, customer/staff business workflow, mobile/hardware capability, or production deployment is verified.
 
-The `35_DOCUMENTATION_COMPLETION_MATRIX.md` file is an **auxiliary documentation control artifact**, not a numbered Master Specification. The `35` entry in the map above refers to the website source-decision validator script and its tests. Keep these two meanings distinct; the matrix tracks document review and owner-input gates but does not replace this Master Index or approve any requirement.
+The `DOCUMENTATION_COMPLETION_MATRIX.md` file is an **auxiliary documentation control artifact**, not a numbered Master Specification. The `35` entry in the map above refers to the website source-decision validator script and its tests. Keep these two meanings distinct; the matrix tracks document review and owner-input gates but does not replace this Master Index or approve any requirement.
 
 The current controlling delivery scope remains DEC-BBE-001 and DEC-BBE-002. Specifications 31 and 32 remain the canonical website requirements and owner-input capture documents. The source/new-build route is resolved; service content, brand, sitemap, customer journey, data/privacy, staff workflow, hosting, domain, and production release are not resolved by that decision.
 

@@ -10,3 +10,7 @@ Canonical sources: `MASTER_SPECIFICATION/02_ENGINEERING_CONSTITUTION.md`, `MASTE
 - Run relevant checks and record actual output before changing status.
 - Keep documentation aligned with implementation; label unimplemented requirements clearly.
 - Do not commit/push until review and verification pass; verify the resulting revision and remote state.
+
+## BI-BUGS scope and evidence boundary
+
+These are concise supporting rules, not a separate authority. The BI-BUGS Pest Control Services website is the primary product; optional AI, plugins, microservices, mobile, hardware, booking, payments, and other workflows require specific owner-approved requirements. Preserve unrelated changes and never infer product completion from documents, folders, or a successful documentation-control test.

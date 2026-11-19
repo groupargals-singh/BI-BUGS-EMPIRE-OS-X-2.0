@@ -13,7 +13,7 @@
 - Numbered specifications 01–34 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, and the current semantic traceability audit.
 
 
-- [35_DOCUMENTATION_COMPLETION_MATRIX.md](35_DOCUMENTATION_COMPLETION_MATRIX.md) — document-by-document completion matrix, owner-input gates, and Documentation Phase 1 acceptance checklist.
+- [DOCUMENTATION_COMPLETION_MATRIX.md](DOCUMENTATION_COMPLETION_MATRIX.md) — document-by-document completion matrix, owner-input gates, and Documentation Phase 1 acceptance checklist.
 
 ## Status meanings
 
@@ -34,3 +34,7 @@
 ## Important boundary
 
 These files describe intended architecture and acceptance criteria. They do not prove that software, CI, production controls, tests, or integrations are implemented. Mark implementation as verified only when executable evidence supports that claim.
+
+## Auxiliary completion control
+
+`DOCUMENTATION_COMPLETION_MATRIX.md` is a supporting control artifact, not a numbered Master Specification. Master Index entry 35 refers to the website source-gate validator. The matrix tracks semantic review and owner-input gates; it does not replace canonical specifications or constitute owner approval.

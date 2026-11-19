@@ -12,3 +12,7 @@ Canonical sources: `MASTER_SPECIFICATION/03_MASTER_BLUEPRINT.md`, `MASTER_SPECIF
 - Validate diagrams and references against the current repository before treating them as authoritative.
 
 This overview is a navigation aid, not proof that all listed components are implemented or connected.
+
+## BI-BUGS current implementation boundary
+
+This is a supporting checklist only. The current repository verifies a limited static frontend shell and documentation-control scripts/tests. Backend/API, database, AI runtime, business workflows, mobile/hardware integrations, and production deployment are not verified. Select architecture only from approved BI-BUGS requirements; the existence of a domain in a diagram does not approve or implement it.

@@ -13,3 +13,7 @@ Related registries: `../MASTER_SPECIFICATION/20_FEATURE_REGISTRY.md`, `../MASTER
 - Verify backups through restore tests before claiming recoverability.
 
 No memory engine or persistence behavior is claimed implemented by this document.
+
+## BI-BUGS data boundary
+
+This index is for project documentation and traceable delivery knowledge only. It is not a customer/staff database, CRM, surveillance store, or live memory service. Follow `../MASTER_SPECIFICATION/19_PROJECT_MEMORY.md` for the canonical privacy, retention, provenance, and scope rules. Do not place customer records, staff personal data, credentials, or secrets in Markdown or Git.

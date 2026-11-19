@@ -12,3 +12,7 @@ Canonical sources: `../MASTER_SPECIFICATION/02_ENGINEERING_CONSTITUTION.md` and 
 - Preserve history and document exceptions, ownership, and rollback conditions.
 
 This supporting page does not replace the canonical constitution or prove enforcement in code.
+
+## BI-BUGS scope note
+
+This page is a supporting summary only. The canonical normative constitution is `../MASTER_SPECIFICATION/02_ENGINEERING_CONSTITUTION.md`; the BI-BUGS website scope and owner decisions are DEC-BBE-001/002 in `../DECISIONS/DECISION_LOG.md`. Optional architecture concepts do not become approved features, and this summary does not create authority to bypass the canonical constitution.

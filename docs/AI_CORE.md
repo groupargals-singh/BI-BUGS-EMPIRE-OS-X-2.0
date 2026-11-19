@@ -12,3 +12,7 @@ Related sources: `MASTER_SPECIFICATION/12_KNOWLEDGE_GRAPH.md`, `MASTER_SPECIFICA
 - Test grounding, uncertainty, prompt injection, privacy leakage, fallback behavior, and regressions.
 
 This summary does not claim that an AI runtime, evaluation pipeline, or production integration is implemented.
+
+## BI-BUGS current AI boundary
+
+AI is not a first-release dependency, and no BI-BUGS AI runtime/provider is verified. Any AI capability requires a specific owner-approved business use case, data/privacy review, evaluation thresholds, permission boundaries, human oversight, cost/latency limits, fallback, and disable path. The canonical specifications remain 11, 15, 18, and 24.

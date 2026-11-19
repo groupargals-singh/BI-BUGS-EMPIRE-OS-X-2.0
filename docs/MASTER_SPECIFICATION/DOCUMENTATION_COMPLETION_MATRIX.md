@@ -1,6 +1,6 @@
 # BI-BUGS EMPIRE OS-X 2.0 — DOCUMENTATION COMPLETION MATRIX
 
-**Document ID:** BBEOSX-MS-35
+**Document type:** Auxiliary documentation control artifact (not a numbered Master Specification)
 **Status:** WORKING CONTROL MATRIX — DRAFT; OWNER ACCEPTANCE PENDING
 **Last reviewed:** 2026-11-19
 **Authority:** `00_MASTER_INDEX.md`, `02_ENGINEERING_CONSTITUTION.md`, accepted decisions DEC-BBE-001 and DEC-BBE-002.
@@ -76,17 +76,17 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | Architecture choice | Static/modular/backend/database choices justified by approved requirements | NOT FINALISED; do not preselect unnecessarily |
 | UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | PARTIAL / OWNER INPUT REQUIRED |
 | Release readiness documentation | Domain/hosting owner, release roles, security/privacy evidence, rollback/recovery plan | OWNER INPUT REQUIRED |
-| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | STRUCTURAL CHECKS HAVE PASSED IN MILESTONE 46; rerun for this revision |
+| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | STRUCTURAL CHECKS passed through Milestone 56; rerun after each revision |
 | Owner acceptance | Explicit approval of the documentation package and remaining decisions | PENDING |
 
 ## 5. Required completion sequence
 
-1. Finish semantic review of specifications marked REVIEW NOT YET EVIDENCED or PARTIAL REVIEW (05–08, 17–18, 25–28, 30, and the remaining applicable parts of 00/02/04/34).
-2. Reconcile the live progress dashboard and historical wording so current status is never contradicted by stale present-tense statements. Preserve dated historical milestones.
-3. Complete the website discovery workbook with the owner. Unknown facts stay explicitly pending until supplied.
-4. Convert only approved owner inputs into stable-ID requirements and linked registry records. Conditional registries may remain empty where no feature is approved.
-5. Run the full documentation verification suite and record exact outcomes/revision.
-6. Present the completed documentation package for explicit owner acceptance. Do not begin new product coding before the documentation gate is accepted.
+1. Supporting-document review is complete at the current baseline; preserve the canonical-authority and scope boundaries in all future edits.
+2. Reconcile historical/current progress wording, changelog entries, Git revisions, and every cross-document audit finding. Preserve dated history; correct stale present-tense claims.
+3. Complete the website discovery workbook with the owner. Unknown facts remain pending until supplied; convert only approved inputs into stable `WREQ-*` requirements.
+4. Populate feature/module/API/database/AI registries only where approved requirements and actual capabilities justify records. Empty conditional registries are valid when no feature is approved.
+5. Run the full documentation verification suite and record exact revision, commands, outcomes, and limitations.
+6. Present the complete documentation package for explicit owner acceptance. Do not begin new product coding before this documentation gate is accepted.
 
 ## 6. Completion acceptance checklist
 
@@ -110,3 +110,18 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 The existing Documentation Phase estimate remains **60% provisional**. This matrix is a new control artifact, not evidence that the outstanding semantic reviews or owner decisions are complete. Do not mechanically average document counts: a small number of critical requirements/owner gates can block readiness. Increase the percentage only when a meaningful review group is completed, verified and recorded in the progress tracker.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
+
+
+## 8. Supporting documentation review
+
+| Supporting document/group | Current evidence-based status | Remaining gate |
+|---|---|---|
+| `docs/README.md` and `docs/MASTER_SPECIFICATION/README.md` | REVIEWED — navigation updated through Milestone 55 | Final link/status reconciliation after all supporting docs are reviewed |
+| `docs/MASTER_SYSTEM/MASTER_CONSTITUTION.md` | REVIEWED — SUPPORTING SUMMARY | Keep subordinate to Specification 02 and DEC-BBE-001/002 |
+| `docs/PROJECT_MEMORY/PROJECT_MEMORY.md` and `FEATURE_MEMORY.md` | REVIEWED — SUPPORTING INDEXES | Canonical links and no-customer-data/no-live-engine boundaries recorded |
+| `docs/PROJECT_RULES.md` and `docs/RULES/*` | REVIEWED — SUPPORTING RULE SUMMARIES | Remain subordinate to canonical Engineering/Security/AI/Testing specifications |
+| `docs/STANDARDS/*` | REVIEWED — SUPPORTING STANDARDS | Stack selection and folder/ID creation remain requirements-gated |
+| `docs/ROADMAP.md`, `docs/ROADMAP/MASTER_ROADMAP.md`, `docs/ROADMAP/PHASES.md` | REVIEWED — SUPPORTING ROADMAPS | Owner acceptance and requirements remain pending; no-coding-before-acceptance retained |
+| Root architecture summaries (`docs/MASTER_BLUEPRINT.md`, `SYSTEM_ARCHITECTURE.md`, `DATABASE_ARCHITECTURE.md`, `API_ARCHITECTURE.md`, `AI_CORE.md`, `SECURITY.md`, `CHANGELOG.md`, `VERSION_HISTORY.md`) | REVIEWED — SUPPORTING POINTERS / SUMMARIES | Canonical links and current implementation boundaries recorded; no independent authority or release claims |
+
+Supporting documents do not become separate product requirements. Canonical specifications and accepted decisions remain authoritative.

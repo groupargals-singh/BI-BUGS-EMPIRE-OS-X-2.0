@@ -10,3 +10,7 @@ Canonical sources: `../MASTER_SPECIFICATION/11_AI_CORE.md`, `../MASTER_SPECIFICA
 - Enforce permissions in code and request approval for protected actions.
 - Evaluate prompt injection, privacy leakage, harmful tool calls, grounding, latency, and regressions after changes.
 - Do not claim AI quality or production readiness without reproducible evaluation evidence.
+
+## BI-BUGS applicability
+
+AI is not a first-release dependency. Apply these rules only if a specific BI-BUGS use case is approved and recorded in the canonical AI Registry. No AI runtime/provider is currently verified.

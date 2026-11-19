@@ -12,3 +12,7 @@ Canonical source: `../MASTER_SPECIFICATION/15_SECURITY.md`.
 - Limit tests to isolated environments unless production testing is explicitly approved and safely scoped.
 - Apply controls according to the BI-BUGS website applicability and release baseline in Specification 15, Section 89; architecture options do not authorize unapproved features.
 - Do not collect customer or personal data until purpose, fields, access, privacy/notice, retention, deletion, and operational ownership are approved.
+
+## BI-BUGS applicability
+
+Apply controls to the actual BI-BUGS website and each approved data/workflow boundary. Do not claim a control is implemented because it is documented. Feature-specific threat models and production security evidence are required before release.

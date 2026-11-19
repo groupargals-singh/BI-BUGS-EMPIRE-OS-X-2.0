@@ -480,3 +480,11 @@ Project Motto
 "Build Once. Improve Forever."
 
 Every decision should prioritize quality, scalability, maintainability and long-term value over short-term speed.
+
+## Current scope and authority clarification — 2026-11-19
+
+This file is a legacy supporting vision/blueprint only. The canonical architecture is `MASTER_SPECIFICATION/03_MASTER_BLUEPRINT.md`; controlling scope is DEC-BBE-001 and the new-build route is DEC-BBE-002. The long lists of AI engines, CRM/finance/inventory/field-force, computer vision, IoT, plugins, microservices, franchises, drones, and global/enterprise layers are retained as historical concepts/options, not approved first-release requirements or implementation claims.
+
+The current first product is the BI-BUGS Pest Control Services website. Supporting business workflows are included only after owner-approved requirements. Prefer a simple architecture; do not preselect microservices, plugins, AI, graph storage, offline mode, mobile, or hardware. The root folders and diagrams do not prove implementation. The verified source baseline is the limited static website shell and documentation-control tooling; backend/API/database/AI/business workflows and production deployment remain unverified.
+
+Where this legacy document differs from numbered canonical specifications or accepted decisions, the canonical sources govern. Do not implement features solely because they appear in this historical supporting blueprint.

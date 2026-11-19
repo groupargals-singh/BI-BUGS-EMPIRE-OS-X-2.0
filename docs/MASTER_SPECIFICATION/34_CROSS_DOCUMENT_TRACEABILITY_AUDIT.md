@@ -200,7 +200,7 @@ Continue the owner-input workbook for the remaining website content, customer jo
 
 ## 16. Documentation completion matrix and review-status reconciliation — 2026-11-19
 
-Created `35_DOCUMENTATION_COMPLETION_MATRIX.md` as the canonical worklist for semantic review, owner-input gates, registry dependencies, and Documentation Phase 1 acceptance. The matrix distinguishes semantic review from structural validation, implementation, and owner acceptance. It records evidence-based status per specification and explicitly gates stable-ID registry population on approved requirements.
+Created `DOCUMENTATION_COMPLETION_MATRIX.md` as the canonical worklist for semantic review, owner-input gates, registry dependencies, and Documentation Phase 1 acceptance. The matrix distinguishes semantic review from structural validation, implementation, and owner acceptance. It records evidence-based status per specification and explicitly gates stable-ID registry population on approved requirements.
 
 The matrix does not mark every file reviewed merely because automated checks pass. Specifications 05–08, 17–18, 25–28, and 30 remain review targets; 31–32 retain substantive owner-input gaps; and owner acceptance remains pending. Existing 60% Documentation and 10% overall estimates are unchanged.
 
@@ -244,3 +244,23 @@ The matrix does not mark every file reviewed merely because automated checks pas
 **Remaining owner blockers:** Services/content, brand, service geography/contact, sitemap, customer action/form/data, privacy/retention, staff workflow, accessibility/language, hosting/domain/budget, operational ownership, and measurable first-release acceptance criteria. The source decision is resolved; these other gates are not.
 
 **Audit status:** Core scope and lifecycle boundaries are reconciled. Overall cross-document audit remains open until all applicable specification reviews, requirement traceability, and owner decisions are closed or explicitly accepted.
+
+## 21. Auxiliary matrix naming and supporting documentation review plan — 2026-11-19
+
+Renamed the auxiliary completion matrix to `DOCUMENTATION_COMPLETION_MATRIX.md` and removed the misleading numbered-specification identity. This avoids collision with the Master Index's numbered entry 35, which is the website source-gate validator. Updated all documentation references.
+
+The matrix now includes a separate supporting-document review table for documentation indexes, constitution summary, project/feature memory indexes, rules, standards, roadmaps, and root architecture summaries. These are subordinate supporting documents and must not override numbered canonical specifications. Their semantic review remains the next internal documentation task.
+
+## 22. Supporting summaries, rules, standards, and roadmap reconciliation — 2026-11-19
+
+**Documents reviewed/updated:** Supporting constitution summary, project/feature memory indexes, project rules, AI/coding/engineering/security rule summaries, coding/folder/naming standards, roadmap phase views, legacy root Master Blueprint, documentation changelog and version-history pointers.
+
+**Corrections:** Added explicit canonical-authority and BI-BUGS applicability boundaries; made AI optional; clarified that current folders are not modules and registry IDs are not allocated speculatively; made stack/tool selection requirements-driven; corrected the legacy Master Blueprint's unsupported mandatory microservices/plugin/offline/API/franchise assertions; and converted root changelog/version-history files into non-authoritative pointers to the canonical numbered ledgers. Rewrote the active roadmap/phase sequence to reflect current work and the no-product-coding-before-documentation-acceptance gate.
+
+**Remaining:** Final review of root architecture summaries and general navigation pages; full current-state/progress reconciliation; owner acceptance and unresolved website inputs.
+
+## 23. Root architecture pointers and documentation navigation review — 2026-11-19
+
+Reviewed root architecture/navigation summaries for system, database, API, AI, security, documentation, and version history. Added BI-BUGS-specific current-state boundaries: no application database/API/AI runtime is verified; the security guide is not a completed audit; root pointers remain subordinate to numbered canonical specifications. The legacy Master Blueprint now labels its broad capability catalogue as historical/optional rather than mandatory architecture. Updated README/index navigation to distinguish the auxiliary completion matrix from numbered Specification 35. The supporting-document section of the completion matrix is now marked reviewed at this baseline.
+
+Remaining cross-document work is the final full audit and closure/explicit owner disposition of findings, plus unresolved business inputs and owner acceptance.

@@ -12,3 +12,7 @@ Canonical source: `MASTER_SPECIFICATION/15_SECURITY.md`; related sources: `MASTE
 - Record security findings, severity, owner, fix, regression evidence, and accepted residual risk.
 
 This page is not proof of a security audit or deployed controls. Record evidence for each implemented control.
+
+## BI-BUGS current security evidence boundary
+
+This guide is not a completed security audit. The current static shell has no verified customer-data workflow or backend authorization layer. Feature-specific threat models, privacy review, security tests, and production evidence must be completed before the corresponding feature or release. The canonical security specification is `MASTER_SPECIFICATION/15_SECURITY.md`.

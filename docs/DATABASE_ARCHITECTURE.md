@@ -11,3 +11,7 @@ Canonical source: `MASTER_SPECIFICATION/09_DATABASE_ARCHITECTURE.md`; registry: 
 - Define backup frequency, retention, recovery-point and recovery-time objectives; verify by restoring and checking integrity.
 
 A schema description or backup file is not evidence of a working database or successful recovery.
+
+## BI-BUGS current data baseline
+
+No application database, schema, migration, or customer/staff data store is verified in the current repository. Do not design customer fields or collect personal data until the business purpose, minimum fields, notice/consent, access, retention, deletion, audit, backup, and recovery requirements are approved. The canonical design and registry remain Specifications 09 and 23.

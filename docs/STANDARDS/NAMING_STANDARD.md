@@ -9,3 +9,7 @@ Canonical sources: `../MASTER_SPECIFICATION/06_ENGINEERING_RULES.md` and `../MAS
 - Keep filenames and symbols predictable and searchable; avoid unexplained abbreviations.
 - Use explicit version identifiers for public contracts and migration artifacts.
 - Check case sensitivity and references before renaming files or public symbols.
+
+## Applicability
+
+Stable ID prefixes are reserved by the canonical registries. Do not allocate IDs before approved records exist; do not treat a filename, folder, or generic architecture label as a feature/module/API/data/AI ID.

@@ -1320,7 +1320,7 @@ f0ce9b4 Create master specification index
 
 ## 47. DOCUMENTATION COMPLETION MATRIX AND REVIEW BACKLOG — 2026-11-19
 
-**Completed:** Added `35_DOCUMENTATION_COMPLETION_MATRIX.md` to convert Documentation Phase 1 into an auditable specification-by-specification review backlog. It records the current evidence-based state of Specifications 00–34 and tracker 99, distinguishes semantic review from structural/tooling verification and owner acceptance, identifies remaining document groups, and defines cross-document, registry, website-requirement, privacy, operations, release, and final verification gates.
+**Completed:** Added `DOCUMENTATION_COMPLETION_MATRIX.md` to convert Documentation Phase 1 into an auditable specification-by-specification review backlog. It records the current evidence-based state of Specifications 00–34 and tracker 99, distinguishes semantic review from structural/tooling verification and owner acceptance, identifies remaining document groups, and defines cross-document, registry, website-requirement, privacy, operations, release, and final verification gates.
 
 **Navigation updated:** Linked the matrix from the Master Index, Master Specification README, documentation README, and active Master Roadmap. Added a corresponding current-state addendum to Specification 34.
 
@@ -1404,3 +1404,33 @@ f0ce9b4 Create master specification index
 **Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS.
 
 **Evidence boundary:** The Master Index/Constitution/Digital DNA/Requirements/Workbook/Lifecycle documents remain documentation and governance controls. The source route is resolved, but service catalogue, brand, sitemap, customer action, privacy, staff workflow, hosting/domain, and release inputs remain owner decisions. Strict metadata checks do not constitute owner acceptance or product readiness.
+
+## 57. DOCUMENTATION MATRIX IDENTITY AND SUPPORTING DOCUMENT BACKLOG — 2026-11-19
+
+**Completed:** Renamed the auxiliary matrix to `DOCUMENTATION_COMPLETION_MATRIX.md` to avoid confusion with Master Index entry 35 (website source-gate validator). Removed the false numbered-specification identity and updated repository documentation references. Expanded the matrix to track supporting documentation review separately from numbered specifications and replaced the stale completed-review sequence with the actual remaining work.
+
+**Next:** Review supporting documentation summaries/rules/standards/roadmaps and root architecture pointers for consistency with canonical numbered specifications. Then perform a full current-state audit, close cross-document findings, and resolve owner-input gates.
+
+**Progress:** Documentation remains 60% provisional pending verification of this rename and remaining support-document reviews. Overall project estimate remains 10% provisional.
+
+## 58. SUPPORTING RULES, STANDARDS, AND ROADMAP REVIEW — 2026-11-19
+
+**Completed:** Reviewed and reconciled supporting constitution, memory/feature indexes, project rules, AI/coding/engineering/security rule summaries, coding/folder/naming standards, and roadmap phase views. Corrected the legacy root Master Blueprint so microservices, plugins, offline mode, APIs, franchise scaling, AI engines, and future layers are not presented as mandatory first-release architecture. Converted root changelog/version-history files into pointers to canonical ledgers.
+
+**Matrix:** Supporting-document review statuses updated. Root architecture summaries other than Master Blueprint and changelog/version pointers remain to be reviewed in the next group.
+
+**Progress:** Documentation remains 60% provisional pending verification of this revision, remaining root summaries, final consistency audit, and owner-input/acceptance gates. Overall project estimate remains 10% provisional.
+
+## 59. ROOT ARCHITECTURE POINTERS AND SUPPORTING DOCUMENTATION REVIEW — 2026-11-19
+
+**Completed:** Reviewed root architecture pointers for system, database, API, AI, security, changelog, and version history; updated supporting README/index boundaries; completed the supporting-document review table for constitution summary, project/feature memory indexes, rules, standards, roadmaps, and root summaries. Corrected legacy Master Blueprint statements that could imply mandatory microservices/plugins/offline/API/franchise capabilities.
+
+**Remaining:** Final full-repository cross-document consistency audit, progress/changelog reconciliation, owner-supplied website requirements, and explicit owner acceptance. No product coding is authorized before the documentation gate is accepted.
+
+**Progress:** Documentation percentage remains provisional pending the final audit and owner-input review. Overall project estimate remains provisional.
+
+## 60. SUPPORTING DOCUMENTATION POST-REVIEW VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell test suite PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS. Repository search found no stale references to the former `35_DOCUMENTATION_COMPLETION_MATRIX.md` path. The auxiliary matrix now has a non-numbered filename and identity.
+
+**Evidence boundary:** These checks validate documentation structure/navigation, metadata, source-route gate, and the existing static-shell/project-control suite. They do not close the owner-input gates in Specifications 31–32, establish product acceptance, or constitute release/production evidence.

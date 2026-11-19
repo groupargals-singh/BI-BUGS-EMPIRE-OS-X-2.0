@@ -11,3 +11,7 @@ Canonical source: `MASTER_SPECIFICATION/10_API_ARCHITECTURE.md`; registry: `MAST
 - Maintain contract tests and record the revision and result of each verification run.
 
 This guide describes requirements only. API availability and security must be proven by tests against actual implementations.
+
+## BI-BUGS current API baseline
+
+No backend/API service or API contract is verified in the current repository. Do not invent endpoint IDs or implement interfaces before an approved customer/business workflow establishes the need. The canonical architecture and registry remain Specifications 10 and 22.
