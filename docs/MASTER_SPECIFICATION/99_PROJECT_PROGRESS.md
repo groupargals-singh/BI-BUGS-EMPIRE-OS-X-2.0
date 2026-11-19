@@ -1452,7 +1452,7 @@ f0ce9b4 Create master specification index
 
 **Latest verified Git delivery at the time of this snapshot:** commit `a84c4a0` (`Reconcile supporting BI-BUGS documentation and roadmap`) was pushed to `origin/main`; remote main matched local HEAD and the working tree was clean. Subsequent changes must be committed and verified separately.
 
-**Progress:** Documentation remains 60% provisional and overall project estimate remains 10% provisional. These estimates are intentionally not increased until the owner-input gates and final audit/acceptance are resolved.
+**Progress:** Documentation is now **70% provisional** using the explicit workstream rubric in `DOCUMENTATION_COMPLETION_MATRIX.md`: semantic review 40/40; cross-document consistency/traceability 20/25; owner-input capture 5/25; final verification/acceptance 5/10. Overall project estimate remains 10% provisional. Documentation is not 100% because owner inputs, final traceability, and explicit package acceptance remain open.
 
 
 ## 62. FINAL CROSS-DOCUMENT FINDING DISPOSITION — 2026-11-19
@@ -1472,3 +1472,14 @@ f0ce9b4 Create master specification index
 **Reconciliation:** The current top-of-file status table now reflects the reviewed state of Specifications 00–34 rather than the historical structural-only table. Specification 34 records current dispositions for F-01–F-11. The canonical Changelog and Version History now include verified documentation-only revisions through `a84c4a0`; none is described as a software release. Historical milestone entries remain dated history.
 
 **Remaining:** Owner inputs in Specifications 31–32, final traceability after those requirements are approved, explicit owner acceptance, and any product implementation/testing/release work. Documentation remains 60% provisional; overall project estimate remains 10% provisional.
+
+
+## 64. DOCUMENTATION PHASE WEIGHTED PROGRESS UPDATE — 2026-11-19
+
+**Progress update:** After completion of semantic review across Specifications 00–34 and the supporting documentation, Documentation Phase 1 has moved from 60% to **70% provisional**. The explicit weighted rubric is recorded in `DOCUMENTATION_COMPLETION_MATRIX.md`: semantic review 40/40; cross-document consistency/traceability 20/25; owner-input capture 5/25; final verification/acceptance 5/10.
+
+**Why not 100%:** BI-BUGS-specific services/content, brand, geography/contact, sitemap, customer action/data/privacy, staff workflow, hosting/domain, operations and acceptance criteria still require owner input. The final requirement-to-test/release traceability and explicit documentation-package acceptance also remain open.
+
+**Overall project:** Remains 10% provisional; no application backend/database/business workflow or production deployment is claimed.
+
+**Milestone 64 verification:** Lifecycle strict PASS (34 specifications, zero metadata issues); website source gate strict PASS; project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 files, zero broken relative links/fence issues); frontend JavaScript syntax PASS; `git diff --check` PASS. The weighted progress update changes only the documentation estimate; overall project estimate remains 10% provisional.

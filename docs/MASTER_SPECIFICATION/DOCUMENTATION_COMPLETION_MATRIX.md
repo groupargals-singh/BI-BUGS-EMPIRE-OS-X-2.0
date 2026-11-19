@@ -107,7 +107,17 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 
 ## 7. Progress accounting
 
-The existing Documentation Phase estimate remains **60% provisional**. This matrix is a new control artifact, not evidence that the outstanding semantic reviews or owner decisions are complete. Do not mechanically average document counts: a small number of critical requirements/owner gates can block readiness. Increase the percentage only when a meaningful review group is completed, verified and recorded in the progress tracker.
+The Documentation Phase estimate is now **70% provisional** under the explicit workstream rubric below (updated after all numbered specifications and supporting documentation received semantic review):
+
+| Workstream | Weight | Completion | Weighted contribution |
+|---|---:|---:|---:|
+| Numbered and supporting document semantic review | 40% | 100% | 40% |
+| Cross-document consistency and requirement traceability | 25% | 80% | 20% |
+| Owner requirements and business-input capture | 25% | 20% | 5% |
+| Final verification and explicit package acceptance | 10% | 50% | 5% |
+| **Total** | **100%** |  | **70%** |
+
+These are provisional workstream estimates, not a mechanical document count. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 
