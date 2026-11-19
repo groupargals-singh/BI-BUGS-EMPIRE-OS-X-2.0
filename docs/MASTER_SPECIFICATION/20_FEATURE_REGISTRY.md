@@ -174,3 +174,13 @@ Historical baseline: at the time of the original draft review, the implementatio
 - Production: NOT VERIFIED.
 
 No live feature catalogue or functioning registry service is claimed by this document.
+
+## 19. BI-BUGS initial feature inventory and population gate
+
+**Initial product-feature inventory: NO APPROVED FEATURE RECORDS POPULATED.** This is intentional at the current documentation baseline. The static website shell is a limited technical foundation, not a completed customer-facing business feature. Documentation validators and tests are project-control tooling, not BI-BUGS customer features.
+
+Do not allocate `FEAT-*` identifiers to ideas, generic architecture headings, placeholder sections, or capabilities inferred from a folder. Create a feature record only after a requirement has an owner-approved source, defined user/business outcome, scope and non-goals, acceptance criteria, accountable owner, dependencies, privacy/security impact, priority decision, and test approach. A record must link to its originating requirement and any approving decision. Implementation/testing/release status must be updated separately from requirement approval.
+
+Until that gate is met, the registry remains schema-only and no product feature is implied by its empty record set. The first candidates must come from the approved website sitemap/customer journey, not from this architecture document.
+
+**Review result:** Registry lifecycle and scope reviewed. Empty initial product-feature inventory is evidence-honest; owner acceptance and population from approved requirements remain pending.

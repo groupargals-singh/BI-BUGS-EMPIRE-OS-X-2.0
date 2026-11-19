@@ -224,3 +224,13 @@ The matrix does not mark every file reviewed merely because automated checks pas
 **Evidence boundary:** The current repository is not a released or production-deployed business application. No semantic software version or application release artifact was established by the inspected commit/tag/artifact inventory. Owner confirmation is required for any releases, tags, or deployments outside the inspected repository.
 
 **Remaining:** Owner acceptance of the reviewed specifications; actual website content, design, journey, test acceptance criteria, and roadmap capacity/date approvals; any automation implementation is separate future work.
+
+## 19. Feature, module, API, database, and AI registry baseline review — 2026-11-19
+
+**Documents reviewed:** Specifications 20–24, compared with current tracked source inventory, Specifications 07–10, 11–13, 15, 18–19, 25, 31–32, and accepted decisions DEC-BBE-001/002.
+
+**Corrections:** Each registry now states its BI-BUGS initial inventory and explicit record-population gate. The Feature Registry distinguishes project-control tooling/static shell from approved customer features. The Module Registry distinguishes folders from functioning/approved modules. The API Registry records no verified API contract. The Database Registry records no verified application database/schema and requires privacy/data-purpose approval before field design. The AI Registry records no verified AI runtime and requires a specific approved use case, evaluation, data, safety, permission, and fallback plan.
+
+**Traceability rule:** Do not create speculative stable IDs to make registries look populated. Once website requirements are owner-approved, each requirement should link to only the necessary feature/module/API/data records, tests, decision, and release evidence. A registry may remain empty where no capability is approved or present.
+
+**Remaining:** Owner approval of registry schemas; actual requirements; registry automation/tests; product implementation and product acceptance tests. No implementation is claimed.

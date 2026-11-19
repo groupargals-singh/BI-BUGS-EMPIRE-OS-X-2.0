@@ -118,3 +118,11 @@ The inspected repository currently has a `database/` directory containing only a
 - Production: NOT VERIFIED.
 
 This document does not claim that a database or data registry service is implemented or verified.
+
+## 19. BI-BUGS initial data inventory and population gate
+
+**Initial verified application database inventory: NO DATABASE ENTITY OR SCHEMA RECORDS POPULATED.** No product database, schema, migration, or persistent customer/staff record store is verified in the current repository. Git-tracked project documentation and project-control records are not the application database.
+
+Do not create data-entity IDs or define customer fields before the business purpose, collection channel, minimum necessary fields, privacy notice/consent where applicable, access roles, retention, correction/deletion, export, audit, backup, and recovery requirements are approved. A future schema record must link to the accepted requirement and data-flow/security review. Use synthetic test data unless a separately approved test-data process permits otherwise.
+
+**Review result:** Registry schema and privacy-first population gate reviewed. Empty initial application-data inventory is intentional; owner approval and approved workflow requirements remain pending.

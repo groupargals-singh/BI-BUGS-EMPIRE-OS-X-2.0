@@ -170,3 +170,11 @@ Changes to module responsibility, interface, data ownership, dependencies, secur
 - Production: NOT VERIFIED.
 
 This document does not claim that a module registry service or any application module is implemented or verified.
+
+## 19. BI-BUGS initial module inventory and population gate
+
+**Initial verified product-module inventory: NO PRODUCT MODULE RECORDS POPULATED.** Repository folders such as `frontend/`, `backend/`, `database/`, `ai-core/`, `cloud/`, `deployment/`, `mobile/`, and `hardware/` are organizational boundaries, not proof of functioning modules. The current frontend shell has not yet been decomposed into owner-approved product modules or domain ownership boundaries.
+
+Do not create module IDs solely to mirror directory names. A module record requires a defined BI-BUGS responsibility, approved requirement(s), accountable owner, public/internal interfaces, dependency direction, data ownership, security boundary, lifecycle, test evidence, and change/deprecation policy. A module may be recorded as planned only when its need and scope are accepted; it must not be described as implemented without code evidence.
+
+**Review result:** Registry schema and directory-versus-module distinction reviewed. Empty baseline is intentional until requirements and architecture select actual modules; owner acceptance remains pending.

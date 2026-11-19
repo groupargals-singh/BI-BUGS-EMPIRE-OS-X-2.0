@@ -1372,3 +1372,19 @@ f0ce9b4 Create master specification index
 **Evidence boundary:** The 19 tests cover lifecycle/source-gate validators and the limited static website shell. They are not end-to-end business/product acceptance tests. No software release, application artifact, or production deployment is established by these checks. Specifications 17, 18, 25–28, and 30 remain drafts pending owner acceptance and remaining owner inputs.
 
 **Progress:** Documentation remains 60% provisional; overall project estimate remains 10% provisional. No percentage increase is claimed for this review batch.
+
+## 53. FEATURE / MODULE / API / DATABASE / AI REGISTRY SEMANTIC REVIEW — 2026-11-19
+
+**Completed:** Reviewed Specifications 20–24 against the actual repository inventory and the BI-BUGS website scope. Added explicit initial inventory and owner-approved population gates to each registry.
+
+**Findings recorded:** No approved product-feature records, verified product-module records, API contracts, application database/schema records, or AI capability records are currently populated/verified. Root folders, static shell elements, and documentation-control tools are not automatically product modules/features. Empty registries are intentional until requirements and decisions justify records.
+
+**Traceability:** Updated Specification 35 and Specification 34. Future accepted requirements must link only to the relevant stable-ID feature/module/API/data records, tests, decisions, and release evidence. No speculative IDs were invented.
+
+**Progress:** Documentation remains 60% provisional pending broader verification and remaining document reviews. Overall project estimate remains 10% provisional. Owner acceptance remains pending.
+
+## 54. REGISTRY BASELINE POST-REVIEW VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS.
+
+**Evidence boundary:** These checks validate document lifecycle metadata, the owner-approved website source route, existing repository-control tests, and static-shell checks only. Registry population/automation, product APIs, database, AI runtime, and product acceptance testing remain unimplemented/unverified. Empty initial registries are intentional until owner-approved requirements exist.

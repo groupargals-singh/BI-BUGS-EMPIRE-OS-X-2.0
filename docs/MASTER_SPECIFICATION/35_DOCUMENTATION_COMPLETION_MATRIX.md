@@ -46,11 +46,11 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 17 | UI/UX System | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Owner approval of sitemap, brand/design tokens, content, accessibility target and approved customer journey |
 | 18 | Testing Architecture | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Requirement-linked product acceptance tests and production evidence await approved requirements/implementation |
 | 19 | Project Memory | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 44) | Confirm project-memory boundaries; do not use as customer/staff record store |
-| 20 | Feature Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only after owner-approved requirements; no speculative feature IDs |
-| 21 | Module Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only modules justified by approved requirements |
-| 22 | API Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only approved API contracts after architecture/requirements review |
-| 23 | Database Registry | STRUCTURE / SCOPE REVIEWED; records gated | Populate only approved data entities/fields after privacy and data requirements approval |
-| 24 | AI Registry | STRUCTURE / SCOPE REVIEWED; records gated | Keep empty/conditional until a specific BI-BUGS AI use case is approved |
+| 20 | Feature Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 53) | No approved product-feature records yet; populate only from accepted website requirements |
+| 21 | Module Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 53) | No verified product-module records yet; directory names are not modules |
+| 22 | API Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 53) | No verified API contracts/endpoints; populate only after approved workflows |
+| 23 | Database Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 53) | No verified application database/schema; privacy/data approval required |
+| 24 | AI Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 53) | No verified AI runtime/capability; keep optional and empty until approved |
 | 25 | Decision Registry | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Canonical log contains DEC-BBE-001/002; automation/owner schema acceptance pending |
 | 26 | Idea Vault | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | No verified idea inventory imported; future source-backed ideas require owner intake |
 | 27 | Changelog | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Unreleased documentation commits recorded; release entries await approved artifacts |

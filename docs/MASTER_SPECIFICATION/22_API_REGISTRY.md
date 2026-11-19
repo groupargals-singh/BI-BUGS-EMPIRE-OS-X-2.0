@@ -124,3 +124,11 @@ The current repository inventory (2026-11-19) contains a static frontend shell a
 - Production: NOT VERIFIED.
 
 No functioning API or deployed endpoint is claimed by this document.
+
+## 20. BI-BUGS initial API inventory and population gate
+
+**Initial verified API inventory: NO API CONTRACT RECORDS POPULATED.** The current static website shell has no verified backend/API endpoint. A browser navigation event, static asset path, placeholder link, or future architecture diagram is not an API contract.
+
+Create an API record only when an approved BI-BUGS requirement needs a defined interface. Each record must identify caller/provider, purpose, owner, method/protocol, path or event name, request/response schema, authentication/authorization, validation, error semantics, rate/abuse controls where relevant, data classification, version/compatibility policy, tests, and lifecycle. Do not invent endpoints or expose internal APIs as public contracts.
+
+**Review result:** Registry schema and current no-API baseline reviewed. No API IDs are fabricated; population awaits approved workflow and architecture decisions.

@@ -134,3 +134,11 @@ The inspected repository's `ai-core/` directory contains only a `.gitkeep` place
 - Production: NOT VERIFIED.
 
 This document does not claim that an AI registry service, model, agent, or AI runtime is implemented or verified.
+
+## 19. BI-BUGS initial AI inventory and population gate
+
+**Initial verified BI-BUGS AI inventory: NO AI CAPABILITY RECORDS POPULATED.** No model, provider, agent, prompt pipeline, retrieval system, evaluator, or AI runtime is verified as part of the current BI-BUGS application. Generic AI architecture material is conditional guidance only and does not approve an AI feature.
+
+An AI record may be created only after the project owner approves a specific BI-BUGS user/business problem and non-AI alternatives have been considered. The record must include purpose, users, model/provider and data location, input/output data classes, provenance, evaluation dataset and thresholds, uncertainty/abstention behavior, prompt-injection/tool risks, permission boundaries, human review, cost/latency limits, fallback, monitoring, owner, tests, and rollback/disable path. Customer or staff data must not be sent to an external model without explicit privacy/security and owner approval.
+
+**Review result:** Registry schema and optional-AI boundary reviewed. No speculative AI IDs or providers are added; the initial inventory remains intentionally empty.
