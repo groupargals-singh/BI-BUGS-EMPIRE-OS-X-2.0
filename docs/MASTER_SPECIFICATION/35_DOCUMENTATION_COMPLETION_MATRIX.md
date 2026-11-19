@@ -26,11 +26,11 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 
 | ID | Document | Current evidence-based status | Remaining documentation work / gate |
 |---:|---|---|---|
-| 00 | Master Index | PARTIAL REVIEW; index and authority hierarchy checked | Reconcile all links and final status wording after remaining reviews; owner acceptance |
+| 00 | Master Index | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; maintain index as new specifications/auxiliary controls are added |
 | 01 | Project Vision | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 38 scope review) | Final owner confirmation that the BI-BUGS purpose/non-goals are accurate |
-| 02 | Engineering Constitution | STRUCTURE VERIFIED; semantic acceptance not evidenced | Full policy consistency and owner review |
+| 02 | Engineering Constitution | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Explicit owner acceptance; constitutional amendments require separate authorized approval |
 | 03 | Master Blueprint | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 38 scope review) | Final owner confirmation; reconcile architecture map with approved requirements |
-| 04 | Digital DNA System | STRUCTURE VERIFIED; semantic acceptance not evidenced | Review BI-BUGS applicability, necessity, and links; owner review |
+| 04 | Digital DNA System | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; runtime identity/graph service is not implemented |
 | 05 | Living Blueprint System | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; automated generator/drift detection remains unimplemented |
 | 06 | Engineering Rules | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; runtime/CI rule enforcement remains unimplemented |
 | 07 | Project Structure | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 49) | Owner acceptance; update map as approved modules are implemented |
@@ -57,10 +57,10 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 28 | Version History | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Repository baseline recorded; remote/out-of-repo release history needs owner confirmation |
 | 29 | Release Process | REVIEWED — OWNER ACCEPTANCE PENDING (Milestones 42–43) | Actual release roles, hosting, deployment, recovery and production evidence remain open |
 | 30 | 20-Year Roadmap | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 51) | Detailed dates, budgets, staffing, and future optional features remain unapproved |
-| 31 | Website Requirements | PARTIAL REVIEW; requirements inventory incomplete | Owner-approved sitemap, content, service list, contact, customer action, privacy and workflows |
-| 32 | Website Discovery Workbook | OWNER INPUT REQUIRED; new-build decision resolved | Complete remaining business/brand/customer/privacy/operations/hosting inputs with owner |
-| 33 | Lifecycle Status Standard | STRUCTURE / TOOLING VERIFIED | Owner acceptance of the standard; retain strict audit evidence and lifecycle compatibility |
-| 34 | Cross-Document Traceability Audit | PARTIAL REVIEW; findings recorded | Resolve or explicitly accept findings; owner review; update after remaining spec reviews |
+| 31 | Website Requirements | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Approved sitemap/content/services/contact/customer action/privacy/staff workflow and acceptance criteria |
+| 32 | Website Discovery Workbook | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Fill and approve the remaining owner-input groups; source route alone is not full approval |
+| 33 | Lifecycle Status Standard | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; strict audit validates metadata only, not semantic approval |
+| 34 | Cross-Document Traceability Audit | PARTIAL REVIEW — FINDINGS TRACKED (Milestone 55) | Close or explicitly accept each finding after all document reviews and owner decisions |
 | 99 | Project Progress Tracker | CONTROL RECORD; current snapshot needs reconciliation as work proceeds | Keep current status, milestone evidence and Git delivery facts synchronized; historical entries remain historical |
 
 ## 4. Cross-document and registry completion gates

@@ -1388,3 +1388,19 @@ f0ce9b4 Create master specification index
 **Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS.
 
 **Evidence boundary:** These checks validate document lifecycle metadata, the owner-approved website source route, existing repository-control tests, and static-shell checks only. Registry population/automation, product APIs, database, AI runtime, and product acceptance testing remain unimplemented/unverified. Empty initial registries are intentional until owner-approved requirements exist.
+
+## 55. MASTER INDEX, CONSTITUTION, DIGITAL DNA, WEBSITE REQUIREMENTS, AND LIFECYCLE REVIEW — 2026-11-19
+
+**Completed:** Reviewed Specifications 00, 02, 04, 31, 32, and 33 against accepted decisions, repository inventory, architecture, registries, and the Documentation Completion Matrix.
+
+**Corrections:** Reconciled current repository inventory and clarified auxiliary matrix versus numbered validator naming in the Master Index; added BI-BUGS scope and constitutional authority boundaries; clarified Digital DNA identity records and absence of runtime identity services; reconciled website requirements and owner workbook unknowns; clarified lifecycle validator limits and matrix relationship.
+
+**Owner-input blockers:** The new-build route is resolved. Service catalogue/content, brand, geography/contact, sitemap, customer action/form/data, privacy/retention, staff workflow, accessibility/language, hosting/domain/budget, operational ownership, and first-release acceptance criteria remain unknown or unapproved. These are genuine owner decisions and must not be invented.
+
+**Progress:** Documentation remains 60% provisional pending final verification, remaining top-level/supporting document review, cross-document closure, and owner acceptance. Overall project estimate remains 10% provisional.
+
+## 56. CORE GOVERNANCE AND WEBSITE REQUIREMENTS POST-REVIEW VERIFICATION — 2026-11-19
+
+**Verification results:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); project-control/frontend-shell tests PASS (19/19); Markdown integrity PASS (62 Markdown files, zero broken relative links, zero unbalanced code fences); frontend JavaScript syntax PASS; `git diff --check` PASS.
+
+**Evidence boundary:** The Master Index/Constitution/Digital DNA/Requirements/Workbook/Lifecycle documents remain documentation and governance controls. The source route is resolved, but service catalogue, brand, sitemap, customer action, privacy, staff workflow, hosting/domain, and release inputs remain owner decisions. Strict metadata checks do not constitute owner acceptance or product readiness.

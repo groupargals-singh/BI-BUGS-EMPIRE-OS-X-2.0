@@ -88,3 +88,13 @@ Strict mode is an audit gate for header completeness, not an approval gate. A cl
 ## 8. Current implementation boundary
 
 The audit utility and its unit tests are development tooling. They do not implement BI-BUGS customer-facing website, backend, database, AI, or business workflows. Their own test results are recorded in `99_PROJECT_PROGRESS.md`.
+
+## 9. BI-BUGS lifecycle control applicability and review boundary
+
+The lifecycle validator audits metadata headers for numbered Specifications 01–34. It does not audit the auxiliary Documentation Completion Matrix as a numbered specification, and it does not validate the truth of a status value. The matrix is a separate review control; the progress tracker records dated milestone evidence.
+
+For BI-BUGS, keep four dimensions separate: specification review/approval, product implementation, test execution/evidence, and production release/deployment. A clean strict lifecycle audit means only that required header fields are present and unambiguous. It does not mean all specifications have passed semantic review or owner acceptance. Similarly, passing project-control tests does not prove the product's customer journey.
+
+Any new numbered specification must be added deliberately to the index, validator scope, lifecycle metadata, test coverage, and progress records. Do not renumber or silently expand the audit range. Any schema change to status aliases or interpretation requires a reviewed update to this standard and its unit tests.
+
+**Review result:** Lifecycle tool boundary and relationship to the matrix are clarified. The validator remains read-only documentation tooling; the standard's owner acceptance remains pending.

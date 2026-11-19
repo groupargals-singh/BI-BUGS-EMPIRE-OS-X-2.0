@@ -219,3 +219,13 @@ The new-build route is an owner decision. It does not prove that no external sit
 **WDG-01 source decision: RESOLVED — NEW WEBSITE BUILD.** The owner explicitly confirmed on 2026-11-17 that BI-BUGS needs a new official website built from scratch. The decision evidence is recorded in the table above and validated by `scripts/validate_website_source_gate.py`.
 
 **Remaining owner inputs:** Capture company identity/brand, approved services and claims, service geography/contact channels, first-release customer action, form/privacy requirements, staff workflow, sitemap, accessibility/language, hosting/domain, and release acceptance progressively. Do not invent these details or request unrelated decisions all at once.
+
+## 15. Workbook review and remaining owner-input gates — 2026-11-19
+
+The workbook was reviewed against Specification 31, DEC-BBE-001/002, UI/UX, Security, Testing, registries, Release Process, and the current repository baseline. The source route is resolved: **NEW WEBSITE BUILD**. All other blank/UNKNOWN entries remain open; a source-gate PASS does not close them.
+
+The following input groups remain unapproved: (1) company display identity, logo and brand assets; (2) exact approved pest-control service catalogue and publishable claims; (3) service geography and public contact channels; (4) first-release customer action and any form fields; (5) privacy/consent/retention; (6) staff roles and enquiry handling; (7) sitemap and page-level content; (8) language, design and accessibility targets; (9) domain/DNS/hosting/budget/data-region; and (10) monitoring, backup, incident, release and acceptance ownership.
+
+Owner answers must be recorded with source/evidence and approval date. `OWNER_INPUT_RECEIVED` is not the same as `APPROVED`. Do not request passwords, private keys, API tokens, payment credentials, or recovery codes. Unknowns must not be converted into default assumptions to force completion.
+
+**Review result:** Workbook structure and decision gates reviewed; actual business input remains pending. Documentation may be internally organized, but requirements/design readiness and owner acceptance are blocked until the relevant inputs are supplied.

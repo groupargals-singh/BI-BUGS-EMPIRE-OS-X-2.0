@@ -198,3 +198,15 @@ This is a limited historical public-search result, not proof that no external we
 The initial repository audit in section 11 predates the first frontend implementation. The current working tree now contains a static frontend shell at `frontend/index.html`, styles at `frontend/assets/css/styles.css`, and accessible mobile navigation at `frontend/assets/js/main.js`. The earlier zero-file inventory remains a historical snapshot and is not the current inventory.
 
 The preview contains only the confirmed company name and clearly marked pending content. It intentionally has no enquiry form, booking, payment, customer-data collection, public contact details, approved service descriptions, backend, database, or deployment. See `frontend/README.md` for local preview instructions and `testing/test_website_shell.py` for six passing foundation checks.
+
+## 17. Documentation review and owner-input status — 2026-11-19
+
+This requirements baseline has been reviewed against DEC-BBE-001/002, the Discovery Workbook, UI/UX, Security, Testing, Feature/Module/API/Database registries, Release Process, and current repository inventory.
+
+**Confirmed:** BI-BUGS Pest Control Services website is the primary product; the owner selected a new website build from scratch; a limited static frontend shell exists as a preview foundation.
+
+**Still unknown and requiring owner evidence:** approved legal/display name and brand assets; service catalogue and publishable treatment claims; service geography; public phone/WhatsApp/email/address and business hours; sitemap and page content; first customer action (contact/enquiry/quote/booking); exact form fields; privacy/consent/retention; staff roles and enquiry handling; language/accessibility expectations; domain/DNS/hosting/provider/budget; analytics/integrations; operational and release owners.
+
+The candidate first customer journey and candidate sitemap remain proposals, not approved requirements. The workbook is the capture mechanism; once a decision is accepted, transfer it into a stable `WREQ-*` requirement with source, owner, scope, priority, acceptance criteria, dependencies, risk, and lifecycle. Link only justified feature/module/API/data/test records. No registry should be populated from assumptions.
+
+**Review result:** Scope and unknowns are internally consistent. This document is not complete for implementation planning until the owner supplies and accepts the required business inputs and measurable first-release acceptance criteria.

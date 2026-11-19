@@ -234,3 +234,13 @@ The matrix does not mark every file reviewed merely because automated checks pas
 **Traceability rule:** Do not create speculative stable IDs to make registries look populated. Once website requirements are owner-approved, each requirement should link to only the necessary feature/module/API/data records, tests, decision, and release evidence. A registry may remain empty where no capability is approved or present.
 
 **Remaining:** Owner approval of registry schemas; actual requirements; registry automation/tests; product implementation and product acceptance tests. No implementation is claimed.
+
+## 20. Master index, constitution, Digital DNA, requirements, and lifecycle review — 2026-11-19
+
+**Documents reviewed:** Specifications 00, 02, 04, 31, 32, and 33, compared with the canonical Decision Log, 35 Documentation Completion Matrix, current repository inventory, and supporting roadmap/architecture documents.
+
+**Corrections:** Specification 00 now reconciles the current repository snapshot and clarifies that the Documentation Completion Matrix is an auxiliary control artifact, not a numbered Master Specification (the map's 35 entry remains the website source-gate validator). Specification 02 now states BI-BUGS scope application, optional capability gates, and constitutional amendment authority. Specification 04 clarifies component identity versus directories, registries, personal/customer data, and absent runtime services. Specification 31 records confirmed facts versus remaining owner inputs and defines transfer into stable requirements. Specification 32 explicitly separates the resolved new-build source route from all remaining owner decisions. Specification 33 clarifies that strict lifecycle audit checks metadata only and does not approve semantic content.
+
+**Remaining owner blockers:** Services/content, brand, service geography/contact, sitemap, customer action/form/data, privacy/retention, staff workflow, accessibility/language, hosting/domain/budget, operational ownership, and measurable first-release acceptance criteria. The source decision is resolved; these other gates are not.
+
+**Audit status:** Core scope and lifecycle boundaries are reconciled. Overall cross-document audit remains open until all applicable specification reviews, requirement traceability, and owner decisions are closed or explicitly accepted.

@@ -141,3 +141,13 @@ Changes to component identity, ownership, dependencies, interfaces, permissions,
 # 12. IMPLEMENTATION BOUNDARY
 
 This specification defines the intended Digital DNA model. It does not claim that a runtime registry, automated dependency graph, identity service, or enforcement mechanism already exists. Those capabilities require implementation and separate tests.
+
+## 13. BI-BUGS component identity applicability and current baseline
+
+For the current BI-BUGS delivery, component identity is a documentation/engineering discipline, not a deployed Digital DNA service. Stable identities should be assigned only to real, approved, traceable components when a need exists. Do not assign component IDs to every folder, placeholder, generic capability, or speculative roadmap item merely to populate a catalogue.
+
+The canonical registries remain responsible for their own namespaces: website requirements (`WREQ-*`), decisions (`DEC-*`), features, modules, APIs, database entities, and AI capabilities. Digital DNA must reference those identifiers rather than create competing IDs or treat file names as feature/module IDs. A component identity record must link to an approved requirement, owner, source location, dependencies, data/security boundary, lifecycle, tests, and evidence. Unknown fields remain unknown.
+
+At the 2026-11-19 repository baseline, the static frontend shell and documentation-control scripts/tests are present; the other architecture root folders are placeholders. No runtime component registry, dependency graph, identity service, or automated enforcement is verified. The current static shell has not yet been approved as a decomposed set of product modules.
+
+**Review result:** Digital DNA's purpose is limited to traceable component identity and must not be confused with customer data, personal memory, or a runtime system. Owner acceptance and any implementation remain pending.

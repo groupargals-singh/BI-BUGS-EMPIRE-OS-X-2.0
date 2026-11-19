@@ -127,3 +127,15 @@ Changes to this constitution must be explicit, reviewed, traceable, and recorded
 # 5. IMPLEMENTATION BOUNDARY
 
 This document defines engineering policy. Its existence does not prove that software controls, automated enforcement, tests, or production processes have been implemented. Those require separate implementation and verification evidence.
+
+## 6. BI-BUGS project scope application and enforcement boundary
+
+This Constitution governs BI-BUGS EMPIRE OS-X 2.0 as the digital platform for BI-BUGS Pest Control Services Pvt Ltd. Its current delivery purpose is controlled by accepted decisions DEC-BBE-001 and DEC-BBE-002: the BI-BUGS Pest Control Services website is the primary product, and a new official website is to be built from scratch. These decisions do not approve specific services, claims, pages, customer-data fields, staff workflows, payments, integrations, hosting, domain, or production release.
+
+The constitutional principles apply to every approved website and supporting workflow. They do not require every architecture domain or optional capability to be implemented. Apply proportional controls to actual scope and risk; keep AI, plugins, knowledge graphs, microservices, mobile, hardware, IoT, booking, payment, and other optional capabilities gated by specific owner-approved requirements and decisions.
+
+The Constitution is a normative policy document. The Decision Log, progress tracker, architecture diagrams, source code, test output, and runtime observations do not amend it. A constitutional amendment must follow Section 4 and receive explicit authorized approval; an ordinary scope decision cannot silently waive constitutional controls.
+
+Current evidence boundary: this Constitution is documented policy. Automated enforcement, backend authorization, audit services, production controls, and product-level security tests are not established merely by this document's existence. Record implementation and verification separately.
+
+**Review result:** BI-BUGS applicability and authority boundaries reviewed. The Constitution remains ACTIVE as the current policy text, not as evidence of owner acceptance of the complete documentation package or runtime enforcement.
