@@ -1,6 +1,6 @@
 # DEVOPS ARCHITECTURE SPECIFICATION
 
-**Specification status:** DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
+**Specification status:** REVIEWED — OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
 **Testing status:** NOT RUN
 **Production status:** NOT VERIFIED

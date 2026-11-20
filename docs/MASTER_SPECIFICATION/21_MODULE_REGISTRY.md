@@ -1,7 +1,7 @@
 # BI-BUGS EMPIRE OS-X 2.0 — MODULE REGISTRY
 
 **Specification ID:** BBEOSX-MS-21
-**Status:** DRAFT FOR REVIEW
+**Status:** REVIEWED — OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
 **Testing status:** NOT RUN
 **Production status:** NOT VERIFIED

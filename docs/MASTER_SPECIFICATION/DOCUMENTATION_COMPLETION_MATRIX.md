@@ -2,7 +2,7 @@
 
 **Document type:** Auxiliary documentation control artifact (not a numbered Master Specification)
 **Status:** INTERNAL DOCUMENTATION PACKAGE READY FOR OWNER REVIEW; OWNER INPUTS / ACCEPTANCE PENDING
-**Last reviewed:** 2026-11-20
+**Last reviewed:** 2026-11-21
 **Authority:** `00_MASTER_INDEX.md`, `02_ENGINEERING_CONSTITUTION.md`, accepted decisions DEC-BBE-001 and DEC-BBE-002.
 
 ## 1. Purpose and completion rule

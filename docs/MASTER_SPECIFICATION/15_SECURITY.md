@@ -4,7 +4,7 @@
 **Document:** Security Architecture Specification
 **Project:** BI-BUGS EMPIRE OS-X 2.0
 **Specification:** 15
-**Specification status:** DRAFT FOR REVIEW — OWNER ACCEPTANCE PENDING
+**Specification status:** REVIEWED — OWNER ACCEPTANCE PENDING
 **Implementation status:** NOT STARTED
 **Testing status:** NOT RUN
 **Production status:** NOT VERIFIED

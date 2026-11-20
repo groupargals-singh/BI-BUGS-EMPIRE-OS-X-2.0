@@ -303,3 +303,11 @@ The discovery workbook now provides a consolidated OI-01 through OI-11 register 
 **Evidence boundary:** These are documentation consistency/control changes only. No owner business input has been inferred; no new customer feature, service, contact detail, policy, hosting choice, API, database, integration, or production capability is approved or implemented by this milestone.
 
 **Remaining:** OI-01 through OI-11 require real owner decisions or explicit defer/not-applicable dispositions. Approved items must be converted into testable `WREQ-*` records and linked to justified design, implementation, test, and release evidence. Explicit owner acceptance remains pending.
+
+## 27. Lifecycle header and current matrix reconciliation — 2026-11-21
+
+A verification pass found that current lifecycle headers for Specifications 01–30 did not consistently express the document-review state recorded in the completion matrix: some retained legacy `ACTIVE` or generic `DRAFT FOR REVIEW` wording, and Specification 12 still said semantic review was pending. Updated the current status header of Specifications 01–30 to `REVIEWED — OWNER ACCEPTANCE PENDING`. This is a documentation-review label only; implementation, testing, production, and owner-acceptance fields remain separate and unchanged. Specifications 31–32 continue to show owner-input/requirements work in progress; Specifications 33–34 retain their specific standards/audit review states.
+
+**Verification:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); project-control/frontend-shell tests PASS (19/19); website source gate strict PASS (`NEW WEBSITE BUILD`); Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
+
+**Remaining:** Owner inputs OI-01–OI-11, approved `WREQ-*` conversion, requirement-level traceability, and explicit owner acceptance remain open. No new product coding is authorized before the documentation gate is accepted.

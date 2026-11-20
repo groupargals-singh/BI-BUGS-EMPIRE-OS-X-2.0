@@ -3,7 +3,7 @@
 
 **Document:** 12_KNOWLEDGE_GRAPH.md
 **Specification:** Knowledge Graph Architecture
-**Status:** DRAFT FOR REVIEW — SEMANTIC REVIEW AND OWNER ACCEPTANCE PENDING
+**Status:** REVIEWED — OWNER ACCEPTANCE PENDING
 **Implementation:** NOT STARTED
 **Testing:** NOT STARTED
 **Production:** NOT STARTED

@@ -21,7 +21,7 @@ PARTIAL — first responsive static website frontend foundation implemented and 
 
 NOT VERIFIED — development preview only; no domain, hosting, or deployment evidence.
 
-**Current Priority (2026-11-20):**
+**Current Priority (2026-11-21):**
 
 Numbered Specifications 00–34 and supporting documentation have received document-level semantic review. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
 
@@ -31,7 +31,7 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 
 ---
 
-# 2. MASTER SPECIFICATION STATUS — CURRENT SNAPSHOT 2026-11-19
+# 2. MASTER SPECIFICATION STATUS — CURRENT SNAPSHOT 2026-11-21
 
 | No. | Specification | Current document-review status | Remaining gate |
 |---:|---|---|---|
@@ -1522,3 +1522,13 @@ f0ce9b4 Create master specification index
 **GitHub:** Commit `0f2b457` (`Reconcile BI-BUGS documentation acceptance gates`) pushed to `origin/main`; remote `main` verified at `0f2b4570d79394b053516cbdc5d191f99efa3ac8`; working tree clean at verification.
 
 **Limitations:** OI-01–OI-11 remain owner decisions. No business facts, services, content, customer journey, privacy policy, hosting, integrations, or production features were invented or approved. Documentation remains 70% provisional; overall project estimate remains 10% provisional.
+
+## M-068 — Lifecycle-header and current-snapshot consistency correction — 2026-11-21
+
+**Completed:** Reconciled the current lifecycle status headers for Specifications 01–30 with the evidence-based document review states in `DOCUMENTATION_COMPLETION_MATRIX.md`. All 30 now state `REVIEWED — OWNER ACCEPTANCE PENDING`; this records document-level review only and does not imply owner acceptance, implementation, testing, or production. Refreshed the current snapshot date and matrix review date.
+
+**Verification:** Project-control/frontend-shell tests 19/19 PASS; lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
+
+**Remaining:** OI-01–OI-11 still require owner answers or explicit defer/not-applicable dispositions. Approved inputs must become testable `WREQ-*` records and receive requirement-to-design/implementation/test/release traceability. Explicit owner acceptance remains pending.
+
+**Progress:** Documentation remains 70% provisional; overall project remains 10% provisional. This correction fixes lifecycle metadata consistency and does not change either percentage.
