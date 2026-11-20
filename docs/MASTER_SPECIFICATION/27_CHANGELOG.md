@@ -113,6 +113,8 @@ This document does not claim that a release has occurred merely because changelo
 
 The following verified repository revisions are documentation/control changes, not software releases (newest first):
 
+- `60e6bec` — reconciled lifecycle status headers for Specifications 01–30 with the semantic-review matrix and refreshed the current progress snapshot.
+- `a30749d` — recorded the final documentation verification revision and owner-acceptance boundary.
 - `0f2b457` — reconciled BI-BUGS documentation acceptance gates, stale lifecycle-header wording, owner-input conversion rules, and roadmap status.
 
 - `06c0077` — finalized the document review baseline, owner-input register, requirement-record schema, and internal package/owner-acceptance distinction.

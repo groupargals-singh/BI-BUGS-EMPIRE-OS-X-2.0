@@ -1531,4 +1531,6 @@ f0ce9b4 Create master specification index
 
 **Remaining:** OI-01–OI-11 still require owner answers or explicit defer/not-applicable dispositions. Approved inputs must become testable `WREQ-*` records and receive requirement-to-design/implementation/test/release traceability. Explicit owner acceptance remains pending.
 
+**GitHub:** Commit `60e6bec` (`Reconcile BI-BUGS lifecycle review status headers`) pushed to `origin/main`; remote `main` verified at `60e6bece392a6f7bcaf2ceb1249cd603c59ac06b`; working tree clean at that verification.
+
 **Progress:** Documentation remains 70% provisional; overall project remains 10% provisional. This correction fixes lifecycle metadata consistency and does not change either percentage.
