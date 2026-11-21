@@ -1546,3 +1546,16 @@ f0ce9b4 Create master specification index
 **Remaining:** OI-01 public display/brand approval; OI-02 service catalogue and claims; OI-03 coverage/contact; OI-04 customer action; OI-05 privacy/data; OI-06 staff workflow; OI-07 sitemap/content; OI-08 design/accessibility; OI-09 domain/hosting; OI-10 operations/release; OI-11 acceptance.
 
 **Progress:** Documentation remains 70% provisional; this evidence clarification does not close a weighted owner-approval gate. Overall project remains 10% provisional.
+
+
+## M-070 — Comprehensive pest-control catalogue capture — 2026-11-21
+
+**Completed:** Recorded the owner's direction to include the broad range of pest-control services. Added a 71-entry candidate catalogue to Specification 32, grouped by residential/general pest management, termite/wood, commercial/institutional, rodent/vector/bird, stored-product/fabric, specialist/controlled treatments, inspection/prevention programmes, and separately labelled allied services. Updated Specification 31, the OI-02 register, the documentation completion matrix, and roadmap status.
+
+**Approval boundary:** The owner approved the breadth of the catalogue, not the claim that BI-BUGS currently provides all 71 entries. Individual service capability, in-house/partner/referral status, exclusions, coverage, licences/permissions, treatment methods, safety controls, and publishable claims remain to be confirmed. No service is marked active/bookable.
+
+**Verification:** Pending for this milestone; record exact results after the full documentation test/audit run.
+
+**GitHub:** Pending verification and push.
+
+**Progress:** Documentation remains 70% provisional; the owner-input rubric has not been increased because individual service approvals and the remaining owner decisions are still open. Overall project remains 10% provisional.

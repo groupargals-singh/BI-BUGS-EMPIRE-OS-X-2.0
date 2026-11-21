@@ -71,7 +71,7 @@ The following information has not been established by the inspected repository d
 ### 5.2 Website information architecture
 - Approved sitemap and page list.
 - Official company/about content.
-- Exact pest-control service catalogue and approved service descriptions.
+- Comprehensive 71-entry candidate service catalogue is recorded in Specification 32 Section 4 following the owner direction of 2026-11-21. Individual BI-BUGS delivery capability, in-house/partner/referral status, exclusions, service geography, legal permissions, treatment descriptions, safety controls, and publishable claims remain unverified and must be owner-approved before publication.
 - Approved pest information, treatment explanations, FAQs, and safety notices.
 - Testimonials, certifications, licences, guarantees, and claims that may legally be published.
 - Required downloads, galleries, case studies, or educational content.
@@ -152,7 +152,7 @@ Before implementation planning is approved, produce:
 
 - Scope alignment: RECORDED in DEC-BBE-001.
 - Requirements inventory: INITIAL BASELINE CREATED; detailed owner inputs remain incomplete.
-- Sitemap and service catalogue: UNKNOWN.
+- Sitemap: UNKNOWN. Service catalogue: comprehensive 71-entry candidate taxonomy recorded; individual service availability and approved public content remain UNKNOWN / OWNER VERIFICATION REQUIRED.
 - Enquiry/booking rules: UNKNOWN; candidate journey only.
 - Website implementation: PARTIAL — responsive static frontend foundation exists in `frontend/`; no backend, database, enquiry, booking, payment, or staff workflow is implemented.
 - Frontend foundation tests: 6 unit tests PASS; complete project-control test suite: 19 tests PASS.
@@ -234,3 +234,12 @@ No new business requirements are created from unknown workbook fields. When an o
 `RECEIVED` is not `OWNER_APPROVED`; `OWNER_APPROVED` is not `IMPLEMENTED`; implementation is not `TESTED`; test pass is not release or production verification. Do not skip lifecycle states. Keep a requirement in the workbook until its evidence and approval are traceable here.
 
 **Current owner-approved website requirement records:** No service/content/customer-journey requirements have yet been approved beyond the project-level scope facts WREQ-C-001 through WREQ-C-004 and the new-build delivery decision DEC-BBE-002. The customer journey and sitemap remain candidates.
+
+
+## 19. Comprehensive candidate service catalogue direction — 2026-11-21
+
+The owner directed: “Jo jo pest control service hoti h sab dalo isme” — include the broad range of pest-control services in the website catalogue. Specification 32 Section 4 now records 71 candidate entries, grouped into residential/general, termite/wood, commercial/institutional, rodent/vector/bird, stored-product/fabric, specialist/controlled treatments, inspection/prevention programmes, and separately labelled allied services.
+
+This owner direction approves the breadth of the discovery catalogue, not a factual claim that BI-BUGS provides every listed service. Before any item is promoted to an approved `WREQ-*` product requirement or published as available, BI-BUGS must confirm capability (in-house/partner/referral/not offered), service area, qualifications/permissions, treatment and safety controls, exclusions, and exact approved customer-facing wording/claims. Specialist fumigation and wildlife-related entries require additional qualification/legal checks; disinfection, sanitization, water-tank cleaning, drain/sewer cleaning and weed management are separately labelled allied/adjacent services, not silently represented as core pest control.
+
+**Acceptance boundary:** Catalogue taxonomy captured: COMPLETE for the owner-directed discovery task. Individual service approvals and claims: PENDING. No service booking, pricing, guarantees, treatment instruction, or public availability is implied.

@@ -174,3 +174,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Documentation-only update: Specification 32 now records the legal/business identity from WREQ-C-001 as source-confirmed while retaining public display and brand approval as pending. Specification 31 and the completion matrix clarify this boundary.
 - Classification: documentation/project-control only; not a semantic software version, release artifact, or deployment.
 - Repository revision: `34e92812ec7758c43313c612899eef41da4e72f9`, pushed to and verified on remote `main`.
+
+
+## 22. Comprehensive candidate pest-control catalogue — 2026-11-21
+
+- Documentation-only change: recorded the owner's direction to include a comprehensive pest-control service catalogue; Specification 32 Section 4 contains 71 candidate entries and Specification 31 records the approval boundary.
+- OI-02 is partially resolved for catalogue breadth only; individual service availability, capability, permissions, safety and public claims remain pending.
+- Classification: documentation/project-control only; not a software version, service launch, release artifact, or deployment.
+- Git revision and remote status: to be recorded after verification and push.

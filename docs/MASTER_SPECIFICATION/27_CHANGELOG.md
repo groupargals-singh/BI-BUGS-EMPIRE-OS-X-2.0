@@ -111,6 +111,8 @@ This document does not claim that a release has occurred merely because changelo
 
 ### Unreleased — documentation and project-control changes only
 
+- 2026-11-21: Added owner-directed 71-entry comprehensive candidate pest-control catalogue; separated allied services and retained capability, legal, safety, and publication verification gates. Updated OI-02 and requirements/matrix/roadmap records. Documentation-only; no service availability or software release is claimed.
+
 The following verified repository revisions are documentation/control changes, not software releases (newest first):
 
 - `34e9281` — reconciled the source-confirmed legal/business identity (`WREQ-C-001`) with the OI-01 public-brand approval boundary; see Milestone 69.

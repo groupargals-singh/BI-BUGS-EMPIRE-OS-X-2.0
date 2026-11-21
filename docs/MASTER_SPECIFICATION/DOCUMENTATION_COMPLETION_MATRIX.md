@@ -110,7 +110,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 
 ### 6.2 Owner decisions and project acceptance — still open
 
-- [ ] Owner confirms approved services and publishable content/claims.
+- [ ] Owner confirms individual service availability/capability, exclusions, treatment descriptions and publishable content/claims. (The comprehensive candidate taxonomy is captured; individual confirmations remain open.)
 - [ ] Owner confirms exact public display wording and approves brand assets, colours, typography, imagery and language. The legal/business identity is source-confirmed in WREQ-C-001; public presentation remains pending.
 - [ ] Owner approves service geography and public contact channels.
 - [ ] Owner approves sitemap and first-release customer action.

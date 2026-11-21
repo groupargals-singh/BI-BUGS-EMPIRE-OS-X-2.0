@@ -63,23 +63,134 @@ Run `python scripts/validate_website_source_gate.py` for a status report or add 
 
 Do not create or publish an unapproved logo, certification, testimonial, guarantee, or brand claim.
 
-## 4. Service catalogue and publishable content
+## 4. Comprehensive pest-control service catalogue — owner-directed candidate scope
 
-Create one row per service only after the owner supplies its approved name and content.
+**Owner direction received 2026-11-21:** “Jo jo pest control service hoti h sab dalo isme” — include the broad range of pest-control services in the BI-BUGS website catalogue. The catalogue below is the comprehensive planning taxonomy requested by the owner. It is **not** evidence that BI-BUGS currently performs every listed treatment, holds every required licence, or approves every public claim. Each service remains `CANDIDATE — PROVIDER CAPABILITY / OWNER PUBLICATION CHECK REQUIRED` until BI-BUGS confirms availability, delivery method, geographic coverage, safety controls, and publishable wording. Do not show an unverified candidate as an active bookable service.
 
-| Service ID | Exact approved service name | Customer problem/use case | Approved description | Coverage/limitations | Safety notice/source | Status |
-|---|---|---|---|---|---|---|
-| WDS-001 |  |  |  |  |  | UNKNOWN |
-| WDS-002 |  |  |  |  |  | UNKNOWN |
-| WDS-003 |  |  |  |  |  | UNKNOWN |
+### 4.1 Residential and general pest management
 
-Additional owner inputs:
-- Which customer segments are served (residential, commercial, industrial, institutional, or other): UNKNOWN.
-- Which pest categories/treatments may be publicly described: UNKNOWN.
-- Which treatment claims, chemical names, safety instructions, warranties, licences, and certifications are legally approved for publication: UNKNOWN.
-- Which services must not be advertised: UNKNOWN.
+| Catalogue ID | Candidate service | Pest / scope | Publication status |
+|---|---|---|---|
+| WDS-001 | General Pest Control | General household pest inspection and control | CANDIDATE — VERIFY |
+| WDS-002 | Cockroach Control | Cockroaches | CANDIDATE — VERIFY |
+| WDS-003 | Ant Control | Ants and ant colonies | CANDIDATE — VERIFY |
+| WDS-004 | Bed Bug Control | Bed bugs | CANDIDATE — VERIFY |
+| WDS-005 | Rat and Mouse Control | Rats and mice | CANDIDATE — VERIFY |
+| WDS-006 | Mosquito Control | Mosquitoes and breeding-site management | CANDIDATE — VERIFY |
+| WDS-007 | Housefly and Other Fly Control | Houseflies and nuisance flies | CANDIDATE — VERIFY |
+| WDS-008 | Lizard Management | Lizards/geckos; humane exclusion where lawful | CANDIDATE — VERIFY |
+| WDS-009 | Spider Control | Common nuisance spiders | CANDIDATE — VERIFY |
+| WDS-010 | Silverfish Control | Silverfish | CANDIDATE — VERIFY |
+| WDS-011 | Flea Control | Fleas | CANDIDATE — VERIFY |
+| WDS-012 | Tick Control | Ticks | CANDIDATE — VERIFY |
+| WDS-013 | Moth Control | Clothes and pantry moths | CANDIDATE — VERIFY |
+| WDS-014 | Carpet Beetle Control | Carpet beetles and fabric pests | CANDIDATE — VERIFY |
+| WDS-015 | Centipede and Millipede Management | Occasional crawling pests | CANDIDATE — VERIFY |
+| WDS-016 | Silverfish and Booklice Management | Moisture-associated nuisance pests | CANDIDATE — VERIFY |
+| WDS-017 | Wasp Management | Wasps and nests, specialist handling only | CANDIDATE — VERIFY |
+| WDS-018 | Bee Management / Relocation Referral | Bees; safe relocation through qualified specialists where applicable | CANDIDATE — VERIFY |
 
-**Content rule:** Do not publish efficacy guarantees, health/safety claims, pesticide instructions, licence claims, or certification logos without approved evidence and appropriate review.
+### 4.2 Termite, wood and structural pest treatments
+
+| Catalogue ID | Candidate service | Pest / scope | Publication status |
+|---|---|---|---|
+| WDS-019 | Termite Control | Termite inspection and treatment | CANDIDATE — VERIFY |
+| WDS-020 | Pre-Construction Anti-Termite Treatment | Pre-construction soil treatment, subject to applicable standards | CANDIDATE — VERIFY |
+| WDS-021 | Post-Construction Anti-Termite Treatment | Treatment for existing buildings | CANDIDATE — VERIFY |
+| WDS-022 | Wood Borer Control | Wood-boring insects | CANDIDATE — VERIFY |
+| WDS-023 | Furniture Pest Treatment | Pest treatment for affected furniture | CANDIDATE — VERIFY |
+| WDS-024 | Structural Pest Inspection | Building and structural pest assessment | CANDIDATE — VERIFY |
+
+### 4.3 Commercial, industrial and institutional programmes
+
+| Catalogue ID | Candidate service | Customer/site type | Publication status |
+|---|---|---|---|
+| WDS-025 | Office Pest Management | Offices and business premises | CANDIDATE — VERIFY |
+| WDS-026 | Retail and Shop Pest Management | Shops, showrooms and retail stores | CANDIDATE — VERIFY |
+| WDS-027 | Hotel and Hospitality Pest Management | Hotels, guest houses and hospitality | CANDIDATE — VERIFY |
+| WDS-028 | Restaurant and Food-Service Pest Management | Restaurants, cafes and food-service areas | CANDIDATE — VERIFY |
+| WDS-029 | Commercial Kitchen Pest Management | Commercial kitchens | CANDIDATE — VERIFY |
+| WDS-030 | Hospital and Healthcare Pest Management | Healthcare premises, subject to strict site protocols | CANDIDATE — VERIFY |
+| WDS-031 | School and Educational Premises Pest Management | Schools, colleges and campuses | CANDIDATE — VERIFY |
+| WDS-032 | Factory and Manufacturing Pest Management | Industrial premises | CANDIDATE — VERIFY |
+| WDS-033 | Warehouse and Godown Pest Management | Warehouses and storage facilities | CANDIDATE — VERIFY |
+| WDS-034 | Food Processing Facility Pest Management | Food production/processing facilities | CANDIDATE — VERIFY |
+| WDS-035 | Pharmaceutical Facility Pest Management | Pharmaceutical premises, subject to site qualification | CANDIDATE — VERIFY |
+| WDS-036 | Cold Storage Pest Management | Cold storage facilities | CANDIDATE — VERIFY |
+| WDS-037 | Logistics and Transport Facility Pest Management | Logistics hubs and transport premises | CANDIDATE — VERIFY |
+| WDS-038 | Mall and Shopping Complex Pest Management | Common and commercial areas | CANDIDATE — VERIFY |
+| WDS-039 | Cinema and Entertainment Venue Pest Management | Entertainment premises | CANDIDATE — VERIFY |
+| WDS-040 | Residential Society / Apartment Pest Management | Common areas and approved residences | CANDIDATE — VERIFY |
+
+### 4.4 Rodent, flying pest, bird and vector management
+
+| Catalogue ID | Candidate service | Pest / scope | Publication status |
+|---|---|---|---|
+| WDS-041 | Integrated Rodent Management | Rodent inspection, proofing and control | CANDIDATE — VERIFY |
+| WDS-042 | Rodent Proofing and Entry-Point Sealing | Exclusion and proofing work | CANDIDATE — VERIFY |
+| WDS-043 | Mosquito and Vector Management | Mosquito/vector monitoring and control | CANDIDATE — VERIFY |
+| WDS-044 | Fly Management Programme | Fly monitoring and source reduction | CANDIDATE — VERIFY |
+| WDS-045 | Bird Proofing and Deterrent Installation | Lawful exclusion/deterrent systems | CANDIDATE — VERIFY |
+| WDS-046 | Pigeon Management | Humane, lawful pigeon exclusion and deterrence | CANDIDATE — VERIFY |
+
+### 4.5 Stored-product, grain, fabric and agricultural-adjacent pest management
+
+| Catalogue ID | Candidate service | Pest / scope | Publication status |
+|---|---|---|---|
+| WDS-047 | Stored Grain Pest Management | Insects affecting stored grain | CANDIDATE — VERIFY |
+| WDS-048 | Stored-Product Pest Management | Pantry and stored-commodity pests | CANDIDATE — VERIFY |
+| WDS-049 | Warehouse Commodity Pest Inspection | Stored goods and commodity inspection | CANDIDATE — VERIFY |
+| WDS-050 | Textile and Fabric Pest Management | Fabric/textile pests | CANDIDATE — VERIFY |
+| WDS-051 | Lawn and Garden Pest Management | Garden/landscape pests, within lawful scope | CANDIDATE — VERIFY |
+
+### 4.6 Specialist and controlled treatments
+
+| Catalogue ID | Candidate service | Scope / prerequisite | Publication status |
+|---|---|---|---|
+| WDS-052 | Fumigation Services | Only where trained, licensed/authorized and site requirements are met | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
+| WDS-053 | Container Fumigation | Qualified container fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
+| WDS-054 | Warehouse / Commodity Fumigation | Qualified facility and commodity fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
+| WDS-055 | Bee / Wasp Nest Specialist Response | Qualified specialist handling; no unsafe DIY instructions | CANDIDATE — SPECIALIST CHECK |
+| WDS-056 | Snake Sighting Referral / Rescue Coordination | Referral to authorized wildlife rescuers only; not routine pest extermination | CANDIDATE — REFERRAL ONLY / VERIFY |
+| WDS-057 | Weed Management | Separate vegetation-control service; include only if BI-BUGS confirms scope | CANDIDATE — ADJACENT SERVICE / VERIFY |
+
+### 4.7 Inspection, prevention and ongoing service programmes
+
+| Catalogue ID | Candidate service | Scope | Publication status |
+|---|---|---|---|
+| WDS-058 | Pest Inspection and Survey | Site inspection and findings | CANDIDATE — VERIFY |
+| WDS-059 | Pest Identification and Assessment | Identification and risk assessment | CANDIDATE — VERIFY |
+| WDS-060 | Integrated Pest Management (IPM) | Monitoring, prevention and targeted control programme | CANDIDATE — VERIFY |
+| WDS-061 | Preventive Pest Management | Preventive site programme | CANDIDATE — VERIFY |
+| WDS-062 | Pest Monitoring and Reporting | Monitoring records and reports | CANDIDATE — VERIFY |
+| WDS-063 | Annual Maintenance Contract (AMC) | Scheduled pest-management programme | CANDIDATE — VERIFY |
+| WDS-064 | Scheduled / Periodic Pest Control | Recurring service visits | CANDIDATE — VERIFY |
+| WDS-065 | Emergency Pest-Control Response | Only with confirmed service hours and response policy | CANDIDATE — VERIFY |
+| WDS-066 | Follow-up Inspection and Treatment Review | Post-treatment review, subject to policy | CANDIDATE — VERIFY |
+| WDS-067 | Site-Specific Pest Management Plan | Documented plan for a customer/site | CANDIDATE — VERIFY |
+
+### 4.8 Separate allied services — not automatically classified as pest control
+
+| Catalogue ID | Candidate service | Boundary | Publication status |
+|---|---|---|---|
+| WDS-068 | Disinfection | Separate hygiene service; approved method and claims required | ALLIED SERVICE — VERIFY |
+| WDS-069 | Sanitization | Separate hygiene service; define exact scope and claims | ALLIED SERVICE — VERIFY |
+| WDS-070 | Water Tank Cleaning | Separate facility-cleaning service; not pest control | ALLIED SERVICE — VERIFY |
+| WDS-071 | Drain / Sewer Cleaning or Treatment | Separate specialist service; distinguish pest treatment from cleaning | ALLIED SERVICE — VERIFY |
+
+**Catalogue total:** 71 candidate entries across core pest control, specialist treatments, inspection/programmes and separately labelled allied services. This is a discovery catalogue, not a statement of 71 currently offered BI-BUGS services.
+
+**Owner-approved catalogue direction:** Include a broad, comprehensive pest-control service catalogue rather than limiting the website to a few common pests. The owner has not yet confirmed which individual entries BI-BUGS can deliver, which require partners/referrals, which should be excluded, or the approved service descriptions and claims.
+
+Additional verification required before an entry becomes publishable:
+- BI-BUGS capability: in-house / approved partner / referral / not offered.
+- Target customer/site segments and actual operating coverage.
+- Treatment method, qualifications, applicable licences/permissions and safety controls.
+- Approved customer-facing description, preparation/re-entry guidance and limitations.
+- Claims, warranties, efficacy statements, certifications and logos supported by evidence.
+- Services explicitly excluded from the public catalogue.
+
+**Content rule:** Do not publish efficacy guarantees, health/safety claims, pesticide instructions, licence claims, certification logos, or service availability without approved evidence and appropriate review. Never provide unsafe chemical-use or wildlife-handling instructions to customers.
 
 ## 5. Service geography and contact channels
 
@@ -239,7 +350,7 @@ This section is the concise working register for completing the open business de
 | Register ID | Decision group | Required owner answer/evidence | Requirement conversion | Current status |
 |---|---|---|---|---|
 | OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | WREQ for approved identity/brand/content rules only | PARTIALLY RESOLVED — legal/business identity source-confirmed by WREQ-C-001; public display wording and brand inputs remain OPEN |
-| OI-02 | Service catalogue and claims | Exact services, target customer segments, treatment descriptions, prohibited claims, licences/certifications/safety wording allowed for publication | WREQ for each approved service/content/claim | OPEN — OWNER INPUT REQUIRED |
+| OI-02 | Service catalogue and claims | Comprehensive candidate taxonomy requested; confirm BI-BUGS delivery capability, partner/referral status, exclusions, coverage, treatment descriptions, claims, licences/certifications/safety wording | WREQ for each individually verified and owner-approved service/content/claim | PARTIALLY RESOLVED — owner directed broad catalogue inclusion; individual service availability and publishable claims remain OPEN |
 | OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | WREQ for approved service-area and public-contact behavior | OPEN — OWNER INPUT REQUIRED |
 | OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | WREQ for the owner-selected first-release customer action | OPEN — OWNER INPUT REQUIRED |
 | OI-05 | Customer data and privacy | Exact minimum fields, purpose, notice/consent, retention/deletion, access roles, exports and incident handling | WREQ for approved data-purpose/privacy/retention controls | OPEN — OWNER INPUT REQUIRED |
@@ -261,6 +372,6 @@ This section is the concise working register for completing the open business de
 
 **Requirement conversion rule:** OI-01 through OI-11 do not create product requirements until the owner supplies and explicitly approves the exact decision. Once approved, split combined answers into atomic, testable `WREQ-*` records; record the source, approval date, scope, priority, acceptance criteria, dependencies, risk/privacy impact, and lifecycle. If an item is explicitly deferred or not applicable, record that disposition and rationale instead of creating a requirement.
 
-**Current partial resolution:** OI-01 legal/business identity is source-confirmed as `BI-BUGS Pest Control Services Pvt Ltd` by existing project fact WREQ-C-001. This does not approve the exact public display wording, logo, colours, typography, imagery, language, or tone.
+**Current partial resolutions:** OI-01 legal/business identity is source-confirmed as `BI-BUGS Pest Control Services Pvt Ltd` by existing project fact WREQ-C-001; public display/brand approval remains open. OI-02 now records the owner-directed comprehensive 71-entry candidate catalogue in Section 4; it does not confirm BI-BUGS delivery capability, partner arrangements, individual service availability, legal permissions, treatment methods, claims, coverage, or public wording.
 
 **Current resolved decision:** OI-00 — Delivery path: `OWNER APPROVED — NEW_WEBSITE_BUILD` (DEC-BBE-002, 2026-11-17). This does not close OI-01 through OI-11.
