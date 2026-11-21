@@ -173,4 +173,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 
 - Documentation-only update: Specification 32 now records the legal/business identity from WREQ-C-001 as source-confirmed while retaining public display and brand approval as pending. Specification 31 and the completion matrix clarify this boundary.
 - Classification: documentation/project-control only; not a semantic software version, release artifact, or deployment.
-- Repository revision: pending commit at time of authoring; update this line after the verified push.
+- Repository revision: `34e92812ec7758c43313c612899eef41da4e72f9`, pushed to and verified on remote `main`.
