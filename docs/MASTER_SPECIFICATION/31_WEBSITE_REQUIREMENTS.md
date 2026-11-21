@@ -42,6 +42,8 @@ The controlling scope is defined by accepted decision `DEC-BBE-001`:
 
 These facts do not define the website's exact pages, wording, visual design, service catalogue, or transaction rules.
 
+**Identity clarification:** WREQ-C-001 supports the recorded business identity `BI-BUGS Pest Control Services Pvt Ltd`. This is a source-confirmed project fact, not approval of a logo, brand system, or exact public-facing display treatment; those remain owner-review items in OI-01.
+
 ## 4. Candidate first customer journey — not yet approved in detail
 
 The following is a planning candidate only:

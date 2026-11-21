@@ -1534,3 +1534,13 @@ f0ce9b4 Create master specification index
 **GitHub:** Commit `60e6bec` (`Reconcile BI-BUGS lifecycle review status headers`) pushed to `origin/main`; remote `main` verified at `60e6bece392a6f7bcaf2ceb1249cd603c59ac06b`; working tree clean at that verification.
 
 **Progress:** Documentation remains 70% provisional; overall project remains 10% provisional. This correction fixes lifecycle metadata consistency and does not change either percentage.
+
+## M-069 — Source-backed company identity reconciliation — 2026-11-21
+
+**Completed:** Cross-checked the owner-input register against confirmed website fact `WREQ-C-001` in Specification 31. Recorded `BI-BUGS Pest Control Services Pvt Ltd` as the source-confirmed legal/business identity in the Discovery Workbook and explicitly separated that fact from approval of public display wording, logo, colours, typography, imagery, language, or tone. OI-01 is now PARTIALLY RESOLVED rather than wholly open; its remaining brand/public-presentation decisions remain pending. Updated the requirements note and documentation acceptance matrix.
+
+**Verification:** Project-control/frontend-shell tests 19/19 PASS; lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS before commit.
+
+**Remaining:** OI-01 public display/brand approval; OI-02 service catalogue and claims; OI-03 coverage/contact; OI-04 customer action; OI-05 privacy/data; OI-06 staff workflow; OI-07 sitemap/content; OI-08 design/accessibility; OI-09 domain/hosting; OI-10 operations/release; OI-11 acceptance.
+
+**Progress:** Documentation remains 70% provisional; this evidence clarification does not close a weighted owner-approval gate. Overall project remains 10% provisional.

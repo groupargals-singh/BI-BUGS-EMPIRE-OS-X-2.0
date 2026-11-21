@@ -111,7 +111,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 ### 6.2 Owner decisions and project acceptance — still open
 
 - [ ] Owner confirms approved services and publishable content/claims.
-- [ ] Owner supplies/approves brand assets, public identity and language.
+- [ ] Owner confirms exact public display wording and approves brand assets, colours, typography, imagery and language. The legal/business identity is source-confirmed in WREQ-C-001; public presentation remains pending.
 - [ ] Owner approves service geography and public contact channels.
 - [ ] Owner approves sitemap and first-release customer action.
 - [ ] Owner approves any form fields, purpose, privacy notice, consent, retention and deletion rules.
@@ -137,7 +137,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. The 2026-11-20 consistency pass did not close any owner-input or owner-acceptance gate, so the evidence-based estimate remains 70%. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02–OI-11 remain open and OI-01 remains partially open. The weighted estimate remains 70% because this partial fact clarification does not yet close a measurable requirement/acceptance gate. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

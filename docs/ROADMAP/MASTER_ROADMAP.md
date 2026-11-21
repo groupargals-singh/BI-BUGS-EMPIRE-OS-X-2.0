@@ -38,3 +38,5 @@ Documentation Phase 1 remains active at 70% provisional. The specification-by-sp
 
 
 **Consistency reconciliation — 2026-11-20:** The internal documentation package is ready for owner review, not owner-accepted. OI-01–OI-11 remain open. Approved decisions alone may become `WREQ-*` records; no speculative registry population is allowed. Milestone 67 updates the canonical audit and revision history.
+
+**Owner-input reconciliation — 2026-11-21:** OI-01 is partially resolved for the legal/business identity fact only: `BI-BUGS Pest Control Services Pvt Ltd` is recorded in WREQ-C-001. Public display wording and brand assets remain owner approval items. OI-02–OI-11 remain open; do not infer service catalogue, contact, customer journey, privacy, staff workflow, sitemap, hosting, or release decisions. Documentation remains 70% provisional.

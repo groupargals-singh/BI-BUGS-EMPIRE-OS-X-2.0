@@ -22,6 +22,7 @@ For every item, record one of:
 - `UNKNOWN` — no reliable information supplied.
 - `OWNER_INPUT_RECEIVED` — information supplied but not yet verified/reviewed.
 - `APPROVED` — explicitly accepted by the BI-BUGS project owner.
+- `SOURCE_CONFIRMED — DISPLAY APPROVAL PENDING` — a company identity fact is supported by the canonical project record, but its exact public-facing presentation is not yet owner-approved.
 - `DEFERRED` — intentionally excluded from the first release.
 - `NOT_APPLICABLE` — owner confirms it does not apply.
 
@@ -51,7 +52,7 @@ Run `python scripts/validate_website_source_gate.py` for a status report or add 
 
 | Input | Owner value | Status | Evidence / notes |
 |---|---|---|---|
-| Exact legal/business display name |  | UNKNOWN |  |
+| Exact legal/business identity on project record | BI-BUGS Pest Control Services Pvt Ltd | SOURCE_CONFIRMED — DISPLAY APPROVAL PENDING | Matches confirmed project identity WREQ-C-001 in `31_WEBSITE_REQUIREMENTS.md`; owner must still confirm exact public display wording before publication. |
 | Approved logo file/source |  | UNKNOWN |  |
 | Brand colours |  | UNKNOWN |  |
 | Typography/font preference |  | UNKNOWN |  |
@@ -237,7 +238,7 @@ This section is the concise working register for completing the open business de
 
 | Register ID | Decision group | Required owner answer/evidence | Requirement conversion | Current status |
 |---|---|---|---|---|
-| OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | WREQ for approved identity/brand/content rules only | OPEN — OWNER INPUT REQUIRED |
+| OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | WREQ for approved identity/brand/content rules only | PARTIALLY RESOLVED — legal/business identity source-confirmed by WREQ-C-001; public display wording and brand inputs remain OPEN |
 | OI-02 | Service catalogue and claims | Exact services, target customer segments, treatment descriptions, prohibited claims, licences/certifications/safety wording allowed for publication | WREQ for each approved service/content/claim | OPEN — OWNER INPUT REQUIRED |
 | OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | WREQ for approved service-area and public-contact behavior | OPEN — OWNER INPUT REQUIRED |
 | OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | WREQ for the owner-selected first-release customer action | OPEN — OWNER INPUT REQUIRED |
@@ -259,5 +260,7 @@ This section is the concise working register for completing the open business de
 6. Re-run the documentation and traceability audits after the approved inputs are incorporated.
 
 **Requirement conversion rule:** OI-01 through OI-11 do not create product requirements until the owner supplies and explicitly approves the exact decision. Once approved, split combined answers into atomic, testable `WREQ-*` records; record the source, approval date, scope, priority, acceptance criteria, dependencies, risk/privacy impact, and lifecycle. If an item is explicitly deferred or not applicable, record that disposition and rationale instead of creating a requirement.
+
+**Current partial resolution:** OI-01 legal/business identity is source-confirmed as `BI-BUGS Pest Control Services Pvt Ltd` by existing project fact WREQ-C-001. This does not approve the exact public display wording, logo, colours, typography, imagery, language, or tone.
 
 **Current resolved decision:** OI-00 — Delivery path: `OWNER APPROVED — NEW_WEBSITE_BUILD` (DEC-BBE-002, 2026-11-17). This does not close OI-01 through OI-11.

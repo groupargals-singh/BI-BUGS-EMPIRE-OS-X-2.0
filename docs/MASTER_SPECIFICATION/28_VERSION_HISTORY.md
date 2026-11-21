@@ -168,3 +168,9 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Classification: documentation/project-control only; not a semantic software version, release artifact, or deployment.
 - Remote `main` verified at `60e6bece392a6f7bcaf2ceb1249cd603c59ac06b`.
 - Evidence boundary: owner inputs OI-01–OI-11, approved requirements, requirement-level traceability, and explicit owner acceptance remain open.
+
+## 21. Source-backed company identity reconciliation — 2026-11-21
+
+- Documentation-only update: Specification 32 now records the legal/business identity from WREQ-C-001 as source-confirmed while retaining public display and brand approval as pending. Specification 31 and the completion matrix clarify this boundary.
+- Classification: documentation/project-control only; not a semantic software version, release artifact, or deployment.
+- Repository revision: pending commit at time of authoring; update this line after the verified push.
