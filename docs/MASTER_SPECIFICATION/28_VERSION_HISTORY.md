@@ -190,3 +190,10 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Added strict read-only validator `scripts/validate_service_catalogue.py` and unit tests `testing/test_validate_service_catalogue.py`.
 - All entries remain blocked by default; validation does not establish actual service availability or approve claims.
 - Documentation/project-control change only; not a software release or deployment. Git revision to be recorded after push.
+
+
+## 24. Geographic selector scope decision — 2026-11-23
+
+- Documentation-only change: owner approved all-India States/UTs and city selection plus a separate International/World country selector; recorded as DEC-BBE-003 / WREQ-GEO-001.
+- OI-03 is partially resolved for selection scope only. Actual service coverage and public contact details remain open.
+- No application feature, software release, nationwide service claim or international operation is declared. Git revision and remote status to be recorded after verification and push.

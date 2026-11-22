@@ -46,3 +46,6 @@ Documentation Phase 1 remains active at 70% provisional. The specification-by-sp
 
 
 **Service approval control gate — 2026-11-23:** All 71 WDS candidate entries now carry explicit provider/delivery, evidence, coverage, compliance/safety, owner approval, content approval, and publication status fields. They default to blocked. The strict service-catalogue validator and unit tests prevent publication unless all required gates are satisfied. This completes the internal approval-control design, not the owner verification of the services themselves.
+
+
+**Geographic selector scope — 2026-11-23:** Owner approved a distinct India selector covering all States/UTs and cities, plus a separate `International / World` country selector (DEC-BBE-003 / WREQ-GEO-001). This is a location-selection requirement only; it does not imply BI-BUGS has active service coverage across India or internationally. Actual coverage and contact details remain open under OI-03. Documentation Phase 1 remains 70% provisional.

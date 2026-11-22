@@ -69,7 +69,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 |---|---|---|
 | Authority and scope | Constitution, DEC-BBE-001/002, Blueprint and scope boundaries agree | Reviewed for core scope; final owner acceptance pending |
 | Specification consistency | No unresolved contradiction across applicable specifications | REVIEWED AT DOCUMENT BASELINE — new contradictions must be logged; owner decisions remain separate |
-| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | OWNER INPUT REQUIRED; 71-row candidate service register now has explicit capability/evidence/coverage/compliance/owner/content/publish gates |
+| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | PARTIALLY RESOLVED: geographic selector scope approved by WREQ-GEO-001; actual service coverage/contact and other website requirements remain OWNER INPUT REQUIRED; 71-row candidate service register has explicit capability/evidence/coverage/compliance/owner/content/publish gates |
 | Privacy and data | Approved data fields, purpose, consent, retention, access and deletion requirements | OWNER INPUT REQUIRED |
 | Operational workflow | Enquiry handling, staff roles, assignment, response and escalation | OWNER INPUT REQUIRED |
 | Registry traceability | Stable IDs linked requirement → feature/module → API/data → test → release | TEMPLATE/POPULATION RULES REVIEWED; product records gated by approved requirements and implementation |
@@ -138,7 +138,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02–OI-11 remain open and OI-01 remains partially open. The weighted estimate remains 70% because this partial fact clarification does not yet close a measurable requirement/acceptance gate. The per-service approval control structure is now complete, but actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02 and OI-03 are partially resolved for catalogue breadth and geographic selector scope respectively; actual service capability/coverage/contact and owner/content decisions remain open, as do the other owner inputs and final package acceptance. The weighted estimate remains 70% because this selector-scope approval does not confirm operating coverage or close the broader owner-acceptance gates. The per-service approval control structure is complete, but actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

@@ -214,8 +214,10 @@ Run `python scripts/validate_service_catalogue.py` to verify catalogue IDs, comp
 
 | Input | Owner value | Status | Evidence / notes |
 |---|---|---|---|
-| Primary operating city/region |  | UNKNOWN |  |
-| Full service coverage / excluded areas |  | UNKNOWN |  |
+| Geographic selection — India | All Indian states/UTs and all cities must be available as selectable/searchable locations | OWNER APPROVED — SELECTION SCOPE ONLY | Owner instruction received 2026-11-23; this is not confirmation of active service coverage in every location |
+| Geographic selection — International | Separate `International / World` option with a selectable country list | OWNER APPROVED — SELECTION SCOPE ONLY | Owner instruction received 2026-11-23; country selection is for enquiry/location capture, not a claim of overseas operations |
+| Primary operating city/region |  | UNKNOWN | Actual operating base not supplied |
+| Full active service coverage / excluded areas |  | UNKNOWN | All locations remain unavailable/unverified for public availability claims until confirmed per service |
 | Official business address (if to publish) |  | UNKNOWN |  |
 | Public phone/WhatsApp number |  | UNKNOWN |  |
 | Public email address |  | UNKNOWN |  |
@@ -369,7 +371,7 @@ This section is the concise working register for completing the open business de
 |---|---|---|---|---|
 | OI-01 | Public company identity and brand | Exact display/legal wording, approved logo/assets, colours, typography, language, writing tone | WREQ for approved identity/brand/content rules only | PARTIALLY RESOLVED — legal/business identity source-confirmed by WREQ-C-001; public display wording and brand inputs remain OPEN |
 | OI-02 | Service catalogue and claims | Comprehensive candidate taxonomy requested; confirm BI-BUGS delivery capability, partner/referral status, exclusions, coverage, treatment descriptions, claims, licences/certifications/safety wording | WREQ for each individually verified and owner-approved service/content/claim | PARTIALLY RESOLVED — owner directed broad catalogue inclusion; individual service availability and publishable claims remain OPEN |
-| OI-03 | Service coverage and contact | Operating city/areas, exclusions, public phone/email/address/hours and emergency policy | WREQ for approved service-area and public-contact behavior | OPEN — OWNER INPUT REQUIRED |
+| OI-03 | Service coverage and contact | Geographic selector scope approved: all India states/UTs and cities, plus separate International/World country selector. Still required: actual active operating/service areas, exclusions, public phone/email/address/hours and emergency policy | WREQ for approved location-selection behavior; separate WREQs only for confirmed active coverage and approved public contact | PARTIALLY RESOLVED — selector scope owner-approved 2026-11-23; actual service coverage/contact remains OPEN |
 | OI-04 | Customer journey | First-release customer action; whether enquiry, callback, appointment, payment, account or channel handoff is in scope | WREQ for the owner-selected first-release customer action | OPEN — OWNER INPUT REQUIRED |
 | OI-05 | Customer data and privacy | Exact minimum fields, purpose, notice/consent, retention/deletion, access roles, exports and incident handling | WREQ for approved data-purpose/privacy/retention controls | OPEN — OWNER INPUT REQUIRED |
 | OI-06 | Staff operations | Roles, assignment, status transitions, response/escalation, audit history and account lifecycle | WREQ for approved staff roles and workflow, if in scope | OPEN — OWNER INPUT REQUIRED |
@@ -390,6 +392,6 @@ This section is the concise working register for completing the open business de
 
 **Requirement conversion rule:** OI-01 through OI-11 do not create product requirements until the owner supplies and explicitly approves the exact decision. Once approved, split combined answers into atomic, testable `WREQ-*` records; record the source, approval date, scope, priority, acceptance criteria, dependencies, risk/privacy impact, and lifecycle. If an item is explicitly deferred or not applicable, record that disposition and rationale instead of creating a requirement.
 
-**Current partial resolutions:** OI-01 legal/business identity is source-confirmed as `BI-BUGS Pest Control Services Pvt Ltd` by existing project fact WREQ-C-001; public display/brand approval remains open. OI-02 now records the owner-directed comprehensive 71-entry candidate catalogue in Section 4; it does not confirm BI-BUGS delivery capability, partner arrangements, individual service availability, legal permissions, treatment methods, claims, coverage, or public wording.
+**Current partial resolutions:** OI-01 legal/business identity is source-confirmed as `BI-BUGS Pest Control Services Pvt Ltd` by existing project fact WREQ-C-001; public display/brand approval remains open. OI-02 records the owner-directed comprehensive 71-entry candidate catalogue; individual availability and claims remain unverified. OI-03 now records the owner-approved geographic selector scope (all India states/UTs and cities, plus a separate International/World country selector); actual active service coverage, exclusions and public contact details remain unknown and must not be inferred.
 
 **Current resolved decision:** OI-00 — Delivery path: `OWNER APPROVED — NEW_WEBSITE_BUILD` (DEC-BBE-002, 2026-11-17). This does not close OI-01 through OI-11.

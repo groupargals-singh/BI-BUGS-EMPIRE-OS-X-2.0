@@ -46,3 +46,16 @@ Accepted decisions should not be silently overwritten; supersede them with a lin
 - **Consequences, risks, and alternatives rejected:** Do not treat an unverified external URL as the official source. Domain, DNS, hosting, content, integrations, and release remain separately gated. Preserve all existing repository history and files.
 - **Related requirements, features, modules, commits, and tests:** `31_WEBSITE_REQUIREMENTS.md`, `32_WEBSITE_DISCOVERY_WORKBOOK.md`, `scripts/validate_website_source_gate.py`, `testing/test_validate_website_source_gate.py`.
 - **Reversal conditions / review date:** Change only through a new explicit owner-approved decision that supersedes this record.
+
+
+## DEC-BBE-003 — India-wide and international geographic selector
+
+- **Status:** ACCEPTED
+- **Date:** 2026-11-23
+- **Owner / approver:** Project Owner (explicit instruction in current conversation)
+- **Context and constraints:** The new BI-BUGS website needs a location-selection scope that is not restricted to the company's currently confirmed service areas.
+- **Decision:** Provide a distinct India selector covering all States/Union Territories and cities, plus a separate `International / World` option with country selection.
+- **Evidence / approval boundary:** Owner instruction: “All India sabhi rajy or sabhi Sahar or ek agal se world ke desh ka option bhi rajhnA.” This approves the geographic selection scope only. It does not confirm service availability in all Indian locations or any overseas country.
+- **Consequences / controls:** Requested/customer-selected location must remain distinct from confirmed service coverage. Never claim availability unless the relevant service has owner-confirmed coverage and has passed its evidence, compliance/safety, owner-approval and public-content publication gates. Enquiry-form use remains subject to customer-journey and privacy approval.
+- **Related requirements:** `WREQ-GEO-001` in `../MASTER_SPECIFICATION/31_WEBSITE_REQUIREMENTS.md`; OI-03 in `../MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md`.
+- **Reversal conditions:** Change only through a subsequent explicit owner-approved decision.

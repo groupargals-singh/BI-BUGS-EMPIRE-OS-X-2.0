@@ -135,3 +135,10 @@ The following verified repository revisions are documentation/control changes, n
 These entries describe source-control changes only. They do not claim a released application artifact, production website, backend, database, or deployed business workflow. The changelog must be updated from verified commits and approved release records; do not move an entry from Unreleased to a versioned release section until the release process has produced an identifiable approved artifact.
 
 **Current baseline:** No software release version or release artifact is established by the above commits. The inspected local Git tag inventory contained no tags at the time of review; confirm remote tags and any external releases separately before a future release declaration.
+
+
+## Unreleased — 2026-11-23 — Geographic selector requirement (documentation only)
+
+- Added owner-approved requirement `WREQ-GEO-001` for all-India States/UTs and city selection plus a separate International/World country selector.
+- Recorded decision `DEC-BBE-003` and partially resolved OI-03 for selector scope only.
+- Actual BI-BUGS service coverage, exclusions and public contact details remain unconfirmed; no nationwide/worldwide availability claim or website feature implementation is implied.

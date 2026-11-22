@@ -252,3 +252,32 @@ Specification 32 Section 4 now maintains a per-service control record for all 71
 Allowed delivery models are `IN_HOUSE`, `APPROVED_PARTNER`, `REFERRAL_ONLY`, `NOT_OFFERED`, and `UNKNOWN`. An item may be marked `APPROVED_FOR_PUBLICATION` only after provider evidence, confirmed coverage, compliance/safety approval, owner approval, and exact public-content approval are recorded. `NOT_OFFERED` must remain blocked. Referral-only entries must be visibly described as referral/coordination, not as BI-BUGS in-house treatment.
 
 A read-only gate validator is provided at `scripts/validate_service_catalogue.py`, with unit tests in `testing/test_validate_service_catalogue.py`. Run `python scripts/validate_service_catalogue.py --strict`. A PASS proves catalogue row integrity and approval-gate consistency only; it does not independently verify submitted evidence, authorize a service, or approve a public claim.
+
+
+## 21. Owner-approved geographic selector scope — 2026-11-23
+
+**Requirement ID:** `WREQ-GEO-001`
+**Title:** India-wide and international location selection
+**Source / approval:** Explicit project-owner instruction received 2026-11-23: “All India sabhi rajy or sabhi Sahar or ek agal se world ke desh ka option bhi rajhnA.”
+**Approval:** `OWNER_APPROVED` for selector scope only; approval date 2026-11-23.
+**Scope:** Website location selection/search for customer enquiry or location capture, subject to the separately approved customer journey and privacy requirements.
+**Priority:** Required discovery/design behavior; implementation remains gated by documentation acceptance.
+
+**Requirement statement:** The website shall provide an India location option that supports selection/search across all Indian States and Union Territories and their cities, and a separate `International / World` option that allows selection of a country. The international selector is distinct from the India selector.
+
+**Acceptance criteria:**
+- India is a distinct selectable geographic scope.
+- The India location data model supports every Indian State and Union Territory and cities within them; do not limit the design to the company's current operating locations.
+- `International / World` is a separate option and supports country selection.
+- The selected location is treated as a customer-provided/requested location, not as evidence that BI-BUGS serves it.
+- The UI must not display “service available” for a location unless active coverage is independently confirmed for the requested service and that service passes the catalogue publication gate.
+- Unknown, unsupported or unconfirmed coverage must be labelled as requiring confirmation; do not imply nationwide or worldwide operational presence.
+- The selector's eventual use in an enquiry form remains subject to OI-04 customer-journey approval and OI-05 privacy/data approval.
+
+**Dependencies:** Specification 32 OI-03; per-service confirmed-coverage and publication controls in Specification 32 Section 4.9; OI-04 customer journey; OI-05 privacy/data.
+
+**Risk / privacy:** Do not collect more precise location data than the approved customer purpose requires. Country/state/city selection alone does not authorize geolocation or precise address collection.
+
+**Lifecycle:** `OWNER_APPROVED` — requirement definition only; `NOT IMPLEMENTED`, `NOT TESTED`, `NOT RELEASED`.
+
+**Explicit non-approval:** This requirement does not assert that BI-BUGS currently serves every Indian city/state or any country outside India. Actual service locations, exclusions, response capacity, branch presence and partner coverage remain unconfirmed.

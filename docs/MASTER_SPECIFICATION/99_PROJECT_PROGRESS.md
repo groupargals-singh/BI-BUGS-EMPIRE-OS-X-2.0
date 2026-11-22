@@ -1572,3 +1572,18 @@ f0ce9b4 Create master specification index
 **GitHub:** Commit/push and exact remote HEAD verification to be recorded after completion.
 
 **Progress:** Documentation remains 70% provisional; the control structure is complete but individual service facts and other owner-input/package-acceptance gates remain open. Overall project remains 10% provisional.
+
+
+## M-072 — India-wide and international geographic selector scope — 2026-11-23
+
+**Status:** COMPLETED — OWNER-APPROVED REQUIREMENT CAPTURED; ACTUAL SERVICE COVERAGE REMAINS UNKNOWN
+
+**Completed:** Recorded the owner's instruction to include (1) all Indian States/Union Territories and cities as selectable/searchable locations and (2) a separate `International / World` country-selection option. Added accepted decision `DEC-BBE-003`, requirement `WREQ-GEO-001`, and updated OI-03, the discovery workbook, completion matrix and roadmap.
+
+**Critical boundary:** A location selector is not a claim of service presence. No nationwide or worldwide service availability is asserted. Per-service active coverage, exclusions, partner arrangements and response capacity remain subject to owner confirmation and the existing per-service publication gate. Enquiry-form use also remains subject to OI-04 customer-journey and OI-05 privacy approval.
+
+**Verification (2026-11-23):** Service catalogue strict gate PASS (71/71); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); full unit test suite PASS (26/26); frontend JavaScript syntax PASS; Markdown integrity PASS (all Markdown files scanned, zero broken relative links and zero unbalanced fences); `git diff --check` PASS.
+
+**GitHub:** Pending selective commit/push and exact remote HEAD verification.
+
+**Progress:** Documentation remains 70% provisional; OI-03 is partially resolved for selector scope only. Actual service geography/contact, other owner inputs and explicit package acceptance remain open. Overall project remains 10% provisional.
