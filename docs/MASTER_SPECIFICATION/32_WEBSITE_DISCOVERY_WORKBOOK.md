@@ -5,7 +5,7 @@
 **Specification ID:** BBEOSX-MS-32
 **Specification status:** DRAFT — OWNER INPUT IN PROGRESS; SOURCE DECISION RESOLVED
 **Implementation status:** PARTIAL — static frontend foundation exists; customer/business workflows are not implemented
-**Testing status:** SOURCE-GATE STRICT VALIDATION PASS; frontend/project-control test evidence recorded in `99_PROJECT_PROGRESS.md`
+**Testing status:** SOURCE-GATE AND SERVICE-CATALOGUE STRICT VALIDATION PASS; frontend/project-control test evidence recorded in `99_PROJECT_PROGRESS.md`
 **Production status:** NOT VERIFIED
 **Authority:** Master Specification
 **Parent:** `00_MASTER_INDEX.md`
@@ -69,114 +69,114 @@ Do not create or publish an unapproved logo, certification, testimonial, guarant
 
 ### 4.1 Residential and general pest management
 
-| Catalogue ID | Candidate service | Pest / scope | Publication status |
-|---|---|---|---|
-| WDS-001 | General Pest Control | General household pest inspection and control | CANDIDATE — VERIFY |
-| WDS-002 | Cockroach Control | Cockroaches | CANDIDATE — VERIFY |
-| WDS-003 | Ant Control | Ants and ant colonies | CANDIDATE — VERIFY |
-| WDS-004 | Bed Bug Control | Bed bugs | CANDIDATE — VERIFY |
-| WDS-005 | Rat and Mouse Control | Rats and mice | CANDIDATE — VERIFY |
-| WDS-006 | Mosquito Control | Mosquitoes and breeding-site management | CANDIDATE — VERIFY |
-| WDS-007 | Housefly and Other Fly Control | Houseflies and nuisance flies | CANDIDATE — VERIFY |
-| WDS-008 | Lizard Management | Lizards/geckos; humane exclusion where lawful | CANDIDATE — VERIFY |
-| WDS-009 | Spider Control | Common nuisance spiders | CANDIDATE — VERIFY |
-| WDS-010 | Silverfish Control | Silverfish | CANDIDATE — VERIFY |
-| WDS-011 | Flea Control | Fleas | CANDIDATE — VERIFY |
-| WDS-012 | Tick Control | Ticks | CANDIDATE — VERIFY |
-| WDS-013 | Moth Control | Clothes and pantry moths | CANDIDATE — VERIFY |
-| WDS-014 | Carpet Beetle Control | Carpet beetles and fabric pests | CANDIDATE — VERIFY |
-| WDS-015 | Centipede and Millipede Management | Occasional crawling pests | CANDIDATE — VERIFY |
-| WDS-016 | Silverfish and Booklice Management | Moisture-associated nuisance pests | CANDIDATE — VERIFY |
-| WDS-017 | Wasp Management | Wasps and nests, specialist handling only | CANDIDATE — VERIFY |
-| WDS-018 | Bee Management / Relocation Referral | Bees; safe relocation through qualified specialists where applicable | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Pest / scope | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-001 | General Pest Control | General household pest inspection and control | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-002 | Cockroach Control | Cockroaches | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-003 | Ant Control | Ants and ant colonies | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-004 | Bed Bug Control | Bed bugs | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-005 | Rat and Mouse Control | Rats and mice | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-006 | Mosquito Control | Mosquitoes and breeding-site management | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-007 | Housefly and Other Fly Control | Houseflies and nuisance flies | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-008 | Lizard Management | Lizards/geckos; humane exclusion where lawful | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-009 | Spider Control | Common nuisance spiders | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-010 | Silverfish Control | Silverfish | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-011 | Flea Control | Fleas | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-012 | Tick Control | Ticks | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-013 | Moth Control | Clothes and pantry moths | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-014 | Carpet Beetle Control | Carpet beetles and fabric pests | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-015 | Centipede and Millipede Management | Occasional crawling pests | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-016 | Silverfish and Booklice Management | Moisture-associated nuisance pests | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-017 | Wasp Management | Wasps and nests, specialist handling only | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-018 | Bee Management / Relocation Referral | Bees; safe relocation through qualified specialists where applicable | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.2 Termite, wood and structural pest treatments
 
-| Catalogue ID | Candidate service | Pest / scope | Publication status |
-|---|---|---|---|
-| WDS-019 | Termite Control | Termite inspection and treatment | CANDIDATE — VERIFY |
-| WDS-020 | Pre-Construction Anti-Termite Treatment | Pre-construction soil treatment, subject to applicable standards | CANDIDATE — VERIFY |
-| WDS-021 | Post-Construction Anti-Termite Treatment | Treatment for existing buildings | CANDIDATE — VERIFY |
-| WDS-022 | Wood Borer Control | Wood-boring insects | CANDIDATE — VERIFY |
-| WDS-023 | Furniture Pest Treatment | Pest treatment for affected furniture | CANDIDATE — VERIFY |
-| WDS-024 | Structural Pest Inspection | Building and structural pest assessment | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Pest / scope | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-019 | Termite Control | Termite inspection and treatment | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-020 | Pre-Construction Anti-Termite Treatment | Pre-construction soil treatment, subject to applicable standards | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-021 | Post-Construction Anti-Termite Treatment | Treatment for existing buildings | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-022 | Wood Borer Control | Wood-boring insects | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-023 | Furniture Pest Treatment | Pest treatment for affected furniture | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-024 | Structural Pest Inspection | Building and structural pest assessment | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.3 Commercial, industrial and institutional programmes
 
-| Catalogue ID | Candidate service | Customer/site type | Publication status |
-|---|---|---|---|
-| WDS-025 | Office Pest Management | Offices and business premises | CANDIDATE — VERIFY |
-| WDS-026 | Retail and Shop Pest Management | Shops, showrooms and retail stores | CANDIDATE — VERIFY |
-| WDS-027 | Hotel and Hospitality Pest Management | Hotels, guest houses and hospitality | CANDIDATE — VERIFY |
-| WDS-028 | Restaurant and Food-Service Pest Management | Restaurants, cafes and food-service areas | CANDIDATE — VERIFY |
-| WDS-029 | Commercial Kitchen Pest Management | Commercial kitchens | CANDIDATE — VERIFY |
-| WDS-030 | Hospital and Healthcare Pest Management | Healthcare premises, subject to strict site protocols | CANDIDATE — VERIFY |
-| WDS-031 | School and Educational Premises Pest Management | Schools, colleges and campuses | CANDIDATE — VERIFY |
-| WDS-032 | Factory and Manufacturing Pest Management | Industrial premises | CANDIDATE — VERIFY |
-| WDS-033 | Warehouse and Godown Pest Management | Warehouses and storage facilities | CANDIDATE — VERIFY |
-| WDS-034 | Food Processing Facility Pest Management | Food production/processing facilities | CANDIDATE — VERIFY |
-| WDS-035 | Pharmaceutical Facility Pest Management | Pharmaceutical premises, subject to site qualification | CANDIDATE — VERIFY |
-| WDS-036 | Cold Storage Pest Management | Cold storage facilities | CANDIDATE — VERIFY |
-| WDS-037 | Logistics and Transport Facility Pest Management | Logistics hubs and transport premises | CANDIDATE — VERIFY |
-| WDS-038 | Mall and Shopping Complex Pest Management | Common and commercial areas | CANDIDATE — VERIFY |
-| WDS-039 | Cinema and Entertainment Venue Pest Management | Entertainment premises | CANDIDATE — VERIFY |
-| WDS-040 | Residential Society / Apartment Pest Management | Common areas and approved residences | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Customer/site type | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-025 | Office Pest Management | Offices and business premises | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-026 | Retail and Shop Pest Management | Shops, showrooms and retail stores | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-027 | Hotel and Hospitality Pest Management | Hotels, guest houses and hospitality | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-028 | Restaurant and Food-Service Pest Management | Restaurants, cafes and food-service areas | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-029 | Commercial Kitchen Pest Management | Commercial kitchens | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-030 | Hospital and Healthcare Pest Management | Healthcare premises, subject to strict site protocols | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-031 | School and Educational Premises Pest Management | Schools, colleges and campuses | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-032 | Factory and Manufacturing Pest Management | Industrial premises | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-033 | Warehouse and Godown Pest Management | Warehouses and storage facilities | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-034 | Food Processing Facility Pest Management | Food production/processing facilities | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-035 | Pharmaceutical Facility Pest Management | Pharmaceutical premises, subject to site qualification | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-036 | Cold Storage Pest Management | Cold storage facilities | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-037 | Logistics and Transport Facility Pest Management | Logistics hubs and transport premises | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-038 | Mall and Shopping Complex Pest Management | Common and commercial areas | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-039 | Cinema and Entertainment Venue Pest Management | Entertainment premises | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-040 | Residential Society / Apartment Pest Management | Common areas and approved residences | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.4 Rodent, flying pest, bird and vector management
 
-| Catalogue ID | Candidate service | Pest / scope | Publication status |
-|---|---|---|---|
-| WDS-041 | Integrated Rodent Management | Rodent inspection, proofing and control | CANDIDATE — VERIFY |
-| WDS-042 | Rodent Proofing and Entry-Point Sealing | Exclusion and proofing work | CANDIDATE — VERIFY |
-| WDS-043 | Mosquito and Vector Management | Mosquito/vector monitoring and control | CANDIDATE — VERIFY |
-| WDS-044 | Fly Management Programme | Fly monitoring and source reduction | CANDIDATE — VERIFY |
-| WDS-045 | Bird Proofing and Deterrent Installation | Lawful exclusion/deterrent systems | CANDIDATE — VERIFY |
-| WDS-046 | Pigeon Management | Humane, lawful pigeon exclusion and deterrence | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Pest / scope | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-041 | Integrated Rodent Management | Rodent inspection, proofing and control | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-042 | Rodent Proofing and Entry-Point Sealing | Exclusion and proofing work | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-043 | Mosquito and Vector Management | Mosquito/vector monitoring and control | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-044 | Fly Management Programme | Fly monitoring and source reduction | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-045 | Bird Proofing and Deterrent Installation | Lawful exclusion/deterrent systems | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-046 | Pigeon Management | Humane, lawful pigeon exclusion and deterrence | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.5 Stored-product, grain, fabric and agricultural-adjacent pest management
 
-| Catalogue ID | Candidate service | Pest / scope | Publication status |
-|---|---|---|---|
-| WDS-047 | Stored Grain Pest Management | Insects affecting stored grain | CANDIDATE — VERIFY |
-| WDS-048 | Stored-Product Pest Management | Pantry and stored-commodity pests | CANDIDATE — VERIFY |
-| WDS-049 | Warehouse Commodity Pest Inspection | Stored goods and commodity inspection | CANDIDATE — VERIFY |
-| WDS-050 | Textile and Fabric Pest Management | Fabric/textile pests | CANDIDATE — VERIFY |
-| WDS-051 | Lawn and Garden Pest Management | Garden/landscape pests, within lawful scope | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Pest / scope | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-047 | Stored Grain Pest Management | Insects affecting stored grain | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-048 | Stored-Product Pest Management | Pantry and stored-commodity pests | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-049 | Warehouse Commodity Pest Inspection | Stored goods and commodity inspection | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-050 | Textile and Fabric Pest Management | Fabric/textile pests | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-051 | Lawn and Garden Pest Management | Garden/landscape pests, within lawful scope | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.6 Specialist and controlled treatments
 
-| Catalogue ID | Candidate service | Scope / prerequisite | Publication status |
-|---|---|---|---|
-| WDS-052 | Fumigation Services | Only where trained, licensed/authorized and site requirements are met | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
-| WDS-053 | Container Fumigation | Qualified container fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
-| WDS-054 | Warehouse / Commodity Fumigation | Qualified facility and commodity fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK |
-| WDS-055 | Bee / Wasp Nest Specialist Response | Qualified specialist handling; no unsafe DIY instructions | CANDIDATE — SPECIALIST CHECK |
-| WDS-056 | Snake Sighting Referral / Rescue Coordination | Referral to authorized wildlife rescuers only; not routine pest extermination | CANDIDATE — REFERRAL ONLY / VERIFY |
-| WDS-057 | Weed Management | Separate vegetation-control service; include only if BI-BUGS confirms scope | CANDIDATE — ADJACENT SERVICE / VERIFY |
+| Catalogue ID | Candidate service | Scope / prerequisite | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-052 | Fumigation Services | Only where trained, licensed/authorized and site requirements are met | CANDIDATE — SPECIALIST / COMPLIANCE CHECK | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-053 | Container Fumigation | Qualified container fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-054 | Warehouse / Commodity Fumigation | Qualified facility and commodity fumigation only | CANDIDATE — SPECIALIST / COMPLIANCE CHECK | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-055 | Bee / Wasp Nest Specialist Response | Qualified specialist handling; no unsafe DIY instructions | CANDIDATE — SPECIALIST CHECK | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-056 | Snake Sighting Referral / Rescue Coordination | Referral to authorized wildlife rescuers only; not routine pest extermination | CANDIDATE — REFERRAL ONLY / VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-057 | Weed Management | Separate vegetation-control service; include only if BI-BUGS confirms scope | CANDIDATE — ADJACENT SERVICE / VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.7 Inspection, prevention and ongoing service programmes
 
-| Catalogue ID | Candidate service | Scope | Publication status |
-|---|---|---|---|
-| WDS-058 | Pest Inspection and Survey | Site inspection and findings | CANDIDATE — VERIFY |
-| WDS-059 | Pest Identification and Assessment | Identification and risk assessment | CANDIDATE — VERIFY |
-| WDS-060 | Integrated Pest Management (IPM) | Monitoring, prevention and targeted control programme | CANDIDATE — VERIFY |
-| WDS-061 | Preventive Pest Management | Preventive site programme | CANDIDATE — VERIFY |
-| WDS-062 | Pest Monitoring and Reporting | Monitoring records and reports | CANDIDATE — VERIFY |
-| WDS-063 | Annual Maintenance Contract (AMC) | Scheduled pest-management programme | CANDIDATE — VERIFY |
-| WDS-064 | Scheduled / Periodic Pest Control | Recurring service visits | CANDIDATE — VERIFY |
-| WDS-065 | Emergency Pest-Control Response | Only with confirmed service hours and response policy | CANDIDATE — VERIFY |
-| WDS-066 | Follow-up Inspection and Treatment Review | Post-treatment review, subject to policy | CANDIDATE — VERIFY |
-| WDS-067 | Site-Specific Pest Management Plan | Documented plan for a customer/site | CANDIDATE — VERIFY |
+| Catalogue ID | Candidate service | Scope | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-058 | Pest Inspection and Survey | Site inspection and findings | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-059 | Pest Identification and Assessment | Identification and risk assessment | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-060 | Integrated Pest Management (IPM) | Monitoring, prevention and targeted control programme | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-061 | Preventive Pest Management | Preventive site programme | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-062 | Pest Monitoring and Reporting | Monitoring records and reports | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-063 | Annual Maintenance Contract (AMC) | Scheduled pest-management programme | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-064 | Scheduled / Periodic Pest Control | Recurring service visits | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-065 | Emergency Pest-Control Response | Only with confirmed service hours and response policy | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-066 | Follow-up Inspection and Treatment Review | Post-treatment review, subject to policy | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-067 | Site-Specific Pest Management Plan | Documented plan for a customer/site | CANDIDATE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 ### 4.8 Separate allied services — not automatically classified as pest control
 
-| Catalogue ID | Candidate service | Boundary | Publication status |
-|---|---|---|---|
-| WDS-068 | Disinfection | Separate hygiene service; approved method and claims required | ALLIED SERVICE — VERIFY |
-| WDS-069 | Sanitization | Separate hygiene service; define exact scope and claims | ALLIED SERVICE — VERIFY |
-| WDS-070 | Water Tank Cleaning | Separate facility-cleaning service; not pest control | ALLIED SERVICE — VERIFY |
-| WDS-071 | Drain / Sewer Cleaning or Treatment | Separate specialist service; distinguish pest treatment from cleaning | ALLIED SERVICE — VERIFY |
+| Catalogue ID | Candidate service | Boundary | Publication status | Delivery model | Provider evidence | Confirmed coverage | Compliance & safety review | Owner service approval | Public content approval | Website publish status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WDS-068 | Disinfection | Separate hygiene service; approved method and claims required | ALLIED SERVICE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-069 | Sanitization | Separate hygiene service; define exact scope and claims | ALLIED SERVICE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-070 | Water Tank Cleaning | Separate facility-cleaning service; not pest control | ALLIED SERVICE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
+| WDS-071 | Drain / Sewer Cleaning or Treatment | Separate specialist service; distinguish pest treatment from cleaning | ALLIED SERVICE — VERIFY | UNKNOWN | NOT PROVIDED | UNKNOWN | PENDING | PENDING | PENDING | BLOCKED |
 
 **Catalogue total:** 71 candidate entries across core pest control, specialist treatments, inspection/programmes and separately labelled allied services. This is a discovery catalogue, not a statement of 71 currently offered BI-BUGS services.
 
@@ -191,6 +191,24 @@ Additional verification required before an entry becomes publishable:
 - Services explicitly excluded from the public catalogue.
 
 **Content rule:** Do not publish efficacy guarantees, health/safety claims, pesticide instructions, licence claims, certification logos, or service availability without approved evidence and appropriate review. Never provide unsafe chemical-use or wildlife-handling instructions to customers.
+
+### 4.9 Service-by-service approval gate and field definitions
+
+The seven control columns added to every WDS row are the working approval record. Defaults are intentionally blocking and must not be changed by an assistant or developer without explicit owner evidence.
+
+| Field | Allowed values / evidence rule |
+|---|---|
+| Delivery model | `IN_HOUSE`, `APPROVED_PARTNER`, `REFERRAL_ONLY`, `NOT_OFFERED`, or `UNKNOWN` |
+| Provider evidence | Non-secret reference to capability evidence/partner approval; `NOT PROVIDED` keeps the item blocked |
+| Confirmed coverage | Owner-confirmed cities/areas/site types or `UNKNOWN` |
+| Compliance & safety review | `PENDING` or `APPROVED` with qualified reviewer/evidence recorded outside public claims |
+| Owner service approval | `PENDING` or `APPROVED` for the exact service and delivery model |
+| Public content approval | `PENDING` or `APPROVED` for exact customer-facing description, limitations and claims |
+| Website publish status | `BLOCKED` by default; `APPROVED_FOR_PUBLICATION` only after every required gate is satisfied |
+
+**Publication rule:** An item may become `APPROVED_FOR_PUBLICATION` only when delivery model is `IN_HOUSE`, `APPROVED_PARTNER`, or `REFERRAL_ONLY`; provider evidence is supplied; coverage is confirmed; compliance/safety review is `APPROVED`; owner service approval is `APPROVED`; and exact public content approval is `APPROVED`. `NOT_OFFERED` entries must remain `BLOCKED`. Referral-only entries must be clearly labelled as referral/coordination, never as an in-house treatment. Specialist fumigation and wildlife-related entries require additional applicable qualifications/permissions.
+
+Run `python scripts/validate_service_catalogue.py` to verify catalogue IDs, complete approval columns, safe defaults and publication-gate consistency. A validator PASS confirms the register is structurally safe; it does not approve any service.
 
 ## 5. Service geography and contact channels
 

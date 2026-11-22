@@ -43,3 +43,6 @@ Documentation Phase 1 remains active at 70% provisional. The specification-by-sp
 
 
 **Comprehensive service catalogue — 2026-11-21:** Owner requested inclusion of the full range of pest-control services. Specification 32 now contains 71 grouped candidate entries, with allied cleaning/hygiene/weed services explicitly separated from core pest control. Only individually verified and owner-approved services may be published as available. Milestone 70 records the catalogue capture; documentation progress remains 70% because service capability/claims and other owner acceptance gates are still open.
+
+
+**Service approval control gate — 2026-11-23:** All 71 WDS candidate entries now carry explicit provider/delivery, evidence, coverage, compliance/safety, owner approval, content approval, and publication status fields. They default to blocked. The strict service-catalogue validator and unit tests prevent publication unless all required gates are satisfied. This completes the internal approval-control design, not the owner verification of the services themselves.

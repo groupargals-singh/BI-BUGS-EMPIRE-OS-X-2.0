@@ -69,14 +69,14 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 |---|---|---|
 | Authority and scope | Constitution, DEC-BBE-001/002, Blueprint and scope boundaries agree | Reviewed for core scope; final owner acceptance pending |
 | Specification consistency | No unresolved contradiction across applicable specifications | REVIEWED AT DOCUMENT BASELINE — new contradictions must be logged; owner decisions remain separate |
-| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | OWNER INPUT REQUIRED |
+| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | OWNER INPUT REQUIRED; 71-row candidate service register now has explicit capability/evidence/coverage/compliance/owner/content/publish gates |
 | Privacy and data | Approved data fields, purpose, consent, retention, access and deletion requirements | OWNER INPUT REQUIRED |
 | Operational workflow | Enquiry handling, staff roles, assignment, response and escalation | OWNER INPUT REQUIRED |
 | Registry traceability | Stable IDs linked requirement → feature/module → API/data → test → release | TEMPLATE/POPULATION RULES REVIEWED; product records gated by approved requirements and implementation |
 | Architecture choice | Static/modular/backend/database choices justified by approved requirements | NOT FINALISED; do not preselect unnecessarily |
 | UI/UX | Sitemap, page intent, responsive/accessibility acceptance criteria | DOCUMENT FRAMEWORK REVIEWED; actual sitemap/brand/accessibility targets require owner input |
 | Release readiness documentation | Domain/hosting owner, release roles, security/privacy evidence, rollback/recovery plan | OWNER INPUT REQUIRED |
-| Documentation verification | Strict lifecycle/source gates, test suite, Markdown/link audit, diff checks | PASS through Milestone 66; rerun after each revision |
+| Documentation verification | Strict lifecycle/source/service-catalogue gates, test suite, Markdown/link audit, diff checks | PASS through Milestone 71; rerun after each revision |
 | Owner acceptance | Explicit approval of the documentation package and remaining decisions | PENDING |
 
 ## 5. Required completion sequence
@@ -101,6 +101,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 - [x] No company fact, service, price, claim, contact, integration or workflow has been invented in the requirements baseline.
 - [x] Strict lifecycle audit passes with zero metadata issues.
 - [x] Strict website source gate passes.
+- [x] Strict service catalogue gate validates all 71 IDs and prevents publication without required evidence/approvals.
 - [x] Project-control/frontend-shell test suite passes.
 - [x] Markdown integrity and Git diff checks pass.
 - [x] Progress, roadmap, audit, changelog, version history and index have been reconciled to the current evidence baseline.
@@ -137,7 +138,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02–OI-11 remain open and OI-01 remains partially open. The weighted estimate remains 70% because this partial fact clarification does not yet close a measurable requirement/acceptance gate. Owner-input and final acceptance gates still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02–OI-11 remain open and OI-01 remains partially open. The weighted estimate remains 70% because this partial fact clarification does not yet close a measurable requirement/acceptance gate. The per-service approval control structure is now complete, but actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

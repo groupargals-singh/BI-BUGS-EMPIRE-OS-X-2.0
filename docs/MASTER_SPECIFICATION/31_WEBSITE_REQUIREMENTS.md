@@ -243,3 +243,12 @@ The owner directed: “Jo jo pest control service hoti h sab dalo isme” — in
 This owner direction approves the breadth of the discovery catalogue, not a factual claim that BI-BUGS provides every listed service. Before any item is promoted to an approved `WREQ-*` product requirement or published as available, BI-BUGS must confirm capability (in-house/partner/referral/not offered), service area, qualifications/permissions, treatment and safety controls, exclusions, and exact approved customer-facing wording/claims. Specialist fumigation and wildlife-related entries require additional qualification/legal checks; disinfection, sanitization, water-tank cleaning, drain/sewer cleaning and weed management are separately labelled allied/adjacent services, not silently represented as core pest control.
 
 **Acceptance boundary:** Catalogue taxonomy captured: COMPLETE for the owner-directed discovery task. Individual service approvals and claims: PENDING. No service booking, pricing, guarantees, treatment instruction, or public availability is implied.
+
+
+## 20. Service catalogue capability and publication controls — 2026-11-23
+
+Specification 32 Section 4 now maintains a per-service control record for all 71 candidate entries: delivery model, non-secret provider evidence, confirmed coverage, compliance/safety review, owner service approval, exact public-content approval, and website publish status. All 71 entries default to `UNKNOWN` / `PENDING` / `BLOCKED`; this is intentional until evidence is supplied.
+
+Allowed delivery models are `IN_HOUSE`, `APPROVED_PARTNER`, `REFERRAL_ONLY`, `NOT_OFFERED`, and `UNKNOWN`. An item may be marked `APPROVED_FOR_PUBLICATION` only after provider evidence, confirmed coverage, compliance/safety approval, owner approval, and exact public-content approval are recorded. `NOT_OFFERED` must remain blocked. Referral-only entries must be visibly described as referral/coordination, not as BI-BUGS in-house treatment.
+
+A read-only gate validator is provided at `scripts/validate_service_catalogue.py`, with unit tests in `testing/test_validate_service_catalogue.py`. Run `python scripts/validate_service_catalogue.py --strict`. A PASS proves catalogue row integrity and approval-gate consistency only; it does not independently verify submitted evidence, authorize a service, or approve a public claim.

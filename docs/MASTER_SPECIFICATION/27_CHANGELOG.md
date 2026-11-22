@@ -111,6 +111,8 @@ This document does not claim that a release has occurred merely because changelo
 
 ### Unreleased — documentation and project-control changes only
 
+- 2026-11-23: Added per-service capability/evidence/coverage/compliance/owner/content/publish controls for all 71 candidate catalogue entries, plus a strict read-only validator and unit tests. All entries remain blocked pending real owner evidence. Documentation-only; no service launch is claimed.
+
 - 2026-11-21: Added owner-directed 71-entry comprehensive candidate pest-control catalogue; separated allied services and retained capability, legal, safety, and publication verification gates. Updated OI-02 and requirements/matrix/roadmap records. Documentation-only; no service availability or software release is claimed.
 
 The following verified repository revisions are documentation/control changes, not software releases (newest first):

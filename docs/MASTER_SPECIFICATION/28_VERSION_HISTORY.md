@@ -182,3 +182,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - OI-02 is partially resolved for catalogue breadth only; individual service availability, capability, permissions, safety and public claims remain pending.
 - Classification: documentation/project-control only; not a software version, service launch, release artifact, or deployment.
 - Git revision and remote status: to be recorded after verification and push.
+
+
+## 23. Per-service catalogue approval controls — 2026-11-23
+
+- Added per-service delivery model, evidence, coverage, compliance/safety, owner approval, public-content approval and publication status fields to all 71 candidate entries.
+- Added strict read-only validator `scripts/validate_service_catalogue.py` and unit tests `testing/test_validate_service_catalogue.py`.
+- All entries remain blocked by default; validation does not establish actual service availability or approve claims.
+- Documentation/project-control change only; not a software release or deployment. Git revision to be recorded after push.

@@ -1559,3 +1559,16 @@ f0ce9b4 Create master specification index
 **GitHub:** Pending verification and push.
 
 **Progress:** Documentation remains 70% provisional; the owner-input rubric has not been increased because individual service approvals and the remaining owner decisions are still open. Overall project remains 10% provisional.
+
+
+## M-071 — Per-service capability and publication approval gate — 2026-11-23
+
+**Completed:** Expanded all 71 WDS catalogue rows with delivery model, provider evidence, confirmed coverage, compliance/safety review, owner service approval, public-content approval, and website publish status. All rows default to `UNKNOWN` / `PENDING` / `BLOCKED`. Added `scripts/validate_service_catalogue.py` and six unit tests in `testing/test_validate_service_catalogue.py`. Updated Specification 31, Specification 32 metadata, and the Documentation Completion Matrix.
+
+**Safety / truth boundary:** No service is represented as currently offered. Publication requires provider evidence, confirmed coverage, compliance/safety approval, explicit owner service approval, and exact public-content approval. `NOT_OFFERED` must remain blocked; referral-only must be labelled clearly. The validator checks structure and gate consistency, not the truth of evidence or legal authorization.
+
+**Verification results (2026-11-23):** Service catalogue strict gate PASS (71/71 IDs; every row has all seven approval-control fields; no unapproved publication); full project test suite PASS (26/26); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); frontend JavaScript syntax PASS; Markdown integrity PASS (63 files, zero broken relative links and zero unbalanced fences); `git diff --check` PASS. Six new service-catalogue unit tests cover safe defaults, missing/duplicate IDs, unauthorized publication, complete approval requirements, NOT_OFFERED blocking, and referral wording.
+
+**GitHub:** Commit/push and exact remote HEAD verification to be recorded after completion.
+
+**Progress:** Documentation remains 70% provisional; the control structure is complete but individual service facts and other owner-input/package-acceptance gates remain open. Overall project remains 10% provisional.
