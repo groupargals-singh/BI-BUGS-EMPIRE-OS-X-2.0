@@ -203,4 +203,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 
 - Captured owner-declared active areas, inactive default for all other India/world locations, Morena head-office city, and public phone/email details.
 - `Sambhav`, `Bolpur`, Chambal boundary and exact Morena address remain pending clarification. Per-service publication approvals remain mandatory.
-- Documentation-only change; website implementation not started.
+- Documentation-only change; website implementation not started. Commit `2630bffe2f253e15e8b482cf14bb16a4806013e0` (`Record initial BI-BUGS active areas and contacts`) pushed to `origin/main`; exact remote hash verified after fetch.

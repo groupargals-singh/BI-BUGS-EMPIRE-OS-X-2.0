@@ -1598,5 +1598,5 @@ f0ce9b4 Create master specification index
 **Controls:** Per-service availability remains independently gated by evidence, confirmed coverage, safety/compliance review and owner/public-content approval. Phone display is owner-provided; WhatsApp, hours and emergency policy are not assumed. No precise head-office pin/address is invented.
 
 **Verification (2026-11-23):** Service catalogue strict gate PASS (71/71); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS; full unit test suite PASS (26/26); frontend JavaScript syntax PASS; Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
-**GitHub:** Pending selective commit/push and remote verification.
+**GitHub:** Commit `2630bffe2f253e15e8b482cf14bb16a4806013e0` (`Record initial BI-BUGS active areas and contacts`) pushed to `origin/main`; subsequent fetch verified local and remote `main` at the exact same hash; working tree clean at verification.
 **Progress:** Documentation remains 70% provisional; this captures part of OI-03 but does not close all owner inputs or final package acceptance. Overall project remains 10% provisional.
