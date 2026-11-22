@@ -211,4 +211,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Documentation-only update: recorded all districts under the owner-selected Madhya Pradesh divisions Chambal, Gwalior, Bhopal and Indore (21 districts), plus Rajasthan Dholpur; prior Jaipur, Jaisalmer and Agra selections remain.
 - Added decision `DEC-BBE-005`, updated OI-03, requirements, progress and roadmap. Official administrative references are linked in Specification 31 Section 23.
 - Classification: documentation/project-control only; no frontend implementation, service availability, software release or deployment is claimed.
-- Git revision: to be recorded after verification and push.
+- Git revision: `8c61424fd1f82329f899d8366b0b2a3b60864c97` (`Record selected MP divisions and Dholpur district`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation-only revision.

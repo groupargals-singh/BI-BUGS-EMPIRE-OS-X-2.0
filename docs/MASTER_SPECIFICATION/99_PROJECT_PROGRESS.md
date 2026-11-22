@@ -1613,5 +1613,5 @@ f0ce9b4 Create master specification index
 **Controls:** All other India and international selector entries remain inactive. This selection does not certify every service's availability; all 71 service-specific publication gates remain mandatory. No frontend changes made; documentation-first gate remains in force.
 
 **Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
-**GitHub:** Not yet committed; immediate push required after verification.
+**GitHub:** Commit `8c61424fd1f82329f899d8366b0b2a3b60864c97` (`Record selected MP divisions and Dholpur district`) pushed to `origin/main`; local and remote `main` hashes matched after fetch. A final version-history synchronization update follows.
 **Progress:** Documentation remains 70% provisional; this resolves the administrative district selection portion of OI-03 only. Overall project remains 10% provisional.
