@@ -227,4 +227,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Added Specification 35, canonical owner-area JSON register, strict location-register validator and unit tests.
 - Expanded lifecycle metadata audit scope from Specifications 01–34 to 01–35.
 - Classification: documentation/project-control only; no full India/world selector dataset, frontend implementation, service availability, software release or deployment is claimed.
-- Git revision: to be recorded after verification and push.
+- Git revision: `4cf0b97cf8401d9dd376a5ad5b07eee9c3c3d663` (`Add governed location register and validation`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation/project-control revision, not a software release.

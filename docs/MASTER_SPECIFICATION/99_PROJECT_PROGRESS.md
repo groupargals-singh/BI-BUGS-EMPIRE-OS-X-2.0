@@ -1642,5 +1642,5 @@ f0ce9b4 Create master specification index
 **Validation boundary:** The new validator checks register integrity and prevents unsafe conflation; it does not populate the complete India/world catalogue, verify live coverage, geocode the head-office address, or implement the frontend selector.
 
 **Verification:** Location register strict validator PASS (25/25 districts); six location-register unit tests PASS; lifecycle strict audit PASS (35 numbered specifications, zero metadata issues); service catalogue strict gate PASS (71/71); website source gate PASS; full project test suite PASS (33/33); JavaScript syntax PASS; Markdown integrity PASS (64 Markdown files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
-**GitHub:** Pending immediate commit/push after verification.
+**GitHub:** Commit `4cf0b97cf8401d9dd376a5ad5b07eee9c3c3d663` (`Add governed location register and validation`) pushed to `origin/main`; local and remote `main` hashes matched after fetch. This is documentation/project-control work, not a website release.
 **Progress:** Documentation remains 70% provisional; new location-control artefacts improve traceability but do not close owner acceptance, complete geographic datasets, or service-coverage evidence. Overall project remains 10% provisional.
