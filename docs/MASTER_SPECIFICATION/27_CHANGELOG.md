@@ -142,3 +142,10 @@ These entries describe source-control changes only. They do not claim a released
 - Added owner-approved requirement `WREQ-GEO-001` for all-India States/UTs and city selection plus a separate International/World country selector.
 - Recorded decision `DEC-BBE-003` and partially resolved OI-03 for selector scope only.
 - Actual BI-BUGS service coverage, exclusions and public contact details remain unconfirmed; no nationwide/worldwide availability claim or website feature implementation is implied.
+
+
+## Unreleased — 2026-11-23 — Initial owner-declared active areas and contact inputs
+
+- Recorded initial active-area declarations for Chambal region, Gwalior, Bhopal, Indore, Jaipur, Jaisalmer and Agra; two ambiguous names retained verbatim pending clarification.
+- Recorded Morena as head-office city only and owner-provided public phone/email details. Other India and international locations remain inactive pending future owner activation.
+- Per-service availability gate remains mandatory; no website code or precise address was implemented.

@@ -49,3 +49,6 @@ Documentation Phase 1 remains active at 70% provisional. The specification-by-sp
 
 
 **Geographic selector scope — 2026-11-23:** Owner approved a distinct India selector covering all States/UTs and cities, plus a separate `International / World` country selector (DEC-BBE-003 / WREQ-GEO-001). This is a location-selection requirement only; it does not imply BI-BUGS has active service coverage across India or internationally. Actual coverage and contact details remain open under OI-03. Documentation Phase 1 remains 70% provisional.
+
+
+**Initial owner-declared areas/contact — 2026-11-23:** Owner supplied Chambal region, Gwalior, Bhopal, Indore, Jaipur, Jaisalmer and Agra as initial active-area declarations; `Sambhav` and `Bolpur` need exact-name clarification. Other India and international selector entries remain inactive until later activation. Head-office city Morena and public phones/email are captured; exact address pending. Service-specific availability remains subject to the per-service publication gate. Documentation Phase 1 remains 70% provisional.

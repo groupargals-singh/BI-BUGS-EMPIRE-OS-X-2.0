@@ -59,3 +59,16 @@ Accepted decisions should not be silently overwritten; supersede them with a lin
 - **Consequences / controls:** Requested/customer-selected location must remain distinct from confirmed service coverage. Never claim availability unless the relevant service has owner-confirmed coverage and has passed its evidence, compliance/safety, owner-approval and public-content publication gates. Enquiry-form use remains subject to customer-journey and privacy approval.
 - **Related requirements:** `WREQ-GEO-001` in `../MASTER_SPECIFICATION/31_WEBSITE_REQUIREMENTS.md`; OI-03 in `../MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md`.
 - **Reversal conditions:** Change only through a subsequent explicit owner-approved decision.
+
+
+## DEC-BBE-004 — Initial owner-declared active areas and public contact channels
+
+- **Status:** ACCEPTED — PARTIAL GEOGRAPHIC/CONTACT INPUT
+- **Date:** 2026-11-23
+- **Owner / approver:** Project Owner (explicit instruction in current conversation)
+- **Decision / supplied inputs:** Owner-declared active areas: Madhya Pradesh — Chambal region, Gwalior, Bhopal, Indore; Rajasthan — Jaipur, Jaisalmer; Uttar Pradesh — Agra. Owner supplied `Sambhav` as an additional Madhya Pradesh name and `Bolpur` as an additional Rajasthan name; both are retained verbatim pending clarification. Other India locations and all international countries remain inactive for now, while remaining available in the geographic selector.
+- **Head office:** Morena, Madhya Pradesh (city only; exact address/landmark/map pin pending).
+- **Public contact channels:** `7049967806`, `7869120139`, `bibugspest24@gmail.com`. Owner supplied these for website contact display. This does not approve WhatsApp integration or emergency/business-hour promises.
+- **Evidence / boundary:** These are owner-provided website area declarations, not independent proof of every service's availability. Each service must still pass its own evidence, coverage, safety/compliance, owner approval and public-content gate. Chambal boundary is not yet defined.
+- **Related records:** OI-03 in `../MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md`; Specification 31 Section 22.
+- **Reversal / update:** Owner may later activate additional locations or revise this list through an explicit instruction.

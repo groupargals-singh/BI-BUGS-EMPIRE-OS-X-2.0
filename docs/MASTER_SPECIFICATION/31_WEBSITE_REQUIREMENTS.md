@@ -281,3 +281,25 @@ A read-only gate validator is provided at `scripts/validate_service_catalogue.py
 **Lifecycle:** `OWNER_APPROVED` — requirement definition only; `NOT IMPLEMENTED`, `NOT TESTED`, `NOT RELEASED`.
 
 **Explicit non-approval:** This requirement does not assert that BI-BUGS currently serves every Indian city/state or any country outside India. Actual service locations, exclusions, response capacity, branch presence and partner coverage remain unconfirmed.
+
+
+## 22. Owner-provided active-area and public-contact inputs — 2026-11-23
+
+**Source:** Explicit owner instruction received 2026-11-23.
+
+**Owner-declared active geographic areas for the website location experience:**
+- Madhya Pradesh: Chambal region, Gwalior, Bhopal and Indore.
+- Rajasthan: Jaipur and Jaisalmer.
+- Uttar Pradesh: Agra.
+- Two additional names were supplied as `Sambhav` (Madhya Pradesh) and `Bolpur` (Rajasthan); they are intentionally not normalized to a guessed city and remain pending owner clarification.
+- Chambal region is recorded as supplied; its exact administrative boundary/district list is not yet defined.
+
+**Inactive by default:** All other Indian cities/areas and all international countries remain selectable/searchable but inactive until the owner explicitly activates them. Do not show an inactive location as a currently served area.
+
+**Head office:** Morena, Madhya Pradesh (city confirmed; exact street address, landmark and map pin not supplied). Do not infer a precise current location or fabricate an address.
+
+**Public contact channels supplied by owner:** Phone `7049967806`, phone `7869120139`, email `bibugspest24@gmail.com`. Phone-number publication is approved by the owner's instruction. WhatsApp integration/links, messaging consent, business hours and emergency-response promises are not approved by this input.
+
+**Publication boundary:** These are owner-declared geographic areas for the website, not independent proof of every treatment/service's availability. The per-service catalogue evidence, compliance/safety and content approval gate remains mandatory before advertising a particular service as available in any area.
+
+**Lifecycle:** Owner input captured; website implementation NOT STARTED under the documentation-first project gate. Exact-name clarifications and address details remain pending.

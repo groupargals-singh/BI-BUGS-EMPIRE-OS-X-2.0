@@ -1587,3 +1587,16 @@ f0ce9b4 Create master specification index
 **GitHub:** Commit `95eb1c9c3e3258648227a14b873140c444ac5117` (`Record India and international location selector scope`) pushed to `origin/main`; subsequent fetch verified local and remote `main` at the exact same hash; working tree clean at verification.
 
 **Progress:** Documentation remains 70% provisional; OI-03 is partially resolved for selector scope only. Actual service geography/contact, other owner inputs and explicit package acceptance remain open. Overall project remains 10% provisional.
+
+
+## M-073 — Initial active-area and public-contact owner inputs — 2026-11-23
+
+**Status:** OWNER INPUT CAPTURED — PARTIAL; IMPLEMENTATION NOT STARTED
+
+**Recorded:** Madhya Pradesh — Chambal region, Gwalior, Bhopal, Indore; Rajasthan — Jaipur, Jaisalmer; Uttar Pradesh — Agra. The owner additionally supplied `Sambhav` (MP) and `Bolpur` (Rajasthan); exact names need clarification and have not been guessed. Other India locations and all international countries remain inactive for now but selectable in the location catalogue. Head office city: Morena, Madhya Pradesh; exact street address/landmark/map pin remains pending. Public contact: 7049967806, 7869120139, bibugspest24@gmail.com.
+
+**Controls:** Per-service availability remains independently gated by evidence, confirmed coverage, safety/compliance review and owner/public-content approval. Phone display is owner-provided; WhatsApp, hours and emergency policy are not assumed. No precise head-office pin/address is invented.
+
+**Verification (2026-11-23):** Service catalogue strict gate PASS (71/71); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS; full unit test suite PASS (26/26); frontend JavaScript syntax PASS; Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
+**GitHub:** Pending selective commit/push and remote verification.
+**Progress:** Documentation remains 70% provisional; this captures part of OI-03 but does not close all owner inputs or final package acceptance. Overall project remains 10% provisional.
