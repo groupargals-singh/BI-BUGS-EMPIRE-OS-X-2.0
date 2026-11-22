@@ -235,4 +235,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Added LGD State/UT/district snapshot (36 States/UTs; 770 districts), UN M49 country/area catalogue (248 entries; 247 International), and GeoNames India populated-place index (549,031 records).
 - Added manifest, source attribution/license/limitations, reproducible importer, strict validator and tests; reconciled Specification 35, progress, roadmap and matrix.
 - Classification: documentation/reference-data only; GeoNames is not a city-only official municipal list. LGD ULB cross-check, owner selector approval, service coverage, frontend implementation, software release and deployment remain unapproved/not implemented.
-- Git revision: to be recorded in the immediate synchronization follow-up after verification and push.
+- Git revision: `03cd4a93fd7dcad1c00e628250176f5c2c33478a` (`Import validated India and international location data`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation/reference-data revision, not a software release.
