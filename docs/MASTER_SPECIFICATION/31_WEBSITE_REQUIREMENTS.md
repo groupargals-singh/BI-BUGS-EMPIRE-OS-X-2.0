@@ -288,11 +288,10 @@ A read-only gate validator is provided at `scripts/validate_service_catalogue.py
 **Source:** Explicit owner instruction received 2026-11-23.
 
 **Owner-declared active geographic areas for the website location experience:**
-- Madhya Pradesh: Chambal region, Gwalior, Bhopal and Indore.
-- Rajasthan: Jaipur and Jaisalmer.
-- Uttar Pradesh: Agra.
-- Two additional names were supplied as `Sambhav` (Madhya Pradesh) and `Bolpur` (Rajasthan); they are intentionally not normalized to a guessed city and remain pending owner clarification.
-- Chambal region is recorded as supplied; its exact administrative boundary/district list is not yet defined.
+- Madhya Pradesh: the owner selected the **Chambal, Gwalior, Bhopal and Indore administrative divisions**, and instructed that every district within each selected division be selected. The current official division-to-district mapping used for this register is: **Chambal** — Morena, Bhind, Sheopur; **Gwalior** — Gwalior, Shivpuri, Guna, Ashoknagar, Datia; **Bhopal** — Bhopal, Sehore, Raisen, Rajgarh, Vidisha; **Indore** — Indore, Dhar, Jhabua, Alirajpur, Barwani, Khargone, Khandwa, Burhanpur. Total: 4 divisions and 21 districts.
+- Rajasthan: Jaipur, Jaisalmer and **Dholpur district**.
+- Uttar Pradesh: Agra district.
+- Earlier transcribed strings `Sambhav` and `Bolpur` are not added as separate selections; the owner has now explicitly specified the four MP divisions and Rajasthan district Dholpur. No guessed city mapping is retained.
 
 **Inactive by default:** All other Indian cities/areas and all international countries remain selectable/searchable but inactive until the owner explicitly activates them. Do not show an inactive location as a currently served area.
 
@@ -302,4 +301,25 @@ A read-only gate validator is provided at `scripts/validate_service_catalogue.py
 
 **Publication boundary:** These are owner-declared geographic areas for the website, not independent proof of every treatment/service's availability. The per-service catalogue evidence, compliance/safety and content approval gate remains mandatory before advertising a particular service as available in any area.
 
-**Lifecycle:** Owner input captured; website implementation NOT STARTED under the documentation-first project gate. Exact-name clarifications and address details remain pending.
+**Lifecycle:** Owner input captured; website implementation NOT STARTED under the documentation-first project gate. Exact Morena address/landmark/map pin, business hours and emergency policy remain pending.
+
+
+## 23. Owner-confirmed division and district selections — 2026-11-23
+
+**Owner instruction:** Select the Chambal, Gwalior, Bhopal and Indore divisions of Madhya Pradesh and select every district under those divisions; additionally select Dholpur district in Rajasthan. This supplements the earlier selected Rajasthan districts Jaipur and Jaisalmer and Uttar Pradesh district Agra.
+
+| State | Selected division | Selected districts | Count | Selection status |
+|---|---|---|---:|---|
+| Madhya Pradesh | Chambal | Morena, Bhind, Sheopur | 3 | ACTIVE — OWNER SELECTED |
+| Madhya Pradesh | Gwalior | Gwalior, Shivpuri, Guna, Ashoknagar, Datia | 5 | ACTIVE — OWNER SELECTED |
+| Madhya Pradesh | Bhopal | Bhopal, Sehore, Raisen, Rajgarh, Vidisha | 5 | ACTIVE — OWNER SELECTED |
+| Madhya Pradesh | Indore | Indore, Dhar, Jhabua, Alirajpur, Barwani, Khargone, Khandwa, Burhanpur | 8 | ACTIVE — OWNER SELECTED |
+| Rajasthan | Not specified in this instruction | Dholpur | 1 | ACTIVE — OWNER SELECTED |
+| Rajasthan | Existing owner selections | Jaipur, Jaisalmer | 2 | ACTIVE — PRIOR OWNER INPUT |
+| Uttar Pradesh | Existing owner selection | Agra | 1 | ACTIVE — PRIOR OWNER INPUT |
+
+**Administrative mapping evidence:** [Madhya Pradesh Government District Portal](https://mpdistricts.nic.in/index.html) lists the State's districts and divisions. The division-wise district names above are cross-checked against the [Madhya Pradesh Gazette dated 21 August 2026, Schedule II](https://mpvidhansabha.nic.in/bill_2026/ACT%20No%2011%20of%202026.pdf), which lists Bhopal, Indore, Gwalior and Chambal division district groupings. The [Rajasthan Government Medical & Health Department 2026–27 district listing](https://rajswasthya.rajasthan.gov.in/link/districtrop.php) includes Dholpur; [Rajasthan Tourism](https://www.tourism.rajasthan.gov.in/dholpur.html) also identifies Dholpur as a Rajasthan district.
+
+**Selection semantics:** These are selected/active geographic entries in the website location experience. They do not prove that every BI-BUGS service is operationally available in every selected district. The 71-row per-service evidence, confirmed-coverage, safety/compliance, owner-approval and public-content gates remain mandatory. Other Indian districts and all international countries remain selectable/searchable but inactive until explicitly activated.
+
+**Lifecycle:** OWNER INPUT CAPTURED; documentation updated; website UI/data implementation NOT STARTED because the Documentation Phase remains active.

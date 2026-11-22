@@ -149,3 +149,10 @@ These entries describe source-control changes only. They do not claim a released
 - Recorded initial active-area declarations for Chambal region, Gwalior, Bhopal, Indore, Jaipur, Jaisalmer and Agra; two ambiguous names retained verbatim pending clarification.
 - Recorded Morena as head-office city only and owner-provided public phone/email details. Other India and international locations remain inactive pending future owner activation.
 - Per-service availability gate remains mandatory; no website code or precise address was implemented.
+
+
+## Unreleased — 2026-11-23 — Owner-confirmed active division/district selections
+
+- Added owner-selected Madhya Pradesh divisions Chambal, Gwalior, Bhopal and Indore and all 21 districts within them; added Rajasthan Dholpur while retaining prior Jaipur, Jaisalmer and Agra selections.
+- Recorded DEC-BBE-005 and Specification 31 Section 23, using official government administrative listings for district mapping.
+- Other India and international locations remain inactive by default; per-service availability approvals remain separate. Documentation-only; no website UI or service coverage claim is implemented.

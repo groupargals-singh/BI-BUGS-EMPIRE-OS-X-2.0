@@ -204,3 +204,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Captured owner-declared active areas, inactive default for all other India/world locations, Morena head-office city, and public phone/email details.
 - `Sambhav`, `Bolpur`, Chambal boundary and exact Morena address remain pending clarification. Per-service publication approvals remain mandatory.
 - Documentation-only change; website implementation not started. Commit `2630bffe2f253e15e8b482cf14bb16a4806013e0` (`Record initial BI-BUGS active areas and contacts`) pushed to `origin/main`; exact remote hash verified after fetch.
+
+
+## 26. Owner-confirmed division and district selections — 2026-11-23
+
+- Documentation-only update: recorded all districts under the owner-selected Madhya Pradesh divisions Chambal, Gwalior, Bhopal and Indore (21 districts), plus Rajasthan Dholpur; prior Jaipur, Jaisalmer and Agra selections remain.
+- Added decision `DEC-BBE-005`, updated OI-03, requirements, progress and roadmap. Official administrative references are linked in Specification 31 Section 23.
+- Classification: documentation/project-control only; no frontend implementation, service availability, software release or deployment is claimed.
+- Git revision: to be recorded after verification and push.

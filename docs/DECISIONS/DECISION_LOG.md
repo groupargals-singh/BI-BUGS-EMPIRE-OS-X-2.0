@@ -72,3 +72,15 @@ Accepted decisions should not be silently overwritten; supersede them with a lin
 - **Evidence / boundary:** These are owner-provided website area declarations, not independent proof of every service's availability. Each service must still pass its own evidence, coverage, safety/compliance, owner approval and public-content gate. Chambal boundary is not yet defined.
 - **Related records:** OI-03 in `../MASTER_SPECIFICATION/32_WEBSITE_DISCOVERY_WORKBOOK.md`; Specification 31 Section 22.
 - **Reversal / update:** Owner may later activate additional locations or revise this list through an explicit instruction.
+
+
+## DEC-BBE-005 — Madhya Pradesh division/district and Rajasthan Dholpur selections
+
+- **Status:** ACCEPTED — OWNER GEOGRAPHIC SELECTION INPUT
+- **Date:** 2026-11-23
+- **Owner / approver:** Project Owner (explicit instruction in current conversation)
+- **Decision:** Select the Madhya Pradesh divisions Chambal, Gwalior, Bhopal and Indore and every district within each division. Selected MP districts: Chambal — Morena, Bhind, Sheopur; Gwalior — Gwalior, Shivpuri, Guna, Ashoknagar, Datia; Bhopal — Bhopal, Sehore, Raisen, Rajgarh, Vidisha; Indore — Indore, Dhar, Jhabua, Alirajpur, Barwani, Khargone, Khandwa, Burhanpur. Also select Dholpur district in Rajasthan. Prior owner-selected Jaipur, Jaisalmer and Agra remain active.
+- **Evidence:** MP district portal and MP Gazette dated 21 August 2026, Schedule II, support the division/district grouping; Rajasthan Government 2026–27 district listing includes Dholpur.
+- **Boundary:** Selection applies to the location selector/active-area register only. It does not certify every service's coverage in every district. Per-service evidence, coverage, safety/compliance, owner and public-content approvals remain required.
+- **Related records:** Specification 31 Section 23; Specification 32 OI-03 and Section 5.
+- **Reversal / update:** Change only through a subsequent explicit owner-approved instruction.

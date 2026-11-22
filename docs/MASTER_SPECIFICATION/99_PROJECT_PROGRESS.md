@@ -1600,3 +1600,18 @@ f0ce9b4 Create master specification index
 **Verification (2026-11-23):** Service catalogue strict gate PASS (71/71); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS; full unit test suite PASS (26/26); frontend JavaScript syntax PASS; Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
 **GitHub:** Commit `2630bffe2f253e15e8b482cf14bb16a4806013e0` (`Record initial BI-BUGS active areas and contacts`) pushed to `origin/main`; subsequent fetch verified local and remote `main` at the exact same hash; working tree clean at verification.
 **Progress:** Documentation remains 70% provisional; this captures part of OI-03 but does not close all owner inputs or final package acceptance. Overall project remains 10% provisional.
+
+
+## M-074 — Owner-confirmed MP divisions/districts and Rajasthan Dholpur — 2026-11-23
+
+**Status:** OWNER INPUT CAPTURED — DOCUMENTATION UPDATED; WEBSITE IMPLEMENTATION NOT STARTED
+
+**Recorded:** Owner selected Madhya Pradesh divisions Chambal (Morena, Bhind, Sheopur), Gwalior (Gwalior, Shivpuri, Guna, Ashoknagar, Datia), Bhopal (Bhopal, Sehore, Raisen, Rajgarh, Vidisha) and Indore (Indore, Dhar, Jhabua, Alirajpur, Barwani, Khargone, Khandwa, Burhanpur): 4 divisions and 21 districts. Rajasthan Dholpur added; prior Jaipur/Jaisalmer (Rajasthan) and Agra (Uttar Pradesh) selections remain. Earlier ambiguous text `Sambhav` and `Bolpur` is not treated as separate active selection.
+
+**Evidence:** Madhya Pradesh District Portal and Madhya Pradesh Gazette dated 21 August 2026, Schedule II; Rajasthan Government 2026–27 district listing. See Specification 31 Section 23.
+
+**Controls:** All other India and international selector entries remain inactive. This selection does not certify every service's availability; all 71 service-specific publication gates remain mandatory. No frontend changes made; documentation-first gate remains in force.
+
+**Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
+**GitHub:** Not yet committed; immediate push required after verification.
+**Progress:** Documentation remains 70% provisional; this resolves the administrative district selection portion of OI-03 only. Overall project remains 10% provisional.
