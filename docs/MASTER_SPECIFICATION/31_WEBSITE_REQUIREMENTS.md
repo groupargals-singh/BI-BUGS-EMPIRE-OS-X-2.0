@@ -295,13 +295,13 @@ A read-only gate validator is provided at `scripts/validate_service_catalogue.py
 
 **Inactive by default:** All other Indian cities/areas and all international countries remain selectable/searchable but inactive until the owner explicitly activates them. Do not show an inactive location as a currently served area.
 
-**Head office:** Morena, Madhya Pradesh (city confirmed; exact street address, landmark and map pin not supplied). Do not infer a precise current location or fabricate an address.
+**Head office address supplied by owner:** Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001. This wording is captured as supplied by the owner on 2026-11-23. No latitude/longitude or map pin was supplied; do not infer coordinates. Preserve the locality wording rather than silently correcting it.
 
 **Public contact channels supplied by owner:** Phone `7049967806`, phone `7869120139`, email `bibugspest24@gmail.com`. Phone-number publication is approved by the owner's instruction. WhatsApp integration/links, messaging consent, business hours and emergency-response promises are not approved by this input.
 
 **Publication boundary:** These are owner-declared geographic areas for the website, not independent proof of every treatment/service's availability. The per-service catalogue evidence, compliance/safety and content approval gate remains mandatory before advertising a particular service as available in any area.
 
-**Lifecycle:** Owner input captured; website implementation NOT STARTED under the documentation-first project gate. Exact Morena address/landmark/map pin, business hours and emergency policy remain pending.
+**Lifecycle:** Owner input captured; website implementation NOT STARTED under the documentation-first project gate. Map pin/coordinates, business hours and emergency policy remain pending.
 
 
 ## 23. Owner-confirmed division and district selections — 2026-11-23
@@ -323,3 +323,18 @@ A read-only gate validator is provided at `scripts/validate_service_catalogue.py
 **Selection semantics:** These are selected/active geographic entries in the website location experience. They do not prove that every BI-BUGS service is operationally available in every selected district. The 71-row per-service evidence, confirmed-coverage, safety/compliance, owner-approval and public-content gates remain mandatory. Other Indian districts and all international countries remain selectable/searchable but inactive until explicitly activated.
 
 **Lifecycle:** OWNER INPUT CAPTURED; documentation updated; website UI/data implementation NOT STARTED because the Documentation Phase remains active.
+
+
+## 24. Owner-provided head-office postal address — 2026-11-23
+
+**Owner-supplied address text:**
+
+Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001
+
+**Use:** Head Office, BI-BUGS Pest Control Services Pvt Ltd.
+
+**Source:** Explicit owner message received 2026-11-23: “Near railway station Manohar Nagar tussi Pura morena 476001”. The capitalization and punctuation above are normalized for readability only; locality names are retained as supplied.
+
+**Limits:** This is an owner-provided postal/location description. No map pin, latitude/longitude, geocoding verification, building/plot number or landmark distance was supplied. Do not invent or infer these. Public website display should use the supplied text; map embed/navigation must wait for an owner-confirmed pin or verified exact coordinates.
+
+**Lifecycle:** OWNER INPUT CAPTURED; documentation updated; frontend implementation remains NOT STARTED under the documentation-first gate.

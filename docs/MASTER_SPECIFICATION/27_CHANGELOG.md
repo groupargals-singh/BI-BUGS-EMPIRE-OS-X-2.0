@@ -156,3 +156,10 @@ These entries describe source-control changes only. They do not claim a released
 - Added owner-selected Madhya Pradesh divisions Chambal, Gwalior, Bhopal and Indore and all 21 districts within them; added Rajasthan Dholpur while retaining prior Jaipur, Jaisalmer and Agra selections.
 - Recorded DEC-BBE-005 and Specification 31 Section 23, using official government administrative listings for district mapping.
 - Other India and international locations remain inactive by default; per-service availability approvals remain separate. Documentation-only; no website UI or service coverage claim is implemented.
+
+
+## Unreleased — 2026-11-23 — Owner-provided Morena head-office address
+
+- Captured the owner-supplied address text: Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001.
+- Recorded decision `DEC-BBE-006` and updated website requirements, discovery workbook, progress, completion matrix and roadmap.
+- No map pin/coordinates or geocoded location inferred. Documentation-only; no frontend or map integration implemented.

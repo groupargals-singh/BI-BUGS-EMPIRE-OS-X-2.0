@@ -1615,3 +1615,16 @@ f0ce9b4 Create master specification index
 **Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
 **GitHub:** Commit `8c61424fd1f82329f899d8366b0b2a3b60864c97` (`Record selected MP divisions and Dholpur district`) pushed to `origin/main`; local and remote `main` hashes matched after fetch. A final version-history synchronization update follows.
 **Progress:** Documentation remains 70% provisional; this resolves the administrative district selection portion of OI-03 only. Overall project remains 10% provisional.
+
+
+## M-075 — Owner-provided Morena head-office address — 2026-11-23
+
+**Status:** OWNER INPUT CAPTURED — DOCUMENTATION UPDATED; WEBSITE IMPLEMENTATION NOT STARTED
+
+**Recorded address:** Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001. Captured from the owner's explicit message. Locality wording is preserved as supplied; formatting capitalization/punctuation only normalized.
+
+**Limits:** No map pin, latitude/longitude, building/plot number or geocoding verification supplied. Do not infer a map location. Business hours and emergency policy remain unknown.
+
+**Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
+**GitHub:** Not yet committed; immediate push required after verification.
+**Progress:** Documentation remains 70% provisional. This resolves the textual postal-address input under OI-03 only; other owner requirements and final package acceptance remain open. Overall project remains 10% provisional.

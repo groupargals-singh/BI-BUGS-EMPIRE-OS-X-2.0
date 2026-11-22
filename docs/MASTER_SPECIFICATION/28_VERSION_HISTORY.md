@@ -212,3 +212,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Added decision `DEC-BBE-005`, updated OI-03, requirements, progress and roadmap. Official administrative references are linked in Specification 31 Section 23.
 - Classification: documentation/project-control only; no frontend implementation, service availability, software release or deployment is claimed.
 - Git revision: `8c61424fd1f82329f899d8366b0b2a3b60864c97` (`Record selected MP divisions and Dholpur district`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation-only revision.
+
+
+## 27. Owner-provided Morena head-office address — 2026-11-23
+
+- Documentation-only update: captured owner-supplied head-office address text, “Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001”, under `DEC-BBE-006`.
+- Map pin/coordinates remain unknown; no geolocation or map integration is claimed.
+- Classification: documentation/project-control only; no frontend implementation, software release or deployment.
+- Git revision: to be recorded after verification and push.

@@ -84,3 +84,15 @@ Accepted decisions should not be silently overwritten; supersede them with a lin
 - **Boundary:** Selection applies to the location selector/active-area register only. It does not certify every service's coverage in every district. Per-service evidence, coverage, safety/compliance, owner and public-content approvals remain required.
 - **Related records:** Specification 31 Section 23; Specification 32 OI-03 and Section 5.
 - **Reversal / update:** Change only through a subsequent explicit owner-approved instruction.
+
+
+## DEC-BBE-006 — Owner-provided Morena head-office address
+
+- **Status:** ACCEPTED — ADDRESS TEXT CAPTURED
+- **Date:** 2026-11-23
+- **Owner / approver:** Project Owner (explicit address supplied in current conversation)
+- **Address text:** Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001.
+- **Use:** BI-BUGS head-office address for website requirements/content planning.
+- **Evidence / limits:** Owner-supplied text; spelling of locality terms is retained as provided. No map pin, latitude/longitude, building/plot number or geocoding verification supplied. Do not fabricate coordinates or map links.
+- **Related records:** Specification 31 Section 24; Specification 32 OI-03 and Section 5.
+- **Reversal / update:** Revise only through a subsequent explicit owner-approved instruction.
