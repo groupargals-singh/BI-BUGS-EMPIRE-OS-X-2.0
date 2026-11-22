@@ -1,10 +1,14 @@
 """Unit tests for the read-only lifecycle metadata audit."""
 import unittest
 
-from scripts.validate_spec_lifecycle import parse_header, inspect_spec
+from scripts.validate_spec_lifecycle import parse_header, inspect_spec, numbered_specs
 
 
 class LifecycleHeaderTests(unittest.TestCase):
+    def test_numbered_specification_35_is_in_audit_scope(self):
+        names = {path.name for path in numbered_specs()}
+        self.assertIn("35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md", names)
+
     def test_canonical_fields_are_read(self):
         header = """# Example
 **Specification status:** DRAFT FOR REVIEW

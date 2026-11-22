@@ -220,3 +220,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Map pin/coordinates remain unknown; no geolocation or map integration is claimed.
 - Classification: documentation/project-control only; no frontend implementation, software release or deployment.
 - Git revision: `cbad6a7` (`Record Morena head office address input`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation-only revision.
+
+
+## 28. Location catalogue governance and validation — 2026-11-23
+
+- Added Specification 35, canonical owner-area JSON register, strict location-register validator and unit tests.
+- Expanded lifecycle metadata audit scope from Specifications 01–34 to 01–35.
+- Classification: documentation/project-control only; no full India/world selector dataset, frontend implementation, service availability, software release or deployment is claimed.
+- Git revision: to be recorded after verification and push.

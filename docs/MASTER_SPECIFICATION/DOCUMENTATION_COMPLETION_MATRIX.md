@@ -92,7 +92,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 
 ### 6.1 Internal documentation package readiness
 
-- [x] Applicable Specifications 00–34 have a documented semantic-review result.
+- [x] Applicable Specifications 00–35 have a documented semantic-review result.
 - [x] Known cross-document findings F-01–F-11 have a current disposition or explicit blocker.
 - [x] Scope, assumptions, dependencies, lifecycle metadata and evidence boundaries are recorded across the reviewed specifications.
 - [x] Internal links and navigation pass the current Markdown integrity audit.
@@ -138,7 +138,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02 and OI-03 are partially resolved for catalogue breadth, selector scope, owner-declared initial areas, division/district selections, public contact channels and head-office address text; map pin/coordinates, service-specific capability/coverage, hours/emergency policy and other owner/content decisions remain open, as does final package acceptance. The weighted estimate remains 70% because this selector-scope approval does not confirm operating coverage or close the broader owner-acceptance gates. The per-service approval control structure is complete, but actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02 and OI-03 are partially resolved for catalogue breadth, selector scope, owner-declared initial areas, division/district selections, public contact channels and head-office address text; map pin/coordinates, service-specific capability/coverage, hours/emergency policy and other owner/content decisions remain open, as does final package acceptance. The weighted estimate remains 70% because this selector-scope approval does not confirm operating coverage or close the broader owner-acceptance gates. The per-service approval control structure and owner-area register integrity control are complete, but authoritative full India/world selector datasets, actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

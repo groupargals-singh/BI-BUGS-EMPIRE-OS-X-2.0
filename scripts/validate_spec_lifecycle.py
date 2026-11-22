@@ -60,7 +60,7 @@ def numbered_specs() -> list[Path]:
     paths = []
     for path in SPEC_DIR.glob("[0-9][0-9]_*.md"):
         number = int(path.name[:2])
-        if 1 <= number <= 34:
+        if 1 <= number <= 35:
             paths.append(path)
     return sorted(paths, key=lambda path: int(path.name[:2]))
 
@@ -71,7 +71,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     specs = numbered_specs()
-    print(f"Lifecycle header audit: {len(specs)} numbered specifications (01–34)")
+    print(f"Lifecycle header audit: {len(specs)} numbered specifications (01–35)")
     total_issues = 0
     for path in specs:
         values, issues = inspect_spec(path)

@@ -8,7 +8,7 @@
 **Testing status:** DOCUMENTATION CHECKS EXECUTED — SEE MILESTONE 31
 **Production status:** NOT APPLICABLE — DOCUMENTATION/PROJECT-CONTROL RECORD
 **Authority:** `00_MASTER_INDEX.md` and `02_ENGINEERING_CONSTITUTION.md`
-**Related:** `03_MASTER_BLUEPRINT.md`, `06_ENGINEERING_RULES.md`, `07_PROJECT_STRUCTURE.md`, `09_DATABASE_ARCHITECTURE.md`, `10_API_ARCHITECTURE.md`, `15_SECURITY.md`, `18_TESTING.md`, `20_FEATURE_REGISTRY.md`–`24_AI_REGISTRY.md`, `29_RELEASE_PROCESS.md`, `31_WEBSITE_REQUIREMENTS.md`–`33_LIFECYCLE_STATUS_STANDARD.md`, `99_PROJECT_PROGRESS.md`
+**Related:** `03_MASTER_BLUEPRINT.md`, `06_ENGINEERING_RULES.md`, `07_PROJECT_STRUCTURE.md`, `09_DATABASE_ARCHITECTURE.md`, `10_API_ARCHITECTURE.md`, `15_SECURITY.md`, `18_TESTING.md`, `20_FEATURE_REGISTRY.md`–`24_AI_REGISTRY.md`, `29_RELEASE_PROCESS.md`, `31_WEBSITE_REQUIREMENTS.md`–`35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md`, `99_PROJECT_PROGRESS.md`
 
 ---
 
@@ -311,3 +311,11 @@ A verification pass found that current lifecycle headers for Specifications 01�
 **Verification:** Lifecycle strict audit PASS (34 specifications, zero metadata issues); project-control/frontend-shell tests PASS (19/19); website source gate strict PASS (`NEW WEBSITE BUILD`); Markdown integrity PASS (63 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
 
 **Remaining:** Owner inputs OI-01–OI-11, approved `WREQ-*` conversion, requirement-level traceability, and explicit owner acceptance remain open. No new product coding is authorized before the documentation gate is accepted.
+
+
+## 11. Location-governance follow-up — 2026-11-23
+
+- Specification 35 and `LOCATION_AREA_REGISTER.json` now provide one canonical machine-readable record for the 25 owner-selected active districts and the India/International selector scope.
+- `scripts/validate_location_register.py` checks unique IDs, selected MP division/district groupings, additional Rajasthan/UP selections, inactive-by-default behavior, and the rule that owner-selected active areas do not prove per-service availability.
+- The complete authoritative all-India/world selector dataset remains a separate open data-acquisition/licensing/versioning task. No full selector implementation or operational coverage claim is implied.
+- This follow-up improves register traceability; it does not close owner acceptance, the full customer journey, or the service-by-district publication gates.

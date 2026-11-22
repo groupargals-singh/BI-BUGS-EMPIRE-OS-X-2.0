@@ -68,7 +68,7 @@ Run the read-only audit from the repository root:
 python scripts/validate_spec_lifecycle.py
 ```
 
-The command scans numbered specifications 01–34, recognizes the aliases above, reports missing/ambiguous dimensions, and does not modify files. To make undeclared or ambiguous dimensions fail the command, run:
+The command scans numbered specifications 01–35, recognizes the aliases above, reports missing/ambiguous dimensions, and does not modify files. To make undeclared or ambiguous dimensions fail the command, run:
 
 ```bash
 python scripts/validate_spec_lifecycle.py --strict
@@ -91,7 +91,7 @@ The audit utility and its unit tests are development tooling. They do not implem
 
 ## 9. BI-BUGS lifecycle control applicability and review boundary
 
-The lifecycle validator audits metadata headers for numbered Specifications 01–34. It does not audit the auxiliary Documentation Completion Matrix as a numbered specification, and it does not validate the truth of a status value. The matrix is a separate review control; the progress tracker records dated milestone evidence.
+The lifecycle validator audits metadata headers for numbered Specifications 01–35. It does not audit the auxiliary Documentation Completion Matrix as a numbered specification, and it does not validate the truth of a status value. The matrix is a separate review control; the progress tracker records dated milestone evidence.
 
 For BI-BUGS, keep four dimensions separate: specification review/approval, product implementation, test execution/evidence, and production release/deployment. A clean strict lifecycle audit means only that required header fields are present and unambiguous. It does not mean all specifications have passed semantic review or owner acceptance. Similarly, passing project-control tests does not prove the product's customer journey.
 

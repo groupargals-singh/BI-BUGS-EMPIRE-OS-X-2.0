@@ -1,0 +1,73 @@
+{
+  "register_id": "BBE-LOC-001",
+  "version": 1,
+  "last_owner_input_date": "2026-11-23",
+  "purpose": "Owner-declared location-selector active-area register; not proof of service availability.",
+  "selector_scope": {
+    "india": "ALL_STATES_AND_UNION_TERRITORIES_AND_CITIES",
+    "international": "SEPARATE_COUNTRY_SELECTOR",
+    "unselected_locations_default": "INACTIVE",
+    "unselected_locations_remain_selectable": true
+  },
+  "coverage_policy": {
+    "service_availability_default": "UNVERIFIED",
+    "publish_as_service_available_requires": [
+      "SERVICE_SPECIFIC_CAPABILITY_EVIDENCE",
+      "CONFIRMED_DISTRICT_COVERAGE",
+      "COMPLIANCE_AND_SAFETY_APPROVAL",
+      "OWNER_SERVICE_APPROVAL",
+      "PUBLIC_CONTENT_APPROVAL"
+    ],
+    "active_area_is_not_service_availability": true
+  },
+  "active_divisions": [
+    {
+      "id": "IN-MP-CHAMBAL",
+      "country": "IN",
+      "state": "Madhya Pradesh",
+      "division": "Chambal",
+      "selection_status": "ACTIVE_OWNER_SELECTED",
+      "districts": ["Morena", "Bhind", "Sheopur"]
+    },
+    {
+      "id": "IN-MP-GWALIOR",
+      "country": "IN",
+      "state": "Madhya Pradesh",
+      "division": "Gwalior",
+      "selection_status": "ACTIVE_OWNER_SELECTED",
+      "districts": ["Gwalior", "Shivpuri", "Guna", "Ashoknagar", "Datia"]
+    },
+    {
+      "id": "IN-MP-BHOPAL",
+      "country": "IN",
+      "state": "Madhya Pradesh",
+      "division": "Bhopal",
+      "selection_status": "ACTIVE_OWNER_SELECTED",
+      "districts": ["Bhopal", "Sehore", "Raisen", "Rajgarh", "Vidisha"]
+    },
+    {
+      "id": "IN-MP-INDORE",
+      "country": "IN",
+      "state": "Madhya Pradesh",
+      "division": "Indore",
+      "selection_status": "ACTIVE_OWNER_SELECTED",
+      "districts": ["Indore", "Dhar", "Jhabua", "Alirajpur", "Barwani", "Khargone", "Khandwa", "Burhanpur"]
+    }
+  ],
+  "additional_active_districts": [
+    {"id": "IN-RJ-JAIPUR", "country": "IN", "state": "Rajasthan", "district": "Jaipur", "selection_status": "ACTIVE_OWNER_SELECTED_PRIOR_INPUT"},
+    {"id": "IN-RJ-JAISALMER", "country": "IN", "state": "Rajasthan", "district": "Jaisalmer", "selection_status": "ACTIVE_OWNER_SELECTED_PRIOR_INPUT"},
+    {"id": "IN-RJ-DHOLPUR", "country": "IN", "state": "Rajasthan", "district": "Dholpur", "selection_status": "ACTIVE_OWNER_SELECTED"},
+    {"id": "IN-UP-AGRA", "country": "IN", "state": "Uttar Pradesh", "district": "Agra", "selection_status": "ACTIVE_OWNER_SELECTED_PRIOR_INPUT"}
+  ],
+  "service_coverage": {
+    "status": "UNVERIFIED",
+    "note": "No district in this register is automatically approved for every catalogue service. Use the per-service coverage and publication gates."
+  },
+  "data_governance": {
+    "authoritative_admin_boundaries_required_for_full_selector": true,
+    "source_version_and_effective_date_required": true,
+    "unknown_or_unverified_locations_must_not_be_guessed": true,
+    "geolocation_requires_separate_owner_approved_purpose": true
+  }
+}

@@ -9,8 +9,10 @@
 - [32_WEBSITE_DISCOVERY_WORKBOOK.md](32_WEBSITE_DISCOVERY_WORKBOOK.md) — owner-input checklist for website identity, content, customer journey, and operations.
 - [33_LIFECYCLE_STATUS_STANDARD.md](33_LIFECYCLE_STATUS_STANDARD.md) — canonical lifecycle dimensions, backward-compatible aliases, and audit policy.
 - [34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md](34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md) — semantic consistency findings, registry/traceability gaps, and remaining delivery gates.
+- [35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md](35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md) — location selector scope, owner-selected active-area register, data provenance, and per-service coverage safeguards.
+- [LOCATION_AREA_REGISTER.json](LOCATION_AREA_REGISTER.json) — canonical machine-readable owner-selected location register.
 - Website source decision gate: `../scripts/validate_website_source_gate.py` (tested by `../testing/test_validate_website_source_gate.py`).
-- Numbered specifications 01–34 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, and the current semantic traceability audit.
+- Numbered specifications 01–35 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, semantic traceability, and location catalogue/coverage governance.
 
 
 - [DOCUMENTATION_COMPLETION_MATRIX.md](DOCUMENTATION_COMPLETION_MATRIX.md) — document-by-document completion matrix, owner-input gates, and Documentation Phase 1 acceptance checklist.

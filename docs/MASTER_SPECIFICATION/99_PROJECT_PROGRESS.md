@@ -21,9 +21,9 @@ PARTIAL — first responsive static website frontend foundation implemented and 
 
 NOT VERIFIED — development preview only; no domain, hosting, or deployment evidence.
 
-**Current Priority (2026-11-21):**
+**Current Priority (2026-11-23):**
 
-Numbered Specifications 00–34 and supporting documentation have received document-level semantic review. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
+Numbered Specifications 00–35 and supporting documentation have received document-level semantic review. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
 
 **Current Workflow:**
 
@@ -31,7 +31,7 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 
 ---
 
-# 2. MASTER SPECIFICATION STATUS — CURRENT SNAPSHOT 2026-11-21
+# 2. MASTER SPECIFICATION STATUS — CURRENT SNAPSHOT 2026-11-23
 
 | No. | Specification | Current document-review status | Remaining gate |
 |---:|---|---|---|
@@ -70,6 +70,7 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 | 32 | WEBSITE DISCOVERY WORKBOOK | REVIEWED — OWNER INPUT REQUIRED | Complete and approve remaining owner-input groups; source route alone is not full approval |
 | 33 | LIFECYCLE STATUS STANDARD | REVIEWED — OWNER ACCEPTANCE PENDING | Owner acceptance; validator checks metadata only |
 | 34 | CROSS-DOCUMENT TRACEABILITY AUDIT | REVIEWED — FINDINGS OPEN | Close or obtain explicit owner disposition for remaining findings |
+| 35 | LOCATION CATALOGUE AND COVERAGE GOVERNANCE | REVIEWED — OWNER ACCEPTANCE PENDING | Complete authoritative India/world datasets; approve selector behavior; validate service-by-district coverage separately |
 
 **Supporting documentation:** Reviewed and reconciled through Milestones 58–60. The auxiliary `DOCUMENTATION_COMPLETION_MATRIX.md` tracks its evidence and remaining gates; it is not a numbered Master Specification.
 
@@ -1442,7 +1443,7 @@ f0ce9b4 Create master specification index
 
 ## 61. CURRENT DOCUMENTATION AND REPOSITORY SNAPSHOT — 2026-11-19
 
-**Current document review:** Specifications 00–34 have been semantically reviewed in the milestones recorded in this tracker and Specification 34. Supporting documentation (constitution summary, project/feature memory indexes, project rules, AI/coding/engineering/security rules, coding/folder/naming standards, roadmap views, root architecture pointers, changelog/version pointers, and documentation indexes) has also been reviewed and reconciled. The canonical evidence-based per-document state is `DOCUMENTATION_COMPLETION_MATRIX.md`.
+**Current document review:** Specifications 00–35 have been semantically reviewed in the milestones recorded in this tracker and Specification 34. Supporting documentation (constitution summary, project/feature memory indexes, project rules, AI/coding/engineering/security rules, coding/folder/naming standards, roadmap views, root architecture pointers, changelog/version pointers, and documentation indexes) has also been reviewed and reconciled. The canonical evidence-based per-document state is `DOCUMENTATION_COMPLETION_MATRIX.md`.
 
 **Remaining Documentation Phase 1 gates:** (1) full final cross-document contradiction/traceability audit and explicit disposition of each finding; (2) owner-supplied and approved website business inputs in Specifications 31–32; (3) final requirements-to-registry/test/release traceability where approved capabilities exist; (4) final verification and explicit project-owner acceptance. Empty conditional registries remain valid where no feature is approved.
 
@@ -1628,3 +1629,18 @@ f0ce9b4 Create master specification index
 **Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
 **GitHub:** Commit `cbad6a7` (`Record Morena head office address input`) pushed to `origin/main`; final exact local/remote hash verification is recorded in the following synchronization revision.
 **Progress:** Documentation remains 70% provisional. This resolves the textual postal-address input under OI-03 only; other owner requirements and final package acceptance remain open. Overall project remains 10% provisional.
+
+
+## M-076 — Canonical owner-area register and location governance validator — 2026-11-23
+
+**Status:** COMPLETE — DOCUMENTATION / PROJECT-CONTROL ARTIFACTS VERIFIED
+
+**Created:** `docs/MASTER_SPECIFICATION/35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md`; canonical machine-readable `LOCATION_AREA_REGISTER.json`; `scripts/validate_location_register.py`; `testing/test_validate_location_register.py`.
+
+**Recorded:** Four owner-selected MP divisions with all 21 districts, plus Rajasthan Jaipur/Jaisalmer/Dholpur and Uttar Pradesh Agra (25 districts total). India all-States/UTs/cities and separate International/country selector scope are retained. All unselected locations default inactive but remain selectable. Service availability remains UNVERIFIED and requires separate per-service approvals.
+
+**Validation boundary:** The new validator checks register integrity and prevents unsafe conflation; it does not populate the complete India/world catalogue, verify live coverage, geocode the head-office address, or implement the frontend selector.
+
+**Verification:** Location register strict validator PASS (25/25 districts); six location-register unit tests PASS; lifecycle strict audit PASS (35 numbered specifications, zero metadata issues); service catalogue strict gate PASS (71/71); website source gate PASS; full project test suite PASS (33/33); JavaScript syntax PASS; Markdown integrity PASS (64 Markdown files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
+**GitHub:** Pending immediate commit/push after verification.
+**Progress:** Documentation remains 70% provisional; new location-control artefacts improve traceability but do not close owner acceptance, complete geographic datasets, or service-coverage evidence. Overall project remains 10% provisional.

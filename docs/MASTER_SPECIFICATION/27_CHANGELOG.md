@@ -163,3 +163,10 @@ These entries describe source-control changes only. They do not claim a released
 - Captured the owner-supplied address text: Near Railway Station, Manohar Nagar, Tussi Pura, Morena, Madhya Pradesh 476001.
 - Recorded decision `DEC-BBE-006` and updated website requirements, discovery workbook, progress, completion matrix and roadmap.
 - No map pin/coordinates or geocoded location inferred. Documentation-only; no frontend or map integration implemented.
+
+
+## Unreleased — 2026-11-23 — Location catalogue governance and validation
+
+- Added Specification 35 and canonical `LOCATION_AREA_REGISTER.json` for 25 owner-selected districts, with separate India/International selector scope and inactive-by-default controls.
+- Added strict read-only `scripts/validate_location_register.py` and unit tests; expanded lifecycle audit scope to numbered Specifications 01–35.
+- Full authoritative India/world datasets, per-service coverage evidence, owner acceptance and frontend implementation remain open. Documentation/project-control change only.
