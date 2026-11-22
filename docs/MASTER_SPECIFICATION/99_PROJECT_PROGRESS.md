@@ -1626,5 +1626,5 @@ f0ce9b4 Create master specification index
 **Limits:** No map pin, latitude/longitude, building/plot number or geocoding verification supplied. Do not infer a map location. Business hours and emergency policy remain unknown.
 
 **Verification:** Pending after documentation edits; run full project validators/tests and Markdown integrity before commit.
-**GitHub:** Not yet committed; immediate push required after verification.
+**GitHub:** Commit `cbad6a7` (`Record Morena head office address input`) pushed to `origin/main`; final exact local/remote hash verification is recorded in the following synchronization revision.
 **Progress:** Documentation remains 70% provisional. This resolves the textual postal-address input under OI-03 only; other owner requirements and final package acceptance remain open. Overall project remains 10% provisional.
