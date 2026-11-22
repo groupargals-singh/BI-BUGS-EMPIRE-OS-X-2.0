@@ -1,0 +1,77 @@
+{
+  "catalogue_id": "BBE-LOCATION-REFERENCE-DATA-001",
+  "retrieved_utc": "2026-11-22T20:33:22.871871+00:00",
+  "purpose": "Reference data for a searchable location selector. Not proof of BI-BUGS operational coverage.",
+  "datasets": {
+    "india_lgd": {
+      "path": "docs/MASTER_SPECIFICATION/data/INDIA_LGD_STATES_DISTRICTS.json",
+      "state_ut_count": 36,
+      "state_count": 28,
+      "ut_count": 8,
+      "district_count": 770,
+      "output_bytes": 188229,
+      "output_sha256": "b3bd0ccf73613e3cdd6c617368770b55fd36172fbaae60e5518089474d5bed54"
+    },
+    "un_m49": {
+      "path": "docs/MASTER_SPECIFICATION/data/UN_M49_COUNTRY_AREA_CATALOGUE.csv",
+      "count": 248,
+      "international_count": 247,
+      "output_bytes": 23164,
+      "output_sha256": "ee7ea51b676e1b62eee3186af01c855b7cb9e84a87ec33ff95687ee02603d15e"
+    },
+    "india_populated_places": {
+      "path": "docs/MASTER_SPECIFICATION/data/INDIA_POPULATED_PLACES.tsv.gz",
+      "record_count": 549031,
+      "state_mapped_records": 548995,
+      "district_mapped_records": 429615,
+      "feature_code_counts": {
+        "PPL": 546172,
+        "PPLA2": 148,
+        "PPLX": 1757,
+        "PPLA": 35,
+        "PPLA3": 24,
+        "PPLC": 1,
+        "PPLL": 887,
+        "PPLS": 4,
+        "PPLA5": 2,
+        "PPLA4": 1
+      },
+      "source_archive_bytes": 15755147,
+      "source_archive_sha256": "f1ce814c1841d5e3a57c7f89c5df294d793b6e1a0adcbe7b34c72cb325378725",
+      "license": "Creative Commons Attribution 4.0 International",
+      "source_url": "https://download.geonames.org/export/dump/IN.zip",
+      "output_bytes": 10825902,
+      "output_sha256": "9563a2696e861d1fd890a8082e325537890e7ade05b43e50b95c5123244b11e3"
+    }
+  },
+  "sources": [
+    {
+      "name": "Local Government Directory (LGD)",
+      "publisher": "Ministry of Panchayati Raj, Government of India",
+      "url": "https://lgdirectory.gov.in/",
+      "catalogue_url": "https://www.data.gov.in/catalog/local-government-directory-lgd",
+      "license": "Government Open Data License-India applies to published OGD resources; LGD portal terms/source attribution must be checked before redistribution",
+      "role": "Official State/UT and district administrative records; urban local bodies are separate records and are not conflated with city/locality list."
+    },
+    {
+      "name": "UN Statistics Division M49",
+      "publisher": "United Nations Statistics Division",
+      "url": "https://unstats.un.org/unsd/methodology/m49/overview/",
+      "role": "Country or area names, M49 and ISO alpha codes. UN list includes areas/territories and is not a sovereignty classification."
+    },
+    {
+      "name": "GeoNames India extract",
+      "publisher": "GeoNames",
+      "url": "https://download.geonames.org/export/dump/IN.zip",
+      "license": "CC BY 4.0",
+      "role": "Searchable populated-place/locality index; includes villages and other populated-place types, not a government city boundary or service-coverage source."
+    }
+  ],
+  "critical_boundaries": [
+    "All locations default inactive unless separately owner-selected.",
+    "Owner-selected active areas are not proof of service availability.",
+    "GeoNames populated places are search candidates; they must not be represented as official municipal city limits.",
+    "UN M49 Country or Area is a statistical list and does not determine sovereignty.",
+    "No browser geolocation, customer exact-address collection, or service coverage is enabled by this import."
+  ]
+}

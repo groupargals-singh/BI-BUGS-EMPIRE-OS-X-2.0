@@ -319,3 +319,12 @@ A verification pass found that current lifecycle headers for Specifications 01â€
 - `scripts/validate_location_register.py` checks unique IDs, selected MP division/district groupings, additional Rajasthan/UP selections, inactive-by-default behavior, and the rule that owner-selected active areas do not prove per-service availability.
 - The complete authoritative all-India/world selector dataset remains a separate open data-acquisition/licensing/versioning task. No full selector implementation or operational coverage claim is implied.
 - This follow-up improves register traceability; it does not close owner acceptance, the full customer journey, or the service-by-district publication gates.
+
+
+## 12. Location reference-data import â€” 2026-11-23
+
+- Imported LGD State/UT and district records (36 States/UTs; 770 districts) as the India administrative hierarchy.
+- Imported UN M49 country-or-area entries (248 total; 247 International after India is split into the domestic selector). M49 is a statistical country/area list, not a sovereignty classification.
+- Imported 549,031 GeoNames populated-place records for broad city/town/village/locality search. 548,995 records map to an LGD State/UT and 429,615 map to an LGD district. Missing mappings remain blank. GeoNames is not an official city-only or municipal-boundary dataset.
+- Source attribution, licenses, limitations, retrieval timestamp and checksums are documented under `data/`. Strict reference-data validation passes.
+- Official LGD Urban Local Body/city cross-check, final selector behavior approval and per-service coverage evidence remain open. The import does not activate locations or claim service availability.

@@ -25,7 +25,16 @@ This is a BI-BUGS pest-control website requirement, not a generic geography prod
 - All geographic locations outside the current owner-selected active list remain selectable/searchable but default to `INACTIVE` for BI-BUGS area-selection purposes.
 - The current owner-selected district list is held in `LOCATION_AREA_REGISTER.json`; do not copy it into independent competing lists.
 - The selector dataset must use stable geographic identifiers, parent identifiers, official display names, source, source version/effective date, and a documented update process. Do not invent missing districts, cities, boundaries, or IDs.
-- Full India/world selector dataset population is a separate data-acquisition and QA task. The current owner-area register is not the complete all-India or world location dataset.
+### 2.1 Imported reference-data snapshot — 2026-11-23
+
+The versioned reference datasets are stored under `data/` and described in `data/README.md` and `data/LOCATION_DATA_SOURCE_MANIFEST.json`:
+
+- **India administrative hierarchy:** the Government of India Local Government Directory (LGD) snapshot contains 36 States/UTs (28 States + 8 UTs) and 770 districts, with LGD codes and district local-language names. This is the primary administrative hierarchy.
+- **International selector:** UN Statistics Division M49 provides 248 country-or-area entries; 247 are in the International selector after India is separated into the domestic selector. The UN list includes territories/areas and is not a sovereignty classification.
+- **City/town/locality search:** GeoNames India extract provides 549,031 active populated-place records, including cities, towns, villages, localities and other populated-place types. It is a broad search index, not a city-only official municipal register. 548,995 records have an LGD State/UT crosswalk and 429,615 have a district crosswalk; unmatched crosswalk fields remain blank rather than guessed.
+- **Still open:** LGD Urban Local Body (ULB) records / official municipal-city cross-check have not been imported in this snapshot. The GeoNames index does not certify official municipal boundaries or exhaustive BI-BUGS city coverage. Owner approval of final labels/selector behavior also remains open.
+
+Source attribution, licensing notes, source limits, retrieval timestamp and SHA-256 checksums are in the manifest and data README. The importer and strict validator are reproducible from the repository root.
 
 ## 3. Owner-selected active areas — current register
 
@@ -58,11 +67,21 @@ A selected district must not automatically activate all 71 candidate catalogue s
 
 ## 6. Validation tooling
 
-Run:
+Run both owner-area and imported-reference-data validators:
 
 ```bash
 python scripts/validate_location_register.py --strict
+python scripts/validate_location_catalogue.py --strict
 ```
+
+To explicitly refresh source snapshots, then validate:
+
+```bash
+python scripts/import_location_reference_data.py
+python scripts/validate_location_catalogue.py --strict
+```
+
+Refresh is a reviewed repository change, not an unattended production sync.
 
 The validator checks the 4 selected Madhya Pradesh divisions, their 21 districts, the 4 additional selected districts, unique IDs, the 25-district total, separate India/International selector scope, inactive-by-default behavior, and the prohibition on treating active-area selection as service availability. It does not validate the completeness of the all-India/world catalogue, geocode addresses, prove operational coverage, or implement a website selector.
 
@@ -73,12 +92,15 @@ The validator checks the 4 selected Madhya Pradesh divisions, their 21 districts
 - [x] Unselected locations default inactive while remaining selectable.
 - [x] Active-area selection separated from per-service availability.
 - [x] Read-only validator and unit tests cover missing/duplicate areas and unsafe status conflation.
-- [ ] Complete authoritative India States/UTs/districts/cities dataset sourced, licensed, versioned and validated.
-- [ ] International country dataset sourced, licensed, versioned and validated.
+- [x] Official India States/UTs and district hierarchy imported from LGD (36 States/UTs, 770 districts), versioned and strictly validated.
+- [x] International UN M49 country-or-area catalogue imported (248 total; 247 International after India is separated), with M49 and ISO identifiers.
+- [x] Broad India populated-place search index imported from GeoNames (549,031 active records) with CC BY 4.0 attribution and explicit limitations; this is not a city-only official list.
+- [ ] LGD Urban Local Body catalogue / official municipal-city cross-check imported and reconciled against the broad populated-place index.
+- [ ] All unmatched place-to-district crosswalks reviewed where the application requires a district parent; do not infer missing mappings.
 - [ ] Owner approves final location labels and selector behavior.
 - [ ] Approved service-by-district coverage records exist before public availability claims.
 - [ ] Frontend selector is implemented and tested only after Documentation Phase acceptance.
 
 ## 8. Current lifecycle boundary
 
-The owner-area register and validator are documentation/project-control artifacts. They are not a live selector, geocoder, map, branch locator, routing service, or proof that BI-BUGS provides any specific service in the selected districts. Documentation Phase 1 remains active; no frontend coding is authorized until its acceptance gate is satisfied.
+The owner-area register, imported reference datasets and validators are documentation/data artifacts. They are not a live selector, geocoder, map, branch locator, routing service, or proof that BI-BUGS provides any specific service in the selected districts. GeoNames is an as-is broad place-name index and must not be represented as official city boundaries. Documentation Phase 1 remains active; no frontend coding is authorized until its acceptance gate is satisfied.

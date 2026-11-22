@@ -16,6 +16,7 @@
 - `MASTER_SPECIFICATION/33_LIFECYCLE_STATUS_STANDARD.md` — backward-compatible lifecycle metadata policy and audit rules.
 - `MASTER_SPECIFICATION/34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md` — cross-document semantic findings and remaining traceability gates.
 - `MASTER_SPECIFICATION/35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md` and `LOCATION_AREA_REGISTER.json` — owner-selected areas and location/service-coverage separation.
+- `MASTER_SPECIFICATION/data/README.md` — imported LGD State/UT/district hierarchy, UN M49 country/area catalogue, GeoNames populated-place index, source attribution and limitations.
 - `scripts/validate_website_source_gate.py` — read-only owner website-source decision gate; use `--strict` in pre-implementation checks.
 
 

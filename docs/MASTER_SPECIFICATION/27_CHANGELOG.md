@@ -170,3 +170,10 @@ These entries describe source-control changes only. They do not claim a released
 - Added Specification 35 and canonical `LOCATION_AREA_REGISTER.json` for 25 owner-selected districts, with separate India/International selector scope and inactive-by-default controls.
 - Added strict read-only `scripts/validate_location_register.py` and unit tests; expanded lifecycle audit scope to numbered Specifications 01–35.
 - Full authoritative India/world datasets, per-service coverage evidence, owner acceptance and frontend implementation remain open. Documentation/project-control change only.
+
+
+## Unreleased — 2026-11-23 — India and International location reference datasets
+
+- Imported official LGD hierarchy for 36 States/UTs and 770 districts; imported UN M49 248 country-or-area entries (247 International); imported GeoNames India 549,031 active populated-place records.
+- Added source manifest/checksums, attribution/license boundaries, explicit crosswalk limitations, reproducible importer and strict catalogue validator/tests.
+- Official LGD ULB/city-only cross-check, final owner selector approval, service coverage and frontend implementation remain open. Documentation/data import only; no public website release or service availability claim.

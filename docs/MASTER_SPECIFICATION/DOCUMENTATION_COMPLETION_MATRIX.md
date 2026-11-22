@@ -2,7 +2,7 @@
 
 **Document type:** Auxiliary documentation control artifact (not a numbered Master Specification)
 **Status:** INTERNAL DOCUMENTATION PACKAGE READY FOR OWNER REVIEW; OWNER INPUTS / ACCEPTANCE PENDING
-**Last reviewed:** 2026-11-21
+**Last reviewed:** 2026-11-23
 **Authority:** `00_MASTER_INDEX.md`, `02_ENGINEERING_CONSTITUTION.md`, accepted decisions DEC-BBE-001 and DEC-BBE-002.
 
 ## 1. Purpose and completion rule
@@ -61,6 +61,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 | 32 | Website Discovery Workbook | REVIEWED — OWNER INPUT REQUIRED (Milestone 55) | Fill and approve the remaining owner-input groups; source route alone is not full approval |
 | 33 | Lifecycle Status Standard | REVIEWED — OWNER ACCEPTANCE PENDING (Milestone 55) | Owner acceptance; strict audit validates metadata only, not semantic approval |
 | 34 | Cross-Document Traceability Audit | REVIEWED — FINDING DISPOSITIONS AND INTERNAL/OWNER GATES RECONCILED (Milestones 62–67) | F-02 remains requirements-gated; F-05 remains blocked by owner inputs and implementation; F-04/F-07–F-11 are monitor items; owner disposition/acceptance pending |
+| 35 | Location Catalogue and Coverage Governance | REVIEWED — OWNER ACCEPTANCE PENDING (Milestones 76–77) | LGD ULB/official city cross-check; unresolved place-to-district crosswalks where required; owner approval of selector behavior; per-service coverage approvals |
 | 99 | Project Progress Tracker | REVIEWED — CURRENT SNAPSHOT RECONCILED (Milestones 61–64) | Maintain current snapshot and dated milestone history; update only from verified evidence |
 
 ## 4. Cross-document and registry completion gates
@@ -69,7 +70,8 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 |---|---|---|
 | Authority and scope | Constitution, DEC-BBE-001/002, Blueprint and scope boundaries agree | Reviewed for core scope; final owner acceptance pending |
 | Specification consistency | No unresolved contradiction across applicable specifications | REVIEWED AT DOCUMENT BASELINE — new contradictions must be logged; owner decisions remain separate |
-| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | PARTIALLY RESOLVED: geographic selector scope approved by WREQ-GEO-001; actual service coverage/contact and other website requirements remain OWNER INPUT REQUIRED; 71-row candidate service register has explicit capability/evidence/coverage/compliance/owner/content/publish gates |
+| Website requirements | Approved sitemap, service/content facts, public contact, geography and customer action | PARTIALLY RESOLVED: selector scope and owner-selected areas recorded; LGD hierarchy (36 States/UTs, 770 districts), UN M49 country/area list (248) and GeoNames populated-place index (549,031) imported/validated; official LGD ULB cross-check, actual service coverage/contact and other website requirements remain OWNER INPUT REQUIRED; 71-row candidate service register retains per-service approval gates |
+| Geographic reference datasets | Source-backed State/UT/district, country/area and place-name reference data with licensing, attribution and crosswalk controls | PASS WITH EXPLICIT LIMITATIONS: LGD/UN M49/GeoNames snapshots imported and strict validator passes; GeoNames is not an official city-only register, 119,416 places have no LGD district crosswalk, and LGD ULB import/cross-check remains open |
 | Privacy and data | Approved data fields, purpose, consent, retention, access and deletion requirements | OWNER INPUT REQUIRED |
 | Operational workflow | Enquiry handling, staff roles, assignment, response and escalation | OWNER INPUT REQUIRED |
 | Registry traceability | Stable IDs linked requirement → feature/module → API/data → test → release | TEMPLATE/POPULATION RULES REVIEWED; product records gated by approved requirements and implementation |
@@ -102,6 +104,7 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 - [x] Strict lifecycle audit passes with zero metadata issues.
 - [x] Strict website source gate passes.
 - [x] Strict service catalogue gate validates all 71 IDs and prevents publication without required evidence/approvals.
+- [x] Strict location-reference catalogue gate validates LGD States/UTs/districts, UN M49 country/areas and the GeoNames populated-place search index; source attribution and non-coverage boundaries are recorded.
 - [x] Project-control/frontend-shell test suite passes.
 - [x] Markdown integrity and Git diff checks pass.
 - [x] Progress, roadmap, audit, changelog, version history and index have been reconciled to the current evidence baseline.
@@ -113,7 +116,8 @@ Documentation Phase 1 can reach internal **DOCUMENTATION PACKAGE READY FOR OWNER
 
 - [ ] Owner confirms individual service availability/capability, exclusions, treatment descriptions and publishable content/claims. (The comprehensive candidate taxonomy is captured; individual confirmations remain open.)
 - [ ] Owner confirms exact public display wording and approves brand assets, colours, typography, imagery and language. The legal/business identity is source-confirmed in WREQ-C-001; public presentation remains pending.
-- [ ] Owner approves service geography and public contact channels.
+- [x] Owner-approved selector scope and initial active-area selections are recorded (this does not approve service coverage).
+- [ ] Owner approves per-service operational coverage by district and public contact-channel display/use.
 - [ ] Owner approves sitemap and first-release customer action.
 - [ ] Owner approves any form fields, purpose, privacy notice, consent, retention and deletion rules.
 - [ ] Owner approves staff roles and enquiry-handling workflow, if required.
@@ -138,7 +142,7 @@ The Documentation Phase estimate is now **70% provisional** under the explicit w
 | Final verification and explicit package acceptance | 10% | 50% | 5% |
 | **Total** | **100%** |  | **70%** |
 
-These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02 and OI-03 are partially resolved for catalogue breadth, selector scope, owner-declared initial areas, division/district selections, public contact channels and head-office address text; map pin/coordinates, service-specific capability/coverage, hours/emergency policy and other owner/content decisions remain open, as does final package acceptance. The weighted estimate remains 70% because this selector-scope approval does not confirm operating coverage or close the broader owner-acceptance gates. The per-service approval control structure and owner-area register integrity control are complete, but authoritative full India/world selector datasets, actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
+These are provisional workstream estimates, not a mechanical document count. The 2026-11-21 identity reconciliation partially resolves the legal/business identity fact from WREQ-C-001, but does not approve public display wording or brand assets; OI-02 and OI-03 are partially resolved for catalogue breadth, selector scope, owner-declared initial areas, division/district selections, public contact channels and head-office address text; map pin/coordinates, service-specific capability/coverage, hours/emergency policy and other owner/content decisions remain open, as does final package acceptance. The weighted estimate remains 70% because this selector-scope approval does not confirm operating coverage or close the broader owner-acceptance gates. The per-service approval control structure and owner-area register integrity control are complete, but the official LGD Urban Local Body/city cross-check, unresolved place-to-district mappings where required, actual capability/evidence/coverage/owner/content decisions and final package acceptance still prevent Documentation Phase 1 from reaching 100%. The rubric must be updated from evidence as each gate closes.
 
 The overall project estimate remains **10% provisional**. The static frontend shell and documentation tools are limited foundations, not a complete website or business platform.
 

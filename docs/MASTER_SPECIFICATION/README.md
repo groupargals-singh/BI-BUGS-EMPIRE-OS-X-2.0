@@ -11,8 +11,10 @@
 - [34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md](34_CROSS_DOCUMENT_TRACEABILITY_AUDIT.md) — semantic consistency findings, registry/traceability gaps, and remaining delivery gates.
 - [35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md](35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md) — location selector scope, owner-selected active-area register, data provenance, and per-service coverage safeguards.
 - [LOCATION_AREA_REGISTER.json](LOCATION_AREA_REGISTER.json) — canonical machine-readable owner-selected location register.
+- [data/README.md](data/README.md) — imported India/International reference datasets, source attribution, license notes, limitations and refresh/validation commands.
+- [data/LOCATION_DATA_SOURCE_MANIFEST.json](data/LOCATION_DATA_SOURCE_MANIFEST.json) — retrieval timestamp, record counts, source details and checksums.
 - Website source decision gate: `../scripts/validate_website_source_gate.py` (tested by `../testing/test_validate_website_source_gate.py`).
-- Numbered specifications 01–35 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, semantic traceability, and location catalogue/coverage governance.
+- Numbered specifications 01–35 define the intended architecture, governance, BI-BUGS website requirements baseline, owner-input discovery, lifecycle-status controls, semantic traceability, and location catalogue/coverage governance and imported reference data.
 
 
 - [DOCUMENTATION_COMPLETION_MATRIX.md](DOCUMENTATION_COMPLETION_MATRIX.md) — document-by-document completion matrix, owner-input gates, and Documentation Phase 1 acceptance checklist.

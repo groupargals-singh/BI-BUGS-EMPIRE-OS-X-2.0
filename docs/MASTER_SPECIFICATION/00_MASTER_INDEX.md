@@ -28,7 +28,7 @@ registry, implementation, and verification records.
 
 **Historical status clarification (working-copy audit, 2026-10-11):** Numbered specifications 00–30 were present at that audit. Specifications 19–30 were expanded drafts awaiting owner review; specification 18 remained under review. A specification being present or marked ACTIVE/DONE does not prove application implementation, successful tests, deployment, or production readiness. The repository inventory found documentation and `.gitkeep` placeholders only outside the documentation tree; implementation status remains NOT VERIFIED.
 
-**Current additions (updated 2026-11-23):** Specifications 31 and 32 record the BI-BUGS Pest Control Services website requirements baseline and owner-input discovery workbook. The owner confirmed a new official website build (DEC-BBE-002); this resolves only the source route, not the remaining content, journey, privacy, or release approvals. Specification 33 defines lifecycle status metadata; Specification 34 records cross-document findings. Specification 35 defines the location catalogue and coverage-governance model, with a machine-readable owner-area register and read-only validation. Website requirements remain draft until the remaining BI-BUGS owner inputs are approved.
+**Current additions (updated 2026-11-23):** Specifications 31 and 32 record the BI-BUGS Pest Control Services website requirements baseline and owner-input discovery workbook. The owner confirmed a new official website build (DEC-BBE-002); this resolves only the source route, not the remaining content, journey, privacy, or release approvals. Specification 33 defines lifecycle status metadata; Specification 34 records cross-document findings. Specification 35 defines location catalogue and coverage governance; the canonical owner-area register and imported LGD/UN M49/GeoNames reference datasets are under `data/`, with strict read-only validation. Website requirements remain draft until the remaining BI-BUGS owner inputs are approved.
 
 ---
 
@@ -452,12 +452,14 @@ Records verified consistency checks, traceability gaps, scope-control risks, imp
 
 `35_LOCATION_CATALOGUE_AND_COVERAGE_GOVERNANCE.md` and `LOCATION_AREA_REGISTER.json`
 
-Defines the India and International selector scopes, owner-selected active districts, inactive-by-default rules, data provenance, and the strict separation between selected areas and verified per-service availability.
+Defines the India and International selector scopes, owner-selected active districts, imported reference datasets (LGD 36 States/UTs and 770 districts; UN M49 248 country/areas; GeoNames 549,031 populated places), source/attribution boundaries, and separation from per-service availability.
 
 ## PROJECT-CONTROL VALIDATORS
 
 - `../scripts/validate_website_source_gate.py` and `../testing/test_validate_website_source_gate.py` — read-only validation of the owner-controlled new-build source decision in Specification 32.
-- `../scripts/validate_location_register.py` and `../testing/test_validate_location_register.py` — read-only validation of the owner-area register and coverage safeguards in Specification 35.
+- `../scripts/validate_location_register.py` and `../testing/test_validate_location_register.py` — read-only validation of the owner-area register and coverage safeguards.
+- `../scripts/import_location_reference_data.py` — explicit source import/refresh for LGD, UN M49 and GeoNames.
+- `../scripts/validate_location_catalogue.py` and `../testing/test_validate_location_catalogue.py` — strict validation of imported location reference datasets. See `data/README.md`.
 
 ---
 

@@ -228,3 +228,11 @@ No software release is declared by these commits. Recheck Git history, remote ta
 - Expanded lifecycle metadata audit scope from Specifications 01–34 to 01–35.
 - Classification: documentation/project-control only; no full India/world selector dataset, frontend implementation, service availability, software release or deployment is claimed.
 - Git revision: `4cf0b97cf8401d9dd376a5ad5b07eee9c3c3d663` (`Add governed location register and validation`) pushed to `origin/main`; exact local/remote `main` hash verified. This is a documentation/project-control revision, not a software release.
+
+
+## 29. India and International location reference-data snapshot — 2026-11-23
+
+- Added LGD State/UT/district snapshot (36 States/UTs; 770 districts), UN M49 country/area catalogue (248 entries; 247 International), and GeoNames India populated-place index (549,031 records).
+- Added manifest, source attribution/license/limitations, reproducible importer, strict validator and tests; reconciled Specification 35, progress, roadmap and matrix.
+- Classification: documentation/reference-data only; GeoNames is not a city-only official municipal list. LGD ULB cross-check, owner selector approval, service coverage, frontend implementation, software release and deployment remain unapproved/not implemented.
+- Git revision: to be recorded in the immediate synchronization follow-up after verification and push.

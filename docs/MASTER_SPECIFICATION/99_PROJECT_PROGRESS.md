@@ -23,7 +23,7 @@ NOT VERIFIED — development preview only; no domain, hosting, or deployment evi
 
 **Current Priority (2026-11-23):**
 
-Numbered Specifications 00–35 and supporting documentation have received document-level semantic review. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
+Numbered Specifications 00–35 and supporting documentation have received document-level semantic review. The India/International reference-data snapshot is imported and validated, with explicit city/ULB and coverage limitations recorded. The internal documentation package is ready for owner review. The active work is owner discovery (OI-01–OI-11), conversion of approved decisions into traceable requirements, final verification, and explicit owner acceptance. Milestone 67 reconciles the audit conclusion, owner-input conversion rules, roadmap wording, and canonical revision ledgers. The new-build source decision is resolved; the remaining business inputs are not. Do not start new product coding before the documentation gate is accepted.
 
 **Current Workflow:**
 
@@ -70,7 +70,7 @@ WRITE → REVIEW → VERIFY → COMMIT → PUSH → PROGRESS UPDATE
 | 32 | WEBSITE DISCOVERY WORKBOOK | REVIEWED — OWNER INPUT REQUIRED | Complete and approve remaining owner-input groups; source route alone is not full approval |
 | 33 | LIFECYCLE STATUS STANDARD | REVIEWED — OWNER ACCEPTANCE PENDING | Owner acceptance; validator checks metadata only |
 | 34 | CROSS-DOCUMENT TRACEABILITY AUDIT | REVIEWED — FINDINGS OPEN | Close or obtain explicit owner disposition for remaining findings |
-| 35 | LOCATION CATALOGUE AND COVERAGE GOVERNANCE | REVIEWED — OWNER ACCEPTANCE PENDING | Complete authoritative India/world datasets; approve selector behavior; validate service-by-district coverage separately |
+| 35 | LOCATION CATALOGUE AND COVERAGE GOVERNANCE | REVIEWED — OWNER ACCEPTANCE PENDING | Import/validate source-backed location datasets; LGD ULB city cross-check, owner selector approval and service-by-district coverage remain open |
 
 **Supporting documentation:** Reviewed and reconciled through Milestones 58–60. The auxiliary `DOCUMENTATION_COMPLETION_MATRIX.md` tracks its evidence and remaining gates; it is not a numbered Master Specification.
 
@@ -1644,3 +1644,21 @@ f0ce9b4 Create master specification index
 **Verification:** Location register strict validator PASS (25/25 districts); six location-register unit tests PASS; lifecycle strict audit PASS (35 numbered specifications, zero metadata issues); service catalogue strict gate PASS (71/71); website source gate PASS; full project test suite PASS (33/33); JavaScript syntax PASS; Markdown integrity PASS (64 Markdown files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
 **GitHub:** Commit `4cf0b97cf8401d9dd376a5ad5b07eee9c3c3d663` (`Add governed location register and validation`) pushed to `origin/main`; local and remote `main` hashes matched after fetch. This is documentation/project-control work, not a website release.
 **Progress:** Documentation remains 70% provisional; new location-control artefacts improve traceability but do not close owner acceptance, complete geographic datasets, or service-coverage evidence. Overall project remains 10% provisional.
+
+
+## M-077 — India and International location reference datasets — 2026-11-23
+
+**Status:** COMPLETE — REFERENCE-DATA IMPORTED, VERSIONED AND STRICTLY VALIDATED; OFFICIAL CITY/ULB CROSS-CHECK REMAINS OPEN
+
+**Imported datasets:**
+- Government of India Local Government Directory (LGD): 36 States/UTs (28 States + 8 UTs) and 770 districts, with LGD codes and district local-language names.
+- United Nations Statistics Division M49: 248 country-or-area entries, including 247 International entries after India is separated into the domestic selector. The list includes territories/areas and is not a sovereignty classification.
+- GeoNames India extract: 549,031 active populated-place records (cities, towns, villages, localities and other populated-place types), distributed as a compressed TSV. 548,995 records have an LGD State/UT crosswalk; 429,615 have an LGD district crosswalk. Missing parent mappings are blank, not guessed.
+
+**Created:** `docs/MASTER_SPECIFICATION/data/INDIA_LGD_STATES_DISTRICTS.json`; `UN_M49_COUNTRY_AREA_CATALOGUE.csv`; `INDIA_POPULATED_PLACES.tsv.gz`; `LOCATION_DATA_SOURCE_MANIFEST.json`; `data/README.md`; `scripts/import_location_reference_data.py`; `scripts/validate_location_catalogue.py`; `testing/test_validate_location_catalogue.py`. Updated Specification 35, master index, completion matrix, audit, roadmap, changelog and version history.
+
+**Source/limitations:** LGD is primary for official India State/UT/district hierarchy; UN M49 supplies country-or-area names/codes; GeoNames is CC BY 4.0 and is an as-is populated-place index, not an official city-only register or municipal boundary source. Official LGD Urban Local Body data/city cross-check remains open. UN M49 country/area entries do not imply BI-BUGS service availability.
+
+**Verification:** Location register strict PASS (25/25); location catalogue strict PASS (36 States/UTs: 28 States + 8 UTs; 770 districts; 248 UN country/areas; 247 International; 549,031 populated places; output SHA-256/size checks); lifecycle strict PASS (35 specifications, zero metadata issues); service catalogue strict PASS (71/71); website source gate strict PASS; full unit suite PASS (37/37); JavaScript syntax PASS; Python compileall PASS; Markdown integrity PASS (65 files, zero broken links/fences); `git diff --check` PASS.
+**GitHub:** Pending immediate commit/push after final checksum-aware validator run.
+**Progress:** Documentation remains 70% provisional; this closes the reference-data import/validation subtask but not the official ULB/city cross-check, remaining owner inputs, per-service coverage or explicit package acceptance. Overall project remains 10% provisional.
