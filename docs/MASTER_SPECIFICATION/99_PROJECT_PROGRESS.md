@@ -1584,6 +1584,6 @@ f0ce9b4 Create master specification index
 
 **Verification (2026-11-23):** Service catalogue strict gate PASS (71/71); lifecycle strict audit PASS (34 specifications, zero metadata issues); website source gate strict PASS (`NEW WEBSITE BUILD`); full unit test suite PASS (26/26); frontend JavaScript syntax PASS; Markdown integrity PASS (all Markdown files scanned, zero broken relative links and zero unbalanced fences); `git diff --check` PASS.
 
-**GitHub:** Pending selective commit/push and exact remote HEAD verification.
+**GitHub:** Commit `95eb1c9c3e3258648227a14b873140c444ac5117` (`Record India and international location selector scope`) pushed to `origin/main`; subsequent fetch verified local and remote `main` at the exact same hash; working tree clean at verification.
 
 **Progress:** Documentation remains 70% provisional; OI-03 is partially resolved for selector scope only. Actual service geography/contact, other owner inputs and explicit package acceptance remain open. Overall project remains 10% provisional.

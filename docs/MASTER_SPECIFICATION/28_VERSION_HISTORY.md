@@ -196,4 +196,4 @@ No software release is declared by these commits. Recheck Git history, remote ta
 
 - Documentation-only change: owner approved all-India States/UTs and city selection plus a separate International/World country selector; recorded as DEC-BBE-003 / WREQ-GEO-001.
 - OI-03 is partially resolved for selection scope only. Actual service coverage and public contact details remain open.
-- No application feature, software release, nationwide service claim or international operation is declared. Git revision and remote status to be recorded after verification and push.
+- No application feature, software release, nationwide service claim or international operation is declared. Commit `95eb1c9c3e3258648227a14b873140c444ac5117` (`Record India and international location selector scope`) pushed to `origin/main`; exact remote `main` hash verified after fetch. This is a documentation-only revision.
