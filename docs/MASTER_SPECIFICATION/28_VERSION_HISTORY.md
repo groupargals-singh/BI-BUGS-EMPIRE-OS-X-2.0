@@ -242,4 +242,5 @@ No software release is declared by these commits. Recheck Git history, remote ta
 
 - Added a single conservative first-release proposal for OI-01–OI-11 in Specification 32 Section 17; all rows remain proposed and require explicit owner approval before becoming requirements.
 - Recorded official OGD/LGD Local Bodies source discovery in Specification 35 Section 9; no verified ULB export/import is claimed.
-- Classification: documentation/project-control only; no product feature, software release, or deployment. Repository revision to be recorded after verification and push.
+- Commit `a49701930e20c33d2786a3056aaddec99c5b2848` (`Consolidate documentation owner review decisions`) pushed to `origin/main`; exact remote hash verified after fetch.
+- Classification: documentation/project-control only; no product feature, software release, or deployment. Final synchronization revision follows.

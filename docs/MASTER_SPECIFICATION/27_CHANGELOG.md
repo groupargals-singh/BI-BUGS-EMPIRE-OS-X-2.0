@@ -184,3 +184,4 @@ These entries describe source-control changes only. They do not claim a released
 - Added one consolidated conservative first-release proposal for OI-01–OI-11 to Specification 32 Section 17. Proposed defaults are explicitly not owner-approved and do not authorize product implementation or public claims.
 - Identified the official OGD Platform India LGD Local Bodies resource and Ministry LGD overview; documented that a verified ULB export/schema has not yet been retrieved and imported.
 - Updated Specification 35, the cross-document audit, completion matrix and roadmap. Documentation progress remains 70% provisional; no software release or production change.
+- Documentation revision `a49701930e20c33d2786a3056aaddec99c5b2848` pushed to `origin/main`; exact remote hash verified after fetch.
