@@ -104,3 +104,18 @@ The validator checks the 4 selected Madhya Pradesh divisions, their 21 districts
 ## 8. Current lifecycle boundary
 
 The owner-area register, imported reference datasets and validators are documentation/data artifacts. They are not a live selector, geocoder, map, branch locator, routing service, or proof that BI-BUGS provides any specific service in the selected districts. GeoNames is an as-is broad place-name index and must not be represented as official city boundaries. Documentation Phase 1 remains active; no frontend coding is authorized until its acceptance gate is satisfied.
+
+
+## 9. Official LGD Urban Local Body source follow-up — 2026-11-23
+
+The official Open Government Data Platform India exposes the Ministry of Panchayati Raj resource “Local Government Directory (LGD) — Local Bodies” at:
+
+- https://data.gov.in/resource/local-government-directory-lgd-local-bodies
+- LGD catalogue: https://data.gov.in/catalog/local-government-directory-lgd
+- Ministry of Panchayati Raj LGD overview: https://panchayat.gov.in/lgd/
+
+The OGD resource metadata describes a monthly updated local-body dataset, last shown as updated 16 November 2026 during this review, and exposes state selection before preview/download. The Ministry's LGD overview explicitly includes urban local governments such as municipalities, corporations, notified areas and cantonment boards, alongside rural local bodies.
+
+**Acquisition result:** Source discovery is complete, but no verified ULB export file has yet been retrieved/imported into this repository. The publicly visible OGD metadata lists state/local-body codes but does not, in the retrieved metadata alone, establish a complete verified schema for local-body names, type, district parent, effective dates and status. Therefore no count, completeness claim, city-to-ULB crosswalk or ULB dataset checksum is asserted here. Do not substitute third-party mirrors or bypass CAPTCHA/access controls. The next valid acquisition step is an official state-filtered OGD/LGD export or an officially documented open API with terms and complete schema; validate the raw export and reconcile it against GeoNames before import.
+
+This closes the source-discovery subtask only. The official ULB data import/reconciliation, unresolved place-to-district mapping review and owner selector approval remain open.

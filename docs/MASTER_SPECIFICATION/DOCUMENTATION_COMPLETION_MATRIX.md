@@ -160,3 +160,12 @@ The overall project estimate remains **10% provisional**. The static frontend sh
 | Root architecture summaries (`docs/MASTER_BLUEPRINT.md`, `SYSTEM_ARCHITECTURE.md`, `DATABASE_ARCHITECTURE.md`, `API_ARCHITECTURE.md`, `AI_CORE.md`, `SECURITY.md`, `CHANGELOG.md`, `VERSION_HISTORY.md`) | REVIEWED — SUPPORTING POINTERS / SUMMARIES | Canonical links and current implementation boundaries recorded; no independent authority or release claims |
 
 Supporting documents do not become separate product requirements. Canonical specifications and accepted decisions remain authoritative.
+
+
+## 9. Consolidated owner-review package and official ULB source discovery — 2026-11-23
+
+Milestone 78 adds a consolidated, conservative first-release proposal to Specification 32 Section 17 for OI-01 through OI-11. It covers identity/brand, all 71 candidate services, location/contact, customer journey, privacy/data, staff workflow, sitemap, accessibility/language, hosting, operations and measurable acceptance. Every proposal is explicitly NOT OWNER-APPROVED. This is intended to reduce repeated fragmented questions; it does not create owner decisions or WREQ requirements by assumption.
+
+The official OGD/LGD Local Bodies resource and Ministry LGD overview have now been identified and documented in Specification 35 Section 9. No verified ULB export has yet been retrieved/imported; official ULB cross-check remains open. No third-party mirror or CAPTCHA bypass is accepted as a substitute.
+
+**Progress accounting remains 70% provisional.** The new proposal improves discovery readiness but the owner-input workstream cannot be scored as approved until the owner accepts/edits/defer decisions and service capability/coverage evidence is supplied. The ULB import/reconciliation, unresolved district crosswalk review where required, final selector approval, full verification after edits and explicit package acceptance remain open.

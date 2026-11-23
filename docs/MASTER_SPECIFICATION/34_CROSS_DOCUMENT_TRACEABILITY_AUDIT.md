@@ -328,3 +328,12 @@ A verification pass found that current lifecycle headers for Specifications 01�
 - Imported 549,031 GeoNames populated-place records for broad city/town/village/locality search. 548,995 records map to an LGD State/UT and 429,615 map to an LGD district. Missing mappings remain blank. GeoNames is not an official city-only or municipal-boundary dataset.
 - Source attribution, licenses, limitations, retrieval timestamp and checksums are documented under `data/`. Strict reference-data validation passes.
 - Official LGD Urban Local Body/city cross-check, final selector behavior approval and per-service coverage evidence remain open. The import does not activate locations or claim service availability.
+
+
+## 13. Owner-review proposal consolidation and LGD ULB source discovery — 2026-11-23
+
+**M-078 disposition:** Added one consolidated low-risk first-release proposal to Specification 32 Section 17 for OI-01–OI-11. Proposed exclusions include no website form, payment, account, WhatsApp, staff portal, or customer database in release 1 unless separately approved. This is a recommendation, not an owner decision; no WREQ is created until exact choices are approved.
+
+**Geographic source follow-up:** Identified the official OGD Platform India LGD Local Bodies resource and Ministry LGD overview. The official source includes urban local-government categories, but no verified export/schema sufficient for an auditable ULB import was retrieved in this milestone. Specification 35 records the source and the exact acquisition limitation. No third-party mirror or access-control bypass is used.
+
+**Remaining:** OI-01–OI-11 owner dispositions; per-service evidence and approvals for all 71 candidates; official ULB export and reconciliation; district-parent crosswalk review where required; final verification and explicit owner package acceptance. The 70% provisional documentation estimate remains unchanged. No product coding is authorized before the documentation gate is accepted.

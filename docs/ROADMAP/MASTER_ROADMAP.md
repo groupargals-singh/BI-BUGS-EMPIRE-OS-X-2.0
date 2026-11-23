@@ -61,3 +61,6 @@ Documentation Phase 1 remains active at 70% provisional. The specification-by-sp
 
 
 **Location reference-data import — 2026-11-23:** Imported and validated the official LGD State/UT and district hierarchy (36 States/UTs; 770 districts), UN M49 country/area catalogue (248 total; 247 International), and GeoNames populated-place search index (549,031 records; 548,995 State/UT crosswalks; 429,615 district crosswalks). Source/attribution boundaries are documented. GeoNames includes villages/localities and is not an official city-only municipal list; LGD ULB/city cross-check, owner selector approval and per-service coverage remain open. Documentation remains 70% provisional; no frontend selector is implemented.
+
+
+**Owner-review consolidation — 2026-11-23 (M-078):** Specification 32 Section 17 now contains one conservative first-release proposal covering OI-01–OI-11, so the owner can review a coherent baseline instead of receiving repeated fragmented questions. All proposed choices remain unapproved until explicitly accepted or edited. Specification 35 Section 9 records discovery of the official OGD/LGD Local Bodies resource; a verified ULB export/import and cross-check remain open. Documentation remains 70% provisional; no product coding begins before owner acceptance.

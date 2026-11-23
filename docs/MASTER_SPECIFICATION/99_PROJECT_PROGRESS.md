@@ -1662,3 +1662,20 @@ f0ce9b4 Create master specification index
 **Verification:** Location register strict PASS (25/25); location catalogue strict PASS (36 States/UTs: 28 States + 8 UTs; 770 districts; 248 UN country/areas; 247 International; 549,031 populated places; output SHA-256/size checks); lifecycle strict PASS (35 specifications, zero metadata issues); service catalogue strict PASS (71/71); website source gate strict PASS; full unit suite PASS (37/37); JavaScript syntax PASS; Python compileall PASS; Markdown integrity PASS (65 files, zero broken links/fences); `git diff --check` PASS.
 **GitHub:** Commit `03cd4a93fd7dcad1c00e628250176f5c2c33478a` (`Import validated India and international location data`) pushed to `origin/main`; local and remote `main` hashes matched after fetch. This is a documentation/reference-data revision, not a website release.
 **Progress:** Documentation remains 70% provisional; this closes the reference-data import/validation subtask but not the official ULB/city cross-check, remaining owner inputs, per-service coverage or explicit package acceptance. Overall project remains 10% provisional.
+
+
+## M-078 — Consolidated owner-review proposal and official ULB source discovery — 2026-11-23
+
+**Status:** DOCUMENTATION DRAFT CONSOLIDATED; OWNER DECISIONS AND ULB IMPORT STILL OPEN
+
+**Completed:** Added Specification 32 Section 17 with one conservative proposed first-release baseline for OI-01–OI-11. It covers identity/brand, 71 candidate services, location/contact, customer journey, privacy/data, staff operations, sitemap, design/accessibility, hosting, operations and acceptance. Proposed exclusions include no website form, payment, customer account, WhatsApp, staff portal or first-party customer database in release 1 unless separately approved. All proposals remain explicitly NOT OWNER-APPROVED; no WREQ records are created from assumptions.
+
+**Geographic source follow-up:** Identified the official Open Government Data Platform India LGD Local Bodies resource and the Ministry of Panchayati Raj LGD overview. Updated Specification 35 Section 9 with source links and acquisition limitations. A verified ULB export/schema was not retrieved/imported in this milestone; no ULB counts or city crosswalk are claimed. No third-party mirror or CAPTCHA/access-control bypass was used.
+
+**Files updated:** Specification 32, Specification 35, Documentation Completion Matrix, Specification 34 audit, Master Roadmap, Changelog and Version History.
+
+**Verification (2026-11-23):** Lifecycle strict audit PASS (35 specifications, zero metadata issues); website source gate strict PASS (NEW WEBSITE BUILD); service catalogue strict PASS (71/71 safe-blocked entries); owner location register strict PASS (25/25); location reference catalogue strict PASS (36 States/UTs, 770 districts, 248 UN M49 country/areas, 247 International, 549,031 populated places, checksum/size validation); full unit suite PASS (37/37); JavaScript syntax PASS (`node --check frontend/assets/js/main.js`); Python compileall PASS; Markdown integrity PASS (64 files, zero broken relative links/unbalanced fences); `git diff --check` PASS.
+
+**GitHub:** Pending verification and push for M-078.
+
+**Progress:** Documentation remains 70% provisional. The proposal makes the owner review easier but does not approve owner decisions, prove service capability/coverage, close ULB import/crosswalk work, or satisfy explicit package acceptance. Overall project remains 10% provisional.
